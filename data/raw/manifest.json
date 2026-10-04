@@ -1,0 +1,69 @@
+{
+  "description": "Registre des fichiers de données saisis à la main (publications annuelles en PDF). Chaque fichier y est rattaché à son document d'origine, à sa date de publication et à la date RÉELLE de récupération. Les fichiers automatiques (Eurostat, Insee) portent eux-mêmes leur retrievedAt.",
+  "files": {
+    "data/raw/adt35/epci_2024.csv": {
+      "sourceId": "adt35_lighthouse",
+      "document": "Fréquentation des hébergements locatifs en 2024",
+      "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+      "publisher": "Observatoire d'Ille & Vilaine Tourisme (données Lighthouse)",
+      "publicationDate": "2025-04",
+      "period": { "start": "2024-01-01", "end": "2024-12-31" },
+      "retrievedAt": "2026-10-04",
+      "retrievalNote": "Saisi le 2026-10-04 (phase 0). PDF re-téléchargé et revérifié le 2026-10-04T21:35:25Z (sha256 ci-dessous).",
+      "sha256": "c79783242b5bc15154d22c21cc91b764e81a26ab29188cce1b7695cfe5dd2ac6",
+      "pages": "4 (tableau par EPCI)",
+      "extraction": "saisie manuelle depuis le tableau du PDF, double lecture",
+      "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+      "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+      "dataClass": "OBSERVÉE"
+    },
+    "data/raw/adt35/departement_mensuel_2024.csv": {
+      "sourceId": "adt35_lighthouse",
+      "document": "Fréquentation des hébergements locatifs en 2024",
+      "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+      "publisher": "Observatoire d'Ille & Vilaine Tourisme (données Lighthouse)",
+      "publicationDate": "2025-04",
+      "period": { "start": "2024-01-01", "end": "2024-12-31" },
+      "retrievedAt": "2026-10-04",
+      "retrievalNote": "Saisi le 2026-10-04 (phase 0). PDF revérifié le 2026-10-04T21:35:25Z.",
+      "sha256": "c79783242b5bc15154d22c21cc91b764e81a26ab29188cce1b7695cfe5dd2ac6",
+      "pages": "2-3 (graphiques mensuels)",
+      "extraction": "saisie manuelle des étiquettes des graphiques",
+      "methodology": "Idem bilan 2024 ; département uniquement.",
+      "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+      "dataClass": "OBSERVÉE"
+    },
+    "data/raw/adt35/indicateurs_departement_2025.csv": {
+      "sourceId": "adt35_chiffres_cles",
+      "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+      "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+      "publisher": "Ille & Vilaine Tourisme (données Lighthouse pour le locatif)",
+      "publicationDate": "2026-05",
+      "period": { "start": "2025-01-01", "end": "2025-12-31" },
+      "retrievedAt": "2026-10-04T21:23:56Z",
+      "retrievalNote": "PDF de 30 pages téléchargé le 2026-10-04 ; texte extrait avec pdf.js ; chaque valeur relue sur la page indiquée.",
+      "sha256": "ec28434846e445c9bca9edc7772970b16cc0f8465bbb4b73b2f24110099adb89",
+      "pages": "14, 15, 28",
+      "extraction": "pdf.js (texte), lecture page par page, aucune valeur déduite",
+      "methodology": "Lighthouse 2025, logements entiers, Airbnb + VRBO + Booking (p. 15). Département uniquement : aucun prix ni taux d'occupation par EPCI, aucun mensuel, aucune typologie. TJM 2024 révisé à ≈ 140,6 € dans cette publication contre 104 € dans le bilan 2024 : série non comparable.",
+      "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+      "dataClass": "OBSERVÉE"
+    },
+    "data/raw/audiar/indicateurs_rennes_metropole_2025.csv": {
+      "sourceId": "audiar_observatoire",
+      "document": "Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)",
+      "sourceUrl": "https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf",
+      "publisher": "AUDIAR / Rennes Métropole",
+      "publicationDate": "2026-07",
+      "period": { "start": "2025-01-01", "end": "2025-12-31" },
+      "retrievedAt": "2026-10-04T21:23:58Z",
+      "retrievalNote": "PDF de 32 pages téléchargé le 2026-10-04 ; texte extrait avec pdf.js.",
+      "sha256": "8bff212a99a007c843f9120d5dfe39fb019d25a5779e2884327bf334a66318d7",
+      "pages": "4, 10, 11, 22, 24",
+      "extraction": "pdf.js (texte), lecture page par page",
+      "methodology": "Annonces actives : AirDNA (fournisseur différent de Lighthouse). Nuitées plateformes : Rennes Métropole – Audiar (10 premiers mois). Aucun prix ni taux d'occupation publiés.",
+      "license": "Non précisée par la source",
+      "dataClass": "OBSERVÉE"
+    }
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-10-v2-calibration",
+  "notes": "Tous les coefficients ci-dessous sont des HYPOTHÈSES DE MODÉLISATION ÉMERAUDE, sauf mention contraire. Ils ne proviennent d'aucune source de marché.",
+
+  "calibrationLog": [
+    { "date": "2026-10-04", "item": "size.bedrooms.*.adr", "from": "0,80 / 1 / 1,30 / 1,60 / 1,90", "to": "0,82 / 1 / 1,45 / 1,85 / 2,50", "evidence": "Régression du prix (capacité, sdb, type contrôlés) sur Inside Airbnb Lyon, Bordeaux, Pays basque : studio −14 à −21 %, 2 ch. +27 à +47 %, 3 ch. +81 à +104 %, 4+ ch. +154 à +200 %. Valeurs retenues proches de Lyon (ville la plus comparable, la plus prudente sur les grandes tailles)." },
+    { "date": "2026-10-04", "item": "size.bedrooms.*.occPts", "from": "+2 / 0 / −2 / −4 / −6", "to": "+3 / 0 / −2 / −8 / −8", "evidence": "Écart médian d'occupation estimée par rapport au 1 chambre (3 villes) : studio +2,7 à +4,9 ; 2 ch. −1,6 à −3,3 ; 3 ch. −5,5 à −11,5 ; 4+ ch. −4,1 à −11,5." },
+    { "date": "2026-10-04", "item": "size.bedrooms.*.typicalGuests", "from": "2 / 3 / 5 / 6 / 8", "to": "2 / 2 / 4 / 6 / 8", "evidence": "Capacité médiane par taille identique dans les 3 villes (Pays basque : 3 pour le 1 chambre)." },
+    { "date": "2026-10-04", "item": "size.guests.perGuest / cap", "from": "0,03 / 0,06", "to": "0,06 / 0,12", "evidence": "Effet d'un voyageur supplémentaire à taille égale : +5,9 à +8,2 % ; valeur retenue = minimum observé." },
+    { "date": "2026-10-04", "item": "size.bathrooms", "from": "+3 % si ≥ 2 sdb et ≥ 2 ch.", "to": "+3 % par sdb au-delà de la configuration typique (1, ou 2 pour 4+ ch.), plafond 6 %", "evidence": "Double comptage : une 2e salle de bain est typique des 4+ chambres et déjà incluse dans le facteur chambres." },
+    { "date": "2026-10-04", "item": "size.house.adr", "from": "0,05", "to": "0", "evidence": "Effet « maison » non robuste une fois chambres et capacité connues (−6,6 %, +2,9 %, +13,3 % selon la ville) ; double comptage avec l'atout « terrasse / extérieur »." },
+    { "date": "2026-10-04", "item": "amenities.canape-lit", "from": "+0,5 %", "to": "0", "evidence": "Double comptage avec la capacité voyageurs." },
+    { "date": "2026-10-04", "item": "referenceCalibration (nouveau)", "from": "moyenne de marché = logement 1 chambre", "to": "moyenne de marché ÷ indice de prix du mélange de tailles", "evidence": "Contrainte de cohérence : appliqué au mélange de tailles du marché, le modèle doit restituer la moyenne publiée (test DC8)." }
+  ],
+
+  "referenceProperty": {
+    "bedrooms": 1,
+    "nature": "hypothese_emeraude",
+    "label": "Logement de référence : 1 chambre",
+    "description": "Hypothèse de modélisation Émeraude : la moyenne de marché publiée pour l'intercommunalité est assimilée à un logement d'une chambre. Ce n'est pas une donnée de marché."
+  },
+
+  "types": {
+    "studio": { "label": "Studio", "expectedBedrooms": [0, 0], "isHouse": false },
+    "t1": { "label": "T1", "expectedBedrooms": [0, 0], "isHouse": false },
+    "t2": { "label": "T2", "expectedBedrooms": [1, 1], "isHouse": false },
+    "t3": { "label": "T3", "expectedBedrooms": [2, 2], "isHouse": false },
+    "t4": { "label": "T4+", "expectedBedrooms": [3, 10], "isHouse": false },
+    "maison": { "label": "Maison", "expectedBedrooms": [0, 10], "isHouse": true }
+  },
+
+  "size": {
+    "bedrooms": {
+      "0": { "adr": 0.82, "occPts": 3, "typicalArea": 25, "typicalGuests": 2, "typicalBathrooms": 1 },
+      "1": { "adr": 1.00, "occPts": 0, "typicalArea": 40, "typicalGuests": 2, "typicalBathrooms": 1 },
+      "2": { "adr": 1.45, "occPts": -2, "typicalArea": 60, "typicalGuests": 4, "typicalBathrooms": 1 },
+      "3": { "adr": 1.85, "occPts": -8, "typicalArea": 80, "typicalGuests": 6, "typicalBathrooms": 1 },
+      "4+": { "adr": 2.50, "occPts": -8, "typicalArea": 110, "typicalGuests": 8, "typicalBathrooms": 2 }
+    },
+    "area": { "perM2": 0.003, "cap": 0.06 },
+    "guests": { "perGuest": 0.06, "cap": 0.12, "warnAboveFormula": "2 x chambres + 2" },
+    "bathrooms": { "perExtraBathroom": 0.03, "cap": 0.06 },
+    "house": { "adr": 0 }
+  },
+
+  "referenceCalibration": {
+    "enabled": true,
+    "nature": "hypothese_emeraude",
+    "label": "Recalage de la moyenne de marché vers le logement de référence (1 chambre)",
+    "description": "La moyenne publiée mélange studios, 1, 2, 3 chambres et plus. Pour la ramener au logement de référence, elle est divisée par l'indice de prix moyen de ce mélange (pondéré par les nuits réservées) et l'occupation est corrigée de l'écart moyen dû à la taille. Le mélange des tailles et l'écart de prix entre tailles sont des hypothèses issues de villes comparables (le mélange local n'est pas publié) : Inside Airbnb (CC BY 4.0), Lyon, Bordeaux et Pays basque, 2026.",
+    "mixByProfile": {
+      "urbain": {
+        "label": "Mélange de tailles d'une métropole universitaire (Lyon, logements entiers actifs, 2026)",
+        "nightsShare": { "0": 0.115, "1": 0.583, "2": 0.212, "3": 0.064, "4+": 0.026 },
+        "listingShare": { "0": 0.100, "1": 0.558, "2": 0.230, "3": 0.082, "4+": 0.030 }
+      },
+      "littoral": {
+        "label": "Mélange de tailles d'un territoire littoral touristique (Pays basque, logements entiers actifs, 2026)",
+        "nightsShare": { "0": 0.059, "1": 0.442, "2": 0.291, "3": 0.128, "4+": 0.079 },
+        "listingShare": { "0": 0.045, "1": 0.368, "2": 0.279, "3": 0.171, "4+": 0.136 }
+      }
+    },
+    "source": "inside_airbnb_structure"
+  },
+
+  "location": {
+    "default": "standard",
+    "levels": {
+      "hypercentre": { "label": "Hypercentre", "adr": 0.10, "occPts": 3 },
+      "tres-central": { "label": "Très central", "adr": 0.06, "occPts": 2 },
+      "central": { "label": "Central", "adr": 0.03, "occPts": 1 },
+      "quartier-recherche": { "label": "Quartier recherché", "adr": 0.02, "occPts": 1 },
+      "standard": { "label": "Standard", "adr": 0, "occPts": 0 },
+      "peripherie": { "label": "Périphérie", "adr": -0.06, "occPts": -3 }
+    }
+  },
+
+  "amenities": {
+    "caps": { "adr": 0.10, "occPts": 3 },
+    "groups": {
+      "base": { "label": "Essentiels", "hint": "Déjà présents dans les logements comparables : sans effet sur l'estimation." },
+      "confort": { "label": "Confort", "hint": "Effet limité." },
+      "differenciant": { "label": "Atouts", "hint": "Effet plafonné au global." }
+    },
+    "items": [
+      { "id": "wifi", "legacyIndex": 0, "label": "Fibre / Wi-Fi haut débit", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "tv", "legacyIndex": 1, "label": "TV connectée", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "chauffage", "legacyIndex": 9, "label": "Chauffage performant", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "cuisine", "legacyIndex": 10, "label": "Cuisine équipée", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "four", "legacyIndex": 11, "label": "Four", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "micro-ondes", "legacyIndex": 12, "label": "Micro-ondes", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "bouilloire", "legacyIndex": 17, "label": "Bouilloire", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "grille-pain", "legacyIndex": 18, "label": "Grille-pain", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "refrigerateur", "legacyIndex": 19, "label": "Réfrigérateur / congélateur", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "plaques", "legacyIndex": 20, "label": "Plaques de cuisson", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "seche-cheveux", "legacyIndex": 25, "label": "Sèche-cheveux", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "fer", "legacyIndex": 26, "label": "Fer + table à repasser", "group": "base", "adr": 0, "occPts": 0 },
+      { "id": "linge", "legacyIndex": 27, "label": "Draps et serviettes inclus", "group": "base", "adr": 0, "occPts": 0 },
+
+      { "id": "lave-vaisselle", "legacyIndex": 13, "label": "Lave-vaisselle", "group": "confort", "adr": 0.01, "occPts": 0 },
+      { "id": "lave-linge", "legacyIndex": 14, "label": "Lave-linge", "group": "confort", "adr": 0.01, "occPts": 0 },
+      { "id": "seche-linge", "legacyIndex": 15, "label": "Sèche-linge", "group": "confort", "adr": 0.005, "occPts": 0 },
+      { "id": "cafe", "legacyIndex": 16, "label": "Machine à café", "group": "confort", "adr": 0.005, "occPts": 0 },
+      { "id": "canape-lit", "legacyIndex": 22, "label": "Canapé convertible", "group": "confort", "adr": 0, "occPts": 0, "note": "Sans effet propre : le couchage supplémentaire est pris en compte par la capacité voyageurs (évite le double comptage)." },
+      { "id": "espace-travail", "legacyIndex": 23, "label": "Espace de travail", "group": "confort", "adr": 0.01, "occPts": 0.5 },
+      { "id": "bebe", "legacyIndex": 24, "label": "Équipement bébé", "group": "confort", "adr": 0.005, "occPts": 0 },
+      { "id": "ascenseur", "legacyIndex": 7, "label": "Ascenseur", "group": "confort", "adr": 0.005, "occPts": 0 },
+      { "id": "parking-proximite", "legacyIndex": 6, "label": "Parking facile à proximité", "group": "confort", "adr": 0.01, "occPts": 0, "exclusive": "parking" },
+      { "id": "checkin-flexible", "legacyIndex": 31, "label": "Check-in flexible", "group": "confort", "adr": 0.005, "occPts": 0.5 },
+
+      { "id": "balcon", "legacyIndex": 2, "label": "Balcon", "group": "differenciant", "adr": 0.02, "occPts": 0, "exclusive": "exterieur" },
+      { "id": "terrasse", "legacyIndex": 3, "label": "Terrasse / extérieur", "group": "differenciant", "adr": 0.04, "occPts": 0, "exclusive": "exterieur" },
+      { "id": "vue", "legacyIndex": 4, "label": "Vue dégagée / agréable", "group": "differenciant", "adr": 0.02, "occPts": 0 },
+      { "id": "parking-prive", "legacyIndex": 5, "label": "Parking privé", "group": "differenciant", "adr": 0.03, "occPts": 1, "exclusive": "parking" },
+      { "id": "climatisation", "legacyIndex": 8, "label": "Climatisation", "group": "differenciant", "adr": 0.02, "occPts": 0 },
+      { "id": "literie-premium", "legacyIndex": 21, "label": "Literie premium", "group": "differenciant", "adr": 0.02, "occPts": 0 },
+      { "id": "serrure-connectee", "legacyIndex": 28, "label": "Serrure connectée / entrée autonome", "group": "differenciant", "adr": 0.01, "occPts": 1 },
+      { "id": "renove", "legacyIndex": 29, "label": "Logement rénové / décoration soignée", "group": "differenciant", "adr": 0.04, "occPts": 1 },
+      { "id": "calme", "legacyIndex": 30, "label": "Calme / bonne isolation phonique", "group": "differenciant", "adr": 0.015, "occPts": 0 }
+    ]
+  },
+
+  "guards": {
+    "adrSecondaryMultiplier": [0.85, 1.25],
+    "occupancy": [0.25, 0.80],
+    "occupancyMaxDeviationPts": 10,
+    "monthlyOccupancyMax": 0.90
+  },
+
+  "cleaning": {
+    "defaultFee": 40,
+    "avgStayDefault": "market",
+    "adrIncludesCleaningPolicy": "no_adjustment",
+    "unknownDefinitionNote": "La source ne précise pas si son prix moyen par nuit inclut les frais de ménage. Aucun ajustement n'est appliqué : le prix de marché est utilisé tel quel, et les frais de ménage de ce logement sont calculés séparément."
+  },
+
+  "fees": {
+    "airbnbHostFeeRate": 0.155,
+    "airbnbHostFeeLabel": "Frais de service Airbnb (15,5 % HT)",
+    "airbnbFeeBase": "nights_plus_cleaning",
+    "vat": {
+      "enabledByDefault": false,
+      "rate": 0.20,
+      "label": "Appliquer la TVA sur les frais Airbnb",
+      "note": "Selon la situation du propriétaire. Non appliquée par défaut."
+    },
+    "cleaningFeeShareBearer": "emeraude"
+  },
+
+  "commission": {
+    "defaultRate": 0.20,
+    "base": "nights_net_of_host_fee",
+    "baseLabel": "Revenu des nuits net des frais Airbnb sur les nuits"
+  },
+
+  "scenarios": {
+    "occupancyDeltaPts": { "source": "market.occupancyYoyPts", "min": 3, "max": 8 },
+    "prudent": {
+      "label": "Prudent",
+      "positiveBonusFactor": 0.5,
+      "occupancyDeltaSign": -1,
+      "managementAdr": 0,
+      "description": "Le logement ne valorise que la moitié de ses atouts (emplacement, équipements) et la demande recule de l'écart annuel observé sur le marché."
+    },
+    "realiste": {
+      "label": "Réaliste",
+      "positiveBonusFactor": 1,
+      "occupancyDeltaSign": 0,
+      "managementAdr": 0,
+      "description": "Marché local observé, ajusté aux caractéristiques du logement."
+    },
+    "performant": {
+      "label": "Performant",
+      "positiveBonusFactor": 1,
+      "occupancyDeltaSign": 1,
+      "managementAdr": 0.03,
+      "description": "Le logement capte la demande d'une bonne année (écart annuel observé sur le marché) et bénéficie d'une gestion optimisée (+3 % sur le prix)."
+    }
+  },
+
+  "months": {
+    "defaultMode": "count",
+    "defaultCount": 10,
+    "labels": ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+    "shortLabels": ["Janv.", "Févr.", "Mars", "Avr.", "Mai", "Juin", "Juil.", "Août", "Sept.", "Oct.", "Nov.", "Déc."],
+    "referenceYearDays": [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+    "countModeNote": "En mode « nombre de mois », les mois retirés sont considérés comme des mois moyens."
+  },
+
+  "seasonality": {
+    "profiles": {
+      "urbain": {
+        "label": "Profil urbain",
+        "occupancySource": "insee_hotels",
+        "adrSource": "adt35_lighthouse",
+        "adrDamping": 0.5,
+        "basis": "Occupation : profil mensuel de l'hôtellerie en Ille-et-Vilaine (Insee), utilisé comme approximation. Prix : profil mensuel des meublés en Ille-et-Vilaine (Ille & Vilaine Tourisme), amplitude réduite de moitié."
+      },
+      "littoral": {
+        "label": "Profil littoral",
+        "occupancySource": "adt35_lighthouse",
+        "adrSource": "adt35_lighthouse",
+        "adrDamping": 1,
+        "basis": "Occupation et prix : profil mensuel des meublés entiers en Ille-et-Vilaine (Ille & Vilaine Tourisme)."
+      }
+    }
+  },
+
+  "freshness": { "greenMaxMonths": 15, "orangeMaxMonths": 27, "pipelineStaleDays": 45 },
+
+  "uncertainty": {
+    "nature": "regle_emeraude",
+    "documentation": "Voir reports/validation-hypotheses-v2.md, section « Implémentation de l'incertitude et du niveau de confiance ». Bases et composantes issues de l'analyse de sensibilité de la phase 5 (incertitude structurelle : ±7 % T2 urbain, ±11 à ±13 % petits logements côtiers, ±8,6 % grands logements).",
+    "basePct": { "urbain": 7, "littoral": 12 },
+    "capPct": 25,
+    "atypicalFloorPct": 10,
+    "roundingStep": 100,
+    "smallMarketNights": 50000,
+    "property": {
+      "largeFromBedrooms": 3,
+      "capacityAtypicalExtraGuests": 2,
+      "capacityVeryAtypicalExtraGuests": 4,
+      "areaAtypical": [0.6, 1.6],
+      "areaVeryAtypical": [0.4, 2.2]
+    },
+    "weights": {
+      "dataOrange": 1, "dataRed": 3, "smallMarket": 1, "neighbourMarket": 1, "departmentMarket": 2, "snapshot": 1,
+      "coastal": 1, "large": 1, "atypical": 1, "veryAtypical": 2, "seasonFallback": 1, "periphery": 1
+    },
+    "components": {
+      "dataOrange": 2, "dataRed": 6, "smallMarket": 4, "neighbourMarket": 5, "departmentMarket": 8, "snapshot": 2,
+      "sizeClass": 5, "capacityAtypical": 4, "capacityVeryAtypical": 8, "areaAtypical": 3, "areaVeryAtypical": 6,
+      "seasonFallback": 5, "periphery": 4
+    },
+    "groupCaps": { "market": 2, "profile": 1, "property": 2, "seasonality": 1, "commune": 1 },
+    "levels": { "mediumFromScore": 1, "lowFromScore": 3 },
+    "peripheryWatch": {
+      "communes": ["bruz", "pace", "chartres-de-bretagne", "betton"],
+      "source": "Phase 5 : loyers T1-T2 < 0,90 × moyenne pondérée de Rennes Métropole (Carte des loyers 2025). Signalement uniquement, aucune correction (D12).",
+      "reason": "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
+    },
+    "texts": {
+      "rangeNote": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+      "scenariosNote": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+    }
+  },
+
+  "confidence": {
+    "lowGeoLevels": ["departement"],
+    "mediumIfSampleNightsBelow": 50000,
+    "mediumIfNeighbourMarket": true,
+    "freshnessCaps": { "green": "elevee", "orange": "moyenne", "red": "faible" },
+    "snapshotCap": "faible",
+    "labels": { "elevee": "Élevée", "moyenne": "Moyenne", "faible": "Faible" }
+  },
+
+  "emeraude": {
+    "minMonthsPerListing": 6,
+    "levels": [
+      { "id": "observation", "label": "Observation", "minListings": 0, "maxWeight": 0, "maxEffect": 0 },
+      { "id": "signal", "label": "Signal", "minListings": 3, "maxWeight": 0, "maxEffect": 0 },
+      { "id": "calibration", "label": "Calibration", "minListings": 5, "maxWeight": 0.33, "maxEffect": 0.10 },
+      { "id": "solide", "label": "Données internes solides", "minListings": 10, "maxWeight": 0.60, "maxEffect": 0.20 }
+    ],
+    "weightHalfSaturation": 10,
+    "minListingsToPublishAggregate": 3,
+    "seasonalityMinListingMonths": 120
+  },
+
+  "validation": {
+    "adr": [30, 400],
+    "occupancy": [0.10, 0.90],
+    "avgStay": [1, 15],
+    "maxYoyChange": { "adr": 0.30, "occupancy": 0.15 },
+    "seasonalIndex": [0.3, 2.5],
+    "seasonalNormalisationTolerance": 0.01
+  },
+
+  "inputs": {
+    "area": [10, 500],
+    "bedrooms": [0, 10],
+    "bathrooms": [0, 8],
+    "guests": [1, 20],
+    "months": [1, 12],
+    "commissionPct": [0, 50],
+    "cleaningFee": [0, 500],
+    "avgStay": [1, 30]
+  },
+
+  "defaults": {
+    "commune": "rennes",
+    "type": "t2",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 40,
+    "guests": 2,
+    "location": "standard",
+    "commissionPct": 20,
+    "cleaningFee": 40
+  },
+
+  "texts": {
+    "attribution": "Sources : Ille & Vilaine Tourisme (données Lighthouse), Eurostat, Insee.",
+    "attributionSuffix": "Estimation réalisée par Émeraude Conciergerie à partir de ces données et de ses propres hypothèses de modélisation.",
+    "methodologyIntro": "L'estimation distingue trois éléments : les données publiques du marché local, les ajustements propres au modèle Émeraude, et le résultat calculé pour ce logement.",
+    "methodologyMarket": "Données publiques observées sur l'intercommunalité (logements entiers loués sur Airbnb, Abritel et Booking). Ce sont des moyennes de marché, pas des chiffres propres au logement.",
+    "methodologyAdjustments": "Hypothèses de modélisation Émeraude appliquées au logement, avec des plafonds. Elles ne proviennent d'aucune source de marché.",
+    "methodologyResult": "Résultat calculé par le modèle. Ce n'est pas une statistique observée : c'est une estimation indicative, qui ne constitue pas une garantie de revenus.",
+    "disclaimer": "Estimation indicative et non garantie. Les performances réelles dépendent notamment de la demande, de la saisonnalité, du positionnement, des avis, de la disponibilité et de la tarification. Revenus présentés avant fiscalité, charges, linge, consommables et autres coûts non intégrés."
+  }
+}

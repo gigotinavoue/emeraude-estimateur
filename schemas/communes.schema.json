@@ -1,0 +1,38 @@
+{
+  "$id": "communes.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "departement", "epci", "communes"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "departement": { "type": "object", "required": ["id", "label"] },
+    "epci": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "fallback"],
+        "properties": {
+          "label": { "type": "string" },
+          "siren": { "type": "string", "pattern": "^\\d{9}$" },
+          "fallback": { "type": "array", "items": { "type": "string", "pattern": "^(epci|departement):" } }
+        }
+      }
+    },
+    "communes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "insee", "epci", "profile", "active"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "label": { "type": "string" },
+          "insee": { "type": "string", "pattern": "^\\d{5}$" },
+          "epci": { "type": "string" },
+          "profile": { "enum": ["urbain", "littoral"] },
+          "active": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

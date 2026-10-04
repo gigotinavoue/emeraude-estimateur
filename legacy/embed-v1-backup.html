@@ -1,0 +1,2331 @@
+<!-- ÉMERAUDE CONCIERGERIE — ESTIMATEUR DE REVENUS LOCATIFS -->
+
+<style>
+:root{
+--g:#0b6b53;
+--g2:#e8f3ef;
+--ink:#17332c;
+--muted:#66756f;
+--border:#d9e2de;
+--bg:#f5f8f7;
+--card:#fff
+}
+
+#emeraude-estimateur,
+#emeraude-estimateur *{
+box-sizing:border-box
+}
+
+#emeraude-estimateur{
+margin:0;
+background:var(--bg);
+color:var(--ink);
+font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+width:100%;
+line-height:1.4
+}
+
+#emeraude-estimateur .app{
+max-width:1160px;
+margin:auto;
+padding:24px 16px 50px
+}
+
+#emeraude-estimateur .head{
+display:flex;
+justify-content:space-between;
+gap:20px;
+align-items:flex-end;
+margin-bottom:20px
+}
+
+#emeraude-estimateur .kicker{
+color:var(--g);
+font-size:12px;
+font-weight:800;
+letter-spacing:.14em;
+text-transform:uppercase
+}
+
+#emeraude-estimateur .title{
+font-size:32px;
+font-weight:850;
+line-height:1.08;
+margin:5px 0
+}
+
+#emeraude-estimateur .sub{
+color:var(--muted);
+font-size:14px;
+max-width:760px
+}
+
+#emeraude-estimateur .badge{
+background:var(--g2);
+color:var(--g);
+font-size:11px;
+font-weight:800;
+padding:7px 10px;
+border-radius:999px;
+white-space:nowrap
+}
+
+#emeraude-estimateur .layout{
+display:grid;
+grid-template-columns:minmax(0,1.2fr) minmax(330px,.8fr);
+gap:18px
+}
+
+#emeraude-estimateur .card{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:18px;
+padding:20px
+}
+
+#emeraude-estimateur .section{
+font-size:17px;
+font-weight:800;
+margin:2px 0 14px
+}
+
+#emeraude-estimateur .section small{
+display:block;
+font-size:12px;
+font-weight:400;
+color:var(--muted);
+margin-top:4px
+}
+
+#emeraude-estimateur .fields{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:12px
+}
+
+#emeraude-estimateur .field{
+display:grid;
+gap:6px
+}
+
+#emeraude-estimateur .field label{
+font-size:12px;
+font-weight:700
+}
+
+#emeraude-estimateur .field input,
+#emeraude-estimateur .field select{
+width:100%;
+min-height:45px;
+border:1px solid var(--border);
+border-radius:10px;
+padding:10px 12px;
+font-size:16px;
+color:var(--ink);
+background:#fff;
+outline:none
+}
+
+#emeraude-estimateur .field input:focus,
+#emeraude-estimateur .field select:focus{
+border-color:var(--g);
+box-shadow:0 0 0 3px var(--g2)
+}
+
+#emeraude-estimateur .eq{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:8px
+}
+
+#emeraude-estimateur .check{
+display:flex;
+align-items:center;
+gap:9px;
+border:1px solid var(--border);
+border-radius:10px;
+padding:10px;
+min-height:44px;
+font-size:13px;
+background:#fff
+}
+
+#emeraude-estimateur .check input{
+width:18px;
+height:18px;
+accent-color:var(--g)
+}
+
+#emeraude-estimateur .result{
+position:sticky;
+top:12px;
+height:max-content
+}
+
+#emeraude-estimateur .hero{
+background:var(--g2);
+border-radius:16px;
+padding:18px
+}
+
+#emeraude-estimateur .hero-label{
+font-size:12px;
+color:var(--muted)
+}
+
+#emeraude-estimateur .hero-val{
+font-size:40px;
+font-weight:900;
+line-height:1.05;
+margin:5px 0
+}
+
+#emeraude-estimateur .hero-range{
+font-size:12px;
+color:var(--muted)
+}
+
+#emeraude-estimateur .quick{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+margin-top:12px
+}
+
+#emeraude-estimateur .metric{
+border:1px solid var(--border);
+border-radius:12px;
+padding:12px
+}
+
+#emeraude-estimateur .metric span{
+display:block;
+color:var(--muted);
+font-size:11px;
+margin-bottom:4px
+}
+
+#emeraude-estimateur .metric strong{
+font-size:18px
+}
+
+#emeraude-estimateur .occ{
+margin-top:12px;
+border:1px solid var(--border);
+border-radius:12px;
+padding:12px
+}
+
+#emeraude-estimateur .occ-top{
+display:flex;
+justify-content:space-between;
+font-size:12px;
+font-weight:700
+}
+
+#emeraude-estimateur .bar{
+height:8px;
+background:#e9efec;
+border-radius:99px;
+overflow:hidden;
+margin-top:8px
+}
+
+#emeraude-estimateur .bar i{
+display:block;
+height:100%;
+background:var(--g);
+border-radius:99px
+}
+
+#emeraude-estimateur .scenarios{
+margin-top:12px
+}
+
+#emeraude-estimateur .scenario{
+display:grid;
+grid-template-columns:82px 1fr 1fr;
+gap:8px;
+align-items:center;
+border-top:1px solid var(--border);
+padding:10px 0
+}
+
+#emeraude-estimateur .scenario:first-child{
+border-top:0
+}
+
+#emeraude-estimateur .scenario b{
+font-size:12px
+}
+
+#emeraude-estimateur .scenario span{
+font-size:12px;
+color:var(--muted)
+}
+
+#emeraude-estimateur .scenario strong{
+text-align:right;
+font-size:14px
+}
+
+#emeraude-estimateur .actions{
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-top:14px
+}
+
+#emeraude-estimateur .btn{
+border:1px solid var(--border);
+background:#fff;
+color:var(--ink);
+border-radius:10px;
+padding:10px 13px;
+font-weight:750;
+cursor:pointer
+}
+
+#emeraude-estimateur .btn.primary{
+background:var(--g);
+color:#fff;
+border-color:var(--g)
+}
+
+#emeraude-estimateur .btn.small{
+padding:8px 11px;
+font-size:12px
+}
+
+#emeraude-estimateur .note{
+font-size:11px;
+line-height:1.5;
+color:var(--muted);
+margin-top:12px
+}
+
+#emeraude-estimateur .top-actions{
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-top:12px
+}
+
+#emeraude-estimateur .present{
+display:none
+}
+
+#emeraude-estimateur .present-head{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+border-bottom:2px solid var(--g);
+padding-bottom:14px
+}
+
+#emeraude-estimateur .present-logo{
+font-weight:900;
+color:var(--g);
+letter-spacing:.05em
+}
+
+#emeraude-estimateur .present-title{
+font-size:28px;
+font-weight:850;
+margin:22px 0 4px
+}
+
+#emeraude-estimateur .present-sub{
+color:var(--muted)
+}
+
+#emeraude-estimateur .present-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+margin:20px 0
+}
+
+#emeraude-estimateur .pbox{
+border:1px solid var(--border);
+border-radius:12px;
+padding:14px
+}
+
+#emeraude-estimateur .pbox span{
+display:block;
+font-size:11px;
+color:var(--muted)
+}
+
+#emeraude-estimateur .pbox strong{
+font-size:22px
+}
+
+#emeraude-estimateur .present-foot{
+font-size:11px;
+color:var(--muted);
+line-height:1.5;
+margin-top:22px
+}
+
+#emeraude-estimateur .modal-backdrop{
+position:fixed;
+inset:0;
+background:rgba(16,39,32,.45);
+display:none;
+align-items:center;
+justify-content:center;
+padding:18px;
+z-index:99999
+}
+
+#emeraude-estimateur .modal-backdrop.open{
+display:flex
+}
+
+#emeraude-estimateur .modal{
+width:min(520px,100%);
+background:#fff;
+border-radius:18px;
+border:1px solid var(--border);
+box-shadow:0 24px 70px rgba(0,0,0,.18);
+padding:22px
+}
+
+#emeraude-estimateur .modal h3{
+margin:0 0 6px;
+font-size:20px
+}
+
+#emeraude-estimateur .modal p{
+margin:0 0 16px;
+color:var(--muted);
+font-size:13px;
+line-height:1.5
+}
+
+#emeraude-estimateur .modal input{
+width:100%;
+min-height:46px;
+border:1px solid var(--border);
+border-radius:10px;
+padding:10px 12px;
+font-size:16px;
+outline:none
+}
+
+#emeraude-estimateur .modal input:focus{
+border-color:var(--g);
+box-shadow:0 0 0 3px var(--g2)
+}
+
+#emeraude-estimateur .modal-actions{
+display:flex;
+justify-content:flex-end;
+gap:8px;
+margin-top:16px;
+flex-wrap:wrap
+}
+
+#emeraude-estimateur .mail-status{
+font-size:12px;
+color:var(--muted);
+margin-top:10px;
+min-height:18px
+}
+
+@media(max-width:820px){
+
+#emeraude-estimateur .layout{
+grid-template-columns:1fr
+}
+
+#emeraude-estimateur .result{
+position:static
+}
+
+#emeraude-estimateur .head{
+flex-direction:column;
+align-items:flex-start
+}
+
+#emeraude-estimateur .fields,
+#emeraude-estimateur .eq{
+grid-template-columns:1fr
+}
+
+#emeraude-estimateur .title{
+font-size:27px
+}
+
+#emeraude-estimateur .present-grid{
+grid-template-columns:1fr 1fr
+}
+
+}
+
+@media(max-width:520px){
+
+#emeraude-estimateur .modal{
+padding:18px
+}
+
+}
+
+@media print{
+
+body{
+background:#fff
+}
+
+#emeraude-estimateur .app{
+display:none
+}
+
+#emeraude-estimateur .present{
+display:block;
+padding:35px;
+max-width:900px;
+margin:auto
+}
+
+#emeraude-estimateur .present-grid{
+grid-template-columns:repeat(3,1fr)
+}
+
+}
+</style>
+
+
+<div id="emeraude-estimateur">
+
+<div class="app" id="app">
+
+<header class="head">
+
+<div>
+
+<div class="kicker">
+Émeraude Conciergerie
+</div>
+
+<div class="title">
+Estimateur de revenus locatifs
+</div>
+
+<div class="sub">
+Estimateur interne basé uniquement sur les communes desservies par Émeraude Conciergerie.
+</div>
+
+</div>
+
+<div class="badge">
+OUTIL INTERNE · ÉMERAUDE
+</div>
+
+</header>
+
+
+<div class="top-actions">
+
+<button class="btn small" id="newEstimate" type="button">
+↻ Nouvelle estimation
+</button>
+
+<button class="btn small" id="sendOwnerTop" type="button">
+✉ Envoyer au propriétaire
+</button>
+
+</div>
+
+
+<div class="layout">
+
+
+<section class="card">
+
+
+<div class="section">
+
+1 · Le logement
+
+<small>
+Renseigne les informations pendant la visite.
+</small>
+
+</div>
+
+
+<div class="fields">
+
+
+<div class="field">
+
+<label>
+Ville / commune
+</label>
+
+<select id="city">
+
+<option>Rennes</option>
+<option>Cesson-Sévigné</option>
+<option>Saint-Grégoire</option>
+<option>Chantepie</option>
+<option>Bruz</option>
+<option>Pacé</option>
+<option>Betton</option>
+<option>Saint-Jacques-de-la-Lande</option>
+<option>Vezin-le-Coquet</option>
+<option>Chartres-de-Bretagne</option>
+<option>Châteaubourg</option>
+<option>Liffré</option>
+<option>Vitré</option>
+<option>Saint-Aubin-du-Cormier</option>
+<option>Saint-Malo</option>
+<option>Val-d'Izé</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Type
+</label>
+
+<select id="type">
+
+<option>Studio</option>
+<option>T1</option>
+<option selected>T2</option>
+<option>T3</option>
+<option>T4+</option>
+<option>Maison</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Chambres
+</label>
+
+<input
+id="bed"
+type="number"
+min="0"
+max="10"
+value="1"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Salles de bain
+</label>
+
+<input
+id="bath"
+type="number"
+min="1"
+max="8"
+value="1"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Superficie (m²)
+</label>
+
+<input
+id="area"
+type="number"
+min="8"
+max="500"
+value="40"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Capacité voyageurs
+</label>
+
+<input
+id="guest"
+type="number"
+min="1"
+max="20"
+value="2"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Mois disponibles / an
+</label>
+
+<input
+id="months"
+type="number"
+min="1"
+max="12"
+value="10"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Emplacement
+</label>
+
+<select id="loc">
+
+<option selected>Hypercentre</option>
+<option>Très central</option>
+<option>Central</option>
+<option>Quartier recherché</option>
+<option>Standard</option>
+<option>Périphérie</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Commission Émeraude (%)
+</label>
+
+<input
+id="commission"
+type="number"
+min="0"
+max="50"
+step=".5"
+value="20"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Frais de ménage / séjour (€)
+</label>
+
+<input
+id="cleaningFee"
+type="number"
+min="0"
+max="500"
+step="1"
+value="40"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Durée moyenne d’un séjour (nuits)
+</label>
+
+<input
+id="stayLength"
+type="number"
+min="1"
+max="30"
+step="1"
+value="3"
+>
+
+</div>
+
+
+</div>
+
+
+<div class="section" style="margin-top:24px">
+
+2 · Équipements et atouts
+
+<small>
+Coche uniquement ce qui est réellement présent ou prévu.
+</small>
+
+</div>
+
+
+<div class="eq" id="eq">
+
+<label class="check">
+<input type="checkbox" data-i="0">
+<span>Fibre / Wi-Fi haut débit</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="1">
+<span>TV connectée</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="2">
+<span>Balcon</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="3">
+<span>Terrasse / extérieur</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="4">
+<span>Vue dégagée / agréable</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="5">
+<span>Parking privé</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="6">
+<span>Parking facile à proximité</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="7">
+<span>Ascenseur</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="8">
+<span>Climatisation</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="9">
+<span>Chauffage performant</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="10">
+<span>Cuisine équipée</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="11">
+<span>Four</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="12">
+<span>Micro-ondes</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="13">
+<span>Lave-vaisselle</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="14">
+<span>Lave-linge</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="15">
+<span>Sèche-linge</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="16">
+<span>Machine à café</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="17">
+<span>Bouilloire</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="18">
+<span>Grille-pain</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="19">
+<span>Réfrigérateur / congélateur</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="20">
+<span>Plaques de cuisson</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="21">
+<span>Literie premium</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="22">
+<span>Canapé convertible</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="23">
+<span>Espace de travail</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="24">
+<span>Équipement bébé</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="25">
+<span>Sèche-cheveux</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="26">
+<span>Fer + table à repasser</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="27">
+<span>Draps et serviettes inclus</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="28">
+<span>Serrure connectée / entrée autonome</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="29">
+<span>Logement rénové / décoration soignée</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="30">
+<span>Calme / bonne isolation phonique</span>
+</label>
+
+<label class="check">
+<input type="checkbox" data-i="31">
+<span>Check-in flexible</span>
+</label>
+
+</div>
+
+
+<div class="actions">
+
+<button class="btn" id="reset" type="button">
+Réinitialiser
+</button>
+
+</div>
+
+</section>
+
+
+<aside class="result">
+
+
+<div class="card">
+
+
+<div class="hero">
+
+<div class="hero-label">
+Estimation centrale · prix moyen / nuit
+</div>
+
+<div class="hero-val" id="adr">
+—
+</div>
+
+<div class="hero-range" id="range">
+—
+</div>
+
+</div>
+
+
+<div class="quick">
+
+
+<div class="metric">
+
+<span>
+CA brut / an
+</span>
+
+<strong id="annual">
+—
+</strong>
+
+</div>
+
+
+<div class="metric">
+
+<span>
+CA brut / mois disponible
+</span>
+
+<strong id="monthly">
+—
+</strong>
+
+</div>
+
+
+<div class="metric">
+
+<span>
+Airbnb (15,5 %) / an
+</span>
+
+<strong id="airbnb">
+—
+</strong>
+
+</div>
+
+
+<div class="metric">
+
+<span>
+Revenu net après Airbnb
+</span>
+
+<strong id="netAfterAirbnb">
+—
+</strong>
+
+</div>
+
+
+<div class="metric">
+
+<span>
+Émeraude / an
+</span>
+
+<strong id="concierge">
+—
+</strong>
+
+</div>
+
+
+<div class="metric">
+
+<span>
+Ménages collectés / an
+</span>
+
+<strong id="cleaningCollected">
+—
+</strong>
+
+</div>
+
+
+<div class="metric">
+
+<span>
+Propriétaire après commission
+</span>
+
+<strong id="owner">
+—
+</strong>
+
+</div>
+
+
+</div>
+
+
+<div class="occ">
+
+<div class="occ-top">
+
+<span>
+Taux d’occupation estimé
+</span>
+
+<span id="occ">
+—
+</span>
+
+</div>
+
+<div class="bar">
+
+<i id="bar"></i>
+
+</div>
+
+</div>
+
+
+<div class="scenarios">
+
+
+<div class="section" style="font-size:15px;margin:14px 0 4px">
+Scénarios
+</div>
+
+
+<div class="scenario">
+
+<b>
+Prudent
+</b>
+
+<span id="lowOcc">
+—
+</span>
+
+<strong id="lowCA">
+—
+</strong>
+
+</div>
+
+
+<div class="scenario">
+
+<b>
+Réaliste
+</b>
+
+<span id="midOcc">
+—
+</span>
+
+<strong id="midCA">
+—
+</strong>
+
+</div>
+
+
+<div class="scenario">
+
+<b>
+Optimisé
+</b>
+
+<span id="highOcc">
+—
+</span>
+
+<strong id="highCA">
+—
+</strong>
+
+</div>
+
+
+</div>
+
+
+<div class="actions">
+
+<button class="btn primary" id="print" type="button">
+Présenter / imprimer
+</button>
+
+<button class="btn primary" id="sendOwner" type="button">
+✉ Envoyer au propriétaire
+</button>
+
+</div>
+
+
+<div class="note" id="note">
+—
+</div>
+
+
+</div>
+
+</aside>
+
+
+</div>
+
+</div>
+
+
+<section class="present">
+
+
+<div class="present-head">
+
+
+<div>
+
+<div class="present-logo">
+ÉMERAUDE CONCIERGERIE
+</div>
+
+<div class="present-title">
+Estimation de revenus locatifs
+</div>
+
+<div class="present-sub" id="pSub">
+—
+</div>
+
+</div>
+
+
+<div id="pDate" class="present-sub">
+</div>
+
+
+</div>
+
+
+<div class="present-grid">
+
+
+<div class="pbox">
+
+<span>
+Prix moyen estimé / nuit
+</span>
+
+<strong id="pAdr">
+—
+</strong>
+
+</div>
+
+
+<div class="pbox">
+
+<span>
+Occupation estimée
+</span>
+
+<strong id="pOcc">
+—
+</strong>
+
+</div>
+
+
+<div class="pbox">
+
+<span>
+CA brut annuel
+</span>
+
+<strong id="pCA">
+—
+</strong>
+
+</div>
+
+
+<div class="pbox">
+
+<span>
+CA moyen / mois disponible
+</span>
+
+<strong id="pMonthly">
+—
+</strong>
+
+</div>
+
+
+<div class="pbox">
+
+<span>
+Frais Airbnb (15,5 %)
+</span>
+
+<strong id="pAirbnb">
+—
+</strong>
+
+</div>
+
+
+<div class="pbox">
+
+<span>
+Revenu net après Airbnb
+</span>
+
+<strong id="pNetAfterAirbnb">
+—
+</strong>
+
+</div>
+
+
+<div class="pbox">
+
+<span>
+Commission Émeraude
+</span>
+
+<strong id="pConc">
+—
+</strong>
+
+</div>
+
+
+<div class="pbox">
+
+<span>
+Ménages collectés pour Émeraude
+</span>
+
+<strong id="pCleaning">
+—
+</strong>
+
+</div>
+
+
+<div class="pbox">
+
+<span>
+Revenu propriétaire*
+</span>
+
+<strong id="pOwner">
+—
+</strong>
+
+</div>
+
+
+</div>
+
+
+<h3>
+Lecture de l'estimation
+</h3>
+
+
+<p id="pText">
+—
+</p>
+
+
+<div class="present-foot">
+
+Estimation indicative, non garantie. Les données de marché sont issues de statistiques AirDNA et converties en euros pour l'outil. Les petites communes présentent une incertitude plus importante. Les performances réelles dépendent notamment de la demande, de la saisonnalité, du positionnement, des avis, de la disponibilité et de la tarification dynamique. *Hors fiscalité, charges, linge et autres coûts non intégrés. Les frais de ménage affichés correspondent à une enveloppe collectée auprès des voyageurs pour financer les prestations de ménage et ne sont pas intégrés au revenu propriétaire.
+
+</div>
+
+
+</section>
+
+
+<div
+class="modal-backdrop"
+id="emailModal"
+role="dialog"
+aria-modal="true"
+aria-labelledby="emailModalTitle"
+>
+
+
+<div class="modal">
+
+
+<h3 id="emailModalTitle">
+Envoyer l’estimation au propriétaire
+</h3>
+
+
+<p>
+Indique l’adresse e-mail du propriétaire. L’outil préparera un e-mail avec les résultats de l’estimation et les caractéristiques du logement.
+</p>
+
+
+<label
+for="ownerEmail"
+style="display:block;font-size:12px;font-weight:700;margin-bottom:6px"
+>
+Adresse e-mail du propriétaire
+</label>
+
+
+<input
+id="ownerEmail"
+type="email"
+inputmode="email"
+autocomplete="email"
+placeholder="proprietaire@exemple.fr"
+>
+
+
+<div
+class="mail-status"
+id="mailStatus"
+>
+</div>
+
+
+<div class="modal-actions">
+
+<button
+class="btn"
+id="cancelEmail"
+type="button"
+>
+Annuler
+</button>
+
+<button
+class="btn primary"
+id="prepareEmail"
+type="button"
+>
+Préparer l’e-mail
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+(()=>{
+
+const root=document.getElementById('emeraude-estimateur');
+
+if(!root)return;
+
+const $=id=>root.querySelector('#'+id);
+
+
+const markets={
+
+"Rennes":[68,0.66,"1 451 annonces"],
+
+"Cesson-Sévigné":[74,0.57,"105 annonces"],
+
+"Saint-Grégoire":[86,0.55,"48 annonces"],
+
+"Chantepie":[62,0.58,"67 annonces"],
+
+"Bruz":[77,0.57,"133 annonces"],
+
+"Pacé":[86,0.61,"37 annonces"],
+
+"Betton":[90,0.58,"29 annonces"],
+
+"Saint-Jacques-de-la-Lande":[79,0.58,"157 annonces"],
+
+"Vezin-le-Coquet":[147,0.53,"45 annonces"],
+
+"Chartres-de-Bretagne":[68,0.54,"33 annonces"],
+
+"Châteaubourg":[66,0.56,"46 annonces"],
+
+"Liffré":[100,0.57,"44 annonces"],
+
+"Vitré":[60,0.61,"113 annonces"],
+
+"Saint-Aubin-du-Cormier":[107,0.45,"21 annonces"],
+
+"Saint-Malo":[117,0.62,"1 986 annonces"],
+
+"Val-d'Izé":[90,0.63,"12 annonces"]
+
+};
+
+
+const eq=[
+
+["Fibre / Wi-Fi haut débit",0.015,0.01],
+
+["TV connectée",0.01,0.005],
+
+["Balcon",0.04,0.01],
+
+["Terrasse / extérieur",0.07,0.015],
+
+["Vue dégagée / agréable",0.04,0.01],
+
+["Parking privé",0.06,0.02],
+
+["Parking facile à proximité",0.02,0.005],
+
+["Ascenseur",0.02,0.005],
+
+["Climatisation",0.03,0.01],
+
+["Chauffage performant",0.01,0.005],
+
+["Cuisine équipée",0.02,0.005],
+
+["Four",0.005,0.002],
+
+["Micro-ondes",0.005,0.002],
+
+["Lave-vaisselle",0.02,0.005],
+
+["Lave-linge",0.015,0.005],
+
+["Sèche-linge",0.015,0.003],
+
+["Machine à café",0.01,0.002],
+
+["Bouilloire",0.003,0.001],
+
+["Grille-pain",0.003,0.001],
+
+["Réfrigérateur / congélateur",0.005,0.001],
+
+["Plaques de cuisson",0.005,0.001],
+
+["Literie premium",0.04,0.01],
+
+["Canapé convertible",0.02,0.005],
+
+["Espace de travail",0.02,0.01],
+
+["Équipement bébé",0.01,0.002],
+
+["Sèche-cheveux",0.003,0.001],
+
+["Fer + table à repasser",0.003,0.001],
+
+["Draps et serviettes inclus",0.005,0.002],
+
+["Serrure connectée / entrée autonome",0.025,0.015],
+
+["Logement rénové / décoration soignée",0.07,0.025],
+
+["Calme / bonne isolation phonique",0.03,0.01],
+
+["Check-in flexible",0.015,0.01]
+
+];
+
+
+function euro(n){
+
+return new Intl.NumberFormat(
+'fr-FR',
+{
+style:'currency',
+currency:'EUR',
+maximumFractionDigits:0
+}
+).format(n);
+
+}
+
+
+function calculate(){
+
+let city=$('city').value;
+
+let m=markets[city];
+
+let type=$('type').value;
+
+let bed=+$('bed').value||0;
+
+let bath=+$('bath').value||1;
+
+let area=+$('area').value||10;
+
+let guest=+$('guest').value||1;
+
+let months=Math.min(
+12,
+Math.max(1,+$('months').value||1)
+);
+
+let loc=$('loc').value;
+
+let comm=Math.min(
+50,
+Math.max(0,+$('commission').value||0)
+);
+
+let cleaningFee=Math.max(
+0,
++$('cleaningFee').value||0
+);
+
+let stayLength=Math.min(
+30,
+Math.max(1,+$('stayLength').value||1)
+);
+
+
+const ta={
+
+Studio:0,
+T1:.03,
+T2:.10,
+T3:.22,
+'T4+':.38,
+Maison:.35
+
+}[type]||0;
+
+
+const to={
+
+Studio:0,
+T1:0,
+T2:.01,
+T3:.02,
+'T4+':.02,
+Maison:.02
+
+}[type]||0;
+
+
+const la={
+
+Hypercentre:.15,
+'Très central':.10,
+Central:.06,
+'Quartier recherché':.03,
+Standard:0,
+Périphérie:-.08
+
+}[loc]||0;
+
+
+const lo={
+
+Hypercentre:.04,
+'Très central':.03,
+Central:.02,
+'Quartier recherché':.01,
+Standard:0,
+Périphérie:-.03
+
+}[loc]||0;
+
+
+let ea=0;
+
+let eo=0;
+
+
+root.querySelectorAll('#eq input').forEach(x=>{
+
+if(x.checked){
+
+ea+=eq[+x.dataset.i][1];
+
+eo+=eq[+x.dataset.i][2];
+
+}
+
+});
+
+
+const aa=Math.max(
+-.05,
+Math.min(.08,(area-35)*.0025)
+);
+
+
+const ca=Math.max(
+-.03,
+Math.min(.12,(guest-2)*.025)
+);
+
+
+const ba=Math.max(
+-.02,
+Math.min(.06,(bath-1)*.03)
+);
+
+
+const bea=Math.max(
+-.03,
+Math.min(.10,(bed-1)*.04)
+);
+
+
+const adr=Math.round(
+m[0]*
+(
+1+
+ta+
+la+
+ea+
+aa+
+ca+
+bea+
+ba
+)
+);
+
+
+const occ=Math.max(
+.40,
+Math.min(
+.88,
+m[1]+
+to+
+lo+
+eo+
+ca/2+
+bea/2
+)
+);
+
+
+const avail=months*365/12;
+
+
+const lowAdr=adr*.90;
+
+const midAdr=adr;
+
+const highAdr=adr*1.10;
+
+
+const lowOcc=Math.max(
+.35,
+occ-.10
+);
+
+const midOcc=occ;
+
+const highOcc=Math.min(
+.92,
+occ+.07
+);
+
+
+const lowCA=lowAdr*avail*lowOcc;
+
+const midCA=midAdr*avail*midOcc;
+
+const highCA=highAdr*avail*highOcc;
+
+/*
+ * Airbnb : 15,5 % appliqués uniquement au revenu brut des nuits.
+ * Les frais de ménage sont séparés du revenu locatif.
+ */
+const airbnbRate=.155;
+
+const airbnb=midCA*airbnbRate;
+
+const netAfterAirbnb=midCA-airbnb;
+
+/*
+ * Commission Émeraude : calculée sur le revenu net
+ * du logement après les frais Airbnb.
+ */
+const conc=netAfterAirbnb*comm/100;
+
+const owner=netAfterAirbnb-conc;
+
+/*
+ * Les frais de ménage sont collectés auprès des voyageurs
+ * pour financer les prestations de ménage.
+ */
+const occupiedNights=midCA>0 ? midCA/midAdr : 0;
+
+const stays=Math.max(
+0,
+Math.round(occupiedNights/stayLength)
+);
+
+const cleaningCollected=stays*cleaningFee;
+
+
+$('adr').textContent=euro(midAdr);
+
+$('range').textContent=
+'Fourchette tarifaire indicative : '+
+euro(lowAdr)+
+' à '+
+euro(highAdr);
+
+
+$('annual').textContent=euro(midCA);
+
+$('monthly').textContent=euro(midCA/months);
+
+$('airbnb').textContent=euro(airbnb);
+
+$('netAfterAirbnb').textContent=euro(netAfterAirbnb);
+
+$('concierge').textContent=euro(conc);
+
+$('cleaningCollected').textContent=euro(cleaningCollected);
+
+$('owner').textContent=euro(owner);
+
+
+$('occ').textContent=
+Math.round(occ*100)+'%';
+
+
+$('bar').style.width=
+Math.round(occ*100)+'%';
+
+
+$('lowOcc').textContent=
+Math.round(lowOcc*100)+
+'% · '+
+euro(lowAdr)+
+'/nuit';
+
+
+$('midOcc').textContent=
+Math.round(midOcc*100)+
+'% · '+
+euro(midAdr)+
+'/nuit';
+
+
+$('highOcc').textContent=
+Math.round(highOcc*100)+
+'% · '+
+euro(highAdr)+
+'/nuit';
+
+
+$('lowCA').textContent=euro(lowCA);
+
+$('midCA').textContent=euro(midCA);
+
+$('highCA').textContent=euro(highCA);
+
+
+$('note').textContent=
+'Marché de référence : '+
+city+
+' · '+
+m[2]+
+'. Base locale convertie en euros puis ajustée selon le logement. Airbnb : 15,5 % du CA brut des nuits. Commission Émeraude : '+
+comm+
+'% du revenu net après Airbnb. Frais de ménage collectés : '+
+euro(cleaningCollected)+
+' pour environ '+
+stays+
+' séjour'+
+(stays>1?'s':'')+
+' par an.';
+
+
+$('pSub').textContent=
+type+
+' · '+
+area+
+' m² · '+
+bed+
+' chambre'+
+(bed>1?'s':'')+
+' · '+
+guest+
+' voyageur'+
+(guest>1?'s':'')+
+' · '+
+months+
+' mois/an · '+
+city;
+
+
+$('pDate').textContent=
+new Intl.DateTimeFormat(
+'fr-FR',
+{dateStyle:'long'}
+).format(new Date());
+
+
+$('pAdr').textContent=euro(midAdr);
+
+$('pOcc').textContent=
+Math.round(occ*100)+'%';
+
+$('pCA').textContent=euro(midCA);
+
+$('pMonthly').textContent=
+euro(midCA/months);
+
+$('pAirbnb').textContent=euro(airbnb);
+
+$('pNetAfterAirbnb').textContent=euro(netAfterAirbnb);
+
+$('pConc').textContent=euro(conc);
+
+$('pCleaning').textContent=euro(cleaningCollected);
+
+$('pOwner').textContent=euro(owner);
+
+
+$('pText').textContent=
+'Sur la base du marché de '+
+city+
+' et des caractéristiques renseignées, le scénario central situe le potentiel du logement autour de '+
+euro(midCA)+
+' de revenus locatifs bruts par an. Après 15,5 % de frais Airbnb, le revenu net estimé du logement est de '+
+euro(netAfterAirbnb)+
+', avant la commission Émeraude de '+
+euro(conc)+
+'. Les frais de ménage, estimés à '+
+euro(cleaningCollected)+
+' par an, sont collectés séparément pour financer les prestations de ménage. Les scénarios prudent et optimisé encadrent le potentiel sans présenter le résultat comme garanti.';
+
+}
+
+
+[
+'city',
+'type',
+'bed',
+'bath',
+'area',
+'guest',
+'months',
+'loc',
+'commission',
+'cleaningFee',
+'stayLength'
+].forEach(id=>{
+
+const el=$(id);
+
+el.addEventListener(
+'input',
+calculate
+);
+
+el.addEventListener(
+'change',
+calculate
+);
+
+el.addEventListener(
+'blur',
+calculate
+);
+
+});
+
+
+root.querySelectorAll('#eq input').forEach(x=>{
+
+x.addEventListener(
+'change',
+calculate
+);
+
+x.addEventListener(
+'input',
+calculate
+);
+
+});
+
+
+$('reset').addEventListener(
+'click',
+()=>{
+
+$('city').value='Rennes';
+
+$('type').value='T2';
+
+$('bed').value='1';
+
+$('bath').value='1';
+
+$('area').value='40';
+
+$('guest').value='2';
+
+$('months').value='10';
+
+$('loc').value='Hypercentre';
+
+$('commission').value='20';
+
+$('cleaningFee').value='40';
+
+$('stayLength').value='3';
+
+
+root.querySelectorAll(
+'#eq input[type=checkbox]'
+).forEach(x=>{
+
+x.checked=false;
+
+x.removeAttribute('checked');
+
+});
+
+
+calculate();
+
+}
+);
+
+
+function currentSummary(){
+
+return{
+
+city:$('city').value,
+
+type:$('type').value,
+
+bed:+$('bed').value||0,
+
+bath:+$('bath').value||1,
+
+area:+$('area').value||0,
+
+guest:+$('guest').value||0,
+
+months:+$('months').value||0,
+
+loc:$('loc').value,
+
+commission:+$('commission').value||0,
+
+cleaningFee:+$('cleaningFee').value||0,
+
+stayLength:+$('stayLength').value||1,
+
+airbnb:$('airbnb').textContent,
+
+netAfterAirbnb:$('netAfterAirbnb').textContent,
+
+cleaningCollected:$('cleaningCollected').textContent,
+
+adr:$('adr').textContent,
+
+occ:$('occ').textContent,
+
+annual:$('annual').textContent,
+
+monthly:$('monthly').textContent,
+
+concierge:$('concierge').textContent,
+
+owner:$('owner').textContent,
+
+lowCA:$('lowCA').textContent,
+
+midCA:$('midCA').textContent,
+
+highCA:$('highCA').textContent,
+
+lowOcc:$('lowOcc').textContent,
+
+midOcc:$('midOcc').textContent,
+
+highOcc:$('highOcc').textContent
+
+};
+
+}
+
+
+function openEmailModal(){
+
+$('mailStatus').textContent='';
+
+$('emailModal').classList.add('open');
+
+setTimeout(
+()=>$('ownerEmail').focus(),
+50
+);
+
+}
+
+
+function closeEmailModal(){
+
+$('emailModal').classList.remove('open');
+
+}
+
+
+function prepareOwnerEmail(){
+
+const email=
+$('ownerEmail').value.trim();
+
+
+if(
+!email ||
+!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+){
+
+$('mailStatus').textContent=
+'Merci d’indiquer une adresse e-mail valide.';
+
+return;
+
+}
+
+
+const d=currentSummary();
+
+
+const subject=
+'Votre estimation locative — Émeraude Conciergerie';
+
+
+const body=[
+
+'Bonjour',
+
+'',
+
+'Suite à notre échange, voici l’estimation indicative réalisée ensemble pour votre logement.',
+
+'',
+
+'LOGEMENT',
+
+'• Commune : '+d.city,
+
+'• Type : '+d.type,
+
+'• Surface : '+d.area+' m²',
+
+'• Chambres : '+d.bed,
+
+'• Salle(s) de bain : '+d.bath,
+
+'• Capacité : '+d.guest+' voyageurs',
+
+'• Disponibilité : '+d.months+' mois/an',
+
+'',
+
+'ESTIMATION CENTRALE',
+
+'• Prix moyen estimé : '+d.adr+' / nuit',
+
+'• Taux d’occupation estimé : '+d.occ,
+
+'• CA brut annuel estimé : '+d.annual,
+
+'• CA brut moyen par mois disponible : '+d.monthly,
+
+'• Frais Airbnb : 15,5% du CA brut des nuits',
+
+'• Frais Airbnb estimés : '+d.airbnb,
+
+'• Revenu net après Airbnb : '+d.netAfterAirbnb,
+
+'• Commission Émeraude : '+d.commission+'%',
+
+'• Frais de ménage / séjour : '+euro(d.cleaningFee),
+
+'• Durée moyenne d’un séjour : '+d.stayLength+' nuit'+(d.stayLength>1?'s':''),
+
+'• Frais de ménage collectés pour Émeraude : '+d.cleaningCollected,
+
+'• Revenu propriétaire après commission : '+d.owner,
+
+'',
+
+'SCÉNARIOS',
+
+'• Prudent : '+d.lowOcc+' — '+d.lowCA+' / an',
+
+'• Réaliste : '+d.midOcc+' — '+d.midCA+' / an',
+
+'• Optimisé : '+d.highOcc+' — '+d.highCA+' / an',
+
+'',
+
+'Cette estimation est indicative et non garantie. Les performances réelles dépendent notamment de la demande, de la saisonnalité, du positionnement, des avis, de la disponibilité et de la tarification dynamique.',
+
+'',
+
+'Bien cordialement,',
+
+'Émeraude Conciergerie'
+
+].join('\n');
+
+
+const gmail=
+'https://mail.google.com/mail/?view=cm&fs=1&to='+
+encodeURIComponent(email)+
+'&su='+
+encodeURIComponent(subject)+
+'&body='+
+encodeURIComponent(body);
+
+
+const mailto=
+'mailto:'+
+encodeURIComponent(email)+
+'?subject='+
+encodeURIComponent(subject)+
+'&body='+
+encodeURIComponent(body);
+
+
+const w=window.open(
+gmail,
+'_blank',
+'noopener,noreferrer'
+);
+
+
+if(!w){
+
+window.location.href=mailto;
+
+}
+
+
+$('mailStatus').textContent=
+'La fenêtre de rédaction de votre e-mail a été préparée. Vérifiez le contenu puis appuyez sur « Envoyer » dans votre messagerie.';
+
+}
+
+
+$('sendOwner').addEventListener(
+'click',
+openEmailModal
+);
+
+
+$('sendOwnerTop').addEventListener(
+'click',
+openEmailModal
+);
+
+
+$('cancelEmail').addEventListener(
+'click',
+closeEmailModal
+);
+
+
+$('emailModal').addEventListener(
+'click',
+e=>{
+
+if(e.target===$('emailModal')){
+
+closeEmailModal();
+
+}
+
+}
+);
+
+
+$('prepareEmail').addEventListener(
+'click',
+prepareOwnerEmail
+);
+
+
+$('ownerEmail').addEventListener(
+'keydown',
+e=>{
+
+if(e.key==='Enter'){
+
+prepareOwnerEmail();
+
+}
+
+if(e.key==='Escape'){
+
+closeEmailModal();
+
+}
+
+}
+);
+
+
+$('newEstimate').addEventListener(
+'click',
+()=>{
+
+$('reset').click();
+
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+
+}
+);
+
+
+$('print').addEventListener(
+'click',
+()=>window.print()
+);
+
+
+calculate();
+
+
+})();
+
+</script>

@@ -1,0 +1,27 @@
+{
+  "name": "emeraude-estimateur",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Estimateur de revenus locatifs Émeraude Conciergerie — moteur indépendant des sources, données publiques gratuites.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fetch": "node scripts/fetch-public.mjs",
+    "normalize": "node scripts/normalize.mjs",
+    "validate": "node scripts/validate.mjs",
+    "build:market": "node scripts/build-market.mjs",
+    "build:embed": "node scripts/build-embed.mjs",
+    "build": "node scripts/normalize.mjs && node scripts/validate.mjs && node scripts/build-market.mjs && node scripts/history-market.mjs && node scripts/check-freshness.mjs && node scripts/build-embed.mjs",
+    "data:update": "node scripts/refresh.mjs",
+    "data:integrate": "node scripts/refresh.mjs --no-fetch",
+    "data:restore": "node scripts/restore-market.mjs",
+    "update": "npm run data:update",
+    "security": "node scripts/security-check.mjs",
+    "history": "node scripts/history-market.mjs",
+    "freshness": "node scripts/check-freshness.mjs",
+    "reference": "node scripts/audit/reference-properties.mjs",
+    "compare": "node scripts/compare-legacy.mjs",
+    "emeraude:aggregate": "node scripts/aggregate-emeraude.mjs",
+    "test": "node --test \"tests/*.test.mjs\""
+  }
+}

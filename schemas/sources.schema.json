@@ -1,0 +1,30 @@
+{
+  "$id": "sources.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "sources"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "sources": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["label", "usage"],
+        "properties": {
+          "label": { "type": "string" },
+          "attribution": { "type": "string" },
+          "licence": { "type": "string" },
+          "usage": { "type": "array", "items": { "enum": ["market_base", "seasonality", "seasonality_proxy", "control", "demand_trend", "calibration", "calibration_structure", "audit", "fallback", "indicator"] } },
+          "priority": { "type": ["integer", "null"] },
+          "collection": { "enum": ["manual", "auto"] },
+          "definitions": {
+            "type": "object",
+            "properties": {
+              "adrIncludesCleaning": { "enum": [true, false, "unknown"] },
+              "occupancyBasis": { "enum": ["available_nights", "all_nights", "unknown"] }
+            }
+          }
+        }
+      }
+    }
+  }
+}

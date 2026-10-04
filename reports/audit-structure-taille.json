@@ -1,0 +1,261 @@
+{
+  "source": "Inside Airbnb (CC BY 4.0) — vérification interne, non utilisée par le moteur",
+  "files": {
+    "bordeaux": {
+      "listings": 4356,
+      "dispersion1BR": {
+        "note": "Dispersion à taille égale (1 chambre) : rapport au médian.",
+        "price": {
+          "p25": 0.82,
+          "p75": 1.28,
+          "p90": 1.6
+        },
+        "occupancyPts": {
+          "p25": -11.5,
+          "p75": 21.4
+        },
+        "revenue": {
+          "p25": 0.4,
+          "p75": 2.14,
+          "p90": 3.4
+        }
+      },
+      "bedrooms": {
+        "0": {
+          "n": 342,
+          "medianPriceRatio": 0.75,
+          "medianOccupancyPtsVs1": 3.3,
+          "medianRevenueRatio": 0.83,
+          "medianGuests": 2,
+          "shareHouse": 19,
+          "listingShare": 0.079,
+          "nightsShare": 0.101
+        },
+        "1": {
+          "n": 1877,
+          "medianPriceRatio": 1,
+          "medianOccupancyPtsVs1": 0,
+          "medianRevenueRatio": 1,
+          "medianGuests": 2,
+          "shareHouse": 16,
+          "listingShare": 0.431,
+          "nightsShare": 0.494
+        },
+        "2": {
+          "n": 999,
+          "medianPriceRatio": 1.46,
+          "medianOccupancyPtsVs1": -3.3,
+          "medianRevenueRatio": 1.35,
+          "medianGuests": 4,
+          "shareHouse": 33,
+          "listingShare": 0.229,
+          "nightsShare": 0.235
+        },
+        "3": {
+          "n": 668,
+          "medianPriceRatio": 2.13,
+          "medianOccupancyPtsVs1": -11.5,
+          "medianRevenueRatio": 0.97,
+          "medianGuests": 6,
+          "shareHouse": 70,
+          "listingShare": 0.153,
+          "nightsShare": 0.109
+        },
+        "4+": {
+          "n": 470,
+          "medianPriceRatio": 3.39,
+          "medianOccupancyPtsVs1": -11.5,
+          "medianRevenueRatio": 1.43,
+          "medianGuests": 8,
+          "shareHouse": 90,
+          "listingShare": 0.108,
+          "nightsShare": 0.062
+        }
+      },
+      "regression": {
+        "note": "Effets en % sur le prix affiché, toutes choses égales par ailleurs (référence : 1 chambre, capacité médiane de la classe, 1 salle de bain, appartement). « house » n'est pas interprétable si l'échantillon contient peu de maisons.",
+        "all": {
+          "n": 4356,
+          "bedrooms_0_vs_1": -20.9,
+          "bedrooms_2_vs_1": 47.1,
+          "bedrooms_3_vs_1": 103.6,
+          "bedrooms_4+_vs_1": 200.1,
+          "perExtraGuestWithinClass": 8.2,
+          "twoPlusBathrooms": 31.4,
+          "house": -6.6
+        }
+      }
+    },
+    "lyon": {
+      "listings": 2944,
+      "dispersion1BR": {
+        "note": "Dispersion à taille égale (1 chambre) : rapport au médian.",
+        "price": {
+          "p25": 0.82,
+          "p75": 1.2,
+          "p90": 1.48
+        },
+        "occupancyPts": {
+          "p25": -14.8,
+          "p75": 29.6
+        },
+        "revenue": {
+          "p25": 0.36,
+          "p75": 2.15,
+          "p90": 3.06
+        }
+      },
+      "bedrooms": {
+        "0": {
+          "n": 295,
+          "medianPriceRatio": 0.75,
+          "medianOccupancyPtsVs1": 4.9,
+          "medianRevenueRatio": 0.9,
+          "medianGuests": 2,
+          "shareHouse": 2,
+          "listingShare": 0.1,
+          "nightsShare": 0.115
+        },
+        "1": {
+          "n": 1643,
+          "medianPriceRatio": 1,
+          "medianOccupancyPtsVs1": 0,
+          "medianRevenueRatio": 1,
+          "medianGuests": 2,
+          "shareHouse": 1,
+          "listingShare": 0.558,
+          "nightsShare": 0.583
+        },
+        "2": {
+          "n": 677,
+          "medianPriceRatio": 1.46,
+          "medianOccupancyPtsVs1": -1.6,
+          "medianRevenueRatio": 1.29,
+          "medianGuests": 4,
+          "shareHouse": 2,
+          "listingShare": 0.23,
+          "nightsShare": 0.212
+        },
+        "3": {
+          "n": 241,
+          "medianPriceRatio": 2.01,
+          "medianOccupancyPtsVs1": -8.2,
+          "medianRevenueRatio": 1.25,
+          "medianGuests": 6,
+          "shareHouse": 7,
+          "listingShare": 0.082,
+          "nightsShare": 0.064
+        },
+        "4+": {
+          "n": 88,
+          "medianPriceRatio": 3.46,
+          "medianOccupancyPtsVs1": -4.1,
+          "medianRevenueRatio": 2.74,
+          "medianGuests": 8,
+          "shareHouse": 17,
+          "listingShare": 0.03,
+          "nightsShare": 0.026
+        }
+      },
+      "regression": {
+        "note": "Effets en % sur le prix affiché, toutes choses égales par ailleurs (référence : 1 chambre, capacité médiane de la classe, 1 salle de bain, appartement). « house » n'est pas interprétable si l'échantillon contient peu de maisons.",
+        "all": {
+          "n": 2944,
+          "bedrooms_0_vs_1": -17.9,
+          "bedrooms_2_vs_1": 45.9,
+          "bedrooms_3_vs_1": 84.7,
+          "bedrooms_4+_vs_1": 154.4,
+          "perExtraGuestWithinClass": 6.7,
+          "twoPlusBathrooms": 41.8,
+          "house": 13.3
+        }
+      }
+    },
+    "paysbasque": {
+      "listings": 5528,
+      "dispersion1BR": {
+        "note": "Dispersion à taille égale (1 chambre) : rapport au médian.",
+        "price": {
+          "p25": 0.81,
+          "p75": 1.33,
+          "p90": 1.76
+        },
+        "occupancyPts": {
+          "p25": -7.1,
+          "p75": 12.6
+        },
+        "revenue": {
+          "p25": 0.5,
+          "p75": 1.93,
+          "p90": 3.38
+        }
+      },
+      "bedrooms": {
+        "0": {
+          "n": 250,
+          "medianPriceRatio": 0.87,
+          "medianOccupancyPtsVs1": 2.7,
+          "medianRevenueRatio": 0.96,
+          "medianGuests": 2,
+          "shareHouse": 12,
+          "listingShare": 0.045,
+          "nightsShare": 0.059
+        },
+        "1": {
+          "n": 2037,
+          "medianPriceRatio": 1,
+          "medianOccupancyPtsVs1": 0,
+          "medianRevenueRatio": 1,
+          "medianGuests": 3,
+          "shareHouse": 9,
+          "listingShare": 0.368,
+          "nightsShare": 0.442
+        },
+        "2": {
+          "n": 1543,
+          "medianPriceRatio": 1.38,
+          "medianOccupancyPtsVs1": -2.2,
+          "medianRevenueRatio": 1.16,
+          "medianGuests": 4,
+          "shareHouse": 22,
+          "listingShare": 0.279,
+          "nightsShare": 0.291
+        },
+        "3": {
+          "n": 947,
+          "medianPriceRatio": 2.29,
+          "medianOccupancyPtsVs1": -5.5,
+          "medianRevenueRatio": 1.29,
+          "medianGuests": 6,
+          "shareHouse": 63,
+          "listingShare": 0.171,
+          "nightsShare": 0.128
+        },
+        "4+": {
+          "n": 751,
+          "medianPriceRatio": 3.95,
+          "medianOccupancyPtsVs1": -7.1,
+          "medianRevenueRatio": 1.78,
+          "medianGuests": 8,
+          "shareHouse": 91,
+          "listingShare": 0.136,
+          "nightsShare": 0.079
+        }
+      },
+      "regression": {
+        "note": "Effets en % sur le prix affiché, toutes choses égales par ailleurs (référence : 1 chambre, capacité médiane de la classe, 1 salle de bain, appartement). « house » n'est pas interprétable si l'échantillon contient peu de maisons.",
+        "all": {
+          "n": 5528,
+          "bedrooms_0_vs_1": -14,
+          "bedrooms_2_vs_1": 26.7,
+          "bedrooms_3_vs_1": 81.1,
+          "bedrooms_4+_vs_1": 158.6,
+          "perExtraGuestWithinClass": 5.9,
+          "twoPlusBathrooms": 37.1,
+          "house": 2.9
+        }
+      }
+    }
+  },
+  "generatedAt": "2026-10-04T20:55:47.466Z"
+}

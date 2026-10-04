@@ -1,0 +1,136 @@
+{
+  "source": "Insee, recensement de la population (DS_RP_LOGEMENT_PRINC), Licence Ouverte",
+  "generatedAt": "2026-10-04T21:08:22.990Z",
+  "communes": {
+    "Rennes": {
+      "year": "2023",
+      "mainDwellings": 122334,
+      "roomsShareMain": {
+        "R1": 0.148,
+        "R2": 0.22,
+        "R3": 0.259,
+        "R4": 0.194,
+        "R_GE5": 0.18
+      },
+      "secondaryShare": 0.048,
+      "housesShareMain": 0.125
+    },
+    "Saint-Malo": {
+      "year": "2023",
+      "mainDwellings": 25835,
+      "roomsShareMain": {
+        "R1": 0.035,
+        "R2": 0.185,
+        "R3": 0.242,
+        "R4": 0.201,
+        "R_GE5": 0.337
+      },
+      "secondaryShare": 0.271,
+      "housesShareMain": 0.434
+    },
+    "Vitré": {
+      "year": "2023",
+      "mainDwellings": 9093,
+      "roomsShareMain": {
+        "R1": 0.041,
+        "R2": 0.143,
+        "R3": 0.201,
+        "R4": 0.191,
+        "R_GE5": 0.424
+      },
+      "secondaryShare": 0.031,
+      "housesShareMain": 0.6
+    },
+    "Cesson": {
+      "year": "2023",
+      "mainDwellings": 9268,
+      "roomsShareMain": {
+        "R1": 0.083,
+        "R2": 0.192,
+        "R3": 0.205,
+        "R4": 0.125,
+        "R_GE5": 0.396
+      },
+      "secondaryShare": 0.029,
+      "housesShareMain": 0.463
+    },
+    "Bruz": {
+      "year": "2023",
+      "mainDwellings": 9301,
+      "roomsShareMain": {
+        "R1": 0.103,
+        "R2": 0.157,
+        "R3": 0.188,
+        "R4": 0.154,
+        "R_GE5": 0.398
+      },
+      "secondaryShare": 0.047,
+      "housesShareMain": 0.482
+    },
+    "Lyon (réf. urbaine)": {
+      "year": "2023",
+      "mainDwellings": 271968,
+      "roomsShareMain": {
+        "R1": 0.158,
+        "R2": 0.244,
+        "R3": 0.28,
+        "R4": 0.19,
+        "R_GE5": 0.127
+      },
+      "secondaryShare": 0.06,
+      "housesShareMain": 0.026
+    },
+    "Bordeaux (réf.)": {
+      "year": "2023",
+      "mainDwellings": 148377,
+      "roomsShareMain": {
+        "R1": 0.163,
+        "R2": 0.255,
+        "R3": 0.256,
+        "R4": 0.167,
+        "R_GE5": 0.159
+      },
+      "secondaryShare": 0.069,
+      "housesShareMain": 0.214
+    },
+    "Biarritz (réf. littorale)": {
+      "year": "2023",
+      "mainDwellings": 15292,
+      "roomsShareMain": {
+        "R1": 0.077,
+        "R2": 0.206,
+        "R3": 0.278,
+        "R4": 0.219,
+        "R_GE5": 0.221
+      },
+      "secondaryShare": 0.401,
+      "housesShareMain": 0.275
+    },
+    "Anglet (réf. littorale)": {
+      "year": "2023",
+      "mainDwellings": 23530,
+      "roomsShareMain": {
+        "R1": 0.067,
+        "R2": 0.213,
+        "R3": 0.263,
+        "R4": 0.225,
+        "R_GE5": 0.232
+      },
+      "secondaryShare": 0.154,
+      "housesShareMain": 0.344
+    },
+    "Saint-Jean-de-Luz (réf. littorale)": {
+      "year": "2023",
+      "mainDwellings": 8208,
+      "roomsShareMain": {
+        "R1": 0.036,
+        "R2": 0.2,
+        "R3": 0.311,
+        "R4": 0.223,
+        "R_GE5": 0.23
+      },
+      "secondaryShare": 0.419,
+      "housesShareMain": 0.252
+    }
+  }
+}

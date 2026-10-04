@@ -1,0 +1,604 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-04T16:15:30.030Z",
+  "buildId": "local",
+  "markets": {
+    "departement:35": {
+      "label": "Ille-et-Vilaine",
+      "geoLevel": "departement",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 104.3,
+      "occupancy": 0.42,
+      "avgStay": 3.3,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 1281472
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:rennes-metropole": {
+      "label": "Rennes Métropole",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 80,
+      "occupancy": 0.49,
+      "avgStay": 3,
+      "occupancyYoyPts": -5,
+      "sample": {
+        "nightsBooked": 352046
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:saint-malo-agglomeration": {
+      "label": "Saint-Malo Agglomération",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 119,
+      "occupancy": 0.45,
+      "avgStay": 3.7,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 418795
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:cote-d-emeraude": {
+      "label": "Côte d'Emeraude",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 138.4,
+      "occupancy": 0.35,
+      "avgStay": 4.1,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 216031
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:pays-de-dol": {
+      "label": "Pays de Dol et de la Baie du Mont-Saint-Michel",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 108.7,
+      "occupancy": 0.42,
+      "avgStay": 3.2,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 69343
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:couesnon-marches-de-bretagne": {
+      "label": "Couesnon-Marches de Bretagne",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 102,
+      "occupancy": 0.38,
+      "avgStay": 2.8,
+      "occupancyYoyPts": 0,
+      "sample": {
+        "nightsBooked": 18757
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:fougeres-agglomeration": {
+      "label": "Fougères Agglomération",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 93.5,
+      "occupancy": 0.41,
+      "avgStay": 2.8,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 30904
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:vitre-communaute": {
+      "label": "Vitré Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 81.3,
+      "occupancy": 0.48,
+      "avgStay": 2.8,
+      "occupancyYoyPts": -7,
+      "sample": {
+        "nightsBooked": 34359
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:broceliande-communaute": {
+      "label": "Brocéliande Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 135.5,
+      "occupancy": 0.46,
+      "avgStay": 2.7,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 18364
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:montfort-communaute": {
+      "label": "Montfort Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 122.3,
+      "occupancy": 0.43,
+      "avgStay": 3,
+      "occupancyYoyPts": -1,
+      "sample": {
+        "nightsBooked": 9988
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:saint-meen-montauban": {
+      "label": "Saint-Méen Montauban",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 95.2,
+      "occupancy": 0.44,
+      "avgStay": 3.1,
+      "occupancyYoyPts": -4,
+      "sample": {
+        "nightsBooked": 14400
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:bretagne-romantique": {
+      "label": "Bretagne Romantique",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 114.2,
+      "occupancy": 0.36,
+      "avgStay": 3.4,
+      "occupancyYoyPts": -6,
+      "sample": {
+        "nightsBooked": 24242
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:vallons-de-haute-bretagne": {
+      "label": "Vallons de Haute Bretagne Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 96,
+      "occupancy": 0.43,
+      "avgStay": 2.8,
+      "occupancyYoyPts": -4,
+      "sample": {
+        "nightsBooked": 14935
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:roche-aux-fees": {
+      "label": "Roche-aux-Fées Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 108.7,
+      "occupancy": 0.39,
+      "avgStay": 2.6,
+      "occupancyYoyPts": -7,
+      "sample": {
+        "nightsBooked": 9431
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:liffre-cormier": {
+      "label": "Liffré-Cormier Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 87.9,
+      "occupancy": 0.45,
+      "avgStay": 3.5,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 9482
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    },
+    "epci:val-d-ille-aubigne": {
+      "label": "Val d'Ille-Aubigné",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 96.8,
+      "occupancy": 0.4,
+      "avgStay": 3.3,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 12246
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok"
+    }
+  },
+  "seasonality": {
+    "urbain": {
+      "label": "Profil urbain",
+      "occupancyIndex": [
+        0.7727,
+        0.8294,
+        0.9185,
+        1.0189,
+        1.0238,
+        1.2214,
+        1.0902,
+        1.1906,
+        1.1809,
+        1.0691,
+        0.8505,
+        0.8262
+      ],
+      "adrIndex": [
+        0.9524,
+        0.9333,
+        0.9428,
+        0.9716,
+        1.0051,
+        0.9908,
+        1.0914,
+        1.1154,
+        0.9956,
+        0.9812,
+        0.9524,
+        1.0003
+      ],
+      "basis": "Occupation : profil mensuel de l'hôtellerie en Ille-et-Vilaine (Insee), utilisé comme approximation. Prix : profil mensuel des meublés en Ille-et-Vilaine (Ille & Vilaine Tourisme), amplitude réduite de moitié.",
+      "period": "Occupation : 2025 (Insee) · Prix : 2024 (Ille & Vilaine Tourisme (données Lighthouse))",
+      "sources": [
+        "insee_hotels",
+        "adt35_lighthouse"
+      ]
+    },
+    "littoral": {
+      "label": "Profil littoral",
+      "occupancyIndex": [
+        0.7343,
+        0.6158,
+        0.8764,
+        0.9948,
+        1.0896,
+        1.0422,
+        1.279,
+        1.587,
+        1.1132,
+        0.9711,
+        0.8053,
+        0.8527
+      ],
+      "adrIndex": [
+        0.8923,
+        0.8547,
+        0.8735,
+        0.9299,
+        0.9956,
+        0.9674,
+        1.1647,
+        1.2116,
+        0.9768,
+        0.9486,
+        0.8923,
+        0.9862
+      ],
+      "basis": "Occupation et prix : profil mensuel des meublés entiers en Ille-et-Vilaine (Ille & Vilaine Tourisme).",
+      "period": "Occupation : 2024 (Ille & Vilaine Tourisme (données Lighthouse)) · Prix : 2024 (Ille & Vilaine Tourisme (données Lighthouse))",
+      "sources": [
+        "adt35_lighthouse"
+      ]
+    }
+  },
+  "controls": {
+    "checks": [
+      {
+        "id": "avgStay_rennes",
+        "status": "ok",
+        "detail": "Durée moyenne de séjour : Ille & Vilaine Tourisme 3 nuits (2024) vs Eurostat 2.98 nuits (2025), écart 1 %."
+      },
+      {
+        "id": "peak_month_littoral",
+        "status": "ok",
+        "detail": "Mois de pointe : Eurostat Bretagne Août (2025) vs profil littoral Août."
+      }
+    ],
+    "eurostatRennes": {
+      "year": 2025,
+      "stays": 75660,
+      "nightsRented": 225633,
+      "avgStay": 2.98,
+      "nightsYoyPct": -6.3,
+      "source": "Eurostat (tour_ce_oarc, Rennes)"
+    }
+  },
+  "emeraude": {
+    "segments": []
+  },
+  "attribution": "Sources : Ille & Vilaine Tourisme (données Lighthouse), Eurostat, Insee."
+}

@@ -1,0 +1,5991 @@
+{
+  "retrievedAt": "2026-10-04T21:40:38.389Z",
+  "url": "https://api.insee.fr/melodi/data/DS_TOUR_FREQ?GEO=2026-DEP-35&FREQ=M&ACTIVITY=I551&TOUR_MEASURE=PLACE_OCCUPANCY_RATE&maxResult=1000",
+  "describe": "Insee — taux d'occupation hôtelier mensuel, Ille-et-Vilaine",
+  "lastPeriod": "2026-07",
+  "data": {
+    "observations": [
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2026-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 46.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 44
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 68.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 59
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 47.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 48.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 74.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 52.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 72.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 73
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 73.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 52.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 43.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 57.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 49.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 43.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 47.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 56.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 68.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 54.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 61.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "P",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "PROV",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 51
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 56.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 47.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 69.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 64.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 68.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 63.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 57.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 47.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 63.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 70.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 64.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 55
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 50
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 60.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 37.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 62.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 42.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 46.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 68.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 62.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 57
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 48.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 66.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 53.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 61.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 49.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 44.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 56.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 55.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 48.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 46.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 59.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 71.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 49.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 52.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 50.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 73.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 56.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 66
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2026-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 56.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 62.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 59.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 58
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 54.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 72.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 62.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 56.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 46.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 57.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 56.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 59.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 72.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 55.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 42.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 61.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 51.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 66
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 60.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 61.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 60.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 57
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 73.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 56.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 63.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 60.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 48.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 59.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2026-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 49.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 45
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 54.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 56.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 49.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 50.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 47.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 55.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 63.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 48.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 57.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 55.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 59.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 55.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 74.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 71.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 50.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 48.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 57.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2026-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 59.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 72.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 60.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 73.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 61.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 72.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "R",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2026-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 62.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 48.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 46.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 61.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 47.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 71.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 69.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 48
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 71.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 50.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 61
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2015-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 47.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 51.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 58.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 67.6
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 42.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 75.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 59.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 53.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 54.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 45.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 53.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 65
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 46.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 69.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-11",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 52.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 50.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 73.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 63.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2025-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 75.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "O",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2020-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {}
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2024-08",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 69
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2017-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 64.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-12",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 50.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2016-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 68.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 64.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2014-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 65.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 59.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 36.8
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-03",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 54.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2022-04",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 57.2
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 65.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2013-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 43.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2011-10",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 58.3
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 45.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2023-05",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 63.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2012-01",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 45.4
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2018-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 70.9
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2021-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 54.5
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2019-02",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 51.7
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "D",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2026-06",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 76.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "PROV",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2026-07",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 68.9
+          }
+        }
+      }
+    ],
+    "identifier": "DS_TOUR_FREQ",
+    "paging": {
+      "first": "https://api.insee.fr/melodi/data/DS_TOUR_FREQ?GEO=2026-DEP-35&FREQ=M&ACTIVITY=I551&TOUR_MEASURE=PLACE_OCCUPANCY_RATE&maxResult=1000&page=1"
+    },
+    "publisher": {
+      "id": "INSEE",
+      "label": [
+        {
+          "content": "Institut national de la statistique et des etudes economiques (INSEE)",
+          "lang": "fr"
+        },
+        {
+          "content": "National Institute of Statistics and Economic Studies",
+          "lang": "en"
+        }
+      ]
+    },
+    "title": {
+      "en": "Tourist visits",
+      "fr": "Fréquentation des hébergements touristiques "
+    }
+  }
+}

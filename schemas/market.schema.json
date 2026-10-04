@@ -1,0 +1,97 @@
+{
+  "$id": "market.schema.json",
+  "description": "dist/market.json — fichier lu par le moteur et par l'Embed.",
+  "type": "object",
+  "required": ["schemaVersion", "generatedAt", "markets", "seasonality", "controls", "emeraude", "attribution"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "generatedAt": { "type": "string" },
+    "buildId": { "type": "string" },
+    "markets": {
+      "type": "object",
+      "patternProperties": {
+        "^(commune|epci|departement):": { "$ref": "#/definitions/marketEntry" }
+      },
+      "additionalProperties": false
+    },
+    "seasonality": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/definitions/profile" }
+    },
+    "controls": { "type": "object" },
+    "emeraude": {
+      "type": "object",
+      "required": ["segments"],
+      "properties": { "segments": { "type": "array", "items": { "$ref": "#/definitions/emeraudeSegment" } } }
+    },
+    "attribution": { "type": "string" }
+  },
+  "definitions": {
+    "marketEntry": {
+      "type": "object",
+      "required": ["label", "geoLevel", "source", "period", "adr", "occupancy", "avgStay", "status"],
+      "properties": {
+        "label": { "type": "string" },
+        "geoLevel": { "enum": ["commune", "epci", "departement"] },
+        "source": { "type": "string" },
+        "period": { "type": "object", "required": ["start", "end"] },
+        "publishedAt": { "type": "string" },
+        "adr": { "type": "number", "minimum": 0 },
+        "occupancy": { "type": "number", "minimum": 0, "maximum": 1 },
+        "avgStay": { "type": "number", "minimum": 0 },
+        "occupancyYoyPts": { "type": ["number", "null"] },
+        "sample": { "type": "object" },
+        "segmentedBy": { "type": "array", "items": { "enum": ["bedrooms", "guests"] } },
+        "definitions": { "type": "object" },
+        "status": { "enum": ["ok", "rejected", "kept_previous"] },
+        "statusReason": { "type": "string" },
+        "meta": { "$ref": "#/definitions/meta" }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "description": "Métadonnées de fraîcheur et de provenance (ajoutées par build-market, ignorées par le moteur).",
+      "required": ["source", "periodStart", "periodEnd", "retrievedAt", "territory", "dataClass", "freshnessDays", "freshnessMonths", "status"],
+      "properties": {
+        "source": { "type": "string" },
+        "sourceUrl": { "type": ["string", "null"] },
+        "publicationDate": { "type": ["string", "null"] },
+        "periodStart": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "periodEnd": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "retrievedAt": { "type": "string", "minLength": 10 },
+        "territory": { "type": "string" },
+        "methodology": { "type": ["string", "null"] },
+        "license": { "type": ["string", "null"] },
+        "dataClass": { "enum": ["OBSERVÉE", "HYPOTHÈSE", "PROXY", "CALIBRATION", "FALLBACK"] },
+        "freshnessDays": { "type": "integer", "minimum": 0 },
+        "freshnessMonths": { "type": "integer", "minimum": 0 },
+        "status": { "enum": ["HIGH", "MEDIUM", "LOW"] }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "required": ["label", "occupancyIndex", "adrIndex", "basis"],
+      "properties": {
+        "label": { "type": "string" },
+        "occupancyIndex": { "type": "array", "minItems": 12, "maxItems": 12, "items": { "type": "number", "minimum": 0 } },
+        "adrIndex": { "type": "array", "minItems": 12, "maxItems": 12, "items": { "type": "number", "minimum": 0 } },
+        "basis": { "type": "string" },
+        "period": { "type": "string" },
+        "sources": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "emeraudeSegment": {
+      "type": "object",
+      "required": ["key", "listings", "listingMonths", "ratioAdr", "ratioOcc", "period"],
+      "additionalProperties": false,
+      "properties": {
+        "key": { "type": "string", "pattern": "^(commune|epci|departement):[a-z0-9:-]+\\|bedrooms:(0|1|2|3|4\\+)$" },
+        "listings": { "type": "integer", "minimum": 3 },
+        "listingMonths": { "type": "integer", "minimum": 0 },
+        "ratioAdr": { "type": "number", "minimum": 0.2, "maximum": 5 },
+        "ratioOcc": { "type": "number", "minimum": 0.2, "maximum": 5 },
+        "period": { "type": "object", "required": ["start", "end"] }
+      }
+    }
+  }
+}

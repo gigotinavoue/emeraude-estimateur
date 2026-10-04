@@ -1,0 +1,55 @@
+{
+  "year": 2024,
+  "writtenAt": "2026-10-04T21:40:39.274Z",
+  "usage": "Séries mensuelles utilisées pour les profils saisonniers (PROXY)",
+  "inputs": {
+    "urbain.adr": {
+      "source": "adt35_lighthouse",
+      "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+      "publicationDate": "2025-04",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "retrievedAt": "2026-10-04",
+      "territory": "Ille-et-Vilaine (département)",
+      "methodology": "Prix mensuels des meublés du département, amortis (coefficient 0.5).",
+      "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+      "dataClass": "PROXY",
+      "freshnessDays": 643,
+      "freshnessMonths": 21,
+      "status": "MEDIUM",
+      "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+    },
+    "littoral.occupancy": {
+      "source": "adt35_lighthouse",
+      "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/acteurs/chiffres-et-donnees/etudes-de-frequentation/hebergements-locatifs/",
+      "publicationDate": "2025-04",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "retrievedAt": "2026-10-04",
+      "territory": "Ille-et-Vilaine (département)",
+      "methodology": "Taux d'occupation mensuel des meublés (logements entiers) du département.",
+      "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+      "dataClass": "PROXY",
+      "freshnessDays": 643,
+      "freshnessMonths": 21,
+      "status": "MEDIUM",
+      "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+    },
+    "littoral.adr": {
+      "source": "adt35_lighthouse",
+      "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+      "publicationDate": "2025-04",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31",
+      "retrievedAt": "2026-10-04",
+      "territory": "Ille-et-Vilaine (département)",
+      "methodology": "Prix mensuels des meublés du département, amortis (coefficient 1).",
+      "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+      "dataClass": "PROXY",
+      "freshnessDays": 643,
+      "freshnessMonths": 21,
+      "status": "MEDIUM",
+      "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+    }
+  }
+}

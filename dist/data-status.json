@@ -1,0 +1,262 @@
+{
+  "checkedAt": "2026-10-05T12:00:00.000Z",
+  "marketGeneratedAt": "2026-10-04T22:09:32.267Z",
+  "marketDataYear": "2024",
+  "thresholds": {
+    "HIGH": "≤ 15 mois",
+    "MEDIUM": "> 15 et ≤ 27 mois",
+    "LOW": "> 27 mois"
+  },
+  "globalDataConfidence": "MEDIUM",
+  "globalRule": "Minimum des familles utilisées dans le calcul (marché, saisonnalité). Les indicateurs et contrôles n'abaissent ni ne relèvent la confiance.",
+  "families": [
+    {
+      "id": "market",
+      "label": "Marché (prix, occupation, durée de séjour)",
+      "role": "calcul",
+      "status": "MEDIUM",
+      "periods": {
+        "oldestEnd": "2024-12-31",
+        "newestEnd": "2024-12-31"
+      },
+      "items": [
+        {
+          "label": "Rennes Métropole",
+          "source": "adt35_lighthouse",
+          "periodEnd": "2024-12-31",
+          "dataClass": "OBSERVÉE",
+          "freshnessDays": 644,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "key": "epci:rennes-metropole",
+          "retrievedAt": "2026-10-04"
+        },
+        {
+          "label": "Saint-Malo Agglomération",
+          "source": "adt35_lighthouse",
+          "periodEnd": "2024-12-31",
+          "dataClass": "OBSERVÉE",
+          "freshnessDays": 644,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "key": "epci:saint-malo-agglomeration",
+          "retrievedAt": "2026-10-04"
+        },
+        {
+          "label": "Vitré Communauté",
+          "source": "adt35_lighthouse",
+          "periodEnd": "2024-12-31",
+          "dataClass": "OBSERVÉE",
+          "freshnessDays": 644,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "key": "epci:vitre-communaute",
+          "retrievedAt": "2026-10-04"
+        },
+        {
+          "label": "Liffré-Cormier Communauté",
+          "source": "adt35_lighthouse",
+          "periodEnd": "2024-12-31",
+          "dataClass": "OBSERVÉE",
+          "freshnessDays": 644,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "key": "epci:liffre-cormier",
+          "retrievedAt": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "seasonality",
+      "label": "Saisonnalité (profils mensuels)",
+      "role": "calcul",
+      "status": "MEDIUM",
+      "periods": {
+        "oldestEnd": "2024-12-31",
+        "newestEnd": "2025-12-31"
+      },
+      "items": [
+        {
+          "label": "Profil urbain — occupation",
+          "source": "insee_hotels",
+          "periodEnd": "2025-12-31",
+          "dataClass": "PROXY",
+          "freshnessDays": 279,
+          "freshnessMonths": 9,
+          "status": "HIGH",
+          "retrievedAt": "2026-10-04T21:40:38.389Z"
+        },
+        {
+          "label": "Profil urbain — prix",
+          "source": "adt35_lighthouse",
+          "periodEnd": "2024-12-31",
+          "dataClass": "PROXY",
+          "freshnessDays": 644,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "retrievedAt": "2026-10-04"
+        },
+        {
+          "label": "Profil littoral — occupation",
+          "source": "adt35_lighthouse",
+          "periodEnd": "2024-12-31",
+          "dataClass": "PROXY",
+          "freshnessDays": 644,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "retrievedAt": "2026-10-04"
+        },
+        {
+          "label": "Profil littoral — prix",
+          "source": "adt35_lighthouse",
+          "periodEnd": "2024-12-31",
+          "dataClass": "PROXY",
+          "freshnessDays": 644,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "retrievedAt": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "id": "indicators",
+      "label": "Indicateurs annuels récents",
+      "role": "contrôle",
+      "status": "HIGH",
+      "periods": {
+        "oldestEnd": "2025-12-31",
+        "newestEnd": "2025-12-31"
+      },
+      "items": [
+        {
+          "label": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026) (17 indicateurs)",
+          "source": "adt35_chiffres_cles",
+          "periodEnd": "2025-12-31",
+          "dataClass": "OBSERVÉE",
+          "freshnessDays": 279,
+          "freshnessMonths": 9,
+          "status": "HIGH",
+          "retrievedAt": "2026-10-04T21:23:56Z",
+          "publicationDate": "2026-05"
+        },
+        {
+          "label": "Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026) (6 indicateurs)",
+          "source": "audiar_observatoire",
+          "periodEnd": "2025-12-31",
+          "dataClass": "OBSERVÉE",
+          "freshnessDays": 279,
+          "freshnessMonths": 9,
+          "status": "HIGH",
+          "retrievedAt": "2026-10-04T21:23:58Z",
+          "publicationDate": "2026-07"
+        }
+      ]
+    },
+    {
+      "id": "controls",
+      "label": "Contrôles automatiques (Eurostat)",
+      "role": "contrôle",
+      "status": "HIGH",
+      "periods": {
+        "oldestEnd": "2025-12-31",
+        "newestEnd": "2025-12-31"
+      },
+      "items": [
+        {
+          "label": "Eurostat Rennes 2025",
+          "source": "eurostat_platforms",
+          "periodEnd": "2025-12-31",
+          "dataClass": "OBSERVÉE",
+          "freshnessDays": 279,
+          "freshnessMonths": 9,
+          "status": "HIGH",
+          "retrievedAt": "2026-10-04T21:40:37.958Z"
+        }
+      ]
+    }
+  ],
+  "classification": [
+    {
+      "item": "Prix moyen, occupation, durée de séjour par intercommunalité (Ille & Vilaine Tourisme / Lighthouse)",
+      "dataClass": "OBSERVÉE",
+      "family": "market",
+      "note": "Observation à l'échelle de l'intercommunalité, appliquée à toutes ses communes."
+    },
+    {
+      "item": "Repli sur le département ou un marché voisin",
+      "dataClass": "FALLBACK",
+      "family": "market",
+      "note": "Signalé à l'utilisateur ; abaisse la confiance."
+    },
+    {
+      "item": "Profil saisonnier urbain — occupation (Insee, hôtels, Ille-et-Vilaine)",
+      "dataClass": "PROXY",
+      "family": "seasonality",
+      "note": "Hôtellerie utilisée comme forme de saisonnalité des meublés urbains."
+    },
+    {
+      "item": "Profil saisonnier littoral — occupation (meublés, département)",
+      "dataClass": "PROXY",
+      "family": "seasonality",
+      "note": "Série départementale appliquée aux communes littorales."
+    },
+    {
+      "item": "Profils saisonniers — prix mensuels (meublés, département)",
+      "dataClass": "PROXY",
+      "family": "seasonality",
+      "note": "Série départementale, amortie."
+    },
+    {
+      "item": "Courbe des chambres (0,82 / 1 / 1,45 / 1,85 / 2,50) et mélange de tailles",
+      "dataClass": "CALIBRATION",
+      "family": "model",
+      "note": "Ratios agrégés Inside Airbnb (Lyon, Bordeaux, Pays basque) ; usage interne (D10)."
+    },
+    {
+      "item": "Logement de référence (1 chambre), emplacement, équipements, scénarios, capacité, salles de bain",
+      "dataClass": "HYPOTHÈSE",
+      "family": "model",
+      "note": "Hypothèses Émeraude documentées (D6, D7, D12-D14)."
+    },
+    {
+      "item": "Frais Airbnb, commission, ménage",
+      "dataClass": "HYPOTHÈSE",
+      "family": "model",
+      "note": "Règles contractuelles (D1-D3)."
+    },
+    {
+      "item": "Indicateurs départementaux 2025 (Chiffres clés)",
+      "dataClass": "OBSERVÉE",
+      "family": "indicators",
+      "note": "Contrôle et tendance ; jamais base de calcul (TJM non comparable)."
+    },
+    {
+      "item": "Indicateurs Rennes Métropole 2025 (AUDIAR)",
+      "dataClass": "OBSERVÉE",
+      "family": "indicators",
+      "note": "Tendance de la demande et de l'offre ; aucun prix ni occupation."
+    },
+    {
+      "item": "Eurostat — nuits louées via plateformes (Rennes, Bretagne)",
+      "dataClass": "OBSERVÉE",
+      "family": "controls",
+      "note": "Contrôle de la durée de séjour et du mois de pointe."
+    },
+    {
+      "item": "Données de secours intégrées à l'outil",
+      "dataClass": "FALLBACK",
+      "family": "market",
+      "note": "Utilisées si le fichier de marché est indisponible ; confiance FAIBLE."
+    },
+    {
+      "item": "Données des logements Émeraude",
+      "dataClass": "CALIBRATION",
+      "family": "emeraude",
+      "note": "Architecture prête, aucune donnée chargée ; privées, jamais publiées."
+    }
+  ],
+  "pipeline": {
+    "buildAgeDays": 1,
+    "pipelineStale": false
+  }
+}

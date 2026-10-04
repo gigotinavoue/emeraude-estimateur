@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "adt35_lighthouse": {
+      "label": "Ille & Vilaine Tourisme (données Lighthouse)",
+      "publisher": "Observatoire d'Ille & Vilaine Tourisme",
+      "url": "https://www.ille-et-vilaine-tourisme.bzh/acteurs/chiffres-et-donnees/etudes-de-frequentation/hebergements-locatifs/",
+      "document": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+      "licence": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+      "attribution": "Ille & Vilaine Tourisme (données Lighthouse)",
+      "usage": ["market_base", "seasonality"],
+      "updateRhythm": "annual",
+      "collection": "manual",
+      "priority": 30,
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": ["airbnb", "vrbo", "booking"],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      }
+    },
+    "adt35_chiffres_cles": {
+      "label": "Ille & Vilaine Tourisme — Chiffres clés 2025 (données Lighthouse, département)",
+      "publisher": "Ille & Vilaine Tourisme",
+      "url": "https://www.ille-et-vilaine-tourisme.bzh/acteurs/chiffres-et-donnees/",
+      "document": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+      "licence": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+      "attribution": "Ille & Vilaine Tourisme (données Lighthouse)",
+      "usage": ["indicator", "control", "demand_trend"],
+      "updateRhythm": "annual",
+      "collection": "manual",
+      "priority": null,
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": ["airbnb", "vrbo", "booking"],
+        "currency": "EUR",
+        "adrSourceLabel": "Tarif Journalier Moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown",
+        "comparability": "TJM 2024 révisé (≈ 140,6 €) par rapport au bilan 2024 (104 €) : non comparable à la base de marché. Département uniquement."
+      }
+    },
+    "audiar_observatoire": {
+      "label": "AUDIAR — Observatoire du tourisme de Rennes Métropole",
+      "publisher": "AUDIAR / Rennes Métropole",
+      "url": "https://www.audiar.org/",
+      "document": "https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf",
+      "licence": "Non précisée par la source",
+      "attribution": "AUDIAR / Rennes Métropole",
+      "usage": ["indicator", "demand_trend"],
+      "updateRhythm": "annual",
+      "collection": "manual",
+      "priority": null,
+      "definitions": { "scope": "plateformes (annonces AirDNA, nuitées plateformes)", "note": "Aucun prix ni taux d'occupation publiés." }
+    },
+    "eurostat_platforms": {
+      "label": "Eurostat — hébergements de courte durée réservés via des plateformes en ligne",
+      "publisher": "Eurostat",
+      "url": "https://ec.europa.eu/eurostat/web/tourism/database",
+      "licence": "Réutilisation autorisée, y compris commerciale, avec mention de la source (Décision 2011/833/UE)",
+      "attribution": "Eurostat",
+      "usage": ["control", "demand_trend"],
+      "updateRhythm": "quarterly",
+      "collection": "auto",
+      "priority": null,
+      "definitions": { "scope": "all_platform_accommodation", "platforms": ["airbnb", "booking", "expedia", "tripadvisor"] }
+    },
+    "insee_hotels": {
+      "label": "Insee — fréquentation des hébergements touristiques (hôtels)",
+      "publisher": "Insee",
+      "url": "https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_TOUR_FREQ",
+      "licence": "Licence Ouverte Etalab 2.0",
+      "attribution": "Insee",
+      "usage": ["seasonality_proxy"],
+      "updateRhythm": "monthly",
+      "collection": "auto",
+      "priority": null,
+      "definitions": { "scope": "hotels", "metric": "taux d'occupation des chambres/places, Ille-et-Vilaine" }
+    },
+    "inside_airbnb_structure": {
+      "label": "Inside Airbnb — structure des prix selon la taille (villes comparables)",
+      "publisher": "Inside Airbnb (Murray Cox)",
+      "url": "https://insideairbnb.com/get-the-data/",
+      "licence": "Creative Commons Attribution 4.0 (CC BY 4.0). Le projet demande de ne pas republier les données et d'en faire un usage cohérent avec sa mission (logement) : seuls des ratios agrégés sont utilisés, aucune donnée n'est republiée.",
+      "attribution": "Inside Airbnb (CC BY 4.0) — Lyon, Bordeaux, Pays basque",
+      "usage": ["calibration_structure"],
+      "updateRhythm": "quarterly",
+      "collection": "manual",
+      "priority": null,
+      "definitions": { "scope": "entire_home_active", "note": "Prix affichés (non réalisés) et occupation estimée par le projet ; utilisés uniquement en rapports relatifs entre tailles." }
+    },
+    "carte_loyers": {
+      "label": "Carte des loyers 2025 (ANIL / ministère du Logement)",
+      "publisher": "ANIL / DHUP",
+      "url": "https://www.data.gouv.fr/fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/",
+      "licence": "Licence Ouverte Etalab 2.0",
+      "attribution": "Carte des loyers 2025 (ANIL, ministère du Logement)",
+      "usage": ["audit"],
+      "updateRhythm": "annual",
+      "collection": "manual",
+      "priority": null,
+      "definitions": { "scope": "loyers d'annonce au m², location nue longue durée", "note": "Indicateur de niveau de prix par commune ; non utilisé dans le calcul en V2 (relation avec les prix de location courte durée non établie)." }
+    },
+    "emeraude_internal": {
+      "label": "Données des logements gérés par Émeraude Conciergerie (agrégées)",
+      "publisher": "Émeraude Conciergerie",
+      "licence": "Interne — seuls des agrégats anonymisés sont publiés",
+      "attribution": "Émeraude Conciergerie",
+      "usage": ["calibration"],
+      "updateRhythm": "monthly",
+      "collection": "manual",
+      "priority": 10
+    },
+    "embedded_snapshot": {
+      "label": "Données de secours intégrées à l'outil",
+      "usage": ["fallback"],
+      "priority": 99
+    }
+  }
+}

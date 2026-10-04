@@ -1,0 +1,329 @@
+{
+  "retrievedAt": "2026-10-04T16:15:29.544Z",
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_ce_omn12?format=JSON&lang=EN&geo=FRH0&c_resid=TOTAL&indic_to=NGT_SP",
+  "describe": "Eurostat — Bretagne, nuitées via plateformes, mensuel",
+  "data": {
+    "version": "2.0",
+    "class": "dataset",
+    "label": "Short-stay accommodation offered via online platforms by months, residence of the guest and NUTS 1 and NUTS 2 region",
+    "source": "ESTAT",
+    "updated": "2026-10-02T11:00:00+0200",
+    "value": {
+      "0": 4872341,
+      "1": 6144402,
+      "2": 5322661,
+      "3": 7332336,
+      "4": 8802543,
+      "5": 9538252,
+      "6": 11354685,
+      "7": 12452640,
+      "9": 76821,
+      "10": 105678,
+      "11": 139699,
+      "12": 162585,
+      "13": 198790,
+      "14": 210409,
+      "15": 271104,
+      "16": 289394,
+      "17": 312461,
+      "18": 101197,
+      "19": 150577,
+      "20": 221234,
+      "21": 364162,
+      "22": 336488,
+      "23": 354654,
+      "24": 323958,
+      "25": 380710,
+      "26": 390617,
+      "27": 155464,
+      "28": 158948,
+      "29": 100980,
+      "30": 345399,
+      "31": 275843,
+      "32": 297550,
+      "33": 494596,
+      "34": 383683,
+      "35": 425000,
+      "36": 327888,
+      "37": 515496,
+      "38": 29319,
+      "39": 208051,
+      "40": 711769,
+      "41": 858232,
+      "42": 757835,
+      "43": 986252,
+      "45": 426966,
+      "46": 423591,
+      "47": 86516,
+      "48": 604211,
+      "49": 674959,
+      "50": 921610,
+      "51": 1112626,
+      "52": 1127642,
+      "54": 378970,
+      "55": 575635,
+      "56": 290616,
+      "57": 508264,
+      "58": 697328,
+      "59": 771699,
+      "60": 929341,
+      "61": 1100068,
+      "63": 1047072,
+      "64": 1305279,
+      "65": 1443706,
+      "66": 1608670,
+      "67": 1767044,
+      "68": 1752824,
+      "69": 2113814,
+      "70": 2366203,
+      "72": 1310694,
+      "73": 1628452,
+      "74": 1729511,
+      "75": 1761674,
+      "76": 2061046,
+      "77": 2200197,
+      "78": 2844177,
+      "79": 3131387,
+      "81": 362393,
+      "82": 433942,
+      "83": 459974,
+      "84": 565791,
+      "85": 713084,
+      "86": 739226,
+      "87": 876748,
+      "88": 942206,
+      "90": 287301,
+      "91": 361860,
+      "92": 449388,
+      "93": 488874,
+      "94": 565451,
+      "95": 608189,
+      "96": 657349,
+      "97": 739029,
+      "99": 152348,
+      "100": 190070,
+      "101": 70017,
+      "102": 328937,
+      "103": 363743,
+      "104": 324514,
+      "105": 407124,
+      "106": 373327,
+      "108": 245227,
+      "109": 294874,
+      "110": 301701,
+      "111": 385718,
+      "112": 436998,
+      "113": 499148,
+      "114": 566013,
+      "115": 632739
+    },
+    "id": [
+      "freq",
+      "indic_to",
+      "c_resid",
+      "month",
+      "unit",
+      "geo",
+      "time"
+    ],
+    "size": [
+      1,
+      1,
+      1,
+      13,
+      1,
+      1,
+      9
+    ],
+    "dimension": {
+      "freq": {
+        "label": "Time frequency",
+        "category": {
+          "index": {
+            "A": 0
+          },
+          "label": {
+            "A": "Annual"
+          }
+        }
+      },
+      "indic_to": {
+        "label": "Tourism indicator",
+        "category": {
+          "index": {
+            "NGT_SP": 0
+          },
+          "label": {
+            "NGT_SP": "Nights spent"
+          }
+        }
+      },
+      "c_resid": {
+        "label": "Country of residence",
+        "category": {
+          "index": {
+            "TOTAL": 0
+          },
+          "label": {
+            "TOTAL": "Total"
+          }
+        }
+      },
+      "month": {
+        "label": "Month",
+        "category": {
+          "index": {
+            "TOTAL": 0,
+            "M01": 1,
+            "M02": 2,
+            "M03": 3,
+            "M04": 4,
+            "M05": 5,
+            "M06": 6,
+            "M07": 7,
+            "M08": 8,
+            "M09": 9,
+            "M10": 10,
+            "M11": 11,
+            "M12": 12
+          },
+          "label": {
+            "TOTAL": "Total",
+            "M01": "January",
+            "M02": "February",
+            "M03": "March",
+            "M04": "April",
+            "M05": "May",
+            "M06": "June",
+            "M07": "July",
+            "M08": "August",
+            "M09": "September",
+            "M10": "October",
+            "M11": "November",
+            "M12": "December"
+          }
+        }
+      },
+      "unit": {
+        "label": "Unit of measure",
+        "category": {
+          "index": {
+            "NR": 0
+          },
+          "label": {
+            "NR": "Number"
+          }
+        }
+      },
+      "geo": {
+        "label": "Geopolitical entity (reporting)",
+        "category": {
+          "index": {
+            "FRH0": 0
+          },
+          "label": {
+            "FRH0": "Bretagne"
+          }
+        }
+      },
+      "time": {
+        "label": "Time",
+        "category": {
+          "index": {
+            "2018": 0,
+            "2019": 1,
+            "2020": 2,
+            "2021": 3,
+            "2022": 4,
+            "2023": 5,
+            "2024": 6,
+            "2025": 7,
+            "2026": 8
+          },
+          "label": {
+            "2018": "2018",
+            "2019": "2019",
+            "2020": "2020",
+            "2021": "2021",
+            "2022": "2022",
+            "2023": "2023",
+            "2024": "2024",
+            "2025": "2025",
+            "2026": "2026"
+          }
+        }
+      }
+    },
+    "extension": {
+      "lang": "EN",
+      "id": "TOUR_CE_OMN12",
+      "agencyId": "ESTAT",
+      "version": "1.0",
+      "datastructure": {
+        "id": "TOUR_CE_OMN12",
+        "agencyId": "ESTAT",
+        "version": "19.0"
+      },
+      "annotation": [
+        {
+          "type": "CREATED",
+          "date": "2022-06-30T16:31:16+0200"
+        },
+        {
+          "type": "DISSEMINATION_DOI_XML",
+          "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/TOUR_CE_OMN12\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/TOUR_CE_OMN12</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2023-01-23</dct:issued></adms:Identifier></adms:identifier>"
+        },
+        {
+          "type": "DISSEMINATION_OBJECT_TYPE",
+          "title": "DATASET"
+        },
+        {
+          "type": "DISSEMINATION_TIMESTAMP_DATA",
+          "date": "2026-10-02T11:00:00+0200"
+        },
+        {
+          "type": "DISSEMINATION_TIMESTAMP_GLOBAL",
+          "date": "2026-10-02T11:00:00+0200"
+        },
+        {
+          "type": "DISSEMINATION_TIMESTAMP_PLANNED",
+          "date": "2026-10-02T11:00:00+0200"
+        },
+        {
+          "type": "OBS_COUNT",
+          "title": "371700"
+        },
+        {
+          "type": "OBS_PERIOD_OVERALL_LATEST",
+          "title": "2026"
+        },
+        {
+          "type": "OBS_PERIOD_OVERALL_OLDEST",
+          "title": "2018"
+        },
+        {
+          "type": "SOURCE_INSTITUTIONS",
+          "text": "Eurostat"
+        },
+        {
+          "type": "UPDATE_DATA",
+          "date": "2026-10-02T11:00:00+0200"
+        },
+        {
+          "type": "UPDATE_STRUCTURE",
+          "date": "2026-10-02T11:00:00+0200"
+        }
+      ],
+      "positions-with-no-data": {
+        "freq": [],
+        "indic_to": [],
+        "c_resid": [],
+        "month": [],
+        "unit": [],
+        "geo": [],
+        "time": []
+      }
+    }
+  },
+  "lastPeriod": "2026-03"
+}

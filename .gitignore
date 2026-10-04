@@ -1,0 +1,16 @@
+# Données brutes des logements gérés : JAMAIS publiées
+data/emeraude/private/*
+!data/emeraude/private/.gitkeep
+
+# Rapports d'exécution locaux de l'actualisation (le workflow les joint en artefact)
+out/
+# PDF des publications détectées : conservés en local uniquement (licence de redistribution non établie)
+data/inbox/pdf/
+# Fichiers temporaires des tests
+tests/tmp-*/
+.env
+.env.*
+
+node_modules/
+.DS_Store
+Thumbs.db

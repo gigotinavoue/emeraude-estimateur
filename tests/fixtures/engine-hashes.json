@@ -1,0 +1,14 @@
+{
+  "capturedAt": "2026-10-04",
+  "note": "Empreintes du moteur 1.2.0 au début de l'actualisation des données (aucune modification autorisée sans validation).",
+  "files": {
+    "inputs.js": "05d747eef5b05717813b1fc5f2e97e4ac45f0f9d06d2384de9393cf0e90db132",
+    "resolveMarket.js": "78f4bb94634265514a1d4d8f8bef00ad73bbd54a399de8f64d75b66fd01005cb",
+    "safe.js": "49b925f51095baeff89bd5c5c558081902eb5940d1b593c7e1e0aeed40709a65",
+    "index.js": "861767eedafd3a66fe68cbddea663b0f3c05dccc783c694f3a9204cb1c113df3",
+    "quality.js": "305ed304a46f82cc8b394ce1bb7e71580cbdac89c2f42a7172deaeb9b28e1d9d",
+    "uncertainty.js": "193936a4b78fb2af03f8b92e6e24dc56328127a99f9f3377f730392e13ad6695",
+    "core.js": "4c8760a0353e8bbaf079457d8440553117c6b9ee4efa767c8a2b5ad33be36c40",
+    "adjustments.js": "aa49ef88fb25ef5724e6bb3bc358c656450cbea26a3c23541062cea16e9b2f00"
+  }
+}

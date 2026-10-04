@@ -1,0 +1,81 @@
+name: Mise à jour des données de marché
+
+# Le 10 de chaque mois à 6 h UTC, et à la demande (onglet Actions → Run workflow).
+on:
+  schedule:
+    - cron: '0 6 10 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      needs_attention: ${{ steps.freshness.outputs.needs_attention }}
+      worst: ${{ steps.freshness.outputs.worst }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Collecte des sources publiques (Eurostat, Insee — sans clé)
+        run: node scripts/fetch-public.mjs
+      - name: Normalisation et validation
+        run: |
+          node scripts/normalize.mjs
+          node scripts/validate.mjs
+      - name: Construction de market.json et de l'Embed
+        env:
+          # À renseigner une fois GitHub Pages activé, ex. https://<compte>.github.io/emeraude-estimateur
+          ESTIMATEUR_DATA_BASE_URL: ${{ vars.ESTIMATEUR_DATA_BASE_URL }}
+        run: |
+          node scripts/build-market.mjs
+          node scripts/build-embed.mjs
+      - name: Tests (bloquants)
+        run: npm test
+      - name: Fraîcheur
+        id: freshness
+        run: node scripts/check-freshness.mjs
+      - name: Historique (commit des données mises à jour)
+        run: |
+          git config user.name "estimateur-bot"
+          git config user.email "estimateur-bot@users.noreply.github.com"
+          git add data/raw data/observations data/history dist embed/estimateur-v2.html
+          git diff --cached --quiet || git commit -m "Données de marché : mise à jour du $(date -u +%Y-%m-%d)"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
+
+  reminder:
+    needs: update
+    if: needs.update.outputs.needs_attention == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Données de marché à mettre à jour';
+            const open = await github.rest.issues.listForRepo({ owner: context.repo.owner, repo: context.repo.repo, state: 'open' });
+            if (open.data.some((i) => i.title === title)) return;
+            await github.rest.issues.create({
+              owner: context.repo.owner, repo: context.repo.repo, title,
+              body: 'La fraîcheur des données de marché est « ${{ needs.update.outputs.worst }} » ou le pipeline est en retard.\n\nÀ faire : vérifier la nouvelle publication annuelle d\'Ille & Vilaine Tourisme (hébergements locatifs) et mettre à jour `data/raw/adt35/` (voir README, procédure annuelle).'
+            });

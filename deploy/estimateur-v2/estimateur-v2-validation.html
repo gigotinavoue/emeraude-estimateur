@@ -1,0 +1,1703 @@
+<script>(function(){try{var m=document.querySelector('meta[name="robots"]');if(!m){m=document.createElement("meta");m.setAttribute("name","robots");document.head.appendChild(m);}m.setAttribute("content","noindex, nofollow");}catch(e){}})();</script>
+<!-- ÉMERAUDE CONCIERGERIE — ESTIMATEUR DE REVENUS LOCATIFS — V2 (moteur 1.2.0, généré le 2026-10-04) -->
+<!-- Fichier GÉNÉRÉ par scripts/build-embed.mjs à partir de embed/template.html : ne pas modifier à la main. -->
+
+<style>
+/* Mise en page reprise à l'identique de l'Embed v1 ; seuls des éléments ont été ajoutés (données de marché, mois, méthodologie). */
+:root{
+--g:#0b6b53;
+--g2:#e8f3ef;
+--ink:#17332c;
+--muted:#66756f;
+--border:#d9e2de;
+--bg:#f5f8f7;
+--card:#fff;
+--ok:#1d6b45;
+--ok2:#e3f1e9;
+--warn:#8a5a10;
+--warn2:#fbf0dc;
+--bad:#9a3324;
+--bad2:#f9e4e0
+}
+body{background:var(--bg)}
+#emeraude-estimateur,#emeraude-estimateur *{box-sizing:border-box}
+#emeraude-estimateur [hidden]{display:none!important}
+#emeraude-estimateur{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;width:100%;line-height:1.4}
+#emeraude-estimateur .app{max-width:1160px;margin:auto;padding:24px 16px 50px}
+#emeraude-estimateur .head{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:20px}
+#emeraude-estimateur .kicker{color:var(--g);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#emeraude-estimateur .title{font-size:32px;font-weight:850;line-height:1.08;margin:5px 0;text-wrap:balance}
+#emeraude-estimateur .sub{color:var(--muted);font-size:14px;max-width:760px}
+#emeraude-estimateur .badge{background:var(--g2);color:var(--g);font-size:11px;font-weight:800;padding:7px 10px;border-radius:999px;white-space:nowrap}
+#emeraude-estimateur .layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(330px,.8fr);gap:18px}
+#emeraude-estimateur .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px;min-width:0}
+#emeraude-estimateur .section{font-size:17px;font-weight:800;margin:2px 0 14px}
+#emeraude-estimateur .section small{display:block;font-size:12px;font-weight:400;color:var(--muted);margin-top:4px}
+#emeraude-estimateur .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#emeraude-estimateur .field{display:grid;gap:6px;align-content:start}
+#emeraude-estimateur .field label{font-size:12px;font-weight:700}
+#emeraude-estimateur .field input,#emeraude-estimateur .field select{width:100%;min-height:45px;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:16px;color:var(--ink);background:#fff;outline:none}
+#emeraude-estimateur .field input:focus,#emeraude-estimateur .field select:focus{border-color:var(--g);box-shadow:0 0 0 3px var(--g2)}
+#emeraude-estimateur .field input[aria-invalid="true"]{border-color:var(--bad);box-shadow:0 0 0 3px var(--bad2)}
+#emeraude-estimateur .field-error{font-size:12px;color:var(--bad)}
+#emeraude-estimateur .field-hint{font-size:11px;color:var(--muted)}
+#emeraude-estimateur .eq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#emeraude-estimateur .group-title{grid-column:1/-1;font-size:12px;font-weight:800;margin-top:8px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+#emeraude-estimateur .group-title span{font-weight:400;color:var(--muted)}
+#emeraude-estimateur .check{display:flex;align-items:center;gap:9px;border:1px solid var(--border);border-radius:10px;padding:10px;min-height:44px;font-size:13px;background:#fff}
+#emeraude-estimateur .check input{width:18px;height:18px;accent-color:var(--g);flex:none}
+#emeraude-estimateur .months-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#emeraude-estimateur .months-row input{flex:1 1 90px}
+#emeraude-estimateur .linkbtn{background:none;border:0;padding:4px 0;color:var(--g);font-weight:750;font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+#emeraude-estimateur .chips{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+#emeraude-estimateur .chip{border:1px solid var(--border);background:#fff;border-radius:9px;padding:9px 2px;font-size:12px;font-weight:700;color:var(--muted);cursor:pointer;min-height:40px}
+#emeraude-estimateur .chip[aria-pressed="true"]{background:var(--g);border-color:var(--g);color:#fff}
+#emeraude-estimateur .result{position:sticky;top:12px;height:max-content}
+#emeraude-estimateur .hero{background:var(--g2);border-radius:16px;padding:18px}
+#emeraude-estimateur .hero-label{font-size:12px;color:var(--muted)}
+#emeraude-estimateur .hero-val{font-size:40px;font-weight:900;line-height:1.05;margin:5px 0;font-variant-numeric:tabular-nums}
+#emeraude-estimateur .hero-range{font-size:12px;color:var(--muted)}
+#emeraude-estimateur .quick{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+#emeraude-estimateur .metric{border:1px solid var(--border);border-radius:12px;padding:12px;min-width:0}
+#emeraude-estimateur .metric span{display:block;color:var(--muted);font-size:11px;margin-bottom:4px}
+#emeraude-estimateur .metric strong{font-size:18px;font-variant-numeric:tabular-nums}
+#emeraude-estimateur .metric.wide{grid-column:1/-1;background:var(--g2);border-color:var(--g2)}
+#emeraude-estimateur .occ{margin-top:12px;border:1px solid var(--border);border-radius:12px;padding:12px}
+#emeraude-estimateur .occ-top{display:flex;justify-content:space-between;font-size:12px;font-weight:700}
+#emeraude-estimateur .bar{height:8px;background:#e9efec;border-radius:99px;overflow:hidden;margin-top:8px}
+#emeraude-estimateur .bar i{display:block;height:100%;background:var(--g);border-radius:99px}
+#emeraude-estimateur .scenarios{margin-top:12px}
+#emeraude-estimateur .scenario{display:grid;grid-template-columns:82px 1fr 1fr;gap:4px 8px;align-items:center;border-top:1px solid var(--border);padding:10px 0}
+#emeraude-estimateur .scenario:first-of-type{border-top:0}
+#emeraude-estimateur .scenario b{font-size:12px}
+#emeraude-estimateur .scenario span{font-size:12px;color:var(--muted)}
+#emeraude-estimateur .scenario strong{text-align:right;font-size:14px;font-variant-numeric:tabular-nums}
+#emeraude-estimateur .scenario.is-main b,#emeraude-estimateur .scenario.is-main strong{color:var(--g)}
+#emeraude-estimateur .scenario p{grid-column:1/-1;margin:0;font-size:11px;color:var(--muted);line-height:1.45}
+#emeraude-estimateur .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+#emeraude-estimateur .btn{border:1px solid var(--border);background:#fff;color:var(--ink);border-radius:10px;padding:10px 13px;font-weight:750;cursor:pointer;font-size:14px}
+#emeraude-estimateur .btn.primary{background:var(--g);color:#fff;border-color:var(--g)}
+#emeraude-estimateur .btn.small{padding:8px 11px;font-size:12px}
+#emeraude-estimateur .btn:focus-visible,#emeraude-estimateur .chip:focus-visible,#emeraude-estimateur .linkbtn:focus-visible{outline:2px solid var(--g);outline-offset:2px}
+#emeraude-estimateur .note{font-size:11px;line-height:1.5;color:var(--muted);margin-top:12px}
+#emeraude-estimateur .top-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;margin-bottom:12px}
+/* Données de marché */
+#emeraude-estimateur .data-block{border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:12px;display:grid;gap:8px}
+#emeraude-estimateur .data-head{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+#emeraude-estimateur .data-head b{font-size:12px}
+#emeraude-estimateur .pills{display:flex;gap:6px;flex-wrap:wrap}
+#emeraude-estimateur .pill{font-size:11px;font-weight:800;padding:4px 8px;border-radius:999px;white-space:nowrap}
+#emeraude-estimateur .pill.green{background:var(--ok2);color:var(--ok)}
+#emeraude-estimateur .pill.orange{background:var(--warn2);color:var(--warn)}
+#emeraude-estimateur .pill.red{background:var(--bad2);color:var(--bad)}
+#emeraude-estimateur .data-grid{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:12px}
+#emeraude-estimateur .data-grid dt{color:var(--muted)}
+#emeraude-estimateur .data-grid dd{margin:0;font-weight:650;font-variant-numeric:tabular-nums}
+#emeraude-estimateur .banner{border-radius:10px;padding:10px 12px;font-size:12px;line-height:1.45;background:var(--warn2);color:var(--warn)}
+#emeraude-estimateur .banner.bad{background:var(--bad2);color:var(--bad)}
+#emeraude-estimateur .banner ul{margin:4px 0 0;padding-left:18px}
+#emeraude-estimateur .warnings{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+#emeraude-estimateur .warnings li{font-size:12px;background:var(--warn2);color:var(--warn);border-radius:8px;padding:7px 10px}
+/* Méthodologie */
+#emeraude-estimateur details.method{margin-top:14px;border:1px solid var(--border);border-radius:12px;padding:0 12px}
+#emeraude-estimateur details.method summary{cursor:pointer;font-weight:800;font-size:13px;padding:12px 0}
+#emeraude-estimateur .method-body{display:grid;gap:14px;padding-bottom:14px;font-size:12px;line-height:1.5}
+#emeraude-estimateur .method-body h4{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--g)}
+#emeraude-estimateur .method-body p{margin:0 0 6px;color:var(--muted)}
+#emeraude-estimateur .mtable{width:100%;border-collapse:collapse;font-size:12px}
+#emeraude-estimateur .mtable td{padding:5px 0;border-top:1px solid var(--border);vertical-align:top}
+#emeraude-estimateur .mtable td:last-child{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;padding-left:10px}
+#emeraude-estimateur .tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:6px;background:var(--g2);color:var(--g);margin-left:6px}
+#emeraude-estimateur .tag.hyp{background:var(--warn2);color:var(--warn)}
+#emeraude-estimateur .conf-block{border:1px solid var(--border);border-radius:12px;padding:12px;margin-top:12px;display:grid;gap:6px}
+#emeraude-estimateur .conf-reasons{margin:0;padding-left:18px;font-size:12px;line-height:1.5}
+#emeraude-estimateur .conf-note{margin:0;font-size:11px;color:var(--muted);line-height:1.45}
+#emeraude-estimateur .v2-badge{background:var(--warn2);color:var(--warn);font-size:11px;font-weight:800;padding:7px 10px;border-radius:999px;white-space:nowrap}
+#emeraude-estimateur .global-error{border-radius:12px;padding:14px;background:var(--bad2);color:var(--bad);font-size:13px;font-weight:650}
+#emeraude-estimateur .attribution{font-size:11px;color:var(--muted);margin-top:10px}
+/* Présentation / impression */
+#emeraude-estimateur .present{display:none}
+#emeraude-estimateur .present-head{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid var(--g);padding-bottom:14px;gap:12px}
+#emeraude-estimateur .present-logo{font-weight:900;color:var(--g);letter-spacing:.05em}
+#emeraude-estimateur .present-title{font-size:28px;font-weight:850;margin:22px 0 4px}
+#emeraude-estimateur .present-sub{color:var(--muted)}
+#emeraude-estimateur .present-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+#emeraude-estimateur .pbox{border:1px solid var(--border);border-radius:12px;padding:14px}
+#emeraude-estimateur .pbox span{display:block;font-size:11px;color:var(--muted)}
+#emeraude-estimateur .pbox strong{font-size:22px;font-variant-numeric:tabular-nums}
+#emeraude-estimateur .present h3{margin:22px 0 8px;font-size:16px}
+#emeraude-estimateur .present-table{width:100%;border-collapse:collapse;font-size:13px}
+#emeraude-estimateur .present-table th,#emeraude-estimateur .present-table td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--border)}
+#emeraude-estimateur .present-table td.num,#emeraude-estimateur .present-table th.num{text-align:right;font-variant-numeric:tabular-nums}
+#emeraude-estimateur .present-foot{font-size:11px;color:var(--muted);line-height:1.5;margin-top:22px}
+#emeraude-estimateur.show-present .present{display:block;background:#fff;border:1px solid var(--border);border-radius:18px;padding:28px;max-width:900px;margin:0 auto 40px}
+#emeraude-estimateur .present-close{margin:0 auto 12px;max-width:900px;display:none;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+#emeraude-estimateur.show-present .present-close{display:flex}
+#emeraude-estimateur.show-present .app{display:none}
+/* Fenêtre e-mail */
+#emeraude-estimateur .modal-backdrop{position:fixed;inset:0;background:rgba(16,39,32,.45);display:none;align-items:center;justify-content:center;padding:18px;z-index:99999}
+#emeraude-estimateur .modal-backdrop.open{display:flex}
+#emeraude-estimateur .modal{width:min(560px,100%);max-height:calc(100% - 36px);overflow:auto;background:#fff;border-radius:18px;border:1px solid var(--border);box-shadow:0 24px 70px rgba(0,0,0,.18);padding:22px}
+#emeraude-estimateur .modal h3{margin:0 0 6px;font-size:20px}
+#emeraude-estimateur .modal p{margin:0 0 16px;color:var(--muted);font-size:13px;line-height:1.5}
+#emeraude-estimateur .modal input{width:100%;min-height:46px;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:16px;outline:none}
+#emeraude-estimateur .modal input:focus{border-color:var(--g);box-shadow:0 0 0 3px var(--g2)}
+#emeraude-estimateur .modal textarea{width:100%;min-height:220px;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);resize:vertical}
+#emeraude-estimateur .modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px;flex-wrap:wrap}
+#emeraude-estimateur .mail-status{font-size:12px;color:var(--muted);margin-top:10px;min-height:18px}
+/* Panneau de test (préversion uniquement) */
+#emeraude-estimateur .testbar{max-width:1160px;margin:0 auto;padding:12px 16px 0}
+#emeraude-estimateur .testbar-inner{border:1px dashed var(--g);background:#fff;border-radius:14px;padding:12px 14px;display:grid;gap:10px}
+#emeraude-estimateur .testbar-inner b{font-size:12px;color:var(--g);text-transform:uppercase;letter-spacing:.1em}
+#emeraude-estimateur .testbar-row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}
+#emeraude-estimateur .testbar .field{min-width:200px;flex:1 1 220px}
+#emeraude-estimateur .legacy-cmp{font-size:12px;color:var(--muted);line-height:1.5}
+@media(max-width:820px){
+#emeraude-estimateur .layout{grid-template-columns:1fr}
+#emeraude-estimateur .result{position:static}
+#emeraude-estimateur .head{flex-direction:column;align-items:flex-start}
+#emeraude-estimateur .fields,#emeraude-estimateur .eq{grid-template-columns:1fr}
+#emeraude-estimateur .title{font-size:27px}
+#emeraude-estimateur .present-grid{grid-template-columns:1fr 1fr}
+#emeraude-estimateur .chips{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:520px){
+#emeraude-estimateur .modal{padding:18px}
+#emeraude-estimateur .quick{grid-template-columns:1fr 1fr}
+#emeraude-estimateur .hero-val{font-size:34px}
+#emeraude-estimateur.show-present .present{padding:18px}
+}
+@media (prefers-reduced-motion:reduce){#emeraude-estimateur *{transition:none!important;animation:none!important}}
+@media print{
+body{background:#fff}
+#emeraude-estimateur .app,#emeraude-estimateur .testbar,#emeraude-estimateur .present-close{display:none!important}
+#emeraude-estimateur .present{display:block;padding:35px;max-width:900px;margin:auto;border:0}
+#emeraude-estimateur .present-grid{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+
+
+<div id="emeraude-estimateur">
+
+
+
+<div class="app" id="app">
+
+<header class="head">
+<div>
+<div class="kicker">Émeraude Conciergerie</div>
+<div class="title">Estimateur de revenus locatifs</div>
+<div class="sub">Estimateur interne : données publiques du marché local, ajustées par le modèle Émeraude.</div>
+</div>
+<div class="pills"><div class="badge">OUTIL INTERNE · ÉMERAUDE</div><div class="v2-badge">V2 · VERSION DE VALIDATION</div></div>
+</header>
+
+<div class="top-actions">
+<button class="btn small" id="newEstimate" type="button">↻ Nouvelle estimation</button>
+<button class="btn small" id="sendOwnerTop" type="button">✉ Envoyer au propriétaire</button>
+</div>
+
+<div class="layout">
+
+<section class="card" aria-label="Caractéristiques du logement">
+
+<div class="section">1 · Le logement<small>Renseigne les informations pendant la visite.</small></div>
+
+<div class="fields">
+<div class="field"><label for="city">Ville / commune</label><select id="city"></select><div class="field-error" id="err-commune" hidden></div></div>
+<div class="field"><label for="type">Type</label><select id="type"></select></div>
+<div class="field"><label for="bed">Chambres</label><input id="bed" type="number" inputmode="numeric" min="0" max="10" step="1"><div class="field-error" id="err-bedrooms" hidden></div></div>
+<div class="field"><label for="bath">Salles de bain</label><input id="bath" type="number" inputmode="decimal" min="0" max="8" step="1"><div class="field-error" id="err-bathrooms" hidden></div></div>
+<div class="field"><label for="area">Superficie (m²)</label><input id="area" type="number" inputmode="decimal" min="10" max="500"><div class="field-error" id="err-area" hidden></div></div>
+<div class="field"><label for="guest">Capacité voyageurs</label><input id="guest" type="number" inputmode="numeric" min="1" max="20" step="1"><div class="field-error" id="err-guests" hidden></div></div>
+
+<div class="field">
+<label for="months">Mois disponibles / an</label>
+<div class="months-row"><input id="months" type="number" inputmode="numeric" min="1" max="12" step="1"><button class="linkbtn" id="monthsModeToggle" type="button" aria-expanded="false" aria-controls="monthPicker">Choisir les mois</button></div>
+<div class="field-error" id="err-monthsCount" hidden></div>
+</div>
+
+<div class="field"><label for="loc">Emplacement</label><select id="loc"></select></div>
+
+<div class="field" id="monthPicker" hidden style="grid-column:1/-1">
+<label id="monthPickerLabel">Mois disponibles (sélection exacte)</label>
+<div class="chips" id="monthChips" role="group" aria-labelledby="monthPickerLabel"></div>
+<div class="field-hint" id="monthHint"></div>
+<div class="field-error" id="err-monthsSelected" hidden></div>
+</div>
+
+<div class="field"><label for="commission">Commission Émeraude (%)</label><input id="commission" type="number" inputmode="decimal" min="0" max="50" step=".5"><div class="field-error" id="err-commissionPct" hidden></div></div>
+<div class="field"><label for="cleaningFee">Frais de ménage / séjour (€)</label><input id="cleaningFee" type="number" inputmode="decimal" min="0" max="500" step="1"><div class="field-error" id="err-cleaningFee" hidden></div></div>
+<div class="field"><label for="stayLength">Durée moyenne d’un séjour (nuits)</label><input id="stayLength" type="number" inputmode="decimal" min="1" max="30" step="0.5"><div class="field-hint" id="stayHint"></div><div class="field-error" id="err-avgStay" hidden></div></div>
+<div class="field"><label for="vat">TVA sur frais Airbnb</label><label class="check" style="font-weight:400"><input id="vat" type="checkbox"><span id="vatLabel">Appliquer la TVA sur les frais Airbnb</span></label><div class="field-hint" id="vatHint">Selon la situation du propriétaire. Non appliquée par défaut.</div></div>
+</div>
+
+<div class="section" style="margin-top:24px">2 · Équipements et atouts<small>Coche uniquement ce qui est réellement présent ou prévu. Les essentiels sont sans effet ; les atouts ont un effet plafonné.</small></div>
+<div class="eq" id="eq"></div>
+
+<div class="actions"><button class="btn" id="reset" type="button">Réinitialiser</button></div>
+
+</section>
+
+<aside class="result" aria-live="polite">
+<div class="card">
+
+<div id="globalError" class="global-error" hidden></div>
+
+<div id="resultBody">
+
+<div class="data-block" id="marketData">
+<div class="data-head"><b>Données de marché</b><div class="pills"><span class="pill" id="freshPill">—</span><span class="pill" id="confPill">—</span></div></div>
+<dl class="data-grid">
+<dt>Données de marché</dt><dd id="mYear">—</dd>
+<dt>Fraîcheur</dt><dd id="mAge">—</dd>
+<dt>Zone</dt><dd id="mZone">—</dd>
+<dt>Source</dt><dd id="mSource">—</dd>
+<dt>Période</dt><dd id="mPeriod">—</dd>
+<dt>Publiées</dt><dd id="mPublished">—</dd>
+<dt>Marché observé</dt><dd id="mMarket">—</dd>
+<dt>Saisonnalité</dt><dd id="mSeason">—</dd>
+<dt>Dernière actualisation</dt><dd id="mUpdated">—</dd>
+</dl>
+<div class="banner" id="staleBanner" hidden></div>
+<div class="banner" id="fallbackBanner" hidden></div>
+</div>
+
+<div class="hero">
+<div class="hero-label">Estimation centrale · CA des nuits sur la période (scénario réaliste)</div>
+<div class="hero-val" id="central">—</div>
+<div class="hero-range" id="uncRange">—</div>
+<div class="hero-range" id="range">—</div>
+</div>
+
+<div class="conf-block" id="confBlock">
+<div class="data-head"><b>Niveau de confiance</b><span class="pill" id="confPill2">—</span></div>
+<ul class="conf-reasons" id="confReasons"></ul>
+<p class="conf-note" id="rangeNote">—</p>
+</div>
+
+<div class="metric wide" style="margin-top:12px"><span>Prix moyen estimé par nuit (scénario réaliste)</span><strong id="adr">—</strong></div>
+
+<div class="quick">
+<div class="metric"><span>CA des nuits / an</span><strong id="annual">—</strong></div>
+<div class="metric"><span>CA moyen / mois disponible</span><strong id="monthly">—</strong></div>
+<div class="metric"><span id="airbnbLabel">Frais Airbnb (15,5 % HT) / an</span><strong id="airbnb">—</strong></div>
+<div class="metric"><span>Revenu net après Airbnb</span><strong id="netAfterAirbnb">—</strong></div>
+<div class="metric" id="vatMetric" hidden><span>TVA sur frais Airbnb / an</span><strong id="vatAmount">—</strong></div>
+<div class="metric"><span>Commission Émeraude / an</span><strong id="concierge">—</strong></div>
+<div class="metric"><span>Ménages collectés / an</span><strong id="cleaningCollected">—</strong></div>
+<div class="metric wide"><span>Revenu propriétaire après commission</span><strong id="owner">—</strong> <span id="ownerMonthly" style="display:inline;margin-left:6px">—</span></div>
+</div>
+
+<div class="occ">
+<div class="occ-top"><span>Taux d’occupation estimé</span><span id="occ">—</span></div>
+<div class="bar"><i id="bar"></i></div>
+</div>
+
+<div class="scenarios" id="scenarios">
+<div class="section" style="font-size:15px;margin:14px 0 4px">Scénarios</div>
+</div>
+
+<ul class="warnings" id="warnings" hidden></ul>
+
+<div class="actions">
+<button class="btn primary" id="print" type="button">Présenter / imprimer</button>
+<button class="btn primary" id="sendOwner" type="button">✉ Envoyer au propriétaire</button>
+</div>
+
+<details class="method" id="method">
+<summary>Comment cette estimation est calculée ?</summary>
+<div class="method-body" id="methodBody"></div>
+</details>
+
+<div class="note" id="note">—</div>
+<div class="attribution" id="attribution">—</div>
+
+</div>
+</div>
+</aside>
+
+</div>
+</div>
+
+<div class="present-close" id="presentClose">
+<span class="note" style="margin:0">Aperçu de la version imprimée. Dans l’outil Framer, « Présenter / imprimer » ouvre directement l’impression.</span>
+<button class="btn small" id="closePresent" type="button">← Revenir à l’estimateur</button>
+</div>
+
+<section class="present" id="present" aria-label="Version imprimable">
+<div class="present-head">
+<div>
+<div class="present-logo">ÉMERAUDE CONCIERGERIE</div>
+<div class="present-title">Estimation de revenus locatifs</div>
+<div class="present-sub" id="pSub">—</div>
+</div>
+<div id="pDate" class="present-sub"></div>
+</div>
+<div class="present-grid" id="pGrid"></div>
+<h3>Scénarios</h3>
+<div style="overflow-x:auto"><table class="present-table" id="pScenarios"></table></div>
+<h3>Données utilisées et méthode</h3>
+<div id="pMethod" style="font-size:12px;line-height:1.55"></div>
+<div class="present-foot" id="pFoot"></div>
+</section>
+
+<div class="modal-backdrop" id="emailModal" role="dialog" aria-modal="true" aria-labelledby="emailModalTitle">
+<div class="modal">
+<h3 id="emailModalTitle">Envoyer l’estimation au propriétaire</h3>
+<p id="emailIntro">Indique l’adresse e-mail du propriétaire. L’outil préparera un e-mail avec les résultats de l’estimation et les caractéristiques du logement.</p>
+<label for="ownerEmail" style="display:block;font-size:12px;font-weight:700;margin-bottom:6px">Adresse e-mail du propriétaire</label>
+<input id="ownerEmail" type="email" inputmode="email" autocomplete="email" placeholder="proprietaire@exemple.fr">
+<div id="emailPreviewWrap" hidden style="margin-top:12px">
+<label for="emailPreview" style="display:block;font-size:12px;font-weight:700;margin-bottom:6px">Contenu de l’e-mail</label>
+<textarea id="emailPreview" readonly></textarea>
+</div>
+<div class="mail-status" id="mailStatus" role="status"></div>
+<div class="modal-actions">
+<button class="btn" id="cancelEmail" type="button">Fermer</button>
+<button class="btn" id="copyEmail" type="button" hidden>Copier le texte</button>
+<button class="btn primary" id="prepareEmail" type="button">Préparer l’e-mail</button>
+</div>
+</div>
+</div>
+
+</div>
+
+<script>
+/* Moteur de calcul (généré depuis engine/*.js) */
+(function(){
+'use strict';
+// ---- engine/safe.js ----
+// Garde-fous numériques : aucune valeur NaN / undefined / null ne doit sortir du moteur.
+
+function isNum(x) {
+  return typeof x === 'number' && Number.isFinite(x);
+}
+
+function clamp(x, min, max) {
+  return Math.min(max, Math.max(min, x));
+}
+
+// Convertit une saisie ("35", "35,5", " 40 ") en nombre ; NaN si invalide.
+function toNumber(v) {
+  if (typeof v === 'number') return Number.isFinite(v) ? v : NaN;
+  if (typeof v !== 'string') return NaN;
+  const s = v.trim().replace(/\s/g, '').replace(',', '.');
+  if (s === '' || !/^-?\d+(\.\d+)?$/.test(s)) return NaN;
+  return Number(s);
+}
+
+function sum(arr) {
+  let s = 0;
+  for (const x of arr) s += x;
+  return s;
+}
+
+// Parcourt un objet résultat et liste les chemins invalides (NaN, Infinity, undefined, null).
+function findInvalidValues(obj, path = 'result', out = []) {
+  if (obj === undefined || obj === null) {
+    out.push(path);
+    return out;
+  }
+  if (typeof obj === 'number') {
+    if (!Number.isFinite(obj)) out.push(path);
+    return out;
+  }
+  if (Array.isArray(obj)) {
+    obj.forEach((v, i) => findInvalidValues(v, `${path}[${i}]`, out));
+    return out;
+  }
+  if (typeof obj === 'object') {
+    for (const [k, v] of Object.entries(obj)) findInvalidValues(v, `${path}.${k}`, out);
+  }
+  return out;
+}
+
+// ---- engine/inputs.js ----
+// Validation et normalisation des caractéristiques du logement saisies dans le formulaire.
+
+function bedroomsKey(bedrooms) {
+  return bedrooms >= 4 ? '4+' : String(bedrooms);
+}
+
+function readRange(raw, key, range, { integer = false, label }) {
+  const n = toNumber(raw);
+  if (!isNum(n)) return { error: `Veuillez saisir un nombre valide (${label}).` };
+  if (integer && !Number.isInteger(n)) return { error: `Veuillez saisir un nombre entier (${label}).` };
+  if (n < range[0] || n > range[1]) return { error: `${label} : valeur attendue entre ${range[0]} et ${range[1]}.` };
+  return { value: n };
+}
+
+function validateInputs(raw, config, communesCfg) {
+  const errors = {};
+  const warnings = [];
+  const r = config.inputs;
+  const d = config.defaults;
+  const p = {};
+
+  const commune = communesCfg.communes.find((c) => c.id === raw.commune && c.active !== false);
+  if (!commune) errors.commune = 'Commune non référencée dans la configuration.';
+  else p.commune = commune.id;
+
+  p.type = config.types[raw.type] ? raw.type : d.type;
+  if (!config.types[raw.type]) warnings.push({ field: 'type', message: 'Type de logement inconnu : valeur par défaut utilisée.' });
+
+  const fields = [
+    ['bedrooms', r.bedrooms, true, 'Chambres'],
+    ['bathrooms', r.bathrooms, false, 'Salles de bain'],
+    ['area', r.area, false, 'Superficie'],
+    ['guests', r.guests, true, 'Capacité voyageurs'],
+    ['commissionPct', r.commissionPct, false, 'Commission'],
+    ['cleaningFee', r.cleaningFee, false, 'Frais de ménage']
+  ];
+  for (const [key, range, integer, label] of fields) {
+    const res = readRange(raw[key], key, range, { integer, label });
+    if (res.error) errors[key] = res.error;
+    else p[key] = res.value;
+  }
+
+  // Durée moyenne de séjour : facultative (vide = valeur du marché).
+  if (raw.avgStay === '' || raw.avgStay === undefined || raw.avgStay === null) {
+    p.avgStay = null;
+  } else {
+    const res = readRange(raw.avgStay, 'avgStay', r.avgStay, { label: 'Durée moyenne de séjour' });
+    if (res.error) errors.avgStay = res.error;
+    else p.avgStay = res.value;
+  }
+
+  // Mois disponibles : nombre de mois OU sélection exacte.
+  const mode = raw.monthsMode === 'select' ? 'select' : 'count';
+  p.monthsMode = mode;
+  if (mode === 'count') {
+    const res = readRange(raw.monthsCount, 'monthsCount', r.months, { integer: true, label: 'Mois disponibles' });
+    if (res.error) errors.monthsCount = res.error;
+    else p.monthsCount = res.value;
+    p.monthsSelected = [];
+  } else {
+    const sel = Array.isArray(raw.monthsSelected) ? raw.monthsSelected : [];
+    const clean = [...new Set(sel.map(Number).filter((m) => Number.isInteger(m) && m >= 0 && m <= 11))].sort((a, b) => a - b);
+    if (clean.length === 0) errors.monthsSelected = 'Sélectionnez au moins un mois disponible.';
+    p.monthsSelected = clean;
+    p.monthsCount = clean.length;
+  }
+
+  p.location = config.location.levels[raw.location] ? raw.location : config.location.default;
+  if (raw.location && !config.location.levels[raw.location]) {
+    warnings.push({ field: 'location', message: 'Emplacement inconnu : « Standard » utilisé.' });
+  }
+
+  const known = new Set(config.amenities.items.map((a) => a.id));
+  const amen = Array.isArray(raw.amenities) ? raw.amenities : [];
+  p.amenities = [...new Set(amen.filter((id) => known.has(id)))];
+  if (amen.some((id) => !known.has(id))) warnings.push({ field: 'amenities', message: 'Équipement inconnu ignoré.' });
+
+  p.vat = raw.vat === true;
+
+  // Cohérences (avertissements, sans effet sur le calcul).
+  if (isNum(p.bedrooms) && isNum(p.guests) && p.guests > 2 * p.bedrooms + 2) {
+    warnings.push({ field: 'guests', message: `Capacité élevée pour ${p.bedrooms} chambre(s) : vérifiez le couchage.` });
+  }
+  const t = config.types[p.type];
+  if (t && isNum(p.bedrooms) && (p.bedrooms < t.expectedBedrooms[0] || p.bedrooms > t.expectedBedrooms[1])) {
+    warnings.push({ field: 'type', message: `Type « ${t.label} » inhabituel avec ${p.bedrooms} chambre(s). Le calcul se base sur le nombre de chambres.` });
+  }
+
+  return { ok: Object.keys(errors).length === 0, property: p, errors, warnings };
+}
+
+// ---- engine/quality.js ----
+// Fraîcheur des données et niveau de confiance (règles explicites, pas de score statistique).
+
+const MONTHS_FR = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+
+function parseDate(s) {
+  if (typeof s !== 'string') return null;
+  const m = s.match(/^(\d{4})-(\d{2})(?:-(\d{2}))?/);
+  if (!m) return null;
+  return new Date(Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3] || 1)));
+}
+
+function monthsBetween(a, b) {
+  return (b.getUTCFullYear() - a.getUTCFullYear()) * 12 + (b.getUTCMonth() - a.getUTCMonth()) + (b.getUTCDate() - a.getUTCDate()) / 30;
+}
+
+function formatMonthYear(s) {
+  const d = parseDate(s);
+  return d ? `${MONTHS_FR[d.getUTCMonth()]} ${d.getUTCFullYear()}` : 'date inconnue';
+}
+
+function describePeriod(period) {
+  if (!period) return 'période inconnue';
+  const s = parseDate(period.start);
+  const e = parseDate(period.end);
+  if (s && e && s.getUTCMonth() === 0 && e.getUTCMonth() === 11 && s.getUTCFullYear() === e.getUTCFullYear()) return `année ${s.getUTCFullYear()}`;
+  return `${formatMonthYear(period.start)} – ${formatMonthYear(period.end)}`;
+}
+
+function freshness(period, publishedAt, today, config) {
+  const end = parseDate(period && period.end);
+  if (!end) return { level: 'red', months: 0, label: 'Date des données inconnue' };
+  const months = Math.max(0, monthsBetween(end, today));
+  const f = config.freshness;
+  const level = months <= f.greenMaxMonths ? 'green' : months <= f.orangeMaxMonths ? 'orange' : 'red';
+  const labels = { green: 'Données récentes', orange: 'Données anciennes', red: 'Données très anciennes' };
+  return { level, months: Math.round(months), label: labels[level], text: `${describePeriod(period)}${publishedAt ? ` · publiées en ${formatMonthYear(publishedAt)}` : ''}` };
+}
+
+const ORDER = ['faible', 'moyenne', 'elevee'];
+function capLevel(current, cap) {
+  return ORDER.indexOf(cap) < ORDER.indexOf(current) ? cap : current;
+}
+
+function confidence({ geoRole, origin, sampleNights, freshnessLevel }, config) {
+  const c = config.confidence;
+  let level = 'elevee';
+  const reasons = [];
+  if (c.lowGeoLevels.includes(geoRole)) {
+    level = capLevel(level, 'faible');
+    reasons.push('Données départementales utilisées (pas de donnée intercommunale).');
+  }
+  if (geoRole === 'epci_voisin' && c.mediumIfNeighbourMarket) {
+    level = capLevel(level, 'moyenne');
+    reasons.push('Marché voisin utilisé.');
+  }
+  if (isNum(sampleNights) && sampleNights < c.mediumIfSampleNightsBelow) {
+    level = capLevel(level, 'moyenne');
+    reasons.push(`Marché de petite taille (${Math.round(sampleNights).toLocaleString('fr-FR')} nuits réservées sur la période).`);
+  }
+  const fc = c.freshnessCaps[freshnessLevel];
+  if (fc && ORDER.indexOf(fc) < ORDER.indexOf(level)) reasons.push('Ancienneté des données.');
+  if (fc) level = capLevel(level, fc);
+  if (origin === 'snapshot') {
+    if (ORDER.indexOf(c.snapshotCap) < ORDER.indexOf(level)) reasons.push('Données de secours intégrées utilisées.');
+    level = capLevel(level, c.snapshotCap);
+  }
+  if (reasons.length === 0) reasons.push('Données intercommunales récentes et marché de taille suffisante.');
+  return { level, label: c.labels[level], reasons };
+}
+
+// ---- engine/resolveMarket.js ----
+// Résolution de la base de marché d'une commune, avec chaîne de repli.
+
+function checkMarketEntry(m, validation) {
+  if (!m || typeof m !== 'object') return { ok: false, reason: 'entrée absente' };
+  if (m.status && m.status !== 'ok') return { ok: false, reason: `statut « ${m.status} »` };
+  const checks = [
+    ['adr', m.adr, validation.adr],
+    ['occupancy', m.occupancy, validation.occupancy],
+    ['avgStay', m.avgStay, validation.avgStay]
+  ];
+  for (const [k, v, range] of checks) {
+    if (!isNum(v)) return { ok: false, reason: `${k} manquant ou invalide` };
+    if (v < range[0] || v > range[1]) return { ok: false, reason: `${k} hors limites (${v})` };
+  }
+  if (!m.period || !m.period.end) return { ok: false, reason: 'période absente' };
+  return { ok: true };
+}
+
+function marketChain(commune, communesCfg) {
+  const chain = [`commune:${commune.id}`, `epci:${commune.epci}`];
+  const epci = communesCfg.epci[commune.epci];
+  for (const f of (epci && epci.fallback) || []) if (!chain.includes(f)) chain.push(f);
+  const dep = communesCfg.departement.id;
+  if (!chain.includes(dep)) chain.push(dep);
+  return chain;
+}
+
+// Renvoie la première base valide de la chaîne, ou null.
+function resolveMarket(communeId, market, communesCfg, config) {
+  const commune = communesCfg.communes.find((c) => c.id === communeId);
+  if (!commune || !market || !market.markets) return null;
+  const chain = marketChain(commune, communesCfg);
+  const ownEpci = `epci:${commune.epci}`;
+  const reasons = [];
+  for (const key of chain) {
+    const m = market.markets[key];
+    if (!m) {
+      if (!key.startsWith('commune:')) reasons.push({ key, reason: 'aucune donnée publiée' });
+      continue;
+    }
+    const check = checkMarketEntry(m, config.validation);
+    if (!check.ok) {
+      reasons.push({ key, reason: check.reason });
+      continue;
+    }
+    let geoRole;
+    if (key.startsWith('commune:')) geoRole = 'commune';
+    else if (key === ownEpci) geoRole = 'epci';
+    else if (key.startsWith('epci:')) geoRole = 'epci_voisin';
+    else geoRole = 'departement';
+    return { key, commune, entry: m, geoRole, fallbackReasons: reasons, ownEpciLabel: (communesCfg.epci[commune.epci] || {}).label || commune.epci };
+  }
+  return { key: null, commune, entry: null, geoRole: null, fallbackReasons: reasons };
+}
+
+// ---- engine/adjustments.js ----
+// Ajustements du modèle Émeraude : taille, emplacement, équipements.
+// Tous les coefficients proviennent de config.json (hypothèses de modélisation).
+
+function sizeAdjustments(p, config, segmentedBy = []) {
+  const s = config.size;
+  const bk = bedroomsKey(p.bedrooms);
+  const ref = s.bedrooms[bk];
+  const out = [];
+  const segBed = segmentedBy.includes('bedrooms');
+  out.push({
+    id: 'bedrooms',
+    label: `Nombre de chambres (${p.bedrooms})`,
+    kind: segBed ? 'market_segment' : 'hypothese_emeraude',
+    factor: segBed ? 1 : ref.adr,
+    occPts: segBed ? 0 : ref.occPts,
+    detail: segBed ? 'Déjà intégré par la source (données par nombre de chambres).' : `Coefficient ${ref.adr.toFixed(2)} par rapport au logement de référence (1 chambre).`
+  });
+  const area = clamp((p.area - ref.typicalArea) * s.area.perM2, -s.area.cap, s.area.cap);
+  out.push({ id: 'area', label: `Surface (${p.area} m² vs ${ref.typicalArea} m² typique)`, kind: 'hypothese_emeraude', secondary: area, occPts: 0 });
+  const guestsAdj = segmentedBy.includes('guests') ? 0 : clamp((p.guests - ref.typicalGuests) * s.guests.perGuest, -s.guests.cap, s.guests.cap);
+  out.push({ id: 'guests', label: `Capacité (${p.guests} vs ${ref.typicalGuests} voyageurs typiques)`, kind: 'hypothese_emeraude', secondary: guestsAdj, occPts: 0 });
+  let bath;
+  let bathDetail = '';
+  if (s.bathrooms.perExtraBathroom !== undefined) {
+    // Seules les salles de bain AU-DELÀ de la configuration typique de la taille comptent (évite le double comptage avec les chambres).
+    const typical = ref.typicalBathrooms ?? 1;
+    bath = clamp(Math.max(0, p.bathrooms - typical) * s.bathrooms.perExtraBathroom, 0, s.bathrooms.cap);
+    bathDetail = `Configuration typique pour cette taille : ${typical} salle(s) de bain.`;
+  } else {
+    bath = p.bathrooms >= s.bathrooms.minBathrooms && p.bedrooms >= s.bathrooms.minBedrooms ? s.bathrooms.bonus : 0;
+  }
+  out.push({ id: 'bathrooms', label: `Salles de bain (${p.bathrooms})`, kind: 'hypothese_emeraude', secondary: bath, occPts: 0, detail: bathDetail });
+  const isHouse = !!(config.types[p.type] && config.types[p.type].isHouse);
+  out.push({ id: 'house', label: 'Maison', kind: 'hypothese_emeraude', secondary: isHouse ? s.house.adr : 0, occPts: 0 });
+  return out;
+}
+
+function locationAdjustment(p, config, positiveBonusFactor = 1) {
+  const lv = config.location.levels[p.location] || config.location.levels[config.location.default];
+  const f = (x) => (x > 0 ? x * positiveBonusFactor : x);
+  return { id: 'location', label: `Emplacement (${lv.label})`, kind: 'hypothese_emeraude', secondary: f(lv.adr), occPts: f(lv.occPts) };
+}
+
+function amenityAdjustment(p, config, positiveBonusFactor = 1) {
+  const items = config.amenities.items.filter((a) => p.amenities.includes(a.id));
+  const byExclusive = new Map();
+  let adr = 0;
+  let occ = 0;
+  for (const a of items) {
+    if (a.exclusive) {
+      const prev = byExclusive.get(a.exclusive);
+      if (!prev || a.adr > prev.adr) byExclusive.set(a.exclusive, a);
+    } else {
+      adr += a.adr;
+      occ += a.occPts;
+    }
+  }
+  for (const a of byExclusive.values()) {
+    adr += a.adr;
+    occ += a.occPts;
+  }
+  const capped = adr > config.amenities.caps.adr || occ > config.amenities.caps.occPts;
+  adr = Math.min(adr, config.amenities.caps.adr);
+  occ = Math.min(occ, config.amenities.caps.occPts);
+  return {
+    id: 'amenities',
+    label: `Équipements et atouts (${items.length} cochés)`,
+    kind: 'hypothese_emeraude',
+    secondary: adr * positiveBonusFactor,
+    occPts: occ * positiveBonusFactor,
+    detail: capped ? 'Plafond global des équipements atteint.' : 'Les équipements essentiels sont sans effet.'
+  };
+}
+
+// ---- engine/core.js ----
+// Calculs de base : ADR, occupation, saisonnalité, nuits, chiffre d'affaires et répartition.
+// Règle absolue : les frais de ménage ne sont JAMAIS intégrés au prix par nuit ni au CA des nuits.
+
+// ---------- ADR ----------
+// base.adr est utilisé tel quel (décision D8 : aucune correction du ménage tant que la source ne le précise pas).
+function computeAdr(base, adjustments, managementAdr, emeraudeAdrFactor, config) {
+  const bedroom = adjustments.find((a) => a.id === 'bedrooms');
+  const bedroomFactor = bedroom ? bedroom.factor : 1;
+  let secondaryRaw = 1;
+  for (const a of adjustments) if (isNum(a.secondary)) secondaryRaw *= 1 + a.secondary;
+  secondaryRaw *= 1 + managementAdr;
+  const [lo, hi] = config.guards.adrSecondaryMultiplier;
+  const secondary = clamp(secondaryRaw, lo, hi);
+  const adr = base.adr * bedroomFactor * secondary * emeraudeAdrFactor;
+  return { adr, bedroomFactor, secondaryRaw, secondary, secondaryCapped: Math.abs(secondary - secondaryRaw) > 1e-9 };
+}
+
+// ---------- Occupation ----------
+function computeOccupancy(base, adjustments, scenarioDeltaPts, emeraudeOccFactor, config) {
+  const pts = sum(adjustments.map((a) => (isNum(a.occPts) ? a.occPts : 0)));
+  const maxDev = config.guards.occupancyMaxDeviationPts / 100;
+  let occ = base.occupancy + pts / 100;
+  const beforeDev = occ;
+  occ = clamp(occ, base.occupancy - maxDev, base.occupancy + maxDev);
+  occ = occ + scenarioDeltaPts / 100;
+  occ = occ * emeraudeOccFactor;
+  const [lo, hi] = config.guards.occupancy;
+  const final = clamp(occ, lo, hi);
+  return { occupancy: final, adjustmentPts: pts, deviationCapped: Math.abs(beforeDev - clamp(beforeDev, base.occupancy - maxDev, base.occupancy + maxDev)) > 1e-9, guardCapped: Math.abs(final - occ) > 1e-9 };
+}
+
+// ---------- Saisonnalité ----------
+function flatProfile(reason) {
+  return { id: 'uniforme', label: 'Sans saisonnalité', basis: reason, occupancyIndex: Array(12).fill(1), adrIndex: Array(12).fill(1), fallback: true, sources: [] };
+}
+
+function checkSeasonalProfile(p, config) {
+  const days = config.months.referenceYearDays;
+  const v = config.validation;
+  if (!p || !Array.isArray(p.occupancyIndex) || !Array.isArray(p.adrIndex)) return 'profil absent';
+  if (p.occupancyIndex.length !== 12 || p.adrIndex.length !== 12) return 'profil incomplet (12 mois attendus)';
+  for (const x of [...p.occupancyIndex, ...p.adrIndex]) {
+    if (!isNum(x) || x < v.seasonalIndex[0] || x > v.seasonalIndex[1]) return 'indice mensuel hors limites';
+  }
+  const sO = sum(p.occupancyIndex.map((x, i) => x * days[i]));
+  if (Math.abs(sO / 365 - 1) > v.seasonalNormalisationTolerance) return 'indices d\'occupation non normalisés';
+  const w = p.occupancyIndex.map((x, i) => x * days[i]);
+  const sA = sum(w.map((x, i) => x * p.adrIndex[i])) / sum(w);
+  if (Math.abs(sA - 1) > v.seasonalNormalisationTolerance) return 'indices de prix non normalisés';
+  return null;
+}
+
+function seasonalProfile(profileId, market, config) {
+  const p = market && market.seasonality ? market.seasonality[profileId] : null;
+  const problem = checkSeasonalProfile(p, config);
+  if (problem) return flatProfile(`Profil « ${profileId} » indisponible (${problem}) : répartition uniforme sur l'année.`);
+  return { id: profileId, label: p.label || profileId, basis: p.basis || '', occupancyIndex: p.occupancyIndex, adrIndex: p.adrIndex, fallback: false, sources: p.sources || [], period: p.period || '' };
+}
+
+// ---------- Nuits ----------
+function computeNights(p, adr, occupancy, profile, config) {
+  const days = config.months.referenceYearDays;
+  const cap = config.guards.monthlyOccupancyMax;
+  const selected = new Set(p.monthsMode === 'select' ? p.monthsSelected : []);
+  const monthly = days.map((d, m) => {
+    const occ = Math.min(cap, occupancy * profile.occupancyIndex[m]);
+    const adrM = adr * profile.adrIndex[m];
+    const booked = d * occ;
+    return { month: m, days: d, occupancy: occ, adr: adrM, nightsBooked: booked, nightsRevenue: booked * adrM, included: p.monthsMode === 'select' ? selected.has(m) : true };
+  });
+  let nightsAvailable;
+  let nightsBooked;
+  let nightsRevenue;
+  if (p.monthsMode === 'select') {
+    const inc = monthly.filter((x) => x.included);
+    nightsAvailable = sum(inc.map((x) => x.days));
+    nightsBooked = sum(inc.map((x) => x.nightsBooked));
+    nightsRevenue = sum(inc.map((x) => x.nightsRevenue));
+  } else {
+    const f = p.monthsCount / 12;
+    nightsAvailable = p.monthsCount * 365 / 12;
+    nightsBooked = sum(monthly.map((x) => x.nightsBooked)) * f;
+    nightsRevenue = sum(monthly.map((x) => x.nightsRevenue)) * f;
+  }
+  return {
+    mode: p.monthsMode,
+    monthsCount: p.monthsCount,
+    nightsAvailable,
+    nightsBooked,
+    nightsRevenue,
+    adrEffective: nightsBooked > 0 ? nightsRevenue / nightsBooked : adr,
+    occupancyEffective: nightsAvailable > 0 ? nightsBooked / nightsAvailable : 0,
+    monthly
+  };
+}
+
+// ---------- Répartition financière ----------
+// Le CA des nuits et le ménage restent deux objets distincts ; seule l'assiette des frais Airbnb les combine, explicitement.
+function computeFinancials(nights, p, avgStay, config) {
+  const rate = config.fees.airbnbHostFeeRate;
+  const nightsRevenue = nights.nightsRevenue;
+  const stays = Math.round(nights.nightsBooked / avgStay);
+  const cleaningCollected = stays * p.cleaningFee;
+
+  const hostFeeNights = nightsRevenue * rate;
+  const hostFeeCleaning = config.fees.airbnbFeeBase === 'nights_plus_cleaning' ? cleaningCollected * rate : 0;
+  const vatRate = p.vat ? config.fees.vat.rate : 0;
+  const vatOnNightsFee = hostFeeNights * vatRate;
+  const vatOnCleaningFee = hostFeeCleaning * vatRate;
+
+  const nightsNetOfHostFee = nightsRevenue - hostFeeNights;
+  let commissionBase;
+  if (config.commission.base === 'nights_gross') commissionBase = nightsRevenue;
+  else commissionBase = nightsNetOfHostFee; // D2 : revenu des nuits net des frais Airbnb sur les nuits
+  const commissionRate = p.commissionPct / 100;
+  const commission = commissionBase * commissionRate;
+
+  let ownerIncome = nightsNetOfHostFee - vatOnNightsFee - commission;
+  let cleaningNetForEmeraude;
+  if (config.fees.cleaningFeeShareBearer === 'owner') {
+    ownerIncome -= hostFeeCleaning + vatOnCleaningFee;
+    cleaningNetForEmeraude = cleaningCollected;
+  } else {
+    cleaningNetForEmeraude = cleaningCollected - hostFeeCleaning - vatOnCleaningFee; // D1
+  }
+
+  const months = nights.monthsCount;
+  return {
+    nightsRevenue,
+    nightsRevenueMonthlyAverage: nightsRevenue / months,
+    cleaning: { avgStay, stays, feePerStay: p.cleaningFee, collected: cleaningCollected, hostFee: hostFeeCleaning, vatOnHostFee: vatOnCleaningFee, netForEmeraude: cleaningNetForEmeraude, bearer: config.fees.cleaningFeeShareBearer },
+    airbnb: { rate, onNights: hostFeeNights, onCleaning: hostFeeCleaning, vatEnabled: p.vat, vatRate: config.fees.vat.rate, vatOnNightsFee, vatOnCleaningFee },
+    nightsNetOfHostFee,
+    commission: { rate: commissionRate, base: commissionBase, amount: commission },
+    ownerIncome,
+    ownerIncomeMonthlyAverage: ownerIncome / months,
+    emeraude: { commission, cleaningNet: cleaningNetForEmeraude, total: commission + cleaningNetForEmeraude }
+  };
+}
+
+// ---------- Recalage marché → logement de référence ----------
+// La moyenne publiée porte sur un mélange de tailles. Contrainte de cohérence : appliqué au mélange de marché,
+// le modèle doit restituer la moyenne observée. On divise donc le prix par l'indice de prix moyen du mélange
+// (pondéré par les nuits) et on corrige l'occupation de l'écart moyen dû à la taille (pondéré par les annonces).
+function referenceCalibration(entry, profileId, config) {
+  const rc = config.referenceCalibration;
+  const none = { applied: false, adrDivisor: 1, occShiftPts: 0, label: '', mixLabel: '' };
+  if (!rc || !rc.enabled) return none;
+  if (Array.isArray(entry.segmentedBy) && entry.segmentedBy.includes('bedrooms')) return none;
+  const mix = rc.mixByProfile[profileId] || rc.mixByProfile.urbain;
+  if (!mix) return none;
+  const curve = config.size.bedrooms;
+  let wN = 0;
+  let wL = 0;
+  let adrIdx = 0;
+  let occPts = 0;
+  for (const k of Object.keys(curve)) {
+    const n = mix.nightsShare[k] || 0;
+    const l = mix.listingShare[k] || 0;
+    adrIdx += n * curve[k].adr;
+    occPts += l * curve[k].occPts;
+    wN += n;
+    wL += l;
+  }
+  if (!(wN > 0) || !(wL > 0)) return none;
+  return { applied: true, adrDivisor: adrIdx / wN, occShiftPts: -occPts / wL, label: rc.label, mixLabel: mix.label };
+}
+
+// ---------- Calibration Émeraude ----------
+function emeraudeCalibration(market, geoKey, bedrooms, config) {
+  const none = { level: 'aucune', label: 'Aucune donnée interne', listings: 0, weight: 0, adrFactor: 1, occFactor: 1, applied: false };
+  const segs = (market && market.emeraude && Array.isArray(market.emeraude.segments)) ? market.emeraude.segments : [];
+  const seg = segs.find((s) => s.key === `${geoKey}|bedrooms:${bedroomsKey(bedrooms)}`);
+  if (!seg || !isNum(seg.listings) || !isNum(seg.ratioAdr) || !isNum(seg.ratioOcc) || seg.ratioAdr <= 0 || seg.ratioOcc <= 0) return none;
+  const levels = [...config.emeraude.levels].sort((a, b) => a.minListings - b.minListings);
+  let level = levels[0];
+  for (const l of levels) if (seg.listings >= l.minListings) level = l;
+  const n = seg.listings;
+  const weight = Math.min(level.maxWeight, n / (n + config.emeraude.weightHalfSaturation));
+  const eff = (ratio) => 1 + clamp(weight * (ratio - 1), -level.maxEffect, level.maxEffect);
+  return { level: level.id, label: level.label, listings: n, weight, adrFactor: eff(seg.ratioAdr), occFactor: eff(seg.ratioOcc), applied: weight > 0 };
+}
+
+// ---- engine/uncertainty.js ----
+// Incertitude de l'estimation et niveau de confiance (phase 5 → engine 1.2.0).
+// Principe :
+//  1. on détecte des FACTEURS d'incertitude (marché, profil côtier, logement, saisonnalité, commune) ;
+//  2. CONFIANCE : chaque facteur a un poids ; les facteurs d'un même GROUPE ne s'additionnent pas librement
+//     (maximum par groupe, plafond par groupe) afin d'éviter le double comptage ; score total → HIGH / MEDIUM / LOW ;
+//     certains facteurs imposent LOW quel que soit le score ;
+//  3. INCERTITUDE : base selon le profil (urbain / côtier), puis composantes indépendantes combinées en somme
+//     quadratique (pas d'addition linéaire), planchers éventuels, plafond global.
+// Tous les seuils et poids sont dans config.json → uncertainty. Le résultat ne constitue pas une garantie.
+
+function roundTo(n, step) {
+  return Math.round(n / step) * step;
+}
+
+// Profil du logement par rapport à la configuration typique de sa taille.
+function propertyProfile(p, config) {
+  const ref = config.size.bedrooms[bedroomsKey(p.bedrooms)];
+  const u = config.uncertainty.property;
+  const areaRatio = p.area / ref.typicalArea;
+  const extraGuests = p.guests - ref.typicalGuests;
+  const capacityLimit = 2 * p.bedrooms + 2;
+  return {
+    sizeClass: p.bedrooms === 0 ? 'studio' : p.bedrooms >= u.largeFromBedrooms ? 'large' : 'standard',
+    areaRatio,
+    extraGuests,
+    capacityLimit,
+    capacity: p.guests > capacityLimit || extraGuests >= u.capacityVeryAtypicalExtraGuests ? 'very_atypical' : extraGuests > u.capacityAtypicalExtraGuests ? 'atypical' : 'ok',
+    area: areaRatio < u.areaVeryAtypical[0] || areaRatio > u.areaVeryAtypical[1] ? 'very_atypical' : areaRatio < u.areaAtypical[0] || areaRatio > u.areaAtypical[1] ? 'atypical' : 'ok'
+  };
+}
+
+// Liste des facteurs détectés (déterministe). Chaque facteur : groupe, poids de confiance, composante d'incertitude (%), raison lisible.
+function detectFactors({ property, prop, marketQuality, seasonality, profileId, communeId }, config) {
+  const U = config.uncertainty;
+  const W = U.weights;
+  const C = U.components;
+  const f = [];
+  const add = (id, group, weight, componentPct, reason, hardLow = false, floorPct = 0) => f.push({ id, group, weight, componentPct, reason, hardLow, floorPct });
+
+  // Marché
+  if (marketQuality.freshness === 'orange') add('data_age', 'market', W.dataOrange, C.dataOrange, `Données de marché datant de ${marketQuality.freshnessMonths} mois (dernière publication disponible)`);
+  if (marketQuality.freshness === 'red') add('data_too_old', 'market', W.dataRed, C.dataRed, `Données de marché trop anciennes (${marketQuality.freshnessMonths} mois)`, true);
+  if (isNum(marketQuality.sampleNights) && marketQuality.sampleNights > 0 && marketQuality.sampleNights < U.smallMarketNights) add('small_market', 'market', W.smallMarket, C.smallMarket, `Marché de petite taille (${Math.round(marketQuality.sampleNights).toLocaleString('fr-FR')} nuits réservées sur la période)`);
+  if (marketQuality.geoRole === 'epci_voisin') add('neighbour_market', 'market', W.neighbourMarket, C.neighbourMarket, 'Données d\'un marché voisin (pas de donnée pour l\'intercommunalité de la commune)');
+  if (marketQuality.geoRole === 'departement') add('department_market', 'market', W.departmentMarket, C.departmentMarket, 'Données départementales uniquement', true);
+  if (marketQuality.origin === 'snapshot') add('snapshot', 'market', W.snapshot, C.snapshot, 'Données de secours intégrées à l\'outil', true);
+
+  // Profil côtier (mélange de tailles moins certain — D11)
+  if (profileId === 'littoral') add('coastal_mix', 'profile', W.coastal, 0, 'Marché côtier : mélange de tailles des logements moins certain');
+
+  // Logement
+  if (prop.sizeClass === 'large') add('large', 'property', W.large, C.sizeClass, `Logement de ${property.bedrooms} chambres : moins de références comparables`, false, U.atypicalFloorPct);
+  if (prop.sizeClass === 'studio') add('studio', 'property', 0, C.sizeClass, 'Studio : courbe de taille plus sensible');
+  if (prop.capacity === 'atypical') add('capacity_atypical', 'property', W.atypical, C.capacityAtypical, `Capacité un peu élevée pour la taille (${property.guests} voyageurs)`, false, U.atypicalFloorPct);
+  if (prop.capacity === 'very_atypical') add('capacity_very_atypical', 'property', W.veryAtypical, C.capacityVeryAtypical, `Capacité très inhabituelle pour ${property.bedrooms} chambre(s) (${property.guests} voyageurs)`, false, U.atypicalFloorPct);
+  if (prop.area === 'atypical') add('area_atypical', 'property', W.atypical, C.areaAtypical, `Surface éloignée de la surface typique (${property.area} m²)`, false, U.atypicalFloorPct);
+  if (prop.area === 'very_atypical') add('area_very_atypical', 'property', W.veryAtypical, C.areaVeryAtypical, `Surface très inhabituelle pour la taille (${property.area} m²)`, false, U.atypicalFloorPct);
+
+  // Saisonnalité
+  if (seasonality.fallback) add('season_fallback', 'seasonality', W.seasonFallback, C.seasonFallback, 'Profil saisonnier indisponible : répartition uniforme sur l\'année');
+
+  // Commune périphérique au loyer nettement plus bas que la moyenne de l'intercommunalité (D12 : signalé, non corrigé)
+  if ((U.peripheryWatch.communes || []).includes(communeId)) add('periphery', 'commune', W.periphery, C.periphery, U.peripheryWatch.reason);
+
+  return f;
+}
+
+// Score de confiance : maximum par groupe pour le logement (une seule « atypie » comptée), somme plafonnée par groupe ailleurs.
+function confidenceScore(factors, config) {
+  const caps = config.uncertainty.groupCaps;
+  const groups = {};
+  for (const x of factors) (groups[x.group] ||= []).push(x);
+  let score = 0;
+  const detail = {};
+  for (const [g, list] of Object.entries(groups)) {
+    const weights = list.map((x) => x.weight);
+    const s = g === 'property' ? Math.max(...weights) : weights.reduce((a, b) => a + b, 0);
+    detail[g] = Math.min(s, caps[g] ?? s);
+    score += detail[g];
+  }
+  return { score, detail };
+}
+
+function getConfidence(input, marketQuality, seasonality, propertyProfileValue, config, ctx = {}) {
+  const factors = detectFactors({ property: input, prop: propertyProfileValue, marketQuality, seasonality, profileId: ctx.profileId, communeId: ctx.communeId }, config);
+  const { score, detail } = confidenceScore(factors, config);
+  const T = config.uncertainty.levels;
+  const hardLow = factors.some((x) => x.hardLow);
+  let level = hardLow || score >= T.lowFromScore ? 'LOW' : score >= T.mediumFromScore ? 'MEDIUM' : 'HIGH';
+  const reasons = factors.filter((x) => x.weight > 0 || x.hardLow).map((x) => x.reason);
+  if (level === 'HIGH') {
+    reasons.push(ctx.profileId === 'littoral' ? 'Marché documenté' : 'Marché urbain bien documenté');
+    if (propertyProfileValue.sizeClass !== 'large' && propertyProfileValue.capacity === 'ok' && propertyProfileValue.area === 'ok') reasons.push('Typologie cohérente avec les données de calibration');
+    if (!seasonality.fallback) reasons.push('Saisonnalité mensuelle disponible');
+  }
+  return { level, score, groupScores: detail, hardLow, reasons, factors };
+}
+
+// Incertitude en % : base du profil, composantes en somme quadratique, planchers, plafond.
+function getUncertainty(factors, profileId, config) {
+  const U = config.uncertainty;
+  const base = U.basePct[profileId] ?? U.basePct.urbain;
+  const comps = factors.filter((x) => x.componentPct > 0).map((x) => x.componentPct);
+  const combined = Math.sqrt(base * base + comps.reduce((s, c) => s + c * c, 0));
+  const floor = Math.max(0, ...factors.map((x) => x.floorPct || 0));
+  const pctExact = clamp(Math.max(combined, floor), base, U.capPct);
+  return { basePct: base, components: factors.filter((x) => x.componentPct > 0).map((x) => ({ id: x.id, pct: x.componentPct })), floorPct: floor, pctExact, pct: Math.round(pctExact) };
+}
+
+// Fourchette arrondie à la centaine (affichage) ; calculs internes conservés.
+function buildRange(central, pct, step) {
+  const low = central * (1 - pct / 100);
+  const high = central * (1 + pct / 100);
+  return { central: roundTo(central, step), low: roundTo(low, step), high: roundTo(high, step), exact: { central, low, high } };
+}
+
+// ---- engine/index.js ----
+// Point d'entrée unique du moteur : estimate(raw, ctx).
+// ctx = { config, communes, sources, marketSources: [{ origin: 'remote'|'cache'|'snapshot', data, note? }], today: Date }
+
+const ENGINE_VERSION = '1.2.0';
+const LEVEL_FR = { HIGH: 'elevee', MEDIUM: 'moyenne', LOW: 'faible' };
+const SCENARIO_IDS = ['prudent', 'realiste', 'performant'];
+
+function scenarioDelta(entry, market, config) {
+  const cfg = config.scenarios.occupancyDeltaPts;
+  let raw = entry.occupancyYoyPts;
+  let from = 'marché retenu';
+  if (!isNum(raw)) {
+    const dep = market.markets && market.markets['departement:35'];
+    raw = dep && isNum(dep.occupancyYoyPts) ? dep.occupancyYoyPts : null;
+    from = 'département (donnée du marché retenu absente)';
+  }
+  if (!isNum(raw)) return { pts: cfg.min, observedPts: null, source: 'minimum de configuration (aucune variation publiée)' };
+  return { pts: clamp(Math.abs(raw), cfg.min, cfg.max), observedPts: raw, source: from };
+}
+
+function originLabel(origin) {
+  return { remote: 'Données en ligne', cache: 'Dernières données enregistrées sur cet appareil', snapshot: 'Données de secours intégrées à l\'outil' }[origin] || origin;
+}
+
+function estimate(raw, ctx) {
+  const { config, communes, sources } = ctx;
+  const today = ctx.today instanceof Date ? ctx.today : new Date();
+  const v = validateInputs(raw, config, communes);
+  if (!v.ok) return { ok: false, errors: v.errors, warnings: v.warnings };
+  const p = v.property;
+
+  // 1. Résolution du marché, source après source (en ligne → cache → secours).
+  const dataNotes = [];
+  let res = null;
+  let used = null;
+  for (const ms of ctx.marketSources || []) {
+    if (!ms || !ms.data) {
+      if (ms && ms.note) dataNotes.push(ms.note);
+      continue;
+    }
+    const r = resolveMarket(p.commune, ms.data, communes, config);
+    if (r && r.entry) {
+      res = r;
+      used = ms;
+      break;
+    }
+    dataNotes.push(`${originLabel(ms.origin)} : aucune base valide pour cette commune.`);
+  }
+  if (!res) {
+    return { ok: false, errors: { _global: 'Aucune donnée de marché utilisable pour cette commune. L\'estimation ne peut pas être calculée.' }, warnings: v.warnings, dataNotes };
+  }
+  const market = used.data;
+  const entry = res.entry;
+  // Valeurs de marché OBSERVÉES (affichées telles quelles) puis base de modélisation (logement de référence).
+  const observed = { adr: entry.adr, occupancy: entry.occupancy, avgStay: entry.avgStay };
+  const refCal = referenceCalibration(entry, res.commune.profile, config);
+  const base = { adr: observed.adr / refCal.adrDivisor, occupancy: observed.occupancy + refCal.occShiftPts / 100, avgStay: observed.avgStay };
+  const segmentedBy = Array.isArray(entry.segmentedBy) ? entry.segmentedBy : [];
+  const definitions = Object.assign({}, (sources.sources[entry.source] || {}).definitions || {}, entry.definitions || {});
+  const sourceInfo = sources.sources[entry.source] || { label: entry.source, attribution: entry.source };
+
+  // 2. Éléments communs aux scénarios.
+  const profile = seasonalProfile(res.commune.profile, market, config);
+  const calibration = emeraudeCalibration(market, res.key, p.bedrooms, config);
+  const avgStay = isNum(p.avgStay) ? p.avgStay : base.avgStay;
+  const delta = scenarioDelta(entry, market, config);
+
+  // 3. Calcul par scénario.
+  const scenarios = {};
+  for (const id of SCENARIO_IDS) {
+    const sc = config.scenarios[id];
+    const adjustments = [
+      ...sizeAdjustments(p, config, segmentedBy),
+      locationAdjustment(p, config, sc.positiveBonusFactor),
+      amenityAdjustment(p, config, sc.positiveBonusFactor)
+    ];
+    const adrR = computeAdr(base, adjustments, sc.managementAdr, calibration.adrFactor, config);
+    const occR = computeOccupancy(base, adjustments, sc.occupancyDeltaSign * delta.pts, calibration.occFactor, config);
+    const nights = computeNights(p, adrR.adr, occR.occupancy, profile, config);
+    const fin = computeFinancials(nights, p, avgStay, config);
+    scenarios[id] = {
+      id,
+      label: sc.label,
+      description: sc.description,
+      adrAnnual: adrR.adr,
+      occupancyAnnual: occR.occupancy,
+      adr: nights.adrEffective,
+      occupancy: nights.occupancyEffective,
+      monthsMode: nights.mode,
+      monthsCount: nights.monthsCount,
+      nightsAvailable: nights.nightsAvailable,
+      nightsBooked: nights.nightsBooked,
+      monthly: nights.monthly,
+      ...fin,
+      model: {
+        bedroomFactor: adrR.bedroomFactor,
+        secondaryMultiplier: adrR.secondary,
+        secondaryMultiplierRaw: adrR.secondaryRaw,
+        secondaryCapped: adrR.secondaryCapped,
+        occupancyAdjustmentPts: occR.adjustmentPts,
+        occupancyDeviationCapped: occR.deviationCapped,
+        occupancyGuardCapped: occR.guardCapped,
+        scenarioDeltaPts: sc.occupancyDeltaSign * delta.pts,
+        managementAdr: sc.managementAdr,
+        positiveBonusFactor: sc.positiveBonusFactor
+      },
+      adjustments: [
+        ...(refCal.applied ? [{
+          id: 'reference',
+          label: refCal.label,
+          kind: 'hypothese_emeraude',
+          adrEffectPct: (1 / refCal.adrDivisor - 1) * 100,
+          occEffectPts: refCal.occShiftPts,
+          detail: refCal.mixLabel
+        }] : []),
+        ...adjustments.map((a) => ({
+          id: a.id,
+          label: a.label,
+          kind: a.kind,
+          adrEffectPct: a.id === 'bedrooms' ? (a.factor - 1) * 100 : (a.secondary || 0) * 100,
+          occEffectPts: a.occPts || 0,
+          detail: a.detail || ''
+        }))
+      ]
+    };
+  }
+  const order = SCENARIO_IDS.map((id) => scenarios[id].nightsRevenue);
+  const warnings = [...v.warnings];
+  if (!(order[0] <= order[1] + 1e-6 && order[1] <= order[2] + 1e-6)) warnings.push({ field: '_scenarios', message: 'Ordre des scénarios inattendu.' });
+  if (profile.fallback) warnings.push({ field: '_seasonality', message: profile.basis });
+
+  // 4. Données, fraîcheur, confiance.
+  const fr = freshness(entry.period, entry.publishedAt, today, config);
+  // Confiance et incertitude (engine 1.2.0). Les configurations antérieures sans section « uncertainty » gardent l'ancienne règle.
+  let conf;
+  let summary;
+  if (config.uncertainty) {
+    const prop = propertyProfile(p, config);
+    const marketQuality = { freshness: fr.level, freshnessMonths: fr.months, sampleNights: entry.sample && entry.sample.nightsBooked, geoRole: res.geoRole, origin: used.origin };
+    const c = getConfidence(p, marketQuality, profile, prop, config, { profileId: res.commune.profile, communeId: res.commune.id });
+    const unc = getUncertainty(c.factors, res.commune.profile, config);
+    const step = config.uncertainty.roundingStep;
+    const realS = scenarios.realiste;
+    const rev = buildRange(realS.nightsRevenue, unc.pct, step);
+    const own = buildRange(realS.ownerIncome, unc.pct, step);
+    conf = { level: LEVEL_FR[c.level], label: config.confidence.labels[LEVEL_FR[c.level]], reasons: c.reasons };
+    summary = {
+      basis: 'CA des nuits, scénario réaliste',
+      central: rev.central,
+      low: rev.low,
+      high: rev.high,
+      uncertaintyPct: unc.pct,
+      confidence: c.level,
+      confidenceReasons: c.reasons,
+      uncertaintyReasons: c.factors.filter((x) => x.componentPct > 0).map((x) => x.reason),
+      owner: { central: own.central, low: own.low, high: own.high },
+      adr: Math.round(realS.adr),
+      occupancyPct: Math.round(realS.occupancy * 100),
+      scenarios: Object.fromEntries(SCENARIO_IDS.map((id) => [id, roundTo(scenarios[id].nightsRevenue, step)])),
+      notes: { range: config.uncertainty.texts.rangeNote, scenarios: config.uncertainty.texts.scenariosNote },
+      model: {
+        uncertaintyBasePct: unc.basePct,
+        uncertaintyExactPct: unc.pctExact,
+        uncertaintyFloorPct: unc.floorPct,
+        uncertaintyComponents: unc.components,
+        confidenceScore: c.score,
+        confidenceGroupScores: c.groupScores,
+        confidenceHardLow: c.hardLow,
+        propertyProfile: prop,
+        exact: rev.exact
+      }
+    };
+  } else {
+    conf = confidence({ geoRole: res.geoRole, origin: used.origin, sampleNights: entry.sample && entry.sample.nightsBooked, freshnessLevel: fr.level }, config);
+  }
+  const fallbackMessages = [];
+  for (const n of dataNotes) fallbackMessages.push(n);
+  if (used.origin !== 'remote') fallbackMessages.push(`${originLabel(used.origin)}${used.savedAt ? ` (enregistrées le ${used.savedAt})` : ''}.`);
+  if (res.geoRole === 'epci_voisin') fallbackMessages.push(`Pas de donnée valide pour ${res.ownEpciLabel} : marché voisin utilisé (${entry.label}).`);
+  if (res.geoRole === 'departement') fallbackMessages.push(`Pas de donnée intercommunale valide : données départementales utilisées (${entry.label}).`);
+  for (const r of res.fallbackReasons) if (!fallbackMessages.some((m) => m.includes(r.key))) fallbackMessages.push(`Écartée : ${r.key} (${r.reason}).`);
+
+  const real = scenarios.realiste;
+  const explanation = {
+    market: {
+      title: '1. Données de marché (observées)',
+      intro: config.texts.methodologyMarket,
+      lines: [
+        { label: 'Zone', value: entry.label },
+        { label: 'Prix moyen par nuit (marché)', value: observed.adr, unit: 'EUR' },
+        { label: 'Taux d\'occupation (marché)', value: observed.occupancy, unit: 'ratio' },
+        { label: 'Durée moyenne de séjour (marché)', value: observed.avgStay, unit: 'nights' },
+        { label: 'Période', value: describePeriod(entry.period) },
+        { label: 'Source', value: sourceInfo.attribution || sourceInfo.label }
+      ],
+      definitionNotes: [
+        definitions.adrIncludesCleaning === 'unknown' ? config.cleaning.unknownDefinitionNote : '',
+        definitions.occupancyBasis === 'unknown' ? 'La source ne précise pas si le taux d\'occupation exclut les nuits bloquées par les propriétaires.' : ''
+      ].filter(Boolean)
+    },
+    adjustments: {
+      title: '2. Ajustements du modèle Émeraude (hypothèses)',
+      intro: config.texts.methodologyAdjustments,
+      reference: config.referenceProperty.description + (refCal.applied ? ` ${config.referenceCalibration.description}` : ''),
+      items: real.adjustments,
+      guards: [
+        real.model.secondaryCapped ? 'Plafond global des ajustements de prix appliqué.' : '',
+        real.model.occupancyDeviationCapped ? `Écart d'occupation limité à ±${config.guards.occupancyMaxDeviationPts} points autour du marché.` : '',
+        real.model.occupancyGuardCapped ? 'Occupation bornée par les garde-fous.' : ''
+      ].filter(Boolean),
+      seasonality: { label: profile.label, basis: profile.basis, fallback: profile.fallback },
+      months: p.monthsMode === 'select'
+        ? `Mois disponibles sélectionnés : ${p.monthsSelected.map((m) => config.months.labels[m]).join(', ')}.`
+        : `${p.monthsCount} mois disponibles. ${config.months.countModeNote}`,
+      calibration: calibration.applied ? `Calibration sur ${calibration.listings} logements gérés par Émeraude (poids ${(calibration.weight * 100).toFixed(0)} %).` : 'Aucune calibration par les données internes Émeraude.',
+      scenarios: `Écart de scénario : ±${delta.pts} points d'occupation (${delta.observedPts !== null ? `variation annuelle observée ${delta.observedPts} pts, ${delta.source}` : delta.source}, borné entre ${config.scenarios.occupancyDeltaPts.min} et ${config.scenarios.occupancyDeltaPts.max}).`
+    },
+    result: {
+      title: '3. Résultat estimé pour ce logement',
+      intro: config.texts.methodologyResult,
+      lines: [
+        { label: 'Prix moyen par nuit estimé', value: real.adr, unit: 'EUR' },
+        { label: 'Taux d\'occupation estimé', value: real.occupancy, unit: 'ratio' },
+        { label: 'CA des nuits estimé', value: real.nightsRevenue, unit: 'EUR' }
+      ]
+    }
+  };
+
+  const result = {
+    ok: true,
+    engineVersion: ENGINE_VERSION,
+    configVersion: config.version,
+    errors: {},
+    warnings,
+    property: {
+      commune: res.commune.label,
+      type: config.types[p.type].label,
+      bedrooms: p.bedrooms,
+      bathrooms: p.bathrooms,
+      area: p.area,
+      guests: p.guests,
+      location: config.location.levels[p.location].label,
+      amenities: p.amenities,
+      monthsMode: p.monthsMode,
+      monthsCount: p.monthsCount,
+      monthsSelected: p.monthsSelected,
+      commissionPct: p.commissionPct,
+      cleaningFee: p.cleaningFee,
+      avgStayUsed: avgStay,
+      avgStaySource: isNum(p.avgStay) ? 'saisie' : 'marché',
+      vat: p.vat
+    },
+    data: {
+      origin: used.origin,
+      originLabel: originLabel(used.origin),
+      marketKey: res.key,
+      geoRole: res.geoRole,
+      zone: entry.label,
+      source: { id: entry.source, label: sourceInfo.label, attribution: sourceInfo.attribution || sourceInfo.label },
+      period: entry.period,
+      periodText: describePeriod(entry.period),
+      publishedAt: entry.publishedAt || '',
+      publishedText: entry.publishedAt ? formatMonthYear(entry.publishedAt) : 'non précisée',
+      market: { adr: observed.adr, occupancy: observed.occupancy, avgStay: observed.avgStay, referenceAdr: base.adr, referenceOccupancy: base.occupancy, referenceCalibrated: refCal.applied, sampleNights: (entry.sample && entry.sample.nightsBooked) || 0, occupancyYoyPts: isNum(entry.occupancyYoyPts) ? entry.occupancyYoyPts : 0 },
+      definitions: { adrIncludesCleaning: String(definitions.adrIncludesCleaning || 'unknown'), occupancyBasis: String(definitions.occupancyBasis || 'unknown') },
+      freshness: fr,
+      confidence: conf,
+      fallbackMessages,
+      seasonality: { id: profile.id, label: profile.label, basis: profile.basis, fallback: profile.fallback },
+      calibration,
+      attribution: config.texts.attribution,
+      marketGeneratedAt: market.generatedAt || ''
+    },
+    explanation,
+    ...(summary ? { summary } : {}),
+    scenarios
+  };
+
+  const invalid = findInvalidValues(result);
+  if (invalid.length) {
+    return { ok: false, errors: { _global: 'Calcul interrompu : une valeur incohérente a été détectée. Vérifiez les données saisies.' }, warnings, debug: invalid.slice(0, 10) };
+  }
+  return result;
+}
+
+window.EmeraudeEngine={estimate:estimate,ENGINE_VERSION:ENGINE_VERSION};
+})();
+</script>
+
+<script>
+(()=>{
+'use strict';
+const root=document.getElementById('emeraude-estimateur');
+if(!root)return;
+const $=id=>root.querySelector('#'+id);
+const SNAPSHOT={"builtAt":"2026-10-04T22:13:03.687Z","config":{"schemaVersion":1,"version":"2026-10-v2-calibration","notes":"Tous les coefficients ci-dessous sont des HYPOTHÈSES DE MODÉLISATION ÉMERAUDE, sauf mention contraire. Ils ne proviennent d'aucune source de marché.","calibrationLog":[{"date":"2026-10-04","item":"size.bedrooms.*.adr","from":"0,80 / 1 / 1,30 / 1,60 / 1,90","to":"0,82 / 1 / 1,45 / 1,85 / 2,50","evidence":"Régression du prix (capacité, sdb, type contrôlés) sur Inside Airbnb Lyon, Bordeaux, Pays basque : studio −14 à −21 %, 2 ch. +27 à +47 %, 3 ch. +81 à +104 %, 4+ ch. +154 à +200 %. Valeurs retenues proches de Lyon (ville la plus comparable, la plus prudente sur les grandes tailles)."},{"date":"2026-10-04","item":"size.bedrooms.*.occPts","from":"+2 / 0 / −2 / −4 / −6","to":"+3 / 0 / −2 / −8 / −8","evidence":"Écart médian d'occupation estimée par rapport au 1 chambre (3 villes) : studio +2,7 à +4,9 ; 2 ch. −1,6 à −3,3 ; 3 ch. −5,5 à −11,5 ; 4+ ch. −4,1 à −11,5."},{"date":"2026-10-04","item":"size.bedrooms.*.typicalGuests","from":"2 / 3 / 5 / 6 / 8","to":"2 / 2 / 4 / 6 / 8","evidence":"Capacité médiane par taille identique dans les 3 villes (Pays basque : 3 pour le 1 chambre)."},{"date":"2026-10-04","item":"size.guests.perGuest / cap","from":"0,03 / 0,06","to":"0,06 / 0,12","evidence":"Effet d'un voyageur supplémentaire à taille égale : +5,9 à +8,2 % ; valeur retenue = minimum observé."},{"date":"2026-10-04","item":"size.bathrooms","from":"+3 % si ≥ 2 sdb et ≥ 2 ch.","to":"+3 % par sdb au-delà de la configuration typique (1, ou 2 pour 4+ ch.), plafond 6 %","evidence":"Double comptage : une 2e salle de bain est typique des 4+ chambres et déjà incluse dans le facteur chambres."},{"date":"2026-10-04","item":"size.house.adr","from":"0,05","to":"0","evidence":"Effet « maison » non robuste une fois chambres et capacité connues (−6,6 %, +2,9 %, +13,3 % selon la ville) ; double comptage avec l'atout « terrasse / extérieur »."},{"date":"2026-10-04","item":"amenities.canape-lit","from":"+0,5 %","to":"0","evidence":"Double comptage avec la capacité voyageurs."},{"date":"2026-10-04","item":"referenceCalibration (nouveau)","from":"moyenne de marché = logement 1 chambre","to":"moyenne de marché ÷ indice de prix du mélange de tailles","evidence":"Contrainte de cohérence : appliqué au mélange de tailles du marché, le modèle doit restituer la moyenne publiée (test DC8)."}],"referenceProperty":{"bedrooms":1,"nature":"hypothese_emeraude","label":"Logement de référence : 1 chambre","description":"Hypothèse de modélisation Émeraude : la moyenne de marché publiée pour l'intercommunalité est assimilée à un logement d'une chambre. Ce n'est pas une donnée de marché."},"types":{"studio":{"label":"Studio","expectedBedrooms":[0,0],"isHouse":false},"t1":{"label":"T1","expectedBedrooms":[0,0],"isHouse":false},"t2":{"label":"T2","expectedBedrooms":[1,1],"isHouse":false},"t3":{"label":"T3","expectedBedrooms":[2,2],"isHouse":false},"t4":{"label":"T4+","expectedBedrooms":[3,10],"isHouse":false},"maison":{"label":"Maison","expectedBedrooms":[0,10],"isHouse":true}},"size":{"bedrooms":{"0":{"adr":0.82,"occPts":3,"typicalArea":25,"typicalGuests":2,"typicalBathrooms":1},"1":{"adr":1,"occPts":0,"typicalArea":40,"typicalGuests":2,"typicalBathrooms":1},"2":{"adr":1.45,"occPts":-2,"typicalArea":60,"typicalGuests":4,"typicalBathrooms":1},"3":{"adr":1.85,"occPts":-8,"typicalArea":80,"typicalGuests":6,"typicalBathrooms":1},"4+":{"adr":2.5,"occPts":-8,"typicalArea":110,"typicalGuests":8,"typicalBathrooms":2}},"area":{"perM2":0.003,"cap":0.06},"guests":{"perGuest":0.06,"cap":0.12,"warnAboveFormula":"2 x chambres + 2"},"bathrooms":{"perExtraBathroom":0.03,"cap":0.06},"house":{"adr":0}},"referenceCalibration":{"enabled":true,"nature":"hypothese_emeraude","label":"Recalage de la moyenne de marché vers le logement de référence (1 chambre)","description":"La moyenne publiée mélange studios, 1, 2, 3 chambres et plus. Pour la ramener au logement de référence, elle est divisée par l'indice de prix moyen de ce mélange (pondéré par les nuits réservées) et l'occupation est corrigée de l'écart moyen dû à la taille. Le mélange des tailles et l'écart de prix entre tailles sont des hypothèses issues de villes comparables (le mélange local n'est pas publié) : Inside Airbnb (CC BY 4.0), Lyon, Bordeaux et Pays basque, 2026.","mixByProfile":{"urbain":{"label":"Mélange de tailles d'une métropole universitaire (Lyon, logements entiers actifs, 2026)","nightsShare":{"0":0.115,"1":0.583,"2":0.212,"3":0.064,"4+":0.026},"listingShare":{"0":0.1,"1":0.558,"2":0.23,"3":0.082,"4+":0.03}},"littoral":{"label":"Mélange de tailles d'un territoire littoral touristique (Pays basque, logements entiers actifs, 2026)","nightsShare":{"0":0.059,"1":0.442,"2":0.291,"3":0.128,"4+":0.079},"listingShare":{"0":0.045,"1":0.368,"2":0.279,"3":0.171,"4+":0.136}}},"source":"inside_airbnb_structure"},"location":{"default":"standard","levels":{"hypercentre":{"label":"Hypercentre","adr":0.1,"occPts":3},"tres-central":{"label":"Très central","adr":0.06,"occPts":2},"central":{"label":"Central","adr":0.03,"occPts":1},"quartier-recherche":{"label":"Quartier recherché","adr":0.02,"occPts":1},"standard":{"label":"Standard","adr":0,"occPts":0},"peripherie":{"label":"Périphérie","adr":-0.06,"occPts":-3}}},"amenities":{"caps":{"adr":0.1,"occPts":3},"groups":{"base":{"label":"Essentiels","hint":"Déjà présents dans les logements comparables : sans effet sur l'estimation."},"confort":{"label":"Confort","hint":"Effet limité."},"differenciant":{"label":"Atouts","hint":"Effet plafonné au global."}},"items":[{"id":"wifi","legacyIndex":0,"label":"Fibre / Wi-Fi haut débit","group":"base","adr":0,"occPts":0},{"id":"tv","legacyIndex":1,"label":"TV connectée","group":"base","adr":0,"occPts":0},{"id":"chauffage","legacyIndex":9,"label":"Chauffage performant","group":"base","adr":0,"occPts":0},{"id":"cuisine","legacyIndex":10,"label":"Cuisine équipée","group":"base","adr":0,"occPts":0},{"id":"four","legacyIndex":11,"label":"Four","group":"base","adr":0,"occPts":0},{"id":"micro-ondes","legacyIndex":12,"label":"Micro-ondes","group":"base","adr":0,"occPts":0},{"id":"bouilloire","legacyIndex":17,"label":"Bouilloire","group":"base","adr":0,"occPts":0},{"id":"grille-pain","legacyIndex":18,"label":"Grille-pain","group":"base","adr":0,"occPts":0},{"id":"refrigerateur","legacyIndex":19,"label":"Réfrigérateur / congélateur","group":"base","adr":0,"occPts":0},{"id":"plaques","legacyIndex":20,"label":"Plaques de cuisson","group":"base","adr":0,"occPts":0},{"id":"seche-cheveux","legacyIndex":25,"label":"Sèche-cheveux","group":"base","adr":0,"occPts":0},{"id":"fer","legacyIndex":26,"label":"Fer + table à repasser","group":"base","adr":0,"occPts":0},{"id":"linge","legacyIndex":27,"label":"Draps et serviettes inclus","group":"base","adr":0,"occPts":0},{"id":"lave-vaisselle","legacyIndex":13,"label":"Lave-vaisselle","group":"confort","adr":0.01,"occPts":0},{"id":"lave-linge","legacyIndex":14,"label":"Lave-linge","group":"confort","adr":0.01,"occPts":0},{"id":"seche-linge","legacyIndex":15,"label":"Sèche-linge","group":"confort","adr":0.005,"occPts":0},{"id":"cafe","legacyIndex":16,"label":"Machine à café","group":"confort","adr":0.005,"occPts":0},{"id":"canape-lit","legacyIndex":22,"label":"Canapé convertible","group":"confort","adr":0,"occPts":0,"note":"Sans effet propre : le couchage supplémentaire est pris en compte par la capacité voyageurs (évite le double comptage)."},{"id":"espace-travail","legacyIndex":23,"label":"Espace de travail","group":"confort","adr":0.01,"occPts":0.5},{"id":"bebe","legacyIndex":24,"label":"Équipement bébé","group":"confort","adr":0.005,"occPts":0},{"id":"ascenseur","legacyIndex":7,"label":"Ascenseur","group":"confort","adr":0.005,"occPts":0},{"id":"parking-proximite","legacyIndex":6,"label":"Parking facile à proximité","group":"confort","adr":0.01,"occPts":0,"exclusive":"parking"},{"id":"checkin-flexible","legacyIndex":31,"label":"Check-in flexible","group":"confort","adr":0.005,"occPts":0.5},{"id":"balcon","legacyIndex":2,"label":"Balcon","group":"differenciant","adr":0.02,"occPts":0,"exclusive":"exterieur"},{"id":"terrasse","legacyIndex":3,"label":"Terrasse / extérieur","group":"differenciant","adr":0.04,"occPts":0,"exclusive":"exterieur"},{"id":"vue","legacyIndex":4,"label":"Vue dégagée / agréable","group":"differenciant","adr":0.02,"occPts":0},{"id":"parking-prive","legacyIndex":5,"label":"Parking privé","group":"differenciant","adr":0.03,"occPts":1,"exclusive":"parking"},{"id":"climatisation","legacyIndex":8,"label":"Climatisation","group":"differenciant","adr":0.02,"occPts":0},{"id":"literie-premium","legacyIndex":21,"label":"Literie premium","group":"differenciant","adr":0.02,"occPts":0},{"id":"serrure-connectee","legacyIndex":28,"label":"Serrure connectée / entrée autonome","group":"differenciant","adr":0.01,"occPts":1},{"id":"renove","legacyIndex":29,"label":"Logement rénové / décoration soignée","group":"differenciant","adr":0.04,"occPts":1},{"id":"calme","legacyIndex":30,"label":"Calme / bonne isolation phonique","group":"differenciant","adr":0.015,"occPts":0}]},"guards":{"adrSecondaryMultiplier":[0.85,1.25],"occupancy":[0.25,0.8],"occupancyMaxDeviationPts":10,"monthlyOccupancyMax":0.9},"cleaning":{"defaultFee":40,"avgStayDefault":"market","adrIncludesCleaningPolicy":"no_adjustment","unknownDefinitionNote":"La source ne précise pas si son prix moyen par nuit inclut les frais de ménage. Aucun ajustement n'est appliqué : le prix de marché est utilisé tel quel, et les frais de ménage de ce logement sont calculés séparément."},"fees":{"airbnbHostFeeRate":0.155,"airbnbHostFeeLabel":"Frais de service Airbnb (15,5 % HT)","airbnbFeeBase":"nights_plus_cleaning","vat":{"enabledByDefault":false,"rate":0.2,"label":"Appliquer la TVA sur les frais Airbnb","note":"Selon la situation du propriétaire. Non appliquée par défaut."},"cleaningFeeShareBearer":"emeraude"},"commission":{"defaultRate":0.2,"base":"nights_net_of_host_fee","baseLabel":"Revenu des nuits net des frais Airbnb sur les nuits"},"scenarios":{"occupancyDeltaPts":{"source":"market.occupancyYoyPts","min":3,"max":8},"prudent":{"label":"Prudent","positiveBonusFactor":0.5,"occupancyDeltaSign":-1,"managementAdr":0,"description":"Le logement ne valorise que la moitié de ses atouts (emplacement, équipements) et la demande recule de l'écart annuel observé sur le marché."},"realiste":{"label":"Réaliste","positiveBonusFactor":1,"occupancyDeltaSign":0,"managementAdr":0,"description":"Marché local observé, ajusté aux caractéristiques du logement."},"performant":{"label":"Performant","positiveBonusFactor":1,"occupancyDeltaSign":1,"managementAdr":0.03,"description":"Le logement capte la demande d'une bonne année (écart annuel observé sur le marché) et bénéficie d'une gestion optimisée (+3 % sur le prix)."}},"months":{"defaultMode":"count","defaultCount":10,"labels":["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"],"shortLabels":["Janv.","Févr.","Mars","Avr.","Mai","Juin","Juil.","Août","Sept.","Oct.","Nov.","Déc."],"referenceYearDays":[31,28,31,30,31,30,31,31,30,31,30,31],"countModeNote":"En mode « nombre de mois », les mois retirés sont considérés comme des mois moyens."},"seasonality":{"profiles":{"urbain":{"label":"Profil urbain","occupancySource":"insee_hotels","adrSource":"adt35_lighthouse","adrDamping":0.5,"basis":"Occupation : profil mensuel de l'hôtellerie en Ille-et-Vilaine (Insee), utilisé comme approximation. Prix : profil mensuel des meublés en Ille-et-Vilaine (Ille & Vilaine Tourisme), amplitude réduite de moitié."},"littoral":{"label":"Profil littoral","occupancySource":"adt35_lighthouse","adrSource":"adt35_lighthouse","adrDamping":1,"basis":"Occupation et prix : profil mensuel des meublés entiers en Ille-et-Vilaine (Ille & Vilaine Tourisme)."}}},"freshness":{"greenMaxMonths":15,"orangeMaxMonths":27,"pipelineStaleDays":45},"uncertainty":{"nature":"regle_emeraude","documentation":"Voir reports/validation-hypotheses-v2.md, section « Implémentation de l'incertitude et du niveau de confiance ». Bases et composantes issues de l'analyse de sensibilité de la phase 5 (incertitude structurelle : ±7 % T2 urbain, ±11 à ±13 % petits logements côtiers, ±8,6 % grands logements).","basePct":{"urbain":7,"littoral":12},"capPct":25,"atypicalFloorPct":10,"roundingStep":100,"smallMarketNights":50000,"property":{"largeFromBedrooms":3,"capacityAtypicalExtraGuests":2,"capacityVeryAtypicalExtraGuests":4,"areaAtypical":[0.6,1.6],"areaVeryAtypical":[0.4,2.2]},"weights":{"dataOrange":1,"dataRed":3,"smallMarket":1,"neighbourMarket":1,"departmentMarket":2,"snapshot":1,"coastal":1,"large":1,"atypical":1,"veryAtypical":2,"seasonFallback":1,"periphery":1},"components":{"dataOrange":2,"dataRed":6,"smallMarket":4,"neighbourMarket":5,"departmentMarket":8,"snapshot":2,"sizeClass":5,"capacityAtypical":4,"capacityVeryAtypical":8,"areaAtypical":3,"areaVeryAtypical":6,"seasonFallback":5,"periphery":4},"groupCaps":{"market":2,"profile":1,"property":2,"seasonality":1,"commune":1},"levels":{"mediumFromScore":1,"lowFromScore":3},"peripheryWatch":{"communes":["bruz","pace","chartres-de-bretagne","betton"],"source":"Phase 5 : loyers T1-T2 \u003c 0,90 × moyenne pondérée de Rennes Métropole (Carte des loyers 2025). Signalement uniquement, aucune correction (D12).","reason":"Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."},"texts":{"rangeNote":"Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.","scenariosNote":"Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."}},"confidence":{"lowGeoLevels":["departement"],"mediumIfSampleNightsBelow":50000,"mediumIfNeighbourMarket":true,"freshnessCaps":{"green":"elevee","orange":"moyenne","red":"faible"},"snapshotCap":"faible","labels":{"elevee":"Élevée","moyenne":"Moyenne","faible":"Faible"}},"emeraude":{"minMonthsPerListing":6,"levels":[{"id":"observation","label":"Observation","minListings":0,"maxWeight":0,"maxEffect":0},{"id":"signal","label":"Signal","minListings":3,"maxWeight":0,"maxEffect":0},{"id":"calibration","label":"Calibration","minListings":5,"maxWeight":0.33,"maxEffect":0.1},{"id":"solide","label":"Données internes solides","minListings":10,"maxWeight":0.6,"maxEffect":0.2}],"weightHalfSaturation":10,"minListingsToPublishAggregate":3,"seasonalityMinListingMonths":120},"validation":{"adr":[30,400],"occupancy":[0.1,0.9],"avgStay":[1,15],"maxYoyChange":{"adr":0.3,"occupancy":0.15},"seasonalIndex":[0.3,2.5],"seasonalNormalisationTolerance":0.01},"inputs":{"area":[10,500],"bedrooms":[0,10],"bathrooms":[0,8],"guests":[1,20],"months":[1,12],"commissionPct":[0,50],"cleaningFee":[0,500],"avgStay":[1,30]},"defaults":{"commune":"rennes","type":"t2","bedrooms":1,"bathrooms":1,"area":40,"guests":2,"location":"standard","commissionPct":20,"cleaningFee":40},"texts":{"attribution":"Sources : Ille & Vilaine Tourisme (données Lighthouse), Eurostat, Insee.","attributionSuffix":"Estimation réalisée par Émeraude Conciergerie à partir de ces données et de ses propres hypothèses de modélisation.","methodologyIntro":"L'estimation distingue trois éléments : les données publiques du marché local, les ajustements propres au modèle Émeraude, et le résultat calculé pour ce logement.","methodologyMarket":"Données publiques observées sur l'intercommunalité (logements entiers loués sur Airbnb, Abritel et Booking). Ce sont des moyennes de marché, pas des chiffres propres au logement.","methodologyAdjustments":"Hypothèses de modélisation Émeraude appliquées au logement, avec des plafonds. Elles ne proviennent d'aucune source de marché.","methodologyResult":"Résultat calculé par le modèle. Ce n'est pas une statistique observée : c'est une estimation indicative, qui ne constitue pas une garantie de revenus.","disclaimer":"Estimation indicative et non garantie. Les performances réelles dépendent notamment de la demande, de la saisonnalité, du positionnement, des avis, de la disponibilité et de la tarification. Revenus présentés avant fiscalité, charges, linge, consommables et autres coûts non intégrés."}},"communes":{"schemaVersion":1,"verifiedWith":"geo.api.gouv.fr (codes INSEE et EPCI vérifiés le 2026-10-04)","departement":{"id":"departement:35","label":"Ille-et-Vilaine"},"epci":{"rennes-metropole":{"label":"Rennes Métropole","siren":"243500139","fallback":["departement:35"]},"saint-malo-agglomeration":{"label":"Saint-Malo Agglomération","siren":"243500782","fallback":["departement:35"]},"vitre-communaute":{"label":"Vitré Communauté","siren":"200039022","fallback":["epci:rennes-metropole","departement:35"]},"liffre-cormier":{"label":"Liffré-Cormier Communauté","siren":"243500774","fallback":["epci:rennes-metropole","departement:35"]}},"communes":[{"id":"rennes","label":"Rennes","insee":"35238","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"cesson-sevigne","label":"Cesson-Sévigné","insee":"35051","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"saint-gregoire","label":"Saint-Grégoire","insee":"35278","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"chantepie","label":"Chantepie","insee":"35055","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"bruz","label":"Bruz","insee":"35047","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"pace","label":"Pacé","insee":"35210","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"betton","label":"Betton","insee":"35024","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"saint-jacques-de-la-lande","label":"Saint-Jacques-de-la-Lande","insee":"35281","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"vezin-le-coquet","label":"Vezin-le-Coquet","insee":"35353","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"chartres-de-bretagne","label":"Chartres-de-Bretagne","insee":"35066","epci":"rennes-metropole","profile":"urbain","active":true},{"id":"chateaubourg","label":"Châteaubourg","insee":"35068","epci":"vitre-communaute","profile":"urbain","active":true},{"id":"liffre","label":"Liffré","insee":"35152","epci":"liffre-cormier","profile":"urbain","active":true},{"id":"vitre","label":"Vitré","insee":"35360","epci":"vitre-communaute","profile":"urbain","active":true},{"id":"saint-aubin-du-cormier","label":"Saint-Aubin-du-Cormier","insee":"35253","epci":"liffre-cormier","profile":"urbain","active":true},{"id":"saint-malo","label":"Saint-Malo","insee":"35288","epci":"saint-malo-agglomeration","profile":"littoral","active":true},{"id":"val-d-ize","label":"Val-d'Izé","insee":"35347","epci":"vitre-communaute","profile":"urbain","active":true}]},"sources":{"schemaVersion":1,"sources":{"adt35_lighthouse":{"label":"Ille & Vilaine Tourisme (données Lighthouse)","publisher":"Observatoire d'Ille & Vilaine Tourisme","url":"https://www.ille-et-vilaine-tourisme.bzh/acteurs/chiffres-et-donnees/etudes-de-frequentation/hebergements-locatifs/","document":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","licence":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","attribution":"Ille & Vilaine Tourisme (données Lighthouse)","usage":["market_base","seasonality"],"updateRhythm":"annual","collection":"manual","priority":30,"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"}},"adt35_chiffres_cles":{"label":"Ille & Vilaine Tourisme — Chiffres clés 2025 (données Lighthouse, département)","publisher":"Ille & Vilaine Tourisme","url":"https://www.ille-et-vilaine-tourisme.bzh/acteurs/chiffres-et-donnees/","document":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","licence":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","attribution":"Ille & Vilaine Tourisme (données Lighthouse)","usage":["indicator","control","demand_trend"],"updateRhythm":"annual","collection":"manual","priority":null,"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Tarif Journalier Moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown","comparability":"TJM 2024 révisé (≈ 140,6 €) par rapport au bilan 2024 (104 €) : non comparable à la base de marché. Département uniquement."}},"audiar_observatoire":{"label":"AUDIAR — Observatoire du tourisme de Rennes Métropole","publisher":"AUDIAR / Rennes Métropole","url":"https://www.audiar.org/","document":"https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf","licence":"Non précisée par la source","attribution":"AUDIAR / Rennes Métropole","usage":["indicator","demand_trend"],"updateRhythm":"annual","collection":"manual","priority":null,"definitions":{"scope":"plateformes (annonces AirDNA, nuitées plateformes)","note":"Aucun prix ni taux d'occupation publiés."}},"eurostat_platforms":{"label":"Eurostat — hébergements de courte durée réservés via des plateformes en ligne","publisher":"Eurostat","url":"https://ec.europa.eu/eurostat/web/tourism/database","licence":"Réutilisation autorisée, y compris commerciale, avec mention de la source (Décision 2011/833/UE)","attribution":"Eurostat","usage":["control","demand_trend"],"updateRhythm":"quarterly","collection":"auto","priority":null,"definitions":{"scope":"all_platform_accommodation","platforms":["airbnb","booking","expedia","tripadvisor"]}},"insee_hotels":{"label":"Insee — fréquentation des hébergements touristiques (hôtels)","publisher":"Insee","url":"https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_TOUR_FREQ","licence":"Licence Ouverte Etalab 2.0","attribution":"Insee","usage":["seasonality_proxy"],"updateRhythm":"monthly","collection":"auto","priority":null,"definitions":{"scope":"hotels","metric":"taux d'occupation des chambres/places, Ille-et-Vilaine"}},"inside_airbnb_structure":{"label":"Inside Airbnb — structure des prix selon la taille (villes comparables)","publisher":"Inside Airbnb (Murray Cox)","url":"https://insideairbnb.com/get-the-data/","licence":"Creative Commons Attribution 4.0 (CC BY 4.0). Le projet demande de ne pas republier les données et d'en faire un usage cohérent avec sa mission (logement) : seuls des ratios agrégés sont utilisés, aucune donnée n'est republiée.","attribution":"Inside Airbnb (CC BY 4.0) — Lyon, Bordeaux, Pays basque","usage":["calibration_structure"],"updateRhythm":"quarterly","collection":"manual","priority":null,"definitions":{"scope":"entire_home_active","note":"Prix affichés (non réalisés) et occupation estimée par le projet ; utilisés uniquement en rapports relatifs entre tailles."}},"carte_loyers":{"label":"Carte des loyers 2025 (ANIL / ministère du Logement)","publisher":"ANIL / DHUP","url":"https://www.data.gouv.fr/fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/","licence":"Licence Ouverte Etalab 2.0","attribution":"Carte des loyers 2025 (ANIL, ministère du Logement)","usage":["audit"],"updateRhythm":"annual","collection":"manual","priority":null,"definitions":{"scope":"loyers d'annonce au m², location nue longue durée","note":"Indicateur de niveau de prix par commune ; non utilisé dans le calcul en V2 (relation avec les prix de location courte durée non établie)."}},"emeraude_internal":{"label":"Données des logements gérés par Émeraude Conciergerie (agrégées)","publisher":"Émeraude Conciergerie","licence":"Interne — seuls des agrégats anonymisés sont publiés","attribution":"Émeraude Conciergerie","usage":["calibration"],"updateRhythm":"monthly","collection":"manual","priority":10},"embedded_snapshot":{"label":"Données de secours intégrées à l'outil","usage":["fallback"],"priority":99}}},"market":{"schemaVersion":1,"generatedAt":"2026-10-04T22:09:32.267Z","buildId":"local","markets":{"departement:35":{"label":"Ille-et-Vilaine","geoLevel":"departement","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":104.3,"occupancy":0.42,"avgStay":3.3,"occupancyYoyPts":-3,"sample":{"nightsBooked":1281472},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Ille-et-Vilaine","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:rennes-metropole":{"label":"Rennes Métropole","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":80,"occupancy":0.49,"avgStay":3,"occupancyYoyPts":-5,"sample":{"nightsBooked":352046},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Rennes Métropole","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:saint-malo-agglomeration":{"label":"Saint-Malo Agglomération","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":119,"occupancy":0.45,"avgStay":3.7,"occupancyYoyPts":-3,"sample":{"nightsBooked":418795},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Saint-Malo Agglomération","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:cote-d-emeraude":{"label":"Côte d'Emeraude","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":138.4,"occupancy":0.35,"avgStay":4.1,"occupancyYoyPts":-2,"sample":{"nightsBooked":216031},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Côte d'Emeraude","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:pays-de-dol":{"label":"Pays de Dol et de la Baie du Mont-Saint-Michel","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":108.7,"occupancy":0.42,"avgStay":3.2,"occupancyYoyPts":-3,"sample":{"nightsBooked":69343},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Pays de Dol et de la Baie du Mont-Saint-Michel","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:couesnon-marches-de-bretagne":{"label":"Couesnon-Marches de Bretagne","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":102,"occupancy":0.38,"avgStay":2.8,"occupancyYoyPts":0,"sample":{"nightsBooked":18757},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Couesnon-Marches de Bretagne","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:fougeres-agglomeration":{"label":"Fougères Agglomération","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":93.5,"occupancy":0.41,"avgStay":2.8,"occupancyYoyPts":-2,"sample":{"nightsBooked":30904},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Fougères Agglomération","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:vitre-communaute":{"label":"Vitré Communauté","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":81.3,"occupancy":0.48,"avgStay":2.8,"occupancyYoyPts":-7,"sample":{"nightsBooked":34359},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Vitré Communauté","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:broceliande-communaute":{"label":"Brocéliande Communauté","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":135.5,"occupancy":0.46,"avgStay":2.7,"occupancyYoyPts":-2,"sample":{"nightsBooked":18364},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Brocéliande Communauté","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:montfort-communaute":{"label":"Montfort Communauté","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":122.3,"occupancy":0.43,"avgStay":3,"occupancyYoyPts":-1,"sample":{"nightsBooked":9988},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Montfort Communauté","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:saint-meen-montauban":{"label":"Saint-Méen Montauban","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":95.2,"occupancy":0.44,"avgStay":3.1,"occupancyYoyPts":-4,"sample":{"nightsBooked":14400},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Saint-Méen Montauban","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:bretagne-romantique":{"label":"Bretagne Romantique","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":114.2,"occupancy":0.36,"avgStay":3.4,"occupancyYoyPts":-6,"sample":{"nightsBooked":24242},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Bretagne Romantique","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:vallons-de-haute-bretagne":{"label":"Vallons de Haute Bretagne Communauté","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":96,"occupancy":0.43,"avgStay":2.8,"occupancyYoyPts":-4,"sample":{"nightsBooked":14935},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Vallons de Haute Bretagne Communauté","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:roche-aux-fees":{"label":"Roche-aux-Fées Communauté","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":108.7,"occupancy":0.39,"avgStay":2.6,"occupancyYoyPts":-7,"sample":{"nightsBooked":9431},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Roche-aux-Fées Communauté","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:liffre-cormier":{"label":"Liffré-Cormier Communauté","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":87.9,"occupancy":0.45,"avgStay":3.5,"occupancyYoyPts":-2,"sample":{"nightsBooked":9482},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Liffré-Cormier Communauté","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"epci:val-d-ille-aubigne":{"label":"Val d'Ille-Aubigné","geoLevel":"epci","source":"adt35_lighthouse","period":{"start":"2024-01-01","end":"2024-12-31"},"publishedAt":"2025-04-01","adr":96.8,"occupancy":0.4,"avgStay":3.3,"occupancyYoyPts":-3,"sample":{"nightsBooked":12246},"segmentedBy":[],"definitions":{"scope":"entire_home","platforms":["airbnb","vrbo","booking"],"currency":"EUR","adrSourceLabel":"Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)","adrIncludesCleaning":"unknown","occupancyBasis":"unknown"},"status":"ok","meta":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Val d'Ille-Aubigné","methodology":"Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}}},"seasonality":{"urbain":{"label":"Profil urbain","occupancyIndex":[0.7727,0.8294,0.9185,1.0189,1.0238,1.2214,1.0902,1.1906,1.1809,1.0691,0.8505,0.8262],"adrIndex":[0.9524,0.9333,0.9428,0.9716,1.0051,0.9908,1.0914,1.1154,0.9956,0.9812,0.9524,1.0003],"basis":"Occupation : profil mensuel de l'hôtellerie en Ille-et-Vilaine (Insee), utilisé comme approximation. Prix : profil mensuel des meublés en Ille-et-Vilaine (Ille & Vilaine Tourisme), amplitude réduite de moitié.","period":"Occupation : 2025 (Insee) · Prix : 2024 (Ille & Vilaine Tourisme (données Lighthouse))","sources":["insee_hotels","adt35_lighthouse"],"meta":{"occupancy":{"source":"insee_hotels","sourceUrl":"https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_TOUR_FREQ","publicationDate":null,"periodStart":"2025-01-01","periodEnd":"2025-12-31","retrievedAt":"2026-10-04T21:40:38.389Z","territory":"Ille-et-Vilaine (département)","methodology":"Taux d'occupation mensuel des hôtels utilisé comme forme de saisonnalité urbaine.","license":"Licence Ouverte Etalab 2.0","dataClass":"PROXY","freshnessDays":278,"freshnessMonths":9,"status":"HIGH","freshnessComputedAt":"2026-10-04T22:09:32.267Z"},"adr":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Ille-et-Vilaine (département)","methodology":"Prix mensuels des meublés du département, amortis (coefficient 0.5).","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"PROXY","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}}},"littoral":{"label":"Profil littoral","occupancyIndex":[0.7343,0.6158,0.8764,0.9948,1.0896,1.0422,1.279,1.587,1.1132,0.9711,0.8053,0.8527],"adrIndex":[0.8923,0.8547,0.8735,0.9299,0.9956,0.9674,1.1647,1.2116,0.9768,0.9486,0.8923,0.9862],"basis":"Occupation et prix : profil mensuel des meublés entiers en Ille-et-Vilaine (Ille & Vilaine Tourisme).","period":"Occupation : 2024 (Ille & Vilaine Tourisme (données Lighthouse)) · Prix : 2024 (Ille & Vilaine Tourisme (données Lighthouse))","sources":["adt35_lighthouse"],"meta":{"occupancy":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/acteurs/chiffres-et-donnees/etudes-de-frequentation/hebergements-locatifs/","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Ille-et-Vilaine (département)","methodology":"Taux d'occupation mensuel des meublés (logements entiers) du département.","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"PROXY","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"},"adr":{"source":"adt35_lighthouse","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf","publicationDate":"2025-04","periodStart":"2024-01-01","periodEnd":"2024-12-31","retrievedAt":"2026-10-04","territory":"Ille-et-Vilaine (département)","methodology":"Prix mensuels des meublés du département, amortis (coefficient 1).","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"PROXY","freshnessDays":643,"freshnessMonths":21,"status":"MEDIUM","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}}}},"controls":{"checks":[{"id":"avgStay_rennes","status":"ok","detail":"Durée moyenne de séjour : Ille & Vilaine Tourisme 3 nuits (2024) vs Eurostat 2.98 nuits (2025), écart 1 %."},{"id":"peak_month_littoral","status":"ok","detail":"Mois de pointe : Eurostat Bretagne Août (2025) vs profil littoral Août."}],"eurostatRennes":{"year":2025,"stays":75660,"nightsRented":225633,"avgStay":2.98,"nightsYoyPct":-6.3,"source":"Eurostat (tour_ce_oarc, Rennes)","meta":{"source":"eurostat_platforms","sourceUrl":"https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_ce_oarc?cities=FR016C&c_resid=TOTAL","publicationDate":null,"periodStart":"2025-01-01","periodEnd":"2025-12-31","retrievedAt":"2026-10-04T21:40:37.958Z","territory":"Rennes (Eurostat, greater city)","methodology":"Séjours et nuits louées via Airbnb, Booking, Expedia, Tripadvisor (toutes catégories d'hébergement de courte durée).","license":"Réutilisation autorisée, y compris commerciale, avec mention de la source (Décision 2011/833/UE)","dataClass":"OBSERVÉE","freshnessDays":278,"freshnessMonths":9,"status":"HIGH","freshnessComputedAt":"2026-10-04T22:09:32.267Z"}},"indicatorComparisons":[{"id":"dep_occupancy","comparable":true,"base":{"year":"2024","value":0.42},"recent":{"year":"2025","value":0.42},"gapPts":0,"decision":"B — contrôle : même méthode, même niveau ; la base reste un millésime cohérent (prix et occupation de la même année)"},{"id":"dep_avgStay","comparable":true,"base":{"year":"2024","value":3.3},"recent":{"year":"2025","value":3.2},"gapPct":-3,"decision":"B — contrôle"},{"id":"dep_adr","comparable":false,"base":{"year":"2024","value":104.3},"recent":{"year":"2025","value":137},"gapPct":31.4,"decision":"B — série révisée par la source (2024 publié à 104 € puis ≈ 140,6 €) : non comparable, non utilisée"}]},"emeraude":{"segments":[]},"indicators":{"2025":[{"id":"adt35_chiffres_cles|2025|departement:35|nights_booked","indicator":"nights_booked","value":1.337,"unit":"million nights","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Nuits réservées (logements entiers ; Airbnb + VRBO + Booking via Lighthouse)","comparableWith2024Base":"oui","note":"Valeur arrondie publiée « 1,337 M »","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|guest_nights","indicator":"guest_nights","value":4.278,"unit":"million guest-nights","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Nuitées correspondant aux nuits réservées (logements entiers)","comparableWith2024Base":"non_verifie","note":"Pas d'équivalent dans le bilan 2024","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|occupancy_pct","indicator":"occupancy_pct","value":42,"unit":"percent","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Taux d'occupation (logements entiers)","comparableWith2024Base":"oui","note":"Identique au bilan 2024 (42 %) ; publication : -0,2 point vs 2024","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|occupancy_yoy_pts","indicator":"occupancy_yoy_pts","value":-0.2,"unit":"points","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Évolution du taux d'occupation vs 2024","comparableWith2024Base":"oui","note":"","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|tjm_eur","indicator":"tjm_eur","value":137,"unit":"EUR/night","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Tarif Journalier Moyen (TJM) des logements entiers","comparableWith2024Base":"non","note":"Même libellé que le bilan 2024 (104 €) mais 2024 recalculé à ≈ 140,6 € (137 + 3,6) dans cette publication : série révisée ; non comparable à la base 2024","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|tjm_yoy_eur","indicator":"tjm_yoy_eur","value":-3.6,"unit":"EUR","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Évolution du TJM vs 2024 (série révisée)","comparableWith2024Base":"non","note":"","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|revenue_eur","indicator":"revenue_eur","value":188239000,"unit":"EUR","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Revenu annuel total des logements entiers","comparableWith2024Base":"non_verifie","note":"Publié « 188,239 millions d'euros » ; +2,0 % vs 2024","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|revenue_yoy_pct","indicator":"revenue_yoy_pct","value":2,"unit":"percent","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Évolution du revenu annuel vs 2024","comparableWith2024Base":"non_verifie","note":"","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|listings_published","indicator":"listings_published","value":198235,"unit":"listings","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Annonces publiées (définition du cumul non précisée par la source)","comparableWith2024Base":"non","note":"La page indique à la fois +6,5 % et +6,2 % vs 2024 : incohérence interne non résolue","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|avg_stay_days","indicator":"avg_stay_days","value":3.2,"unit":"days","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Durée moyenne de séjour","comparableWith2024Base":"oui","note":"Bilan 2024 : 3,3","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|nights_yoy_pct","indicator":"nights_yoy_pct","value":5.1,"unit":"percent","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Évolution des nuits réservées vs 2024","comparableWith2024Base":"oui","note":"Le bilan 2024 donnait 1 281 472 nuits : 1,337 M = +4,3 % ; l'écart avec +5,1 % vient d'une révision de 2024","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"15","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|offer_furnished_units","indicator":"offer_furnished_units","value":4378,"unit":"units","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Meublés et gîtes (offre recensée)","comparableWith2024Base":"non_verifie","note":"Offre déclarée/recensée ≠ annonces actives sur plateformes","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"14","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|offer_beds","indicator":"offer_beds","value":21684,"unit":"beds","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Lits touristiques des meublés et gîtes","comparableWith2024Base":"non_verifie","note":"","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"14","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|offer_classified_pct","indicator":"offer_classified_pct","value":61.5,"unit":"percent","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Part des meublés et gîtes classés","comparableWith2024Base":"non_verifie","note":"","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"14","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|epci:saint-malo-agglomeration|capacity_share_saint_malo_agglo_pct","indicator":"capacity_share_saint_malo_agglo_pct","value":38.2,"unit":"percent","territory":{"geoId":"epci:saint-malo-agglomeration","label":"Saint-Malo Agglomération"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Part de la capacité d'accueil en locatif du département","comparableWith2024Base":"non_verifie","note":"Part d'offre (lits) ; pas un indicateur de prix ni d'occupation","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"14","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|epci:rennes-metropole|capacity_share_rennes_metropole_pct","indicator":"capacity_share_rennes_metropole_pct","value":9.6,"unit":"percent","territory":{"geoId":"epci:rennes-metropole","label":"Rennes Métropole"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Part de la capacité d'accueil en locatif du département","comparableWith2024Base":"non_verifie","note":"Part d'offre (lits) ; pas un indicateur de prix ni d'occupation","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"14","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"adt35_chiffres_cles|2025|departement:35|locatif_share_of_market_nights_pct","indicator":"locatif_share_of_market_nights_pct","value":43.5,"unit":"percent","territory":{"geoId":"departement:35","label":"Ille-et-Vilaine"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Part des nuitées marchandes réalisées en locatif","comparableWith2024Base":"non_verifie","note":"","source":"adt35_chiffres_cles","sourceUrl":"https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf","document":"Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)","page":"28","publicationDate":"2026-05","retrievedAt":"2026-10-04T21:23:56Z","license":"Non précisée par la source — citation de chiffres agrégés avec mention de la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"audiar_observatoire|2025|epci:rennes-metropole|active_listings_monthly_avg","indicator":"active_listings_monthly_avg","value":2360,"unit":"listings","territory":{"geoId":"epci:rennes-metropole","label":"Rennes Métropole"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Annonces actives de meublés touristiques en moyenne par mois (source AirDNA citée par l'AUDIAR)","comparableWith2024Base":"non","note":"2024 : 2 400 (même publication) ; fournisseur différent de la base (Lighthouse)","source":"audiar_observatoire","sourceUrl":"https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf","document":"Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)","page":"24","publicationDate":"2026-07","retrievedAt":"2026-10-04T21:23:58Z","license":"Non précisée par la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"audiar_observatoire|2025|epci:rennes-metropole|active_entire_homes_monthly_avg","indicator":"active_entire_homes_monthly_avg","value":1710,"unit":"listings","territory":{"geoId":"epci:rennes-metropole","label":"Rennes Métropole"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Annonces actives de logements entiers en moyenne par mois (AirDNA)","comparableWith2024Base":"non","note":"« baisse d'une soixantaine d'annonces » vs 2024","source":"audiar_observatoire","sourceUrl":"https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf","document":"Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)","page":"24","publicationDate":"2026-07","retrievedAt":"2026-10-04T21:23:58Z","license":"Non précisée par la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"audiar_observatoire|2025|epci:rennes-metropole|platform_nights_yoy_pct_jan_oct","indicator":"platform_nights_yoy_pct_jan_oct","value":-8,"unit":"percent","territory":{"geoId":"epci:rennes-metropole","label":"Rennes Métropole"},"period":{"start":"2025-01-01","end":"2025-10-31"},"definition":"Évolution des nuitées des plateformes internet sur les dix premiers mois vs 2024","comparableWith2024Base":"non","note":"Nuitées (personnes × nuits) et non nuits réservées ; juillet-août en hausse (+4 % et +5 %)","source":"audiar_observatoire","sourceUrl":"https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf","document":"Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)","page":"10","publicationDate":"2026-07","retrievedAt":"2026-10-04T21:23:58Z","license":"Non précisée par la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":339,"freshnessMonths":11,"status":"HIGH"},{"id":"audiar_observatoire|2025|epci:rennes-metropole|market_nights_yoy_pct","indicator":"market_nights_yoy_pct","value":-6,"unit":"percent","territory":{"geoId":"epci:rennes-metropole","label":"Rennes Métropole"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Évolution des nuitées marchandes (tous hébergements) vs 2024","comparableWith2024Base":"non","note":"","source":"audiar_observatoire","sourceUrl":"https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf","document":"Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)","page":"4","publicationDate":"2026-07","retrievedAt":"2026-10-04T21:23:58Z","license":"Non précisée par la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"audiar_observatoire|2025|epci:rennes-metropole|declared_furnished_units","indicator":"declared_furnished_units","value":1909,"unit":"units","territory":{"geoId":"epci:rennes-metropole","label":"Rennes Métropole"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Meublés de tourisme déclarés pour la taxe de séjour","comparableWith2024Base":"non","note":"+61 % vs 2024 (effet réglementaire : déclarations) ; 1 500 à Rennes","source":"audiar_observatoire","sourceUrl":"https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf","document":"Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)","page":"22","publicationDate":"2026-07","retrievedAt":"2026-10-04T21:23:58Z","license":"Non précisée par la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"},{"id":"audiar_observatoire|2025|epci:rennes-metropole|platform_tourist_tax_eur","indicator":"platform_tourist_tax_eur","value":703591,"unit":"EUR","territory":{"geoId":"epci:rennes-metropole","label":"Rennes Métropole"},"period":{"start":"2025-01-01","end":"2025-12-31"},"definition":"Taxe de séjour collectée via les plateformes (Airbnb…)","comparableWith2024Base":"non","note":"2024 : 682 000 € (graphique p. 11)","source":"audiar_observatoire","sourceUrl":"https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf","document":"Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)","page":"11","publicationDate":"2026-07","retrievedAt":"2026-10-04T21:23:58Z","license":"Non précisée par la source","dataClass":"OBSERVÉE","usage":"indicator","freshnessDays":278,"freshnessMonths":9,"status":"HIGH"}]},"attribution":"Sources : Ille & Vilaine Tourisme (données Lighthouse), Eurostat, Insee."}};
+const REMOTE={market:'',config:''};
+const IS_PREVIEW=false;
+const CACHE_KEY='emeraude-estimateur-v2-data';
+const Engine=window.EmeraudeEngine;
+
+let bundle={config:SNAPSHOT.config,communes:SNAPSHOT.communes,sources:SNAPSHOT.sources};
+let marketSources=[{origin:'snapshot',data:SNAPSHOT.market,savedAt:fmtDate(SNAPSHOT.builtAt)}];
+let monthsMode='count';
+let selectedMonths=new Set([0,1,2,3,4,5,8,9,10,11]);
+let stayEdited=false;
+let last=null;
+let simulation='none';
+let today=new Date();
+
+function fmtDate(iso){try{return new Intl.DateTimeFormat('fr-FR',{dateStyle:'long'}).format(new Date(iso));}catch(e){return String(iso||'');}}
+const eurFmt=new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:0});
+function euro(n){return (typeof n==='number'&&isFinite(n))?eurFmt.format(n):'—';}
+function pct(n,d){return (typeof n==='number'&&isFinite(n))?(n*100).toFixed(d||0).replace('.',',')+' %':'—';}
+function num(n,d){return (typeof n==='number'&&isFinite(n))?n.toLocaleString('fr-FR',{maximumFractionDigits:d||0}):'—';}
+function signedPct(x){const v=Math.round(x*10)/10;return (v>0?'+':'')+String(v).replace('.',',')+' %';}
+function signedPts(x){const v=Math.round(x*10)/10;return (v>0?'+':'')+String(v).replace('.',',')+' pt'+(Math.abs(v)>1?'s':'');}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+/* ---------- Chargement des données : en ligne → cache local → secours intégré ---------- */
+async function fetchJson(url,ms){
+if(!url||url.indexOf('%%')===0||url==='')throw new Error('adresse non configurée');
+const ctl=typeof AbortController!=='undefined'?new AbortController():null;
+const t=setTimeout(()=>{if(ctl)ctl.abort();},ms||4000);
+try{const r=await fetch(url,{signal:ctl?ctl.signal:undefined,cache:'no-cache'});if(!r.ok)throw new Error('HTTP '+r.status);return await r.json();}
+finally{clearTimeout(t);}
+}
+function validMarket(m){return !!(m&&m.schemaVersion===1&&m.markets&&typeof m.markets==='object');}
+function validBundle(b){return !!(b&&b.schemaVersion===1&&b.config&&b.config.schemaVersion===1&&b.communes&&b.sources);}
+function readCache(){try{const s=localStorage.getItem(CACHE_KEY);if(!s)return null;const c=JSON.parse(s);return validMarket(c.market)?c:null;}catch(e){return null;}}
+function writeCache(market,cfg){try{localStorage.setItem(CACHE_KEY,JSON.stringify({savedAt:new Date().toISOString(),market:market,bundle:cfg||null}));}catch(e){}}
+function clone(x){return JSON.parse(JSON.stringify(x));}
+
+function applySimulation(m){
+if(!m)return m;
+const c=clone(m);
+if(simulation==='stale'){for(const k in c.markets){c.markets[k].period={start:'2021-01-01',end:'2021-12-31'};c.markets[k].publishedAt='2022-04-01';}}
+if(simulation==='outlier'&&c.markets['epci:rennes-metropole']){c.markets['epci:rennes-metropole'].adr=900;}
+if(simulation==='noepci'){delete c.markets['epci:vitre-communaute'];}
+if(simulation==='noseason'&&c.seasonality){c.seasonality={};}
+return c;
+}
+
+async function loadData(){
+const notes=[];
+let remote=null,remoteCfg=null;
+if(simulation==='offline'){notes.push('Données en ligne indisponibles (simulation : connexion impossible).');}
+else if(simulation==='corrupt'){notes.push('Fichier en ligne illisible (simulation : contenu corrompu).');}
+else{
+try{const m=await fetchJson(REMOTE.market,4000);if(validMarket(m))remote=m;else notes.push('Fichier de marché en ligne invalide.');}
+catch(e){notes.push('Données en ligne indisponibles ('+e.message+').');}
+try{const b=await fetchJson(REMOTE.config,4000);if(validBundle(b))remoteCfg=b;}catch(e){}
+}
+if(remote)writeCache(remote,remoteCfg);
+const cache=readCache();
+bundle=remoteCfg||(cache&&validBundle(cache.bundle)?cache.bundle:null)||{config:SNAPSHOT.config,communes:SNAPSHOT.communes,sources:SNAPSHOT.sources};
+const sim=['stale','outlier','noepci','noseason'].includes(simulation);
+const first=remote?{origin:'remote',data:sim?applySimulation(remote):remote}:{origin:'remote',data:null,note:notes.join(' ')};
+const list=[first];
+if(!remote&&cache)list.push({origin:'cache',data:sim?applySimulation(cache.market):cache.market,savedAt:fmtDate(cache.savedAt)});
+list.push({origin:'snapshot',data:sim?applySimulation(SNAPSHOT.market):SNAPSHOT.market,savedAt:fmtDate(SNAPSHOT.builtAt)});
+marketSources=list;
+}
+
+/* ---------- Construction du formulaire depuis la configuration ---------- */
+function buildForm(){
+const cfg=bundle.config;
+const keep={city:$('city').value,type:$('type').value,loc:$('loc').value};
+$('city').innerHTML=bundle.communes.communes.filter(c=>c.active!==false).map(c=>'<option value="'+esc(c.id)+'">'+esc(c.label)+'</option>').join('');
+$('type').innerHTML=Object.entries(cfg.types).map(([id,t])=>'<option value="'+esc(id)+'">'+esc(t.label)+'</option>').join('');
+$('loc').innerHTML=Object.entries(cfg.location.levels).map(([id,l])=>'<option value="'+esc(id)+'">'+esc(l.label)+'</option>').join('');
+const checked=new Set(Array.from(root.querySelectorAll('#eq input:checked')).map(x=>x.value));
+let html='';
+for(const [gid,g] of Object.entries(cfg.amenities.groups)){
+html+='<div class="group-title">'+esc(g.label)+' <span>'+esc(g.hint)+'</span></div>';
+for(const a of cfg.amenities.items.filter(a=>a.group===gid)){
+html+='<label class="check"><input type="checkbox" value="'+esc(a.id)+'"'+(checked.has(a.id)?' checked':'')+'><span>'+esc(a.label)+'</span></label>';
+}
+}
+$('eq').innerHTML=html;
+$('monthChips').innerHTML=cfg.months.shortLabels.map((l,i)=>'<button type="button" class="chip" data-m="'+i+'" aria-pressed="'+(selectedMonths.has(i)?'true':'false')+'" aria-label="'+esc(cfg.months.labels[i])+'">'+esc(l)+'</button>').join('');
+$('vatLabel').textContent=cfg.fees.vat.label;
+$('vatHint').textContent=cfg.fees.vat.note;
+if(keep.city)$('city').value=keep.city;
+if(keep.type)$('type').value=keep.type;
+if(keep.loc)$('loc').value=keep.loc;
+root.querySelectorAll('#eq input').forEach(x=>x.addEventListener('change',calculate));
+root.querySelectorAll('#monthChips .chip').forEach(b=>b.addEventListener('click',()=>{
+const m=+b.dataset.m;if(selectedMonths.has(m))selectedMonths.delete(m);else selectedMonths.add(m);
+b.setAttribute('aria-pressed',selectedMonths.has(m)?'true':'false');calculate();}));
+}
+
+function setDefaults(){
+const d=bundle.config.defaults;
+$('city').value=d.commune;$('type').value=d.type;$('bed').value=d.bedrooms;$('bath').value=d.bathrooms;$('area').value=d.area;$('guest').value=d.guests;
+$('months').value=bundle.config.months.defaultCount;$('loc').value=d.location;$('commission').value=d.commissionPct;$('cleaningFee').value=d.cleaningFee;
+$('stayLength').value='';stayEdited=false;$('vat').checked=!!bundle.config.fees.vat.enabledByDefault;
+root.querySelectorAll('#eq input').forEach(x=>{x.checked=false;});
+selectedMonths=new Set([0,1,2,3,4,5,8,9,10,11]);
+root.querySelectorAll('#monthChips .chip').forEach(b=>b.setAttribute('aria-pressed',selectedMonths.has(+b.dataset.m)?'true':'false'));
+setMonthsMode('count');
+}
+
+function setMonthsMode(mode){
+monthsMode=mode;
+$('monthPicker').hidden=mode!=='select';
+$('months').disabled=mode==='select';
+$('monthsModeToggle').textContent=mode==='select'?'Utiliser un nombre de mois':'Choisir les mois';
+$('monthsModeToggle').setAttribute('aria-expanded',mode==='select'?'true':'false');
+}
+
+function readRaw(){
+return{
+commune:$('city').value,type:$('type').value,bedrooms:$('bed').value,bathrooms:$('bath').value,area:$('area').value,guests:$('guest').value,
+location:$('loc').value,amenities:Array.from(root.querySelectorAll('#eq input:checked')).map(x=>x.value),
+monthsMode:monthsMode,monthsCount:$('months').value,monthsSelected:Array.from(selectedMonths),
+commissionPct:$('commission').value,cleaningFee:$('cleaningFee').value,avgStay:stayEdited?$('stayLength').value:'',vat:$('vat').checked
+};
+}
+
+/* ---------- Affichage ---------- */
+const FIELD_INPUT={commune:'city',bedrooms:'bed',bathrooms:'bath',area:'area',guests:'guest',monthsCount:'months',commissionPct:'commission',cleaningFee:'cleaningFee',avgStay:'stayLength'};
+function showErrors(errors){
+root.querySelectorAll('.field-error').forEach(e=>{e.hidden=true;e.textContent='';});
+root.querySelectorAll('[aria-invalid]').forEach(e=>e.removeAttribute('aria-invalid'));
+for(const [k,msg] of Object.entries(errors||{})){
+if(k==='_global')continue;
+const el=$('err-'+k);if(el){el.textContent=msg;el.hidden=false;}
+const inp=FIELD_INPUT[k]&&$(FIELD_INPUT[k]);if(inp)inp.setAttribute('aria-invalid','true');
+}
+}
+
+function freshClass(l){return l==='green'?'green':l==='orange'?'orange':'red';}
+function confClass(l){return l==='elevee'||l==='HIGH'?'green':l==='moyenne'||l==='MEDIUM'?'orange':'red';}
+const CONF_LABEL={HIGH:'Élevée',MEDIUM:'Moyenne',LOW:'Faible'};
+/* Affichage sans fausse précision : revenus à la centaine, frais à la dizaine. Calculs internes inchangés. */
+function e100(n){return (typeof n==='number'&&isFinite(n))?eurFmt.format(Math.round(n/100)*100):'—';}
+function e10(n){return (typeof n==='number'&&isFinite(n))?eurFmt.format(Math.round(n/10)*10):'—';}
+function summaryOf(r){
+if(r.summary)return r.summary;
+const s=r.scenarios.realiste;
+return {central:Math.round(s.nightsRevenue/100)*100,low:Math.round(s.nightsRevenue/100)*100,high:Math.round(s.nightsRevenue/100)*100,uncertaintyPct:0,confidence:'MEDIUM',confidenceReasons:r.data.confidence.reasons,owner:{central:Math.round(s.ownerIncome/100)*100,low:Math.round(s.ownerIncome/100)*100,high:Math.round(s.ownerIncome/100)*100},notes:{range:'',scenarios:''}};
+}
+
+function render(r){
+const cfg=bundle.config;
+const s=r.scenarios.realiste;
+const d=r.data;
+$('mZone').textContent=d.zone+(d.geoRole==='epci'?' (intercommunalité de la commune)':d.geoRole==='epci_voisin'?' (marché voisin)':d.geoRole==='departement'?' (département)':'');
+$('mSource').textContent=d.source.attribution;
+$('mPeriod').textContent=d.periodText;
+$('mPublished').textContent=d.publishedText;
+$('mMarket').textContent=euro(d.market.adr)+' / nuit · occupation '+pct(d.market.occupancy)+' · séjour moyen '+num(d.market.avgStay,1)+' nuits';
+$('freshPill').className='pill '+freshClass(d.freshness.level);
+$('freshPill').textContent=(d.freshness.level==='green'?'🟢 ':d.freshness.level==='orange'?'🟠 ':'🔴 ')+d.freshness.label;
+$('freshPill').title=d.freshness.text+' — environ '+d.freshness.months+' mois depuis la fin de la période.';
+const S=summaryOf(r);
+/* Millésime, âge et actualisation : lus dans les données utilisées (aucun calcul ici). */
+const dataYear=d.period&&d.period.end?d.period.end.slice(0,4):'inconnue';
+$('mYear').textContent=dataYear;
+$('mAge').textContent='Âge : '+d.freshness.months+' mois · Confiance : '+CONF_LABEL[S.confidence].toUpperCase();
+$('mUpdated').textContent=d.marketGeneratedAt?fmtDate(d.marketGeneratedAt):'non précisée';
+const usedMarket=(marketSources.find(x=>x.origin===d.origin)||{}).data||{};
+const sm=usedMarket.seasonality&&usedMarket.seasonality[d.seasonality.id]&&usedMarket.seasonality[d.seasonality.id].meta;
+$('mSeason').textContent=sm?('occupation '+sm.occupancy.periodEnd.slice(0,4)+' · prix '+sm.adr.periodEnd.slice(0,4)+' (séries départementales utilisées comme profil, non locales)'):(d.seasonality.fallback?'répartition de repli':d.seasonality.label);
+const sb=$('staleBanner');
+if(d.freshness.level!=='green'){sb.hidden=false;sb.className='banner'+(d.freshness.level==='red'?' bad':'');sb.textContent='⚠️ Les données de marché disponibles sont anciennes (année '+dataYear+', '+d.freshness.months+' mois).';}
+else sb.hidden=true;
+$('confPill').className='pill '+confClass(S.confidence);
+$('confPill').textContent='Confiance : '+CONF_LABEL[S.confidence];
+$('confPill').title=S.confidenceReasons.join(' · ');
+const fb=$('fallbackBanner');
+if(d.fallbackMessages.length){fb.hidden=false;fb.className='banner'+(d.origin==='snapshot'||d.geoRole==='departement'?' bad':'');fb.innerHTML='<b>Données de repli utilisées</b><ul>'+d.fallbackMessages.map(m=>'<li>'+esc(m)+'</li>').join('')+'</ul>';}
+else fb.hidden=true;
+
+$('central').textContent='≈ '+euro(S.central);
+$('uncRange').textContent='Fourchette d’incertitude : '+euro(S.low)+' à '+euro(S.high)+(S.uncertaintyPct?' (±'+S.uncertaintyPct+' %)':'');
+$('range').textContent='Occupation estimée ≈ '+pct(s.occupancy)+' · '+num(s.monthsCount)+' mois disponibles';
+$('confPill2').className='pill '+confClass(S.confidence);
+$('confPill2').textContent=CONF_LABEL[S.confidence];
+$('confReasons').innerHTML=S.confidenceReasons.map(x=>'<li>'+esc(x)+'</li>').join('');
+$('rangeNote').textContent=S.notes.range;
+$('adr').textContent='≈ '+euro(s.adr);
+$('annual').textContent=euro(S.central);
+$('monthly').textContent=e100(s.nightsRevenueMonthlyAverage);
+$('airbnbLabel').textContent=cfg.fees.airbnbHostFeeLabel.replace('Frais de service Airbnb','Frais Airbnb')+' / an';
+$('airbnb').textContent=e10(s.airbnb.onNights);
+$('netAfterAirbnb').textContent=e100(s.nightsNetOfHostFee);
+$('vatMetric').hidden=!s.airbnb.vatEnabled;
+$('vatAmount').textContent=e10(s.airbnb.vatOnNightsFee);
+$('concierge').textContent=e10(s.commission.amount);
+$('cleaningCollected').textContent=e10(s.cleaning.collected);
+$('owner').textContent=euro(S.owner.central);
+$('ownerMonthly').textContent='fourchette '+euro(S.owner.low)+' à '+euro(S.owner.high)+' · soit ≈ '+e100(s.ownerIncomeMonthlyAverage)+' / mois disponible';
+$('occ').textContent=pct(s.occupancy);
+$('bar').style.width=Math.round(Math.min(1,s.occupancy)*100)+'%';
+$('stayHint').textContent=r.property.avgStaySource==='marché'?'Valeur du marché ('+d.zone+') : '+num(d.market.avgStay,1)+' nuits. Saisissez une valeur pour la remplacer.':'Valeur saisie (marché : '+num(d.market.avgStay,1)+' nuits).';
+if(!stayEdited)$('stayLength').placeholder=num(d.market.avgStay,1);
+$('monthHint').textContent=selectedMonths.size+' mois sélectionné'+(selectedMonths.size>1?'s':'')+' · '+num(s.nightsAvailable)+' nuits disponibles.';
+
+let sc='<div class="section" style="font-size:15px;margin:14px 0 4px">Scénarios</div>';
+for(const id of ['prudent','realiste','performant']){
+const x=r.scenarios[id];
+sc+='<div class="scenario'+(id==='realiste'?' is-main':'')+'"><b>'+esc(x.label)+'</b><span>'+pct(x.occupancy)+' · '+euro(x.adr)+'/nuit</span><strong>'+e100(x.nightsRevenue)+'</strong><p>'+esc(x.description)+'</p></div>';
+}
+if(S.notes.scenarios)sc+='<p class="conf-note" style="margin-top:4px">'+esc(S.notes.scenarios)+'</p>';
+$('scenarios').innerHTML=sc;
+
+const w=r.warnings.filter(x=>x.field!=='_scenarios');
+$('warnings').hidden=w.length===0;
+$('warnings').innerHTML=w.map(x=>'<li>'+esc(x.message)+'</li>').join('');
+
+$('methodBody').innerHTML=methodHtml(r);
+$('note').textContent=cfg.texts.disclaimer;
+$('attribution').textContent=cfg.texts.attribution+' '+cfg.texts.attributionSuffix;
+renderPresent(r);
+}
+
+function methodHtml(r){
+const e=r.explanation,s=r.scenarios.realiste;
+const val=l=>l.unit==='EUR'?euro(l.value):l.unit==='ratio'?pct(l.value):l.unit==='nights'?num(l.value,1)+' nuits':esc(l.value);
+let h='<p>'+esc(bundle.config.texts.methodologyIntro)+'</p>';
+h+='<div><h4>'+esc(e.market.title)+'<span class="tag">Observé</span></h4><p>'+esc(e.market.intro)+'</p><table class="mtable">'+e.market.lines.map(l=>'<tr><td>'+esc(l.label)+'</td><td>'+val(l)+'</td></tr>').join('')+'</table>';
+if(e.market.definitionNotes.length)h+='<p style="margin-top:6px">'+e.market.definitionNotes.map(esc).join(' ')+'</p>';
+h+='</div>';
+h+='<div><h4>'+esc(e.adjustments.title)+'<span class="tag hyp">Hypothèses</span></h4><p>'+esc(e.adjustments.intro)+'</p><p>'+esc(e.adjustments.reference)+'</p><table class="mtable">';
+for(const a of e.adjustments.items){
+const parts=[];
+if(Math.abs(a.adrEffectPct)>1e-9)parts.push('prix '+signedPct(a.adrEffectPct));
+if(Math.abs(a.occEffectPts)>1e-9)parts.push('occupation '+signedPts(a.occEffectPts));
+h+='<tr><td>'+esc(a.label)+(a.detail?'<br><span style="color:var(--muted)">'+esc(a.detail)+'</span>':'')+'</td><td>'+(parts.join(' · ')||'sans effet')+'</td></tr>';
+}
+h+='<tr><td>Saisonnalité : '+esc(e.adjustments.seasonality.label)+'<br><span style="color:var(--muted)">'+esc(e.adjustments.seasonality.basis)+'</span></td><td>mois par mois</td></tr>';
+h+='</table>';
+h+=e.adjustments.guards.map(g=>'<p>'+esc(g)+'</p>').join('');
+h+='<p>'+esc(e.adjustments.months)+'</p><p>'+esc(e.adjustments.scenarios)+'</p><p>'+esc(e.adjustments.calibration)+'</p></div>';
+h+='<div><h4>'+esc(e.result.title)+'<span class="tag">Estimation</span></h4><p>'+esc(e.result.intro)+'</p><table class="mtable">'+e.result.lines.map(l=>'<tr><td>'+esc(l.label)+'</td><td>'+val(l)+'</td></tr>').join('');
+h+='<tr><td>Nuits disponibles / louées</td><td>'+num(s.nightsAvailable)+' / '+num(s.nightsBooked)+'</td></tr>';
+h+='<tr><td>Ménage (séparé du CA des nuits)</td><td>'+num(s.cleaning.stays)+' séjours × '+euro(s.cleaning.feePerStay)+' = '+euro(s.cleaning.collected)+'</td></tr>';
+h+='<tr><td>Frais Airbnb sur le ménage (à la charge d’Émeraude)</td><td>'+euro(s.cleaning.hostFee)+'</td></tr>';
+h+='<tr><td>Commission : '+pct(s.commission.rate,1)+' × '+esc(bundle.config.commission.baseLabel.toLowerCase())+'</td><td>'+euro(s.commission.amount)+'</td></tr>';
+h+='</table></div>';
+return h;
+}
+
+function presentBoxes(r){
+const s=r.scenarios.realiste,S=summaryOf(r);
+const b=[['CA des nuits — estimation centrale','≈ '+euro(S.central)],['Fourchette d’incertitude',euro(S.low)+' – '+euro(S.high)],['Niveau de confiance',CONF_LABEL[S.confidence]+(S.uncertaintyPct?' (±'+S.uncertaintyPct+' %)':'')],['Prix moyen estimé / nuit','≈ '+euro(s.adr)],['Occupation estimée','≈ '+pct(s.occupancy)],['CA moyen / mois disponible',e100(s.nightsRevenueMonthlyAverage)],['Frais Airbnb (15,5 % HT)',e10(s.airbnb.onNights)],['Revenu net après Airbnb',e100(s.nightsNetOfHostFee)]];
+if(s.airbnb.vatEnabled)b.push(['TVA sur frais Airbnb',e10(s.airbnb.vatOnNightsFee)]);
+b.push(['Commission Émeraude',e10(s.commission.amount)],['Ménages collectés',e10(s.cleaning.collected)],['Revenu propriétaire*','≈ '+euro(S.owner.central)+' ('+euro(S.owner.low)+' – '+euro(S.owner.high)+')']);
+return b;
+}
+
+function propertySummary(r){
+const p=r.property;
+const months=p.monthsMode==='select'?p.monthsSelected.map(m=>bundle.config.months.labels[m].toLowerCase()).join(', '):p.monthsCount+' mois/an';
+return p.type+' · '+num(p.area,1)+' m² · '+p.bedrooms+' chambre'+(p.bedrooms>1?'s':'')+' · '+p.guests+' voyageur'+(p.guests>1?'s':'')+' · '+p.location+' · '+months+' · '+p.commune;
+}
+
+function renderPresent(r){
+const d=r.data;
+$('pSub').textContent=propertySummary(r);
+$('pDate').textContent=new Intl.DateTimeFormat('fr-FR',{dateStyle:'long'}).format(new Date());
+$('pGrid').innerHTML=presentBoxes(r).map(([k,v])=>'<div class="pbox"><span>'+esc(k)+'</span><strong>'+v+'</strong></div>').join('');
+let t='<thead><tr><th>Scénario</th><th class="num">Occupation</th><th class="num">Prix / nuit</th><th class="num">CA des nuits</th><th class="num">Revenu propriétaire</th></tr></thead><tbody>';
+for(const id of ['prudent','realiste','performant']){const x=r.scenarios[id];t+='<tr><td><b>'+esc(x.label)+'</b><br><span style="color:var(--muted);font-size:11px">'+esc(x.description)+'</span></td><td class="num">'+pct(x.occupancy)+'</td><td class="num">'+euro(x.adr)+'</td><td class="num">'+e100(x.nightsRevenue)+'</td><td class="num">'+e100(x.ownerIncome)+'</td></tr>';}
+const SP=summaryOf(r);
+$('pScenarios').innerHTML=t+'</tbody>';
+const e=r.explanation;
+$('pMethod').innerHTML='<p><b>Niveau de confiance : '+esc(CONF_LABEL[SP.confidence])+'</b> — '+SP.confidenceReasons.map(esc).join(' ; ')+'. '+esc(SP.notes.range)+' '+esc(SP.notes.scenarios)+'</p>'
++'<p><b>Données de marché (observées)</b> — '+esc(d.zone)+' : prix moyen '+euro(d.market.adr)+' / nuit, occupation '+pct(d.market.occupancy)+', séjour moyen '+num(d.market.avgStay,1)+' nuits ; '+esc(d.periodText)+', publiées en '+esc(d.publishedText)+' (source : '+esc(d.source.attribution)+'). Fraîcheur : '+esc(d.freshness.label.toLowerCase())+' (âge '+d.freshness.months+' mois)'+(d.marketGeneratedAt?' · dernière actualisation le '+esc(fmtDate(d.marketGeneratedAt)):'')+'.</p>'
++'<p><b>Ajustements du modèle Émeraude (hypothèses)</b> — '+esc(e.adjustments.reference)+' Ajustements appliqués : '+e.adjustments.items.filter(a=>Math.abs(a.adrEffectPct)>1e-9||Math.abs(a.occEffectPts)>1e-9).map(a=>esc(a.label)).join(', ')+'. Saisonnalité : '+esc(e.adjustments.seasonality.label.toLowerCase())+'.</p>'
++'<p><b>Résultat estimé</b> — '+esc(bundle.config.texts.methodologyResult)+'</p>'
++(e.market.definitionNotes.length?'<p>'+e.market.definitionNotes.map(esc).join(' ')+'</p>':'');
+$('pFoot').textContent=bundle.config.texts.disclaimer+' *Revenu propriétaire avant fiscalité et charges. Les frais de ménage sont collectés séparément pour financer les prestations de ménage et ne sont pas intégrés au revenu propriétaire. '+bundle.config.texts.attribution+' '+bundle.config.texts.attributionSuffix;
+}
+
+function renderLegacy(raw){
+if(!IS_PREVIEW||!window.EmeraudeLegacy)return;
+const box=$('legacyCmp');if(!box)return;
+try{
+const cfg=bundle.config;
+const commune=bundle.communes.communes.find(c=>c.id===raw.commune);
+const L=window.EmeraudeLegacy.legacyCalculate({city:commune.label,type:cfg.types[raw.type].label,bed:raw.bedrooms,bath:raw.bathrooms,area:raw.area,guest:raw.guests,months:raw.monthsMode==='select'?raw.monthsSelected.length:raw.monthsCount,loc:cfg.location.levels[raw.location].label,commission:raw.commissionPct,cleaningFee:raw.cleaningFee,stayLength:raw.avgStay||3,eq:raw.amenities.map(id=>cfg.amenities.items.find(a=>a.id===id).legacyIndex)});
+const s=last&&last.ok?last.scenarios.realiste:null;
+box.innerHTML='<b style="text-transform:none;letter-spacing:0;color:var(--ink)">Ancien calculateur (même saisie)</b> : '+euro(L.adr)+'/nuit · occupation '+pct(L.occ)+' · CA '+euro(L.annual)+' · propriétaire '+euro(L.owner)+' · commission '+euro(L.concierge)+(s?' — <b style="text-transform:none;letter-spacing:0;color:var(--ink)">nouveau</b> : '+euro(s.adr)+'/nuit · '+pct(s.occupancy)+' · CA '+euro(s.nightsRevenue)+' ('+signedPct((s.nightsRevenue/L.annual-1)*100)+')':'');
+}catch(e){box.textContent='Comparaison indisponible pour cette saisie.';}
+}
+
+function calculate(){
+const raw=readRaw();
+let r;
+try{r=Engine.estimate(raw,{config:bundle.config,communes:bundle.communes,sources:bundle.sources,marketSources:marketSources,today:today});}
+catch(e){r={ok:false,errors:{_global:'Le calcul n’a pas pu aboutir. Vérifiez les valeurs saisies.'}};}
+showErrors(r.errors);
+const ge=$('globalError');
+if(!r.ok){
+last=null;
+const hasField=Object.keys(r.errors||{}).some(k=>k!=='_global');
+ge.hidden=false;
+ge.textContent=r.errors&&r.errors._global?r.errors._global:(hasField?'Corrigez les champs signalés pour afficher l’estimation.':'Estimation indisponible.');
+$('resultBody').hidden=true;
+renderLegacy(raw);
+return;
+}
+ge.hidden=true;$('resultBody').hidden=false;
+last=r;
+render(r);
+renderLegacy(raw);
+}
+
+/* ---------- E-mail ---------- */
+function buildEmail(r){
+const s=r.scenarios.realiste,d=r.data,p=r.property,cfg=bundle.config;
+const subject='Votre estimation locative — Émeraude Conciergerie';
+const lines=['Bonjour','','Suite à notre échange, voici l’estimation indicative réalisée ensemble pour votre logement.','',
+'LOGEMENT','• Commune : '+p.commune,'• Type : '+p.type,'• Surface : '+num(p.area,1)+' m²','• Chambres : '+p.bedrooms,'• Salle(s) de bain : '+p.bathrooms,'• Capacité : '+p.guests+' voyageurs','• Emplacement : '+p.location,
+'• Disponibilité : '+(p.monthsMode==='select'?p.monthsSelected.map(m=>cfg.months.labels[m].toLowerCase()).join(', '):p.monthsCount+' mois/an'),'',
+'1. DONNÉES DE MARCHÉ (observées)','• Zone : '+d.zone,'• Prix moyen par nuit sur le marché : '+euro(d.market.adr),'• Taux d’occupation du marché : '+pct(d.market.occupancy),'• Période : '+d.periodText+' (publiées en '+d.publishedText+')','• Âge des données : '+d.freshness.months+' mois'+(d.marketGeneratedAt?' · dernière actualisation le '+fmtDate(d.marketGeneratedAt):''),'• Source : '+d.source.attribution,'',
+'2. AJUSTEMENTS DU MODÈLE ÉMERAUDE (hypothèses)',
+...r.explanation.adjustments.items.filter(a=>Math.abs(a.adrEffectPct)>1e-9||Math.abs(a.occEffectPts)>1e-9).map(a=>'• '+a.label+' : '+[Math.abs(a.adrEffectPct)>1e-9?'prix '+signedPct(a.adrEffectPct):'',Math.abs(a.occEffectPts)>1e-9?'occupation '+signedPts(a.occEffectPts):''].filter(Boolean).join(', ')),
+'• Saisonnalité : '+r.explanation.adjustments.seasonality.label.toLowerCase()+' (mois par mois)','',
+'3. RÉSULTAT ESTIMÉ (scénario réaliste)','• CA des nuits — estimation centrale : environ '+euro(summaryOf(r).central),'• Fourchette d’incertitude : '+euro(summaryOf(r).low)+' à '+euro(summaryOf(r).high)+(summaryOf(r).uncertaintyPct?' (±'+summaryOf(r).uncertaintyPct+' %)':''),
+'• Niveau de confiance : '+CONF_LABEL[summaryOf(r).confidence]+' — '+summaryOf(r).confidenceReasons.join(' ; '),
+'• Prix moyen estimé par nuit : environ '+euro(s.adr),'• Taux d’occupation estimé : environ '+pct(s.occupancy),'• CA moyen par mois disponible : environ '+e100(s.nightsRevenueMonthlyAverage),
+'• Frais Airbnb (15,5 % HT) : environ '+e10(s.airbnb.onNights)];
+if(s.airbnb.vatEnabled)lines.push('• TVA sur frais Airbnb : environ '+e10(s.airbnb.vatOnNightsFee));
+lines.push('• Revenu net après Airbnb : environ '+e100(s.nightsNetOfHostFee),'• Commission Émeraude ('+pct(s.commission.rate,1)+') : environ '+e10(s.commission.amount),'• Revenu propriétaire après commission : environ '+euro(summaryOf(r).owner.central)+' (fourchette '+euro(summaryOf(r).owner.low)+' à '+euro(summaryOf(r).owner.high)+')',
+'• Frais de ménage : '+euro(s.cleaning.feePerStay)+' par séjour, collectés séparément (environ '+e10(s.cleaning.collected)+' sur la période)','',
+summaryOf(r).notes.range,'',
+'SCÉNARIOS DE PERFORMANCE',...['prudent','realiste','performant'].map(id=>{const x=r.scenarios[id];return '• '+x.label+' : '+pct(x.occupancy)+' · '+euro(x.adr)+'/nuit — CA des nuits environ '+e100(x.nightsRevenue);}),summaryOf(r).notes.scenarios,'',
+cfg.texts.disclaimer,'',cfg.texts.attribution+' '+cfg.texts.attributionSuffix,'','Bien cordialement,','Émeraude Conciergerie');
+return{subject:subject,body:lines.join('\n')};
+}
+function openEmailModal(){
+if(!last){return;}
+$('mailStatus').textContent='';
+if(IS_PREVIEW){
+const m=buildEmail(last);
+$('emailPreview').value='Objet : '+m.subject+'\n\n'+m.body;
+$('emailPreviewWrap').hidden=false;$('copyEmail').hidden=false;
+$('emailIntro').textContent='Aperçu du contenu préparé. Dans l’outil Framer, « Préparer l’e-mail » ouvre votre messagerie avec ce texte.';
+}
+$('emailModal').classList.add('open');
+setTimeout(()=>$('ownerEmail').focus(),50);
+}
+function closeEmailModal(){$('emailModal').classList.remove('open');}
+function prepareOwnerEmail(){
+const email=$('ownerEmail').value.trim();
+if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){$('mailStatus').textContent='Merci d’indiquer une adresse e-mail valide.';return;}
+if(!last){$('mailStatus').textContent='Aucune estimation à envoyer.';return;}
+const m=buildEmail(last);
+if(IS_PREVIEW){$('mailStatus').textContent='Préversion : aucun e-mail n’est ouvert ni envoyé. Le texte ci-dessus est celui qui serait préparé pour '+email+'.';return;}
+const gmail='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(email)+'&su='+encodeURIComponent(m.subject)+'&body='+encodeURIComponent(m.body);
+const mailto='mailto:'+encodeURIComponent(email)+'?subject='+encodeURIComponent(m.subject)+'&body='+encodeURIComponent(m.body);
+const w=window.open(gmail,'_blank','noopener,noreferrer');
+if(!w){window.location.href=mailto;}
+$('mailStatus').textContent='La fenêtre de rédaction de votre e-mail a été préparée. Vérifiez le contenu puis appuyez sur « Envoyer » dans votre messagerie.';
+}
+async function copyEmail(){
+const ta=$('emailPreview');
+try{await navigator.clipboard.writeText(ta.value);$('mailStatus').textContent='Texte copié.';}
+catch(e){ta.focus();ta.select();$('mailStatus').textContent='Copie automatique refusée : le texte est sélectionné, utilisez Ctrl+C.';}
+}
+
+/* ---------- Événements ---------- */
+['city','type','bed','bath','area','guest','months','loc','commission','cleaningFee','vat'].forEach(id=>{const el=$(id);el.addEventListener('input',calculate);el.addEventListener('change',calculate);});
+$('stayLength').addEventListener('input',()=>{stayEdited=$('stayLength').value.trim()!=='';calculate();});
+$('monthsModeToggle').addEventListener('click',()=>{setMonthsMode(monthsMode==='select'?'count':'select');calculate();});
+$('reset').addEventListener('click',()=>{setDefaults();calculate();});
+$('newEstimate').addEventListener('click',()=>{setDefaults();calculate();try{window.scrollTo({top:0,behavior:'smooth'});}catch(e){}});
+$('sendOwner').addEventListener('click',openEmailModal);
+$('sendOwnerTop').addEventListener('click',openEmailModal);
+$('cancelEmail').addEventListener('click',closeEmailModal);
+$('copyEmail').addEventListener('click',copyEmail);
+$('emailModal').addEventListener('click',e=>{if(e.target===$('emailModal'))closeEmailModal();});
+$('prepareEmail').addEventListener('click',prepareOwnerEmail);
+$('ownerEmail').addEventListener('keydown',e=>{if(e.key==='Enter')prepareOwnerEmail();if(e.key==='Escape')closeEmailModal();});
+$('print').addEventListener('click',()=>{if(!last)return;if(IS_PREVIEW){root.classList.add('show-present');try{window.scrollTo({top:0});}catch(e){}}else window.print();});
+$('closePresent').addEventListener('click',()=>root.classList.remove('show-present'));
+
+if(IS_PREVIEW){
+const sim=$('simSelect'),dt=$('dateInput');
+if(sim)sim.addEventListener('change',async()=>{simulation=sim.value;await loadData();calculate();});
+if(dt)dt.addEventListener('change',()=>{const v=dt.value;today=v?new Date(v+'T12:00:00'):new Date();calculate();});
+}
+
+/* ---------- Démarrage ---------- */
+buildForm();setDefaults();calculate();
+loadData().then(()=>{buildForm();calculate();});
+})();
+</script>

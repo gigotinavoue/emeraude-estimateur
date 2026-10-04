@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "verifiedWith": "geo.api.gouv.fr (codes INSEE et EPCI vérifiés le 2026-10-04)",
+  "departement": { "id": "departement:35", "label": "Ille-et-Vilaine" },
+  "epci": {
+    "rennes-metropole": { "label": "Rennes Métropole", "siren": "243500139", "fallback": ["departement:35"] },
+    "saint-malo-agglomeration": { "label": "Saint-Malo Agglomération", "siren": "243500782", "fallback": ["departement:35"] },
+    "vitre-communaute": { "label": "Vitré Communauté", "siren": "200039022", "fallback": ["epci:rennes-metropole", "departement:35"] },
+    "liffre-cormier": { "label": "Liffré-Cormier Communauté", "siren": "243500774", "fallback": ["epci:rennes-metropole", "departement:35"] }
+  },
+  "communes": [
+    { "id": "rennes", "label": "Rennes", "insee": "35238", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "cesson-sevigne", "label": "Cesson-Sévigné", "insee": "35051", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "saint-gregoire", "label": "Saint-Grégoire", "insee": "35278", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "chantepie", "label": "Chantepie", "insee": "35055", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "bruz", "label": "Bruz", "insee": "35047", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "pace", "label": "Pacé", "insee": "35210", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "betton", "label": "Betton", "insee": "35024", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "saint-jacques-de-la-lande", "label": "Saint-Jacques-de-la-Lande", "insee": "35281", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "vezin-le-coquet", "label": "Vezin-le-Coquet", "insee": "35353", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "chartres-de-bretagne", "label": "Chartres-de-Bretagne", "insee": "35066", "epci": "rennes-metropole", "profile": "urbain", "active": true },
+    { "id": "chateaubourg", "label": "Châteaubourg", "insee": "35068", "epci": "vitre-communaute", "profile": "urbain", "active": true },
+    { "id": "liffre", "label": "Liffré", "insee": "35152", "epci": "liffre-cormier", "profile": "urbain", "active": true },
+    { "id": "vitre", "label": "Vitré", "insee": "35360", "epci": "vitre-communaute", "profile": "urbain", "active": true },
+    { "id": "saint-aubin-du-cormier", "label": "Saint-Aubin-du-Cormier", "insee": "35253", "epci": "liffre-cormier", "profile": "urbain", "active": true },
+    { "id": "saint-malo", "label": "Saint-Malo", "insee": "35288", "epci": "saint-malo-agglomeration", "profile": "littoral", "active": true },
+    { "id": "val-d-ize", "label": "Val-d'Izé", "insee": "35347", "epci": "vitre-communaute", "profile": "urbain", "active": true }
+  ]
+}

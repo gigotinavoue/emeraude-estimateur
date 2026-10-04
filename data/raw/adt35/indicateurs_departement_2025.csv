@@ -1,0 +1,18 @@
+indicator,value,unit,geo_id,label,period_start,period_end,definition,page,comparable_with_2024_base,note
+nights_booked,1.337,million nights,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Nuits réservées (logements entiers ; Airbnb + VRBO + Booking via Lighthouse),15,oui,"Valeur arrondie publiée « 1,337 M »"
+guest_nights,4.278,million guest-nights,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Nuitées correspondant aux nuits réservées (logements entiers),15,non_verifie,"Pas d'équivalent dans le bilan 2024"
+occupancy_pct,42,percent,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Taux d'occupation (logements entiers),15,oui,"Identique au bilan 2024 (42 %) ; publication : -0,2 point vs 2024"
+occupancy_yoy_pts,-0.2,points,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Évolution du taux d'occupation vs 2024,15,oui,
+tjm_eur,137,EUR/night,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Tarif Journalier Moyen (TJM) des logements entiers,15,non,"Même libellé que le bilan 2024 (104 €) mais 2024 recalculé à ≈ 140,6 € (137 + 3,6) dans cette publication : série révisée ; non comparable à la base 2024"
+tjm_yoy_eur,-3.6,EUR,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Évolution du TJM vs 2024 (série révisée),15,non,
+revenue_eur,188239000,EUR,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Revenu annuel total des logements entiers,15,non_verifie,"Publié « 188,239 millions d'euros » ; +2,0 % vs 2024"
+revenue_yoy_pct,2.0,percent,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Évolution du revenu annuel vs 2024,15,non_verifie,
+listings_published,198235,listings,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Annonces publiées (définition du cumul non précisée par la source),15,non,"La page indique à la fois +6,5 % et +6,2 % vs 2024 : incohérence interne non résolue"
+avg_stay_days,3.2,days,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Durée moyenne de séjour,15,oui,"Bilan 2024 : 3,3"
+nights_yoy_pct,5.1,percent,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Évolution des nuits réservées vs 2024,15,oui,"Le bilan 2024 donnait 1 281 472 nuits : 1,337 M = +4,3 % ; l'écart avec +5,1 % vient d'une révision de 2024"
+offer_furnished_units,4378,units,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Meublés et gîtes (offre recensée),14,non_verifie,"Offre déclarée/recensée ≠ annonces actives sur plateformes"
+offer_beds,21684,beds,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Lits touristiques des meublés et gîtes,14,non_verifie,
+offer_classified_pct,61.5,percent,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Part des meublés et gîtes classés,14,non_verifie,
+capacity_share_saint_malo_agglo_pct,38.2,percent,epci:saint-malo-agglomeration,Saint-Malo Agglomération,2025-01-01,2025-12-31,Part de la capacité d'accueil en locatif du département,14,non_verifie,"Part d'offre (lits) ; pas un indicateur de prix ni d'occupation"
+capacity_share_rennes_metropole_pct,9.6,percent,epci:rennes-metropole,Rennes Métropole,2025-01-01,2025-12-31,Part de la capacité d'accueil en locatif du département,14,non_verifie,"Part d'offre (lits) ; pas un indicateur de prix ni d'occupation"
+locatif_share_of_market_nights_pct,43.5,percent,departement:35,Ille-et-Vilaine,2025-01-01,2025-12-31,Part des nuitées marchandes réalisées en locatif,28,non_verifie,

@@ -1,0 +1,29 @@
+{
+  "year": 2025,
+  "writtenAt": "2026-10-04T21:40:39.274Z",
+  "usage": "Contrôles automatiques (Eurostat)",
+  "eurostatRennes": {
+    "year": 2025,
+    "stays": 75660,
+    "nightsRented": 225633,
+    "avgStay": 2.98,
+    "nightsYoyPct": -6.3,
+    "source": "Eurostat (tour_ce_oarc, Rennes)",
+    "meta": {
+      "source": "eurostat_platforms",
+      "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_ce_oarc?cities=FR016C&c_resid=TOTAL",
+      "publicationDate": null,
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "retrievedAt": "2026-10-04T21:40:37.958Z",
+      "territory": "Rennes (Eurostat, greater city)",
+      "methodology": "Séjours et nuits louées via Airbnb, Booking, Expedia, Tripadvisor (toutes catégories d'hébergement de courte durée).",
+      "license": "Réutilisation autorisée, y compris commerciale, avec mention de la source (Décision 2011/833/UE)",
+      "dataClass": "OBSERVÉE",
+      "freshnessDays": 278,
+      "freshnessMonths": 9,
+      "status": "HIGH",
+      "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+    }
+  }
+}

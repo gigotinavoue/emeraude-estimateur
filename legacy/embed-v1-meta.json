@@ -1,0 +1,25 @@
+{
+  "exportedAt": "2026-10-04T16:07:48.456Z",
+  "page": "/estimateur",
+  "nodes": {
+    "desktop": {
+      "id": "U5WyRFY5X",
+      "media": {
+        "range": "(min-width: 1200px)",
+        "name": "Desktop"
+      },
+      "height": "502px"
+    },
+    "phone": {
+      "id": "YkfG26au8U5WyRFY5X",
+      "media": {
+        "range": "(max-width: 1199.98px)",
+        "name": "Phone"
+      },
+      "height": "502px"
+    }
+  },
+  "identicalHtml": true,
+  "length": 30996,
+  "sha256": "c88697b9d796b016fe2dceab057409a1fe5cf8c32854eee8a4957337c2fc01b0"
+}

@@ -1,0 +1,8 @@
+{"at":"2026-10-04T16:15:30.030Z","buildId":"local","markets":16,"profiles":["urbain","littoral"],"changes":[],"notes":[]}
+{"at":"2026-10-04T16:26:35.299Z","buildId":"local","markets":16,"profiles":["urbain","littoral"],"changes":[],"notes":[]}
+{"at":"2026-10-04T21:40:39.179Z","buildId":"local","markets":16,"profiles":["urbain","littoral"],"changes":[],"notes":[]}
+{"at":"2026-10-04T21:40:39.281Z","kind":"history","changes":[{"file":"data/market/2024/base.json","action":"created"},{"file":"data/market/2024/seasonality-inputs.json","action":"created"},{"file":"data/market/2025/seasonality-inputs.json","action":"created"},{"file":"data/market/2025/indicators.json","action":"created"},{"file":"data/market/2025/controls.json","action":"created"}]}
+{"at":"2026-10-04T21:40:46.208Z","buildId":"local","markets":16,"profiles":["urbain","littoral"],"changes":[],"notes":[]}
+{"at":"2026-10-04T21:44:15.523Z","buildId":"local","markets":16,"profiles":["urbain","littoral"],"changes":[],"notes":[]}
+{"at":"2026-10-04T22:09:32.267Z","buildId":"local","markets":16,"profiles":["urbain","littoral"],"changes":[],"notes":[]}
+{"at":"2026-10-04T22:09:31.754Z","kind":"promotion","archivedMarket":"data/history/market-versions/market-2026-10-04T21-44-15-523Z.json"}

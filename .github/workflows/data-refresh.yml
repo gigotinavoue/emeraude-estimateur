@@ -1,0 +1,100 @@
+name: Actualisation des données
+
+# Chaque lundi à 5 h 23 UTC (sources mensuelles Eurostat / Insee + surveillance des publications annuelles)
+# et à la demande : onglet Actions → « Actualisation des données » → Run workflow (option simulation).
+# Sans nouvelle période : rien n'est reconstruit, rien n'est enregistré, aucune alerte.
+on:
+  schedule:
+    - cron: '23 5 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Simulation (aucune donnée active modifiée)'
+        type: boolean
+        default: false
+      force:
+        description: 'Reconstruire même sans nouvelle période'
+        type: boolean
+        default: false
+
+# Seul le jeton automatique du workflow est utilisé (aucun secret à créer, aucune clé d'API).
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      status: ${{ steps.refresh.outputs.status }}
+      promoted: ${{ steps.refresh.outputs.promoted }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Dépendances (aucune dépendance externe — vérification)
+        run: node -e "const p=require('./package.json');const d=Object.keys({...p.dependencies,...p.devDependencies});if(d.length){console.error('Dépendances inattendues : '+d);process.exit(1)}console.log('Aucune dépendance à installer.')"
+
+      - name: Contrôle de sécurité (secrets, données privées, PDF)
+        run: node scripts/security-check.mjs
+
+      - name: Actualisation contrôlée (récupération → contrôles → préparation → tests → activation)
+        id: refresh
+        run: |
+          set +e
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          node scripts/refresh.mjs $ARGS
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Tests sur la version active
+        run: npm test
+
+      - name: Rapport d'exécution (artefact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: refresh-report
+          path: |
+            out/refresh-report.md
+            out/refresh-report.json
+            dist/data-status.json
+          retention-days: 90
+          if-no-files-found: warn
+
+      - name: Enregistrement des données (uniquement si une nouvelle version a été activée ou un état a changé)
+        if: steps.refresh.outputs.status != 'ERROR' && inputs.dry_run != true
+        run: |
+          git config user.name "estimateur-bot"
+          git config user.email "estimateur-bot@users.noreply.github.com"
+          git add data/raw data/observations data/market data/history data/inbox dist embed/estimateur-v2.html deploy/estimateur-v2/estimateur-v2-validation.html reports/preview-artifact.html
+          node scripts/security-check.mjs
+          if git diff --cached --quiet; then
+            echo "Aucun changement : rien à enregistrer."
+          else
+            git commit -m "Données : actualisation automatique du $(date -u +%Y-%m-%d) (${{ steps.refresh.outputs.status }})"
+            git push
+          fi
+
+      - name: Alerte (uniquement si une intervention est nécessaire)
+        if: always() && steps.refresh.outputs.needs_attention == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/ci/alert-issue.mjs
+
+      - name: Résultat
+        run: |
+          echo "Statut : ${{ steps.refresh.outputs.status }} — décision : ${{ steps.refresh.outputs.decision }}"
+          if [ "${{ steps.refresh.outputs.exit_code }}" != "0" ]; then
+            echo "::error::Actualisation bloquée ou en erreur : la version active a été conservée. Voir l'artefact refresh-report."
+            exit 1
+          fi

@@ -1,0 +1,31 @@
+{
+  "description": "Batterie de logements FICTIFS représentatifs des 16 communes (phase 4). Hypothèses communes : 10 mois disponibles, commission 20 %, ménage 40 €, séjour moyen 3 nuits (identique pour tous les moteurs).",
+  "defaults": { "bathrooms": 1, "commissionPct": 20, "cleaningFee": 40, "avgStay": 3, "months": { "mode": "count", "count": 10 }, "amenities": [], "location": "standard" },
+  "properties": [
+    { "id": "rennes-studio", "label": "Rennes · studio 22 m² · 2 voy.", "commune": "rennes", "type": "studio", "bedrooms": 0, "area": 22, "guests": 2, "location": "central" },
+    { "id": "rennes-t2", "label": "Rennes · T2 40 m² · 2 voy. · standard", "commune": "rennes", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "rennes-t2-premium", "label": "Rennes · T2 45 m² · hypercentre · rénové · serrure connectée", "commune": "rennes", "type": "t2", "bedrooms": 1, "area": 45, "guests": 2, "location": "hypercentre", "amenities": ["renove", "serrure-connectee", "lave-linge", "lave-vaisselle"] },
+    { "id": "rennes-t3", "label": "Rennes · T3 62 m² · 4 voy. · central", "commune": "rennes", "type": "t3", "bedrooms": 2, "area": 62, "guests": 4, "location": "central", "amenities": ["lave-linge", "lave-vaisselle"] },
+    { "id": "rennes-t4", "label": "Rennes · T4 3 ch. 80 m² · 6 voy.", "commune": "rennes", "type": "t4", "bedrooms": 3, "area": 80, "guests": 6 },
+    { "id": "rennes-t5", "label": "Rennes · T5 4 ch. 110 m² · 8 voy. · 2 sdb", "commune": "rennes", "type": "t4", "bedrooms": 4, "bathrooms": 2, "area": 110, "guests": 8 },
+    { "id": "rennes-maison", "label": "Rennes · maison 3 ch. 95 m² · 6 voy. · jardin · quartier recherché", "commune": "rennes", "type": "maison", "bedrooms": 3, "area": 95, "guests": 6, "location": "quartier-recherche", "amenities": ["terrasse"] },
+    { "id": "cesson-t2", "label": "Cesson-Sévigné · T2 42 m² · 2 voy.", "commune": "cesson-sevigne", "type": "t2", "bedrooms": 1, "area": 42, "guests": 2, "amenities": ["parking-prive"] },
+    { "id": "saint-gregoire-t3", "label": "Saint-Grégoire · T3 65 m² · 4 voy. · parking", "commune": "saint-gregoire", "type": "t3", "bedrooms": 2, "area": 65, "guests": 4, "amenities": ["parking-prive"] },
+    { "id": "chantepie-t2", "label": "Chantepie · T2 40 m² · 2 voy.", "commune": "chantepie", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "bruz-t3", "label": "Bruz · T3 60 m² · 4 voy.", "commune": "bruz", "type": "t3", "bedrooms": 2, "area": 60, "guests": 4 },
+    { "id": "pace-maison", "label": "Pacé · maison 3 ch. 100 m² · 6 voy. · terrasse · parking", "commune": "pace", "type": "maison", "bedrooms": 3, "area": 100, "guests": 6, "amenities": ["terrasse", "parking-prive"] },
+    { "id": "betton-t2", "label": "Betton · T2 42 m² · 2 voy.", "commune": "betton", "type": "t2", "bedrooms": 1, "area": 42, "guests": 2 },
+    { "id": "saint-jacques-t2", "label": "Saint-Jacques-de-la-Lande · T2 40 m² · 2 voy.", "commune": "saint-jacques-de-la-lande", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "vezin-t2", "label": "Vezin-le-Coquet · T2 38 m² · 2 voy.", "commune": "vezin-le-coquet", "type": "t2", "bedrooms": 1, "area": 38, "guests": 2 },
+    { "id": "chartres-maison", "label": "Chartres-de-Bretagne · maison 3 ch. 90 m² · 6 voy.", "commune": "chartres-de-bretagne", "type": "maison", "bedrooms": 3, "area": 90, "guests": 6, "amenities": ["terrasse"] },
+    { "id": "chateaubourg-maison", "label": "Châteaubourg · maison 3 ch. 95 m² · 6 voy. · terrasse", "commune": "chateaubourg", "type": "maison", "bedrooms": 3, "area": 95, "guests": 6, "amenities": ["terrasse"] },
+    { "id": "liffre-t2", "label": "Liffré · T2 40 m² · 2 voy.", "commune": "liffre", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "vitre-t2", "label": "Vitré · T2 45 m² · 2 voy. · central", "commune": "vitre", "type": "t2", "bedrooms": 1, "area": 45, "guests": 2, "location": "central" },
+    { "id": "saint-aubin-maison", "label": "Saint-Aubin-du-Cormier · maison 3 ch. 90 m² · 6 voy.", "commune": "saint-aubin-du-cormier", "type": "maison", "bedrooms": 3, "area": 90, "guests": 6, "amenities": ["terrasse"] },
+    { "id": "val-d-ize-maison", "label": "Val-d'Izé · maison 3 ch. 100 m² · 6 voy.", "commune": "val-d-ize", "type": "maison", "bedrooms": 3, "area": 100, "guests": 6, "amenities": ["terrasse", "parking-prive"] },
+    { "id": "saint-malo-studio", "label": "Saint-Malo · studio 22 m² · intra-muros (hypercentre)", "commune": "saint-malo", "type": "studio", "bedrooms": 0, "area": 22, "guests": 2, "location": "hypercentre" },
+    { "id": "saint-malo-t2", "label": "Saint-Malo · T2 40 m² · 2 voy. · central", "commune": "saint-malo", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2, "location": "central" },
+    { "id": "saint-malo-t2-sans-ete", "label": "Saint-Malo · T2 40 m² · central · juillet et août exclus", "commune": "saint-malo", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2, "location": "central", "months": { "mode": "select", "months": [0, 1, 2, 3, 4, 5, 8, 9, 10, 11] } },
+    { "id": "saint-malo-maison", "label": "Saint-Malo · maison 4 ch. 120 m² · 8 voy. · 2 sdb · terrasse · vue", "commune": "saint-malo", "type": "maison", "bedrooms": 4, "bathrooms": 2, "area": 120, "guests": 8, "amenities": ["terrasse", "vue"] }
+  ]
+}

@@ -1,0 +1,1659 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-04T21:44:15.523Z",
+  "buildId": "local",
+  "markets": {
+    "departement:35": {
+      "label": "Ille-et-Vilaine",
+      "geoLevel": "departement",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 104.3,
+      "occupancy": 0.42,
+      "avgStay": 3.3,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 1281472
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Ille-et-Vilaine",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:rennes-metropole": {
+      "label": "Rennes Métropole",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 80,
+      "occupancy": 0.49,
+      "avgStay": 3,
+      "occupancyYoyPts": -5,
+      "sample": {
+        "nightsBooked": 352046
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Rennes Métropole",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:saint-malo-agglomeration": {
+      "label": "Saint-Malo Agglomération",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 119,
+      "occupancy": 0.45,
+      "avgStay": 3.7,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 418795
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Saint-Malo Agglomération",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:cote-d-emeraude": {
+      "label": "Côte d'Emeraude",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 138.4,
+      "occupancy": 0.35,
+      "avgStay": 4.1,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 216031
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Côte d'Emeraude",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:pays-de-dol": {
+      "label": "Pays de Dol et de la Baie du Mont-Saint-Michel",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 108.7,
+      "occupancy": 0.42,
+      "avgStay": 3.2,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 69343
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Pays de Dol et de la Baie du Mont-Saint-Michel",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:couesnon-marches-de-bretagne": {
+      "label": "Couesnon-Marches de Bretagne",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 102,
+      "occupancy": 0.38,
+      "avgStay": 2.8,
+      "occupancyYoyPts": 0,
+      "sample": {
+        "nightsBooked": 18757
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Couesnon-Marches de Bretagne",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:fougeres-agglomeration": {
+      "label": "Fougères Agglomération",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 93.5,
+      "occupancy": 0.41,
+      "avgStay": 2.8,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 30904
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Fougères Agglomération",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:vitre-communaute": {
+      "label": "Vitré Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 81.3,
+      "occupancy": 0.48,
+      "avgStay": 2.8,
+      "occupancyYoyPts": -7,
+      "sample": {
+        "nightsBooked": 34359
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Vitré Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:broceliande-communaute": {
+      "label": "Brocéliande Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 135.5,
+      "occupancy": 0.46,
+      "avgStay": 2.7,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 18364
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Brocéliande Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:montfort-communaute": {
+      "label": "Montfort Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 122.3,
+      "occupancy": 0.43,
+      "avgStay": 3,
+      "occupancyYoyPts": -1,
+      "sample": {
+        "nightsBooked": 9988
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Montfort Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:saint-meen-montauban": {
+      "label": "Saint-Méen Montauban",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 95.2,
+      "occupancy": 0.44,
+      "avgStay": 3.1,
+      "occupancyYoyPts": -4,
+      "sample": {
+        "nightsBooked": 14400
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Saint-Méen Montauban",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:bretagne-romantique": {
+      "label": "Bretagne Romantique",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 114.2,
+      "occupancy": 0.36,
+      "avgStay": 3.4,
+      "occupancyYoyPts": -6,
+      "sample": {
+        "nightsBooked": 24242
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Bretagne Romantique",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:vallons-de-haute-bretagne": {
+      "label": "Vallons de Haute Bretagne Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 96,
+      "occupancy": 0.43,
+      "avgStay": 2.8,
+      "occupancyYoyPts": -4,
+      "sample": {
+        "nightsBooked": 14935
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Vallons de Haute Bretagne Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:roche-aux-fees": {
+      "label": "Roche-aux-Fées Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 108.7,
+      "occupancy": 0.39,
+      "avgStay": 2.6,
+      "occupancyYoyPts": -7,
+      "sample": {
+        "nightsBooked": 9431
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Roche-aux-Fées Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:liffre-cormier": {
+      "label": "Liffré-Cormier Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 87.9,
+      "occupancy": 0.45,
+      "avgStay": 3.5,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 9482
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Liffré-Cormier Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "epci:val-d-ille-aubigne": {
+      "label": "Val d'Ille-Aubigné",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 96.8,
+      "occupancy": 0.4,
+      "avgStay": 3.3,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 12246
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Val d'Ille-Aubigné",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    }
+  },
+  "seasonality": {
+    "urbain": {
+      "label": "Profil urbain",
+      "occupancyIndex": [
+        0.7727,
+        0.8294,
+        0.9185,
+        1.0189,
+        1.0238,
+        1.2214,
+        1.0902,
+        1.1906,
+        1.1809,
+        1.0691,
+        0.8505,
+        0.8262
+      ],
+      "adrIndex": [
+        0.9524,
+        0.9333,
+        0.9428,
+        0.9716,
+        1.0051,
+        0.9908,
+        1.0914,
+        1.1154,
+        0.9956,
+        0.9812,
+        0.9524,
+        1.0003
+      ],
+      "basis": "Occupation : profil mensuel de l'hôtellerie en Ille-et-Vilaine (Insee), utilisé comme approximation. Prix : profil mensuel des meublés en Ille-et-Vilaine (Ille & Vilaine Tourisme), amplitude réduite de moitié.",
+      "period": "Occupation : 2025 (Insee) · Prix : 2024 (Ille & Vilaine Tourisme (données Lighthouse))",
+      "sources": [
+        "insee_hotels",
+        "adt35_lighthouse"
+      ],
+      "meta": {
+        "occupancy": {
+          "source": "insee_hotels",
+          "sourceUrl": "https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_TOUR_FREQ",
+          "publicationDate": null,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "retrievedAt": "2026-10-04T21:40:38.389Z",
+          "territory": "Ille-et-Vilaine (département)",
+          "methodology": "Taux d'occupation mensuel des hôtels utilisé comme forme de saisonnalité urbaine.",
+          "license": "Licence Ouverte Etalab 2.0",
+          "dataClass": "PROXY",
+          "freshnessDays": 278,
+          "freshnessMonths": 9,
+          "status": "HIGH",
+          "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+        },
+        "adr": {
+          "source": "adt35_lighthouse",
+          "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+          "publicationDate": "2025-04",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "retrievedAt": "2026-10-04",
+          "territory": "Ille-et-Vilaine (département)",
+          "methodology": "Prix mensuels des meublés du département, amortis (coefficient 0.5).",
+          "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+          "dataClass": "PROXY",
+          "freshnessDays": 643,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+        }
+      }
+    },
+    "littoral": {
+      "label": "Profil littoral",
+      "occupancyIndex": [
+        0.7343,
+        0.6158,
+        0.8764,
+        0.9948,
+        1.0896,
+        1.0422,
+        1.279,
+        1.587,
+        1.1132,
+        0.9711,
+        0.8053,
+        0.8527
+      ],
+      "adrIndex": [
+        0.8923,
+        0.8547,
+        0.8735,
+        0.9299,
+        0.9956,
+        0.9674,
+        1.1647,
+        1.2116,
+        0.9768,
+        0.9486,
+        0.8923,
+        0.9862
+      ],
+      "basis": "Occupation et prix : profil mensuel des meublés entiers en Ille-et-Vilaine (Ille & Vilaine Tourisme).",
+      "period": "Occupation : 2024 (Ille & Vilaine Tourisme (données Lighthouse)) · Prix : 2024 (Ille & Vilaine Tourisme (données Lighthouse))",
+      "sources": [
+        "adt35_lighthouse"
+      ],
+      "meta": {
+        "occupancy": {
+          "source": "adt35_lighthouse",
+          "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/acteurs/chiffres-et-donnees/etudes-de-frequentation/hebergements-locatifs/",
+          "publicationDate": "2025-04",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "retrievedAt": "2026-10-04",
+          "territory": "Ille-et-Vilaine (département)",
+          "methodology": "Taux d'occupation mensuel des meublés (logements entiers) du département.",
+          "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+          "dataClass": "PROXY",
+          "freshnessDays": 643,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+        },
+        "adr": {
+          "source": "adt35_lighthouse",
+          "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+          "publicationDate": "2025-04",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "retrievedAt": "2026-10-04",
+          "territory": "Ille-et-Vilaine (département)",
+          "methodology": "Prix mensuels des meublés du département, amortis (coefficient 1).",
+          "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+          "dataClass": "PROXY",
+          "freshnessDays": 643,
+          "freshnessMonths": 21,
+          "status": "MEDIUM",
+          "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+        }
+      }
+    }
+  },
+  "controls": {
+    "checks": [
+      {
+        "id": "avgStay_rennes",
+        "status": "ok",
+        "detail": "Durée moyenne de séjour : Ille & Vilaine Tourisme 3 nuits (2024) vs Eurostat 2.98 nuits (2025), écart 1 %."
+      },
+      {
+        "id": "peak_month_littoral",
+        "status": "ok",
+        "detail": "Mois de pointe : Eurostat Bretagne Août (2025) vs profil littoral Août."
+      }
+    ],
+    "eurostatRennes": {
+      "year": 2025,
+      "stays": 75660,
+      "nightsRented": 225633,
+      "avgStay": 2.98,
+      "nightsYoyPct": -6.3,
+      "source": "Eurostat (tour_ce_oarc, Rennes)",
+      "meta": {
+        "source": "eurostat_platforms",
+        "sourceUrl": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_ce_oarc?cities=FR016C&c_resid=TOTAL",
+        "publicationDate": null,
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-12-31",
+        "retrievedAt": "2026-10-04T21:40:37.958Z",
+        "territory": "Rennes (Eurostat, greater city)",
+        "methodology": "Séjours et nuits louées via Airbnb, Booking, Expedia, Tripadvisor (toutes catégories d'hébergement de courte durée).",
+        "license": "Réutilisation autorisée, y compris commerciale, avec mention de la source (Décision 2011/833/UE)",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH",
+        "freshnessComputedAt": "2026-10-04T21:44:15.523Z"
+      }
+    },
+    "indicatorComparisons": [
+      {
+        "id": "dep_occupancy",
+        "comparable": true,
+        "base": {
+          "year": "2024",
+          "value": 0.42
+        },
+        "recent": {
+          "year": "2025",
+          "value": 0.42
+        },
+        "gapPts": 0,
+        "decision": "B — contrôle : même méthode, même niveau ; la base reste un millésime cohérent (prix et occupation de la même année)"
+      },
+      {
+        "id": "dep_avgStay",
+        "comparable": true,
+        "base": {
+          "year": "2024",
+          "value": 3.3
+        },
+        "recent": {
+          "year": "2025",
+          "value": 3.2
+        },
+        "gapPct": -3,
+        "decision": "B — contrôle"
+      },
+      {
+        "id": "dep_adr",
+        "comparable": false,
+        "base": {
+          "year": "2024",
+          "value": 104.3
+        },
+        "recent": {
+          "year": "2025",
+          "value": 137
+        },
+        "gapPct": 31.4,
+        "decision": "B — série révisée par la source (2024 publié à 104 € puis ≈ 140,6 €) : non comparable, non utilisée"
+      }
+    ]
+  },
+  "emeraude": {
+    "segments": []
+  },
+  "indicators": {
+    "2025": [
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|nights_booked",
+        "indicator": "nights_booked",
+        "value": 1.337,
+        "unit": "million nights",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Nuits réservées (logements entiers ; Airbnb + VRBO + Booking via Lighthouse)",
+        "comparableWith2024Base": "oui",
+        "note": "Valeur arrondie publiée « 1,337 M »",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|guest_nights",
+        "indicator": "guest_nights",
+        "value": 4.278,
+        "unit": "million guest-nights",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Nuitées correspondant aux nuits réservées (logements entiers)",
+        "comparableWith2024Base": "non_verifie",
+        "note": "Pas d'équivalent dans le bilan 2024",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|occupancy_pct",
+        "indicator": "occupancy_pct",
+        "value": 42,
+        "unit": "percent",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Taux d'occupation (logements entiers)",
+        "comparableWith2024Base": "oui",
+        "note": "Identique au bilan 2024 (42 %) ; publication : -0,2 point vs 2024",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|occupancy_yoy_pts",
+        "indicator": "occupancy_yoy_pts",
+        "value": -0.2,
+        "unit": "points",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Évolution du taux d'occupation vs 2024",
+        "comparableWith2024Base": "oui",
+        "note": "",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|tjm_eur",
+        "indicator": "tjm_eur",
+        "value": 137,
+        "unit": "EUR/night",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Tarif Journalier Moyen (TJM) des logements entiers",
+        "comparableWith2024Base": "non",
+        "note": "Même libellé que le bilan 2024 (104 €) mais 2024 recalculé à ≈ 140,6 € (137 + 3,6) dans cette publication : série révisée ; non comparable à la base 2024",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|tjm_yoy_eur",
+        "indicator": "tjm_yoy_eur",
+        "value": -3.6,
+        "unit": "EUR",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Évolution du TJM vs 2024 (série révisée)",
+        "comparableWith2024Base": "non",
+        "note": "",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|revenue_eur",
+        "indicator": "revenue_eur",
+        "value": 188239000,
+        "unit": "EUR",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Revenu annuel total des logements entiers",
+        "comparableWith2024Base": "non_verifie",
+        "note": "Publié « 188,239 millions d'euros » ; +2,0 % vs 2024",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|revenue_yoy_pct",
+        "indicator": "revenue_yoy_pct",
+        "value": 2,
+        "unit": "percent",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Évolution du revenu annuel vs 2024",
+        "comparableWith2024Base": "non_verifie",
+        "note": "",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|listings_published",
+        "indicator": "listings_published",
+        "value": 198235,
+        "unit": "listings",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Annonces publiées (définition du cumul non précisée par la source)",
+        "comparableWith2024Base": "non",
+        "note": "La page indique à la fois +6,5 % et +6,2 % vs 2024 : incohérence interne non résolue",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|avg_stay_days",
+        "indicator": "avg_stay_days",
+        "value": 3.2,
+        "unit": "days",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Durée moyenne de séjour",
+        "comparableWith2024Base": "oui",
+        "note": "Bilan 2024 : 3,3",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|nights_yoy_pct",
+        "indicator": "nights_yoy_pct",
+        "value": 5.1,
+        "unit": "percent",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Évolution des nuits réservées vs 2024",
+        "comparableWith2024Base": "oui",
+        "note": "Le bilan 2024 donnait 1 281 472 nuits : 1,337 M = +4,3 % ; l'écart avec +5,1 % vient d'une révision de 2024",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "15",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|offer_furnished_units",
+        "indicator": "offer_furnished_units",
+        "value": 4378,
+        "unit": "units",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Meublés et gîtes (offre recensée)",
+        "comparableWith2024Base": "non_verifie",
+        "note": "Offre déclarée/recensée ≠ annonces actives sur plateformes",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "14",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|offer_beds",
+        "indicator": "offer_beds",
+        "value": 21684,
+        "unit": "beds",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Lits touristiques des meublés et gîtes",
+        "comparableWith2024Base": "non_verifie",
+        "note": "",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "14",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|offer_classified_pct",
+        "indicator": "offer_classified_pct",
+        "value": 61.5,
+        "unit": "percent",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Part des meublés et gîtes classés",
+        "comparableWith2024Base": "non_verifie",
+        "note": "",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "14",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|epci:saint-malo-agglomeration|capacity_share_saint_malo_agglo_pct",
+        "indicator": "capacity_share_saint_malo_agglo_pct",
+        "value": 38.2,
+        "unit": "percent",
+        "territory": {
+          "geoId": "epci:saint-malo-agglomeration",
+          "label": "Saint-Malo Agglomération"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Part de la capacité d'accueil en locatif du département",
+        "comparableWith2024Base": "non_verifie",
+        "note": "Part d'offre (lits) ; pas un indicateur de prix ni d'occupation",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "14",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|epci:rennes-metropole|capacity_share_rennes_metropole_pct",
+        "indicator": "capacity_share_rennes_metropole_pct",
+        "value": 9.6,
+        "unit": "percent",
+        "territory": {
+          "geoId": "epci:rennes-metropole",
+          "label": "Rennes Métropole"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Part de la capacité d'accueil en locatif du département",
+        "comparableWith2024Base": "non_verifie",
+        "note": "Part d'offre (lits) ; pas un indicateur de prix ni d'occupation",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "14",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "adt35_chiffres_cles|2025|departement:35|locatif_share_of_market_nights_pct",
+        "indicator": "locatif_share_of_market_nights_pct",
+        "value": 43.5,
+        "unit": "percent",
+        "territory": {
+          "geoId": "departement:35",
+          "label": "Ille-et-Vilaine"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Part des nuitées marchandes réalisées en locatif",
+        "comparableWith2024Base": "non_verifie",
+        "note": "",
+        "source": "adt35_chiffres_cles",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+        "document": "Chiffres clés du tourisme en Ille-et-Vilaine 2025 (édition mai 2026)",
+        "page": "28",
+        "publicationDate": "2026-05",
+        "retrievedAt": "2026-10-04T21:23:56Z",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "audiar_observatoire|2025|epci:rennes-metropole|active_listings_monthly_avg",
+        "indicator": "active_listings_monthly_avg",
+        "value": 2360,
+        "unit": "listings",
+        "territory": {
+          "geoId": "epci:rennes-metropole",
+          "label": "Rennes Métropole"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Annonces actives de meublés touristiques en moyenne par mois (source AirDNA citée par l'AUDIAR)",
+        "comparableWith2024Base": "non",
+        "note": "2024 : 2 400 (même publication) ; fournisseur différent de la base (Lighthouse)",
+        "source": "audiar_observatoire",
+        "sourceUrl": "https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf",
+        "document": "Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)",
+        "page": "24",
+        "publicationDate": "2026-07",
+        "retrievedAt": "2026-10-04T21:23:58Z",
+        "license": "Non précisée par la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "audiar_observatoire|2025|epci:rennes-metropole|active_entire_homes_monthly_avg",
+        "indicator": "active_entire_homes_monthly_avg",
+        "value": 1710,
+        "unit": "listings",
+        "territory": {
+          "geoId": "epci:rennes-metropole",
+          "label": "Rennes Métropole"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Annonces actives de logements entiers en moyenne par mois (AirDNA)",
+        "comparableWith2024Base": "non",
+        "note": "« baisse d'une soixantaine d'annonces » vs 2024",
+        "source": "audiar_observatoire",
+        "sourceUrl": "https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf",
+        "document": "Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)",
+        "page": "24",
+        "publicationDate": "2026-07",
+        "retrievedAt": "2026-10-04T21:23:58Z",
+        "license": "Non précisée par la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "audiar_observatoire|2025|epci:rennes-metropole|platform_nights_yoy_pct_jan_oct",
+        "indicator": "platform_nights_yoy_pct_jan_oct",
+        "value": -8,
+        "unit": "percent",
+        "territory": {
+          "geoId": "epci:rennes-metropole",
+          "label": "Rennes Métropole"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-10-31"
+        },
+        "definition": "Évolution des nuitées des plateformes internet sur les dix premiers mois vs 2024",
+        "comparableWith2024Base": "non",
+        "note": "Nuitées (personnes × nuits) et non nuits réservées ; juillet-août en hausse (+4 % et +5 %)",
+        "source": "audiar_observatoire",
+        "sourceUrl": "https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf",
+        "document": "Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)",
+        "page": "10",
+        "publicationDate": "2026-07",
+        "retrievedAt": "2026-10-04T21:23:58Z",
+        "license": "Non précisée par la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 339,
+        "freshnessMonths": 11,
+        "status": "HIGH"
+      },
+      {
+        "id": "audiar_observatoire|2025|epci:rennes-metropole|market_nights_yoy_pct",
+        "indicator": "market_nights_yoy_pct",
+        "value": -6,
+        "unit": "percent",
+        "territory": {
+          "geoId": "epci:rennes-metropole",
+          "label": "Rennes Métropole"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Évolution des nuitées marchandes (tous hébergements) vs 2024",
+        "comparableWith2024Base": "non",
+        "note": "",
+        "source": "audiar_observatoire",
+        "sourceUrl": "https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf",
+        "document": "Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)",
+        "page": "4",
+        "publicationDate": "2026-07",
+        "retrievedAt": "2026-10-04T21:23:58Z",
+        "license": "Non précisée par la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "audiar_observatoire|2025|epci:rennes-metropole|declared_furnished_units",
+        "indicator": "declared_furnished_units",
+        "value": 1909,
+        "unit": "units",
+        "territory": {
+          "geoId": "epci:rennes-metropole",
+          "label": "Rennes Métropole"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Meublés de tourisme déclarés pour la taxe de séjour",
+        "comparableWith2024Base": "non",
+        "note": "+61 % vs 2024 (effet réglementaire : déclarations) ; 1 500 à Rennes",
+        "source": "audiar_observatoire",
+        "sourceUrl": "https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf",
+        "document": "Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)",
+        "page": "22",
+        "publicationDate": "2026-07",
+        "retrievedAt": "2026-10-04T21:23:58Z",
+        "license": "Non précisée par la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      },
+      {
+        "id": "audiar_observatoire|2025|epci:rennes-metropole|platform_tourist_tax_eur",
+        "indicator": "platform_tourist_tax_eur",
+        "value": 703591,
+        "unit": "EUR",
+        "territory": {
+          "geoId": "epci:rennes-metropole",
+          "label": "Rennes Métropole"
+        },
+        "period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "definition": "Taxe de séjour collectée via les plateformes (Airbnb…)",
+        "comparableWith2024Base": "non",
+        "note": "2024 : 682 000 € (graphique p. 11)",
+        "source": "audiar_observatoire",
+        "sourceUrl": "https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf",
+        "document": "Observatoire du tourisme de Rennes Métropole — Bilan 2025 (juillet 2026)",
+        "page": "11",
+        "publicationDate": "2026-07",
+        "retrievedAt": "2026-10-04T21:23:58Z",
+        "license": "Non précisée par la source",
+        "dataClass": "OBSERVÉE",
+        "usage": "indicator",
+        "freshnessDays": 278,
+        "freshnessMonths": 9,
+        "status": "HIGH"
+      }
+    ]
+  },
+  "attribution": "Sources : Ille & Vilaine Tourisme (données Lighthouse), Eurostat, Insee."
+}

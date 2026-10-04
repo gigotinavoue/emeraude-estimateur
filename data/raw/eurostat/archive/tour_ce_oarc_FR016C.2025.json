@@ -1,0 +1,210 @@
+{
+  "retrievedAt": "2026-10-04T16:15:29.408Z",
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_ce_oarc?format=JSON&lang=EN&cities=FR016C&c_resid=TOTAL",
+  "describe": "Eurostat — Rennes (greater city), séjours / nuits louées / nuitées, annuel",
+  "data": {
+    "version": "2.0",
+    "class": "dataset",
+    "label": "Short-stay accommodation offered via online platforms by residence of the guest and cities",
+    "source": "ESTAT",
+    "updated": "2026-09-22T23:00:00+0200",
+    "value": {
+      "0": 36362,
+      "1": 46633,
+      "2": 27991,
+      "3": 39363,
+      "4": 58982,
+      "5": 73006,
+      "6": 81591,
+      "7": 75660,
+      "8": 106202,
+      "9": 142253,
+      "10": 101049,
+      "11": 135196,
+      "12": 193564,
+      "13": 225053,
+      "14": 240706,
+      "15": 225633,
+      "16": 193850,
+      "17": 260333,
+      "18": 182481,
+      "19": 250982,
+      "20": 369774,
+      "21": 433119,
+      "22": 466760,
+      "23": 436548
+    },
+    "id": [
+      "freq",
+      "indic_to",
+      "c_resid",
+      "unit",
+      "cities",
+      "time"
+    ],
+    "size": [
+      1,
+      3,
+      1,
+      1,
+      1,
+      8
+    ],
+    "dimension": {
+      "freq": {
+        "label": "Time frequency",
+        "category": {
+          "index": {
+            "A": 0
+          },
+          "label": {
+            "A": "Annual"
+          }
+        }
+      },
+      "indic_to": {
+        "label": "Tourism indicator",
+        "category": {
+          "index": {
+            "STY": 0,
+            "LSTY": 1,
+            "NGT_SP": 2
+          },
+          "label": {
+            "STY": "Stays",
+            "LSTY": "Length of stay (nights rented out)",
+            "NGT_SP": "Nights spent"
+          }
+        }
+      },
+      "c_resid": {
+        "label": "Country of residence",
+        "category": {
+          "index": {
+            "TOTAL": 0
+          },
+          "label": {
+            "TOTAL": "Total"
+          }
+        }
+      },
+      "unit": {
+        "label": "Unit of measure",
+        "category": {
+          "index": {
+            "NR": 0
+          },
+          "label": {
+            "NR": "Number"
+          }
+        }
+      },
+      "cities": {
+        "label": "Geopolitical entity (declaring)",
+        "category": {
+          "index": {
+            "FR016C": 0
+          },
+          "label": {
+            "FR016C": "Rennes (greater city)"
+          }
+        }
+      },
+      "time": {
+        "label": "Time",
+        "category": {
+          "index": {
+            "2018": 0,
+            "2019": 1,
+            "2020": 2,
+            "2021": 3,
+            "2022": 4,
+            "2023": 5,
+            "2024": 6,
+            "2025": 7
+          },
+          "label": {
+            "2018": "2018",
+            "2019": "2019",
+            "2020": "2020",
+            "2021": "2021",
+            "2022": "2022",
+            "2023": "2023",
+            "2024": "2024",
+            "2025": "2025"
+          }
+        }
+      }
+    },
+    "extension": {
+      "lang": "EN",
+      "id": "TOUR_CE_OARC",
+      "agencyId": "ESTAT",
+      "version": "1.0",
+      "datastructure": {
+        "id": "TOUR_CE_OARC",
+        "agencyId": "ESTAT",
+        "version": "15.0"
+      },
+      "annotation": [
+        {
+          "type": "CREATED",
+          "date": "2022-06-30T16:29:54+0200"
+        },
+        {
+          "type": "DISSEMINATION_DOI_XML",
+          "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/TOUR_CE_OARC\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/TOUR_CE_OARC</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2023-01-23</dct:issued></adms:Identifier></adms:identifier>"
+        },
+        {
+          "type": "DISSEMINATION_OBJECT_TYPE",
+          "title": "DATASET"
+        },
+        {
+          "type": "DISSEMINATION_TIMESTAMP_DATA",
+          "date": "2026-09-22T23:00:00+0200"
+        },
+        {
+          "type": "DISSEMINATION_TIMESTAMP_GLOBAL",
+          "date": "2026-09-24T23:00:00+0200"
+        },
+        {
+          "type": "DISSEMINATION_TIMESTAMP_PLANNED",
+          "date": "2026-09-24T23:00:00+0200"
+        },
+        {
+          "type": "OBS_COUNT",
+          "title": "20582"
+        },
+        {
+          "type": "OBS_PERIOD_OVERALL_LATEST",
+          "title": "2025"
+        },
+        {
+          "type": "OBS_PERIOD_OVERALL_OLDEST",
+          "title": "2018"
+        },
+        {
+          "type": "SOURCE_INSTITUTIONS",
+          "text": "Eurostat"
+        },
+        {
+          "type": "UPDATE_DATA",
+          "date": "2026-09-22T23:00:00+0200"
+        },
+        {
+          "type": "UPDATE_STRUCTURE",
+          "date": "2026-07-02T11:00:00+0200"
+        }
+      ],
+      "positions-with-no-data": {
+        "freq": [],
+        "indic_to": [],
+        "c_resid": [],
+        "unit": [],
+        "cities": [],
+        "time": []
+      }
+    }
+  },
+  "lastPeriod": "2025"
+}

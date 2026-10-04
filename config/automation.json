@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "description": "Règles de l'actualisation automatique (scripts/refresh.mjs). FIABILITÉ > RÉCENCE > AUTOMATISATION : en cas de doute, la version active est conservée.",
+  "schedule": {
+    "cron": "23 5 * * 1",
+    "text": "Chaque lundi à 5 h 23 UTC + lancement manuel. Sans nouvelle période, rien n'est reconstruit ni enregistré."
+  },
+  "sources": {
+    "eurostat_city": {
+      "label": "Eurostat — Rennes (tour_ce_oarc)",
+      "file": "data/raw/eurostat/tour_ce_oarc_FR016C.json",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_ce_oarc?format=JSON&lang=EN&cities=FR016C&c_resid=TOTAL",
+      "kind": "eurostat_city",
+      "describe": "Eurostat — Rennes (greater city), séjours / nuits louées / nuitées, annuel",
+      "minObservations": 6,
+      "valueRange": [1, 100000000],
+      "overlapRevision": { "reviewPct": 20, "rejectPct": 50 },
+      "maxLagMonths": 22,
+      "role": "contrôle (durée de séjour, tendance de la demande)"
+    },
+    "eurostat_region": {
+      "label": "Eurostat — Bretagne mensuel (tour_ce_omn12)",
+      "file": "data/raw/eurostat/tour_ce_omn12_FRH0.json",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_ce_omn12?format=JSON&lang=EN&geo=FRH0&c_resid=TOTAL&indic_to=NGT_SP",
+      "kind": "eurostat_region",
+      "describe": "Eurostat — Bretagne, nuitées via plateformes, mensuel",
+      "minObservations": 24,
+      "valueRange": [1, 1000000000],
+      "overlapRevision": { "reviewPct": 20, "rejectPct": 50 },
+      "maxLagMonths": 11,
+      "role": "contrôle (mois de pointe)"
+    },
+    "insee_hotels": {
+      "label": "Insee — occupation hôtelière Ille-et-Vilaine (DS_TOUR_FREQ)",
+      "file": "data/raw/insee/ds_tour_freq_dep35_hotels.json",
+      "url": null,
+      "kind": "insee",
+      "describe": "Insee — taux d'occupation hôtelier mensuel, Ille-et-Vilaine",
+      "minObservations": 24,
+      "valueRange": [0.05, 1],
+      "overlapRevision": { "reviewPts": 10, "rejectPts": 25 },
+      "maxLagMonths": 5,
+      "role": "calcul (forme de la saisonnalité urbaine, PROXY)"
+    }
+  },
+  "thresholds": {
+    "note": "ACCEPT : intégré. REVIEW : intégré mais signalé (NEEDS_REVIEW=true, alerte). REJECT : version active conservée, alerte, validation humaine obligatoire.",
+    "marketAdrPct": { "review": 10, "reject": 30 },
+    "marketOccupancyPts": { "review": 5, "reject": 15 },
+    "marketAvgStayPct": { "review": 15, "reject": 35 },
+    "seasonalIndexAbs": { "review": 0.15, "reject": 0.5 },
+    "referenceRevenuePct": { "signal": 3, "review": 10, "reject": 30 },
+    "referenceAdrPct": { "signal": 3, "review": 10, "reject": 30 },
+    "referenceOccupancyPts": { "signal": 2, "review": 5, "reject": 15 },
+    "referenceCentralBounds": [3000, 80000]
+  },
+  "alerts": {
+    "sourceUnavailableConsecutiveRuns": 3,
+    "onReview": true,
+    "onReject": true,
+    "onNewPublication": true,
+    "onFreshness": ["LOW"],
+    "onSourceStale": true
+  },
+  "publications": {
+    "note": "Surveillance des pages officielles (aucun scraping Airbnb). Un nouveau PDF n'est JAMAIS intégré automatiquement : il est signalé « NOUVELLE PUBLICATION À VÉRIFIER ». Ajouter son adresse à `known` une fois vérifié.",
+    "pages": [
+      {
+        "id": "adt35_locatif",
+        "label": "Ille & Vilaine Tourisme — bilan des hébergements locatifs (base de marché par EPCI)",
+        "url": "https://www.ille-et-vilaine-tourisme.bzh/acteurs/chiffres-et-donnees/etudes-de-frequentation/hebergements-locatifs/",
+        "match": "^https://www\\.ille-et-vilaine-tourisme\\.bzh/app/uploads/.+\\.pdf$",
+        "impact": "Peut faire évoluer la base de calcul (catégorie A) après validation humaine."
+      },
+      {
+        "id": "adt35_chiffres_cles",
+        "label": "Ille & Vilaine Tourisme — Chiffres clés",
+        "url": "https://www.ille-et-vilaine-tourisme.bzh/acteurs/chiffres-et-donnees/chiffres-cles/",
+        "match": "^https://www\\.ille-et-vilaine-tourisme\\.bzh/app/uploads/.+\\.pdf$",
+        "impact": "Indicateurs départementaux (contrôle, catégorie B en général)."
+      },
+      {
+        "id": "audiar_tourisme",
+        "label": "AUDIAR — Observatoire du tourisme de Rennes Métropole",
+        "url": "https://www.audiar.org/observatoires/observatoire-du-tourisme/",
+        "match": "^https://www\\.audiar\\.org/wp-content/uploads/.+tourisme[^/]*\\.pdf$",
+        "impact": "Indicateurs de tendance (offre, demande), sans prix ni occupation."
+      }
+    ],
+    "known": [
+      "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+      "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2024/02/Bilan_2023_hebergements_locatifs_VF.pdf",
+      "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2023/05/Publication_frequentation_locatif_2022_VF.pdf",
+      "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2022/09/2021_Frequentation-en-hebergement-locatif.pdf",
+      "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2025_Chiffres-Cles.pdf",
+      "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/06/Chiffres_cles_2024_edition2025.pdf",
+      "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2026/06/2022_Chiffres-Cles.pdf",
+      "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2022/08/2021_vf_chiffres_cles.pdf",
+      "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2023/05/Chiffres_cles_du_tourisme_2019_Ille_et_Vilaine.pdf",
+      "https://www.audiar.org/wp-content/uploads/2026/07/Doc_obs_Tourisme_2025_V2.pdf"
+    ]
+  }
+}

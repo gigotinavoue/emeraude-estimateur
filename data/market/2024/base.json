@@ -1,0 +1,759 @@
+{
+  "year": 2024,
+  "writtenAt": "2026-10-04T21:40:39.274Z",
+  "usage": "Base de marché (prix, occupation, durée de séjour) — millésime cohérent",
+  "markets": {
+    "departement:35": {
+      "label": "Ille-et-Vilaine",
+      "geoLevel": "departement",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 104.3,
+      "occupancy": 0.42,
+      "avgStay": 3.3,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 1281472
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Ille-et-Vilaine",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:rennes-metropole": {
+      "label": "Rennes Métropole",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 80,
+      "occupancy": 0.49,
+      "avgStay": 3,
+      "occupancyYoyPts": -5,
+      "sample": {
+        "nightsBooked": 352046
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Rennes Métropole",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:saint-malo-agglomeration": {
+      "label": "Saint-Malo Agglomération",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 119,
+      "occupancy": 0.45,
+      "avgStay": 3.7,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 418795
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Saint-Malo Agglomération",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:cote-d-emeraude": {
+      "label": "Côte d'Emeraude",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 138.4,
+      "occupancy": 0.35,
+      "avgStay": 4.1,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 216031
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Côte d'Emeraude",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:pays-de-dol": {
+      "label": "Pays de Dol et de la Baie du Mont-Saint-Michel",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 108.7,
+      "occupancy": 0.42,
+      "avgStay": 3.2,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 69343
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Pays de Dol et de la Baie du Mont-Saint-Michel",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:couesnon-marches-de-bretagne": {
+      "label": "Couesnon-Marches de Bretagne",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 102,
+      "occupancy": 0.38,
+      "avgStay": 2.8,
+      "occupancyYoyPts": 0,
+      "sample": {
+        "nightsBooked": 18757
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Couesnon-Marches de Bretagne",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:fougeres-agglomeration": {
+      "label": "Fougères Agglomération",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 93.5,
+      "occupancy": 0.41,
+      "avgStay": 2.8,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 30904
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Fougères Agglomération",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:vitre-communaute": {
+      "label": "Vitré Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 81.3,
+      "occupancy": 0.48,
+      "avgStay": 2.8,
+      "occupancyYoyPts": -7,
+      "sample": {
+        "nightsBooked": 34359
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Vitré Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:broceliande-communaute": {
+      "label": "Brocéliande Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 135.5,
+      "occupancy": 0.46,
+      "avgStay": 2.7,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 18364
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Brocéliande Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:montfort-communaute": {
+      "label": "Montfort Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 122.3,
+      "occupancy": 0.43,
+      "avgStay": 3,
+      "occupancyYoyPts": -1,
+      "sample": {
+        "nightsBooked": 9988
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Montfort Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:saint-meen-montauban": {
+      "label": "Saint-Méen Montauban",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 95.2,
+      "occupancy": 0.44,
+      "avgStay": 3.1,
+      "occupancyYoyPts": -4,
+      "sample": {
+        "nightsBooked": 14400
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Saint-Méen Montauban",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:bretagne-romantique": {
+      "label": "Bretagne Romantique",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 114.2,
+      "occupancy": 0.36,
+      "avgStay": 3.4,
+      "occupancyYoyPts": -6,
+      "sample": {
+        "nightsBooked": 24242
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Bretagne Romantique",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:vallons-de-haute-bretagne": {
+      "label": "Vallons de Haute Bretagne Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 96,
+      "occupancy": 0.43,
+      "avgStay": 2.8,
+      "occupancyYoyPts": -4,
+      "sample": {
+        "nightsBooked": 14935
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Vallons de Haute Bretagne Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:roche-aux-fees": {
+      "label": "Roche-aux-Fées Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 108.7,
+      "occupancy": 0.39,
+      "avgStay": 2.6,
+      "occupancyYoyPts": -7,
+      "sample": {
+        "nightsBooked": 9431
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Roche-aux-Fées Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:liffre-cormier": {
+      "label": "Liffré-Cormier Communauté",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 87.9,
+      "occupancy": 0.45,
+      "avgStay": 3.5,
+      "occupancyYoyPts": -2,
+      "sample": {
+        "nightsBooked": 9482
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Liffré-Cormier Communauté",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    },
+    "epci:val-d-ille-aubigne": {
+      "label": "Val d'Ille-Aubigné",
+      "geoLevel": "epci",
+      "source": "adt35_lighthouse",
+      "period": {
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "publishedAt": "2025-04-01",
+      "adr": 96.8,
+      "occupancy": 0.4,
+      "avgStay": 3.3,
+      "occupancyYoyPts": -3,
+      "sample": {
+        "nightsBooked": 12246
+      },
+      "segmentedBy": [],
+      "definitions": {
+        "scope": "entire_home",
+        "platforms": [
+          "airbnb",
+          "vrbo",
+          "booking"
+        ],
+        "currency": "EUR",
+        "adrSourceLabel": "Prix moyen par jour de loc. disponible / Tarif journalier moyen (TJM)",
+        "adrIncludesCleaning": "unknown",
+        "occupancyBasis": "unknown"
+      },
+      "status": "ok",
+      "meta": {
+        "source": "adt35_lighthouse",
+        "sourceUrl": "https://www.ille-et-vilaine-tourisme.bzh/app/uploads/bretagne-35/2025/04/2024_Bilan_frequentation_hebergements_locatifs.pdf",
+        "publicationDate": "2025-04",
+        "periodStart": "2024-01-01",
+        "periodEnd": "2024-12-31",
+        "retrievedAt": "2026-10-04",
+        "territory": "Val d'Ille-Aubigné",
+        "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
+        "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
+        "dataClass": "OBSERVÉE",
+        "freshnessDays": 643,
+        "freshnessMonths": 21,
+        "status": "MEDIUM",
+        "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+      }
+    }
+  }
+}

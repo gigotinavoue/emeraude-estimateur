@@ -1,0 +1,708 @@
+{
+  "generatedAt": "2026-10-04T20:58:50.536Z",
+  "today": "2026-10-04T00:00:00.000Z",
+  "rows": [
+    {
+      "id": "rennes-t2-standard",
+      "label": "Rennes · T2 40 m² · standard",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 76,
+        "occ": 0.67,
+        "nights": 203.79166666666669,
+        "ca": 15488.166666666668,
+        "airbnb": 2400.6658333333335,
+        "commission": 2617.500166666667,
+        "owner": 10470.000666666669,
+        "cleaning": 2720,
+        "low": 11858.850000000004,
+        "high": 18816.966666666667
+      },
+      "nouveau": {
+        "adr": 68.48751790123625,
+        "occ": 0.5005576686246574,
+        "nights": 152.25295753999998,
+        "ca": 10427.42715503691,
+        "airbnb": 1616.2512090307212,
+        "commission": 1762.235189201238,
+        "owner": 7048.940756804952,
+        "cleaning": 2040,
+        "cleaningNetEmeraude": 1723.8,
+        "emeraudeTotal": 3486.0351892012377,
+        "prudent": 9385.851004821461,
+        "performant": 11813.07340440993
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 68 € → 80 € (+18 %) ; occupation 66 % → 49 % (-17,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,12 (ancien) → ×0,86 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +1,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "rennes-t2-hyper-renove",
+      "label": "Rennes · T2 40 m² · hypercentre · rénové",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 91,
+        "occ": 0.7350000000000001,
+        "nights": 223.56250000000003,
+        "ca": 20344.187500000004,
+        "airbnb": 3153.3490625000004,
+        "commission": 3438.1676875000003,
+        "owner": 13752.670750000001,
+        "cleaning": 3000,
+        "low": 15818.643750000005,
+        "high": 24509.90208333334
+      },
+      "nouveau": {
+        "adr": 78.34972047901427,
+        "occ": 0.5405574823232876,
+        "nights": 164.41956754,
+        "ca": 12882.227158039408,
+        "airbnb": 1996.7452094961081,
+        "commission": 2177.09638970866,
+        "owner": 8708.38555883464,
+        "cleaning": 2200,
+        "cleaningNetEmeraude": 1859,
+        "emeraudeTotal": 4036.09638970866,
+        "prudent": 10498.457648916085,
+        "performant": 14496.00398210246
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 68 € → 80 € (+18 %) ; occupation 66 % → 49 % (-17,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,34 (ancien) → ×0,98 (nouveau).",
+        "Ajustements d'occupation : +7,5 pts (ancien, plancher 40 % / plafond 88 %) → +5,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "rennes-studio-20",
+      "label": "Rennes · studio 20 m² · 1 voyageur",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 62,
+        "occ": 0.6325000000000001,
+        "nights": 192.3854166666667,
+        "ca": 11927.895833333336,
+        "airbnb": 1848.823854166667,
+        "commission": 2015.814395833334,
+        "owner": 8063.257583333335,
+        "cleaning": 2560,
+        "low": 9037.856250000003,
+        "high": 14572.777083333336
+      },
+      "nouveau": {
+        "adr": 51.99832611629878,
+        "occ": 0.5305575288986302,
+        "nights": 161.37791504000003,
+        "ca": 8391.381454218279,
+        "airbnb": 1300.6641254038332,
+        "commission": 1418.1434657628893,
+        "owner": 5672.573863051557,
+        "cleaning": 2160,
+        "cleaningNetEmeraude": 1825.2,
+        "emeraudeTotal": 3243.3434657628895,
+        "prudent": 7600.577261081002,
+        "performant": 9457.651216776225
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 68 € → 80 € (+18 %) ; occupation 66 % → 49 % (-17,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×0,91 (ancien) → ×0,65 (nouveau).",
+        "Ajustements d'occupation : -2,7 pts (ancien, plancher 40 % / plafond 88 %) → +4,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "rennes-t3-70",
+      "label": "Rennes · T3 70 m² · 4 voyageurs · central",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 101,
+        "occ": 0.7550000000000001,
+        "nights": 229.64583333333337,
+        "ca": 23194.22916666667,
+        "airbnb": 3595.105520833334,
+        "commission": 3919.8247291666676,
+        "owner": 15679.29891666667,
+        "cleaning": 3080,
+        "low": 18109.931250000005,
+        "high": 27879.15625000001
+      },
+      "nouveau": {
+        "adr": 107.46178504956235,
+        "occ": 0.4905577152,
+        "nights": 149.21130504,
+        "ca": 16034.513189173162,
+        "airbnb": 2485.34954432184,
+        "commission": 2709.8327289702647,
+        "owner": 10839.330915881057,
+        "cleaning": 2000,
+        "cleaningNetEmeraude": 1690,
+        "emeraudeTotal": 4399.832728970265,
+        "prudent": 13891.900202178977,
+        "performant": 18198.884831673255
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 68 € → 80 € (+18 %) ; occupation 66 % → 49 % (-17,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,49 (ancien) → ×1,34 (nouveau).",
+        "Ajustements d'occupation : +9,5 pts (ancien, plancher 40 % / plafond 88 %) → +0,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "rennes-maison-120",
+      "label": "Rennes · maison 120 m² · 4 ch. · 8 voyageurs",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 123,
+        "occ": 0.8250000000000002,
+        "nights": 250.93750000000006,
+        "ca": 30865.312500000007,
+        "airbnb": 4784.123437500001,
+        "commission": 5216.237812500001,
+        "owner": 20864.951250000006,
+        "cleaning": 3360,
+        "low": 24411.656250000007,
+        "high": 36832.60625000002
+      },
+      "nouveau": {
+        "adr": 188.70023369738112,
+        "occ": 0.43055799465205474,
+        "nights": 130.96139004,
+        "ca": 24712.44490588188,
+        "airbnb": 3830.428960411691,
+        "commission": 4176.403189094038,
+        "owner": 16705.612756376147,
+        "cleaning": 1760,
+        "cleaningNetEmeraude": 1487.2,
+        "emeraudeTotal": 5663.603189094038,
+        "prudent": 20850.57020321037,
+        "performant": 28409.715021575892
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 68 € → 80 € (+18 %) ; occupation 66 % → 49 % (-17,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,81 (ancien) → ×2,36 (nouveau).",
+        "Ajustements d'occupation : +16,5 pts (ancien, plancher 40 % / plafond 88 %) → -5,9 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "rennes-t2-tous-equipements",
+      "label": "Rennes · T2 40 m² · hypercentre · 32 équipements",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 131,
+        "occ": 0.88,
+        "nights": 267.6666666666667,
+        "ca": 35064.333333333336,
+        "airbnb": 5434.971666666667,
+        "commission": 5925.872333333334,
+        "owner": 23703.489333333335,
+        "cleaning": 3560,
+        "low": 27971.775000000005,
+        "high": 40323.983333333344
+      },
+      "nouveau": {
+        "adr": 82.86989666049584,
+        "occ": 0.5605573891726026,
+        "nights": 170.50287253999997,
+        "ca": 14129.555427707492,
+        "airbnb": 2190.0810912946613,
+        "commission": 2387.894867282566,
+        "owner": 9551.579469130264,
+        "cleaning": 2280,
+        "cleaningNetEmeraude": 1926.6,
+        "emeraudeTotal": 4314.494867282566,
+        "prudent": 11036.903356183182,
+        "performant": 15851.558446552233
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 68 € → 80 € (+18 %) ; occupation 66 % → 49 % (-17,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,93 (ancien) → ×1,04 (nouveau).",
+        "Ajustements d'occupation : +22,0 pts (ancien, plancher 40 % / plafond 88 %) → +7,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "rennes-studio-tous-equipements",
+      "label": "Rennes · studio 20 m² · hypercentre · 32 équipements",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 117,
+        "occ": 0.88,
+        "nights": 267.6666666666667,
+        "ca": 31317,
+        "airbnb": 4854.135,
+        "commission": 5292.572999999999,
+        "owner": 21170.291999999998,
+        "cleaning": 3560,
+        "low": 24982.425,
+        "high": 36014.55000000001
+      },
+      "nouveau": {
+        "adr": 62.91797460072153,
+        "occ": 0.5905572494465754,
+        "nights": 179.62783004000002,
+        "ca": 11301.819248039445,
+        "airbnb": 1751.7819834461138,
+        "commission": 1910.0074529186663,
+        "owner": 7640.029811674665,
+        "cleaning": 2400,
+        "cleaningNetEmeraude": 2028,
+        "emeraudeTotal": 3938.0074529186663,
+        "prudent": 8902.753404102115,
+        "performant": 12626.453091387617
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 68 € → 80 € (+18 %) ; occupation 66 % → 49 % (-17,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,72 (ancien) → ×0,79 (nouveau).",
+        "Ajustements d'occupation : +22,0 pts (ancien, plancher 40 % / plafond 88 %) → +10,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "rennes-t2-12-mois",
+      "label": "Rennes · T2 40 m² · 12 mois",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 76,
+        "occ": 0.67,
+        "nights": 244.55000000000004,
+        "ca": 18585.800000000003,
+        "airbnb": 2880.7990000000004,
+        "commission": 3141.0002000000004,
+        "owner": 12564.000800000002,
+        "cleaning": 3280,
+        "low": 14230.620000000004,
+        "high": 22580.360000000004
+      },
+      "nouveau": {
+        "adr": 68.48751790123623,
+        "occ": 0.5005576686246574,
+        "nights": 182.70354904799999,
+        "ca": 12512.912586044291,
+        "airbnb": 1939.5014508368652,
+        "commission": 2114.682227041485,
+        "owner": 8458.72890816594,
+        "cleaning": 2440,
+        "cleaningNetEmeraude": 2061.8,
+        "emeraudeTotal": 4176.482227041485,
+        "prudent": 11263.021205785753,
+        "performant": 14175.688085291915
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 68 € → 80 € (+18 %) ; occupation 66 % → 49 % (-17,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,12 (ancien) → ×0,86 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +1,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "cesson-t2-quartier",
+      "label": "Cesson-Sévigné · T2 · quartier recherché · balcon + serrure",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 90,
+        "occ": 0.615,
+        "nights": 187.0625,
+        "ca": 16835.625,
+        "airbnb": 2609.521875,
+        "commission": 2845.220625,
+        "owner": 11380.8825,
+        "cleaning": 2480,
+        "low": 12688.3125,
+        "high": 20627.062500000007
+      },
+      "nouveau": {
+        "adr": 72.384704224881,
+        "occ": 0.5205575754739726,
+        "nights": 158.33626254000004,
+        "ca": 11461.12353203101,
+        "airbnb": 1776.4741474648065,
+        "commission": 1936.9298769132406,
+        "owner": 7747.719507652962,
+        "cleaning": 2120,
+        "cleaningNetEmeraude": 1791.4,
+        "emeraudeTotal": 3728.3298769132407,
+        "prudent": 9894.472272765423,
+        "performant": 12938.828188313893
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 74 € → 80 € (+8 %) ; occupation 57 % → 49 % (-8,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,22 (ancien) → ×0,90 (nouveau).",
+        "Ajustements d'occupation : +4,5 pts (ancien, plancher 40 % / plafond 88 %) → +3,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "betton-t2",
+      "label": "Betton · T2 40 m²",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 100,
+        "occ": 0.59,
+        "nights": 179.45833333333331,
+        "ca": 17945.833333333332,
+        "airbnb": 2781.6041666666665,
+        "commission": 3032.8458333333333,
+        "owner": 12131.383333333333,
+        "cleaning": 2400,
+        "low": 13413.75,
+        "high": 22082.500000000004
+      },
+      "nouveau": {
+        "adr": 68.48751790123625,
+        "occ": 0.5005576686246574,
+        "nights": 152.25295753999998,
+        "ca": 10427.42715503691,
+        "airbnb": 1616.2512090307212,
+        "commission": 1762.235189201238,
+        "owner": 7048.940756804952,
+        "cleaning": 2040,
+        "cleaningNetEmeraude": 1723.8,
+        "emeraudeTotal": 3486.0351892012377,
+        "prudent": 9385.851004821461,
+        "performant": 11813.07340440993
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 90 € → 80 € (-11 %) ; occupation 58 % → 49 % (-9,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,11 (ancien) → ×0,86 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +1,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "vezin-t2",
+      "label": "Vezin-le-Coquet · T2 40 m²",
+      "zone": "Rennes Métropole",
+      "legacy": {
+        "adr": 164,
+        "occ": 0.54,
+        "nights": 164.25000000000003,
+        "ca": 26937.000000000004,
+        "airbnb": 4175.235000000001,
+        "commission": 4552.353,
+        "owner": 18209.412000000004,
+        "cleaning": 2200,
+        "low": 19753.800000000003,
+        "high": 33471.716666666674
+      },
+      "nouveau": {
+        "adr": 68.48751790123625,
+        "occ": 0.5005576686246574,
+        "nights": 152.25295753999998,
+        "ca": 10427.42715503691,
+        "airbnb": 1616.2512090307212,
+        "commission": 1762.235189201238,
+        "owner": 7048.940756804952,
+        "cleaning": 2040,
+        "cleaningNetEmeraude": 1723.8,
+        "emeraudeTotal": 3486.0351892012377,
+        "prudent": 9385.851004821461,
+        "performant": 11813.07340440993
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 147 € → 80 € (-46 %) ; occupation 53 % → 49 % (-4,0 pts) — Rennes Métropole.",
+        "Ajustements de prix du logement : ×1,12 (ancien) → ×0,86 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +1,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "saint-malo-t2",
+      "label": "Saint-Malo · T2 40 m² · 10 mois",
+      "zone": "Saint-Malo Agglomération",
+      "legacy": {
+        "adr": 130,
+        "occ": 0.63,
+        "nights": 191.62500000000003,
+        "ca": 24911.250000000004,
+        "airbnb": 3861.2437500000005,
+        "commission": 4210.00125,
+        "owner": 16840.005,
+        "cleaning": 2560,
+        "low": 18861.375,
+        "high": 30447.083333333332
+      },
+      "nouveau": {
+        "adr": 88.27982736585659,
+        "occ": 0.47881947473500897,
+        "nights": 145.6409235652319,
+        "ca": 12857.155589742588,
+        "airbnb": 1992.859116410101,
+        "commission": 2172.859294666497,
+        "owner": 8691.437178665989,
+        "cleaning": 1960,
+        "cleaningNetEmeraude": 1656.2,
+        "emeraudeTotal": 3829.0592946664974,
+        "prudent": 12051.601061531304,
+        "performant": 14072.591421492489
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 117 € → 119 € (+2 %) ; occupation 62 % → 45 % (-17,0 pts) — Saint-Malo Agglomération.",
+        "Ajustements de prix du logement : ×1,11 (ancien) → ×0,74 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +2,9 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil littoral) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "saint-malo-t2-sans-juillet-aout",
+      "label": "Saint-Malo · T2 40 m² · juillet et août exclus",
+      "zone": "Saint-Malo Agglomération",
+      "legacy": {
+        "adr": 130,
+        "occ": 0.63,
+        "nights": 191.62500000000003,
+        "ca": 24911.250000000004,
+        "airbnb": 3861.2437500000005,
+        "commission": 4210.00125,
+        "owner": 16840.005,
+        "cleaning": 2560,
+        "low": 18861.375,
+        "high": 30447.083333333332
+      },
+      "nouveau": {
+        "adr": 82.86422696844232,
+        "occ": 0.43639594554950983,
+        "nights": 132.2279715015015,
+        "ca": 10956.968642077143,
+        "airbnb": 1698.330139521957,
+        "commission": 1851.7277005110373,
+        "owner": 7406.910802044149,
+        "cleaning": 1760,
+        "cleaningNetEmeraude": 1487.2,
+        "emeraudeTotal": 3338.927700511037,
+        "prudent": 10270.46876708644,
+        "performant": 11992.772572579881
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 117 € → 119 € (+2 %) ; occupation 62 % → 45 % (-17,0 pts) — Saint-Malo Agglomération.",
+        "Ajustements de prix du logement : ×1,11 (ancien) → ×0,74 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +2,9 pts (nouveau).",
+        "Mois : sélection exacte (10 mois) avec saisonnalité « Profil littoral » ; l'ancien moteur ne connaît que le nombre de mois (10)."
+      ]
+    },
+    {
+      "id": "vitre-t2",
+      "label": "Vitré · T2 40 m²",
+      "zone": "Vitré Communauté",
+      "legacy": {
+        "adr": 67,
+        "occ": 0.62,
+        "nights": 188.58333333333334,
+        "ca": 12635.083333333334,
+        "airbnb": 1958.4379166666668,
+        "commission": 2135.329083333333,
+        "owner": 8541.316333333332,
+        "cleaning": 2520,
+        "low": 9537.450000000003,
+        "high": 15467.7875
+      },
+      "nouveau": {
+        "adr": 69.60044006713132,
+        "occ": 0.4905577152,
+        "nights": 149.21130504,
+        "ca": 10385.17249377497,
+        "airbnb": 1609.7017365351203,
+        "commission": 1755.09415144797,
+        "owner": 7020.376605791879,
+        "cleaning": 2000,
+        "cleaningNetEmeraude": 1690,
+        "emeraudeTotal": 3445.09415144797,
+        "prudent": 8903.27002605594,
+        "performant": 12223.087210338821
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 60 € → 81,3 € (+36 %) ; occupation 61 % → 48 % (-13,0 pts) — Vitré Communauté.",
+        "Ajustements de prix du logement : ×1,12 (ancien) → ×0,86 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +1,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "chateaubourg-t2",
+      "label": "Châteaubourg · T2 40 m²",
+      "zone": "Vitré Communauté",
+      "legacy": {
+        "adr": 73,
+        "occ": 0.5700000000000001,
+        "nights": 173.37500000000003,
+        "ca": 12656.375000000002,
+        "airbnb": 1961.7381250000003,
+        "commission": 2138.9273750000007,
+        "owner": 8555.7095,
+        "cleaning": 2320,
+        "low": 9392.362500000003,
+        "high": 15631.73333333334
+      },
+      "nouveau": {
+        "adr": 69.60044006713132,
+        "occ": 0.4905577152,
+        "nights": 149.21130504,
+        "ca": 10385.17249377497,
+        "airbnb": 1609.7017365351203,
+        "commission": 1755.09415144797,
+        "owner": 7020.376605791879,
+        "cleaning": 2000,
+        "cleaningNetEmeraude": 1690,
+        "emeraudeTotal": 3445.09415144797,
+        "prudent": 8903.27002605594,
+        "performant": 12223.087210338821
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 66 € → 81,3 € (+23 %) ; occupation 56 % → 48 % (-8,0 pts) — Vitré Communauté.",
+        "Ajustements de prix du logement : ×1,11 (ancien) → ×0,86 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +1,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "val-d-ize-t2",
+      "label": "Val-d'Izé · T2 40 m²",
+      "zone": "Vitré Communauté",
+      "legacy": {
+        "adr": 100,
+        "occ": 0.64,
+        "nights": 194.66666666666669,
+        "ca": 19466.666666666668,
+        "airbnb": 3017.3333333333335,
+        "commission": 3289.8666666666672,
+        "owner": 13159.466666666669,
+        "cleaning": 2600,
+        "low": 14782.500000000002,
+        "high": 23755.41666666667
+      },
+      "nouveau": {
+        "adr": 69.60044006713132,
+        "occ": 0.4905577152,
+        "nights": 149.21130504,
+        "ca": 10385.17249377497,
+        "airbnb": 1609.7017365351203,
+        "commission": 1755.09415144797,
+        "owner": 7020.376605791879,
+        "cleaning": 2000,
+        "cleaningNetEmeraude": 1690,
+        "emeraudeTotal": 3445.09415144797,
+        "prudent": 8903.27002605594,
+        "performant": 12223.087210338821
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 90 € → 81,3 € (-10 %) ; occupation 63 % → 48 % (-15,0 pts) — Vitré Communauté.",
+        "Ajustements de prix du logement : ×1,11 (ancien) → ×0,86 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +1,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "liffre-t3",
+      "label": "Liffré · T3 65 m² · 4 voyageurs",
+      "zone": "Liffré-Cormier Communauté",
+      "legacy": {
+        "adr": 139,
+        "occ": 0.635,
+        "nights": 193.14583333333334,
+        "ca": 26847.270833333336,
+        "airbnb": 4161.326979166667,
+        "commission": 4537.188770833333,
+        "owner": 18148.755083333333,
+        "cleaning": 2560,
+        "low": 20357.418750000004,
+        "high": 32787.49375
+      },
+      "nouveau": {
+        "adr": 110.75015928766994,
+        "occ": 0.4405579480767123,
+        "nights": 134.00304254,
+        "ca": 14840.858306337412,
+        "airbnb": 2300.333037482299,
+        "commission": 2508.1050537710225,
+        "owner": 10032.42021508409,
+        "cleaning": 1800,
+        "cleaningNetEmeraude": 1521,
+        "emeraudeTotal": 4029.1050537710225,
+        "prudent": 13830.267809719193,
+        "performant": 16326.992267044301
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 100 € → 87,9 € (-12 %) ; occupation 57 % → 45 % (-12,0 pts) — Liffré-Cormier Communauté.",
+        "Ajustements de prix du logement : ×1,39 (ancien) → ×1,26 (nouveau).",
+        "Ajustements d'occupation : +6,5 pts (ancien, plancher 40 % / plafond 88 %) → -0,9 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    },
+    {
+      "id": "saint-aubin-t2",
+      "label": "Saint-Aubin-du-Cormier · T2 40 m²",
+      "zone": "Liffré-Cormier Communauté",
+      "legacy": {
+        "adr": 119,
+        "occ": 0.46,
+        "nights": 139.91666666666669,
+        "ca": 16650.083333333336,
+        "airbnb": 2580.762916666667,
+        "commission": 2813.864083333334,
+        "owner": 11255.456333333335,
+        "cleaning": 1880,
+        "low": 11727.45,
+        "high": 21102.170833333337
+      },
+      "nouveau": {
+        "adr": 75.25066029398333,
+        "occ": 0.46055785492602735,
+        "nights": 140.08634754,
+        "ca": 10541.590150557427,
+        "airbnb": 1633.9464733364011,
+        "commission": 1781.5287354442053,
+        "owner": 7126.11494177682,
+        "cleaning": 1880,
+        "cleaningNetEmeraude": 1588.6,
+        "emeraudeTotal": 3370.128735444205,
+        "prudent": 9854.931073527892,
+        "performant": 11565.096704414571
+      },
+      "confidence": "Moyenne",
+      "freshness": "Données anciennes",
+      "reasons": [
+        "Base de marché : prix 107 € → 87,9 € (-18 %) ; occupation 45 % → 45 % (+0,0 pts) — Liffré-Cormier Communauté.",
+        "Ajustements de prix du logement : ×1,11 (ancien) → ×0,86 (nouveau).",
+        "Ajustements d'occupation : +1,0 pts (ancien, plancher 40 % / plafond 88 %) → +1,1 pts (nouveau).",
+        "Saisonnalité appliquée mois par mois (Profil urbain) ; en mode « nombre de mois », les mois retirés sont des mois moyens."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1511 @@
+{
+  "generatedAt": "2026-10-04T21:25:49.582Z",
+  "decomposition": {
+    "marketSame": true,
+    "referenceSame": true,
+    "seasonalitySame": true,
+    "monthsSame": true,
+    "adr": {
+      "a": 68.48728704734184,
+      "b": 80.28935878777503,
+      "ratio": 1.172325
+    },
+    "occ": {
+      "a": 0.50056,
+      "b": 0.55056,
+      "deltaPts": 5.000000000000004
+    },
+    "revenue": {
+      "a": 10427.42715503691,
+      "b": 13445.399299829976,
+      "ratio": 1.2894263464919293
+    },
+    "predictedRatio": 1.289426346491929,
+    "rows": [
+      {
+        "id": "reference",
+        "a": {
+          "id": "reference",
+          "label": "Recalage de la moyenne de marché vers le logement de référence (1 chambre)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": -14.390891190822696,
+          "occEffectPts": 1.056,
+          "detail": "Mélange de tailles d'une métropole universitaire (Lyon, logements entiers actifs, 2026)"
+        },
+        "b": {
+          "id": "reference",
+          "label": "Recalage de la moyenne de marché vers le logement de référence (1 chambre)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": -14.390891190822696,
+          "occEffectPts": 1.056,
+          "detail": "Mélange de tailles d'une métropole universitaire (Lyon, logements entiers actifs, 2026)"
+        }
+      },
+      {
+        "id": "bedrooms",
+        "a": {
+          "id": "bedrooms",
+          "label": "Nombre de chambres (1)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 0,
+          "occEffectPts": 0,
+          "detail": "Coefficient 1.00 par rapport au logement de référence (1 chambre)."
+        },
+        "b": {
+          "id": "bedrooms",
+          "label": "Nombre de chambres (1)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 0,
+          "occEffectPts": 0,
+          "detail": "Coefficient 1.00 par rapport au logement de référence (1 chambre)."
+        }
+      },
+      {
+        "id": "area",
+        "a": {
+          "id": "area",
+          "label": "Surface (40 m² vs 40 m² typique)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 0,
+          "occEffectPts": 0,
+          "detail": ""
+        },
+        "b": {
+          "id": "area",
+          "label": "Surface (45 m² vs 40 m² typique)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 1.5,
+          "occEffectPts": 0,
+          "detail": ""
+        }
+      },
+      {
+        "id": "guests",
+        "a": {
+          "id": "guests",
+          "label": "Capacité (2 vs 2 voyageurs typiques)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 0,
+          "occEffectPts": 0,
+          "detail": ""
+        },
+        "b": {
+          "id": "guests",
+          "label": "Capacité (2 vs 2 voyageurs typiques)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 0,
+          "occEffectPts": 0,
+          "detail": ""
+        }
+      },
+      {
+        "id": "bathrooms",
+        "a": {
+          "id": "bathrooms",
+          "label": "Salles de bain (1)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 0,
+          "occEffectPts": 0,
+          "detail": "Configuration typique pour cette taille : 1 salle(s) de bain."
+        },
+        "b": {
+          "id": "bathrooms",
+          "label": "Salles de bain (1)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 0,
+          "occEffectPts": 0,
+          "detail": "Configuration typique pour cette taille : 1 salle(s) de bain."
+        }
+      },
+      {
+        "id": "location",
+        "a": {
+          "id": "location",
+          "label": "Emplacement (Standard)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 0,
+          "occEffectPts": 0,
+          "detail": ""
+        },
+        "b": {
+          "id": "location",
+          "label": "Emplacement (Hypercentre)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 10,
+          "occEffectPts": 3,
+          "detail": ""
+        }
+      },
+      {
+        "id": "amenities",
+        "a": {
+          "id": "amenities",
+          "label": "Équipements et atouts (0 cochés)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 0,
+          "occEffectPts": 0,
+          "detail": "Les équipements essentiels sont sans effet."
+        },
+        "b": {
+          "id": "amenities",
+          "label": "Équipements et atouts (2 cochés)",
+          "kind": "hypothese_emeraude",
+          "adrEffectPct": 5,
+          "occEffectPts": 2,
+          "detail": "Les équipements essentiels sont sans effet."
+        }
+      }
+    ],
+    "summaries": {
+      "a": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 10400,
+        "low": 9700,
+        "high": 11200,
+        "uncertaintyPct": 7,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "owner": {
+          "central": 7000,
+          "low": 6600,
+          "high": 7500
+        },
+        "adr": 68,
+        "occupancyPct": 50,
+        "scenarios": {
+          "prudent": 9400,
+          "realiste": 10400,
+          "performant": 11800
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 7.280109889280518,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            }
+          ],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "market": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 10427.42715503691,
+            "low": 9697.507254184326,
+            "high": 11157.347055889495
+          }
+        }
+      },
+      "b": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 13400,
+        "low": 12500,
+        "high": 14400,
+        "uncertaintyPct": 7,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "owner": {
+          "central": 9100,
+          "low": 8500,
+          "high": 9700
+        },
+        "adr": 80,
+        "occupancyPct": 55,
+        "scenarios": {
+          "prudent": 10800,
+          "realiste": 13400,
+          "performant": 15100
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 7.280109889280518,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            }
+          ],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "market": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1.125,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 13445.399299829976,
+            "low": 12504.221348841877,
+            "high": 14386.577250818076
+          }
+        }
+      }
+    }
+  },
+  "reference": {
+    "A": {
+      "adr": 97,
+      "occ": 0.7720000000000001,
+      "available": 304.1666666666667,
+      "booked": 234.81666666666672,
+      "revenue": 22777.21666666667,
+      "airbnb": 3530.4685833333338,
+      "netBeforeCommission": 19246.748083333336,
+      "commission": 3849.3496166666673,
+      "owner": 15397.39846666667,
+      "cleaning": 3120
+    },
+    "B": {
+      "adr": 88.77469923679045,
+      "occ": 0.5299975315068493,
+      "available": 304.1666666666667,
+      "booked": 161.2075825,
+      "revenue": 14311.154651127585,
+      "airbnb": 2218.2289709247757,
+      "netBeforeCommission": 12092.925680202809,
+      "commission": 2418.585136040562,
+      "owner": 9674.340544162247,
+      "cleaning": 2160
+    },
+    "C": {
+      "adr": 78.34972047901427,
+      "occ": 0.5405574823232876,
+      "available": 304.1666666666667,
+      "booked": 164.41956754,
+      "revenue": 12882.227158039408,
+      "airbnb": 1996.7452094961081,
+      "netBeforeCommission": 10885.4819485433,
+      "commission": 2177.09638970866,
+      "owner": 8708.38555883464,
+      "cleaning": 2200
+    },
+    "D": {
+      "adr": 78.34972047901427,
+      "occ": 0.5405574823232876,
+      "available": 304.1666666666667,
+      "booked": 164.41956754,
+      "revenue": 12882.227158039408,
+      "airbnb": 1996.7452094961081,
+      "netBeforeCommission": 10885.4819485433,
+      "commission": 2177.09638970866,
+      "owner": 8708.38555883464,
+      "cleaning": 2200
+    },
+    "summary": {
+      "basis": "CA des nuits, scénario réaliste",
+      "central": 12900,
+      "low": 12000,
+      "high": 13800,
+      "uncertaintyPct": 7,
+      "confidence": "MEDIUM",
+      "confidenceReasons": [
+        "Données de marché datant de 21 mois (dernière publication disponible)"
+      ],
+      "uncertaintyReasons": [
+        "Données de marché datant de 21 mois (dernière publication disponible)"
+      ],
+      "owner": {
+        "central": 8700,
+        "low": 8100,
+        "high": 9300
+      },
+      "adr": 78,
+      "occupancyPct": 54,
+      "scenarios": {
+        "prudent": 10500,
+        "realiste": 12900,
+        "performant": 14500
+      },
+      "notes": {
+        "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+        "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+      },
+      "model": {
+        "uncertaintyBasePct": 7,
+        "uncertaintyExactPct": 7.280109889280518,
+        "uncertaintyFloorPct": 0,
+        "uncertaintyComponents": [
+          {
+            "id": "data_age",
+            "pct": 2
+          }
+        ],
+        "confidenceScore": 1,
+        "confidenceGroupScores": {
+          "market": 1
+        },
+        "confidenceHardLow": false,
+        "propertyProfile": {
+          "sizeClass": "standard",
+          "areaRatio": 1,
+          "extraGuests": 0,
+          "capacityLimit": 4,
+          "capacity": "ok",
+          "area": "ok"
+        },
+        "exact": {
+          "central": 12882.227158039408,
+          "low": 11980.471256976649,
+          "high": 13783.983059102167
+        }
+      }
+    },
+    "fresh": {
+      "basis": "CA des nuits, scénario réaliste",
+      "central": 12900,
+      "low": 12000,
+      "high": 13800,
+      "uncertaintyPct": 7,
+      "confidence": "HIGH",
+      "confidenceReasons": [
+        "Marché urbain bien documenté",
+        "Typologie cohérente avec les données de calibration",
+        "Saisonnalité mensuelle disponible"
+      ],
+      "uncertaintyReasons": [],
+      "owner": {
+        "central": 8700,
+        "low": 8100,
+        "high": 9300
+      },
+      "adr": 78,
+      "occupancyPct": 54,
+      "scenarios": {
+        "prudent": 10500,
+        "realiste": 12900,
+        "performant": 14500
+      },
+      "notes": {
+        "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+        "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+      },
+      "model": {
+        "uncertaintyBasePct": 7,
+        "uncertaintyExactPct": 7,
+        "uncertaintyFloorPct": 0,
+        "uncertaintyComponents": [],
+        "confidenceScore": 0,
+        "confidenceGroupScores": {},
+        "confidenceHardLow": false,
+        "propertyProfile": {
+          "sizeClass": "standard",
+          "areaRatio": 1,
+          "extraGuests": 0,
+          "capacityLimit": 4,
+          "capacity": "ok",
+          "area": "ok"
+        },
+        "exact": {
+          "central": 12882.227158039408,
+          "low": 11980.471256976649,
+          "high": 13783.983059102167
+        }
+      }
+    }
+  },
+  "freshness": [
+    {
+      "date": "2025-06-30",
+      "months": 6,
+      "freshness": "green",
+      "confidence": "HIGH",
+      "pct": 7
+    },
+    {
+      "date": "2025-12-31",
+      "months": 12,
+      "freshness": "green",
+      "confidence": "HIGH",
+      "pct": 7
+    },
+    {
+      "date": "2026-03-31",
+      "months": 15,
+      "freshness": "green",
+      "confidence": "HIGH",
+      "pct": 7
+    },
+    {
+      "date": "2026-04-15",
+      "months": 15,
+      "freshness": "orange",
+      "confidence": "MEDIUM",
+      "pct": 7
+    },
+    {
+      "date": "2026-10-04",
+      "months": 21,
+      "freshness": "orange",
+      "confidence": "MEDIUM",
+      "pct": 7
+    },
+    {
+      "date": "2027-03-31",
+      "months": 27,
+      "freshness": "orange",
+      "confidence": "MEDIUM",
+      "pct": 7
+    },
+    {
+      "date": "2027-04-15",
+      "months": 27,
+      "freshness": "red",
+      "confidence": "LOW",
+      "pct": 9
+    }
+  ],
+  "ranges": [
+    {
+      "label": "Rennes T2 standard",
+      "now": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 10400,
+        "low": 9700,
+        "high": 11200,
+        "uncertaintyPct": 7,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "owner": {
+          "central": 7000,
+          "low": 6600,
+          "high": 7500
+        },
+        "adr": 68,
+        "occupancyPct": 50,
+        "scenarios": {
+          "prudent": 9400,
+          "realiste": 10400,
+          "performant": 11800
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 7.280109889280518,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            }
+          ],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "market": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 10427.42715503691,
+            "low": 9697.507254184326,
+            "high": 11157.347055889495
+          }
+        }
+      },
+      "fresh": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 10400,
+        "low": 9700,
+        "high": 11200,
+        "uncertaintyPct": 7,
+        "confidence": "HIGH",
+        "confidenceReasons": [
+          "Marché urbain bien documenté",
+          "Typologie cohérente avec les données de calibration",
+          "Saisonnalité mensuelle disponible"
+        ],
+        "uncertaintyReasons": [],
+        "owner": {
+          "central": 7000,
+          "low": 6600,
+          "high": 7500
+        },
+        "adr": 68,
+        "occupancyPct": 50,
+        "scenarios": {
+          "prudent": 9400,
+          "realiste": 10400,
+          "performant": 11800
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 7,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [],
+          "confidenceScore": 0,
+          "confidenceGroupScores": {},
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 10427.42715503691,
+            "low": 9697.507254184326,
+            "high": 11157.347055889495
+          }
+        }
+      }
+    },
+    {
+      "label": "Rennes T2 hypercentre rénové",
+      "now": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 12900,
+        "low": 12000,
+        "high": 13800,
+        "uncertaintyPct": 7,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "owner": {
+          "central": 8700,
+          "low": 8100,
+          "high": 9300
+        },
+        "adr": 78,
+        "occupancyPct": 54,
+        "scenarios": {
+          "prudent": 10500,
+          "realiste": 12900,
+          "performant": 14500
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 7.280109889280518,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            }
+          ],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "market": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 12882.227158039408,
+            "low": 11980.471256976649,
+            "high": 13783.983059102167
+          }
+        }
+      },
+      "fresh": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 12900,
+        "low": 12000,
+        "high": 13800,
+        "uncertaintyPct": 7,
+        "confidence": "HIGH",
+        "confidenceReasons": [
+          "Marché urbain bien documenté",
+          "Typologie cohérente avec les données de calibration",
+          "Saisonnalité mensuelle disponible"
+        ],
+        "uncertaintyReasons": [],
+        "owner": {
+          "central": 8700,
+          "low": 8100,
+          "high": 9300
+        },
+        "adr": 78,
+        "occupancyPct": 54,
+        "scenarios": {
+          "prudent": 10500,
+          "realiste": 12900,
+          "performant": 14500
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 7,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [],
+          "confidenceScore": 0,
+          "confidenceGroupScores": {},
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 12882.227158039408,
+            "low": 11980.471256976649,
+            "high": 13783.983059102167
+          }
+        }
+      }
+    },
+    {
+      "label": "Rennes T3",
+      "now": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 14500,
+        "low": 13500,
+        "high": 15500,
+        "uncertaintyPct": 7,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "owner": {
+          "central": 9800,
+          "low": 9100,
+          "high": 10500
+        },
+        "adr": 99,
+        "occupancyPct": 48,
+        "scenarios": {
+          "prudent": 13000,
+          "realiste": 14500,
+          "performant": 16500
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 7.280109889280518,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            }
+          ],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "market": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 6,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 14515.65520767856,
+            "low": 13499.55934314106,
+            "high": 15531.751072216059
+          }
+        }
+      },
+      "fresh": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 14500,
+        "low": 13500,
+        "high": 15500,
+        "uncertaintyPct": 7,
+        "confidence": "HIGH",
+        "confidenceReasons": [
+          "Marché urbain bien documenté",
+          "Typologie cohérente avec les données de calibration",
+          "Saisonnalité mensuelle disponible"
+        ],
+        "uncertaintyReasons": [],
+        "owner": {
+          "central": 9800,
+          "low": 9100,
+          "high": 10500
+        },
+        "adr": 99,
+        "occupancyPct": 48,
+        "scenarios": {
+          "prudent": 13000,
+          "realiste": 14500,
+          "performant": 16500
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 7,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [],
+          "confidenceScore": 0,
+          "confidenceGroupScores": {},
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 6,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 14515.65520767856,
+            "low": 13499.55934314106,
+            "high": 15531.751072216059
+          }
+        }
+      }
+    },
+    {
+      "label": "Saint-Malo T2",
+      "now": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 12900,
+        "low": 11300,
+        "high": 14400,
+        "uncertaintyPct": 12,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)",
+          "Marché côtier : mélange de tailles des logements moins certain"
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "owner": {
+          "central": 8700,
+          "low": 7600,
+          "high": 9700
+        },
+        "adr": 88,
+        "occupancyPct": 48,
+        "scenarios": {
+          "prudent": 12100,
+          "realiste": 12900,
+          "performant": 14100
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 12,
+          "uncertaintyExactPct": 12.165525060596439,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            }
+          ],
+          "confidenceScore": 2,
+          "confidenceGroupScores": {
+            "market": 1,
+            "profile": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 12857.155589742588,
+            "low": 11314.296918973478,
+            "high": 14400.0142605117
+          }
+        }
+      },
+      "fresh": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 12900,
+        "low": 11300,
+        "high": 14400,
+        "uncertaintyPct": 12,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Marché côtier : mélange de tailles des logements moins certain"
+        ],
+        "uncertaintyReasons": [],
+        "owner": {
+          "central": 8700,
+          "low": 7600,
+          "high": 9700
+        },
+        "adr": 88,
+        "occupancyPct": 48,
+        "scenarios": {
+          "prudent": 12100,
+          "realiste": 12900,
+          "performant": 14100
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 12,
+          "uncertaintyExactPct": 12,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "profile": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 12857.155589742588,
+            "low": 11314.296918973478,
+            "high": 14400.0142605117
+          }
+        }
+      }
+    },
+    {
+      "label": "Saint-Malo T3",
+      "now": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 17900,
+        "low": 15700,
+        "high": 20000,
+        "uncertaintyPct": 12,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)",
+          "Marché côtier : mélange de tailles des logements moins certain"
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)"
+        ],
+        "owner": {
+          "central": 12100,
+          "low": 10600,
+          "high": 13500
+        },
+        "adr": 128,
+        "occupancyPct": 46,
+        "scenarios": {
+          "prudent": 16700,
+          "realiste": 17900,
+          "performant": 19600
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 12,
+          "uncertaintyExactPct": 12.165525060596439,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            }
+          ],
+          "confidenceScore": 2,
+          "confidenceGroupScores": {
+            "market": 1,
+            "profile": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 6,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 17864.172894522508,
+            "low": 15720.472147179808,
+            "high": 20007.87364186521
+          }
+        }
+      },
+      "fresh": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 17900,
+        "low": 15700,
+        "high": 20000,
+        "uncertaintyPct": 12,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Marché côtier : mélange de tailles des logements moins certain"
+        ],
+        "uncertaintyReasons": [],
+        "owner": {
+          "central": 12100,
+          "low": 10600,
+          "high": 13500
+        },
+        "adr": 128,
+        "occupancyPct": 46,
+        "scenarios": {
+          "prudent": 16700,
+          "realiste": 17900,
+          "performant": 19600
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 12,
+          "uncertaintyExactPct": 12,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "profile": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 6,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 17864.172894522508,
+            "low": 15720.472147179808,
+            "high": 20007.87364186521
+          }
+        }
+      }
+    },
+    {
+      "label": "Vitré T2",
+      "now": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 10400,
+        "low": 9600,
+        "high": 11200,
+        "uncertaintyPct": 8,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)",
+          "Marché de petite taille (34 359 nuits réservées sur la période)"
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)",
+          "Marché de petite taille (34 359 nuits réservées sur la période)"
+        ],
+        "owner": {
+          "central": 7000,
+          "low": 6500,
+          "high": 7600
+        },
+        "adr": 70,
+        "occupancyPct": 49,
+        "scenarios": {
+          "prudent": 8900,
+          "realiste": 10400,
+          "performant": 12200
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 8.306623862918075,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            },
+            {
+              "id": "small_market",
+              "pct": 4
+            }
+          ],
+          "confidenceScore": 2,
+          "confidenceGroupScores": {
+            "market": 2
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 10385.17249377497,
+            "low": 9554.358694272973,
+            "high": 11215.986293276968
+          }
+        }
+      },
+      "fresh": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 10400,
+        "low": 9600,
+        "high": 11200,
+        "uncertaintyPct": 8,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Marché de petite taille (34 359 nuits réservées sur la période)"
+        ],
+        "uncertaintyReasons": [
+          "Marché de petite taille (34 359 nuits réservées sur la période)"
+        ],
+        "owner": {
+          "central": 7000,
+          "low": 6500,
+          "high": 7600
+        },
+        "adr": 70,
+        "occupancyPct": 49,
+        "scenarios": {
+          "prudent": 8900,
+          "realiste": 10400,
+          "performant": 12200
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 8.06225774829855,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "small_market",
+              "pct": 4
+            }
+          ],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "market": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 10385.17249377497,
+            "low": 9554.358694272973,
+            "high": 11215.986293276968
+          }
+        }
+      }
+    },
+    {
+      "label": "Bruz T2",
+      "now": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 10400,
+        "low": 9600,
+        "high": 11300,
+        "uncertaintyPct": 8,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)",
+          "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)",
+          "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
+        ],
+        "owner": {
+          "central": 7000,
+          "low": 6500,
+          "high": 7600
+        },
+        "adr": 68,
+        "occupancyPct": 50,
+        "scenarios": {
+          "prudent": 9400,
+          "realiste": 10400,
+          "performant": 11800
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 8.306623862918075,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            },
+            {
+              "id": "periphery",
+              "pct": 4
+            }
+          ],
+          "confidenceScore": 2,
+          "confidenceGroupScores": {
+            "market": 1,
+            "commune": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 10427.42715503691,
+            "low": 9593.232982633957,
+            "high": 11261.621327439863
+          }
+        }
+      },
+      "fresh": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 10400,
+        "low": 9600,
+        "high": 11300,
+        "uncertaintyPct": 8,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
+        ],
+        "uncertaintyReasons": [
+          "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
+        ],
+        "owner": {
+          "central": 7000,
+          "low": 6500,
+          "high": 7600
+        },
+        "adr": 68,
+        "occupancyPct": 50,
+        "scenarios": {
+          "prudent": 9400,
+          "realiste": 10400,
+          "performant": 11800
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 8.06225774829855,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "periphery",
+              "pct": 4
+            }
+          ],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "commune": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 10427.42715503691,
+            "low": 9593.232982633957,
+            "high": 11261.621327439863
+          }
+        }
+      }
+    },
+    {
+      "label": "Betton T2",
+      "now": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 10400,
+        "low": 9600,
+        "high": 11300,
+        "uncertaintyPct": 8,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)",
+          "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
+        ],
+        "uncertaintyReasons": [
+          "Données de marché datant de 21 mois (dernière publication disponible)",
+          "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
+        ],
+        "owner": {
+          "central": 7000,
+          "low": 6500,
+          "high": 7600
+        },
+        "adr": 68,
+        "occupancyPct": 50,
+        "scenarios": {
+          "prudent": 9400,
+          "realiste": 10400,
+          "performant": 11800
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 8.306623862918075,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "data_age",
+              "pct": 2
+            },
+            {
+              "id": "periphery",
+              "pct": 4
+            }
+          ],
+          "confidenceScore": 2,
+          "confidenceGroupScores": {
+            "market": 1,
+            "commune": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 10427.42715503691,
+            "low": 9593.232982633957,
+            "high": 11261.621327439863
+          }
+        }
+      },
+      "fresh": {
+        "basis": "CA des nuits, scénario réaliste",
+        "central": 10400,
+        "low": 9600,
+        "high": 11300,
+        "uncertaintyPct": 8,
+        "confidence": "MEDIUM",
+        "confidenceReasons": [
+          "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
+        ],
+        "uncertaintyReasons": [
+          "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
+        ],
+        "owner": {
+          "central": 7000,
+          "low": 6500,
+          "high": 7600
+        },
+        "adr": 68,
+        "occupancyPct": 50,
+        "scenarios": {
+          "prudent": 9400,
+          "realiste": 10400,
+          "performant": 11800
+        },
+        "notes": {
+          "range": "Cette fourchette reflète l'incertitude de l'estimation et non une garantie de revenus.",
+          "scenarios": "Les scénarios prudent, réaliste et performant décrivent des niveaux de performance du logement ; ils sont distincts de la fourchette d'incertitude de l'estimation."
+        },
+        "model": {
+          "uncertaintyBasePct": 7,
+          "uncertaintyExactPct": 8.06225774829855,
+          "uncertaintyFloorPct": 0,
+          "uncertaintyComponents": [
+            {
+              "id": "periphery",
+              "pct": 4
+            }
+          ],
+          "confidenceScore": 1,
+          "confidenceGroupScores": {
+            "commune": 1
+          },
+          "confidenceHardLow": false,
+          "propertyProfile": {
+            "sizeClass": "standard",
+            "areaRatio": 1,
+            "extraGuests": 0,
+            "capacityLimit": 4,
+            "capacity": "ok",
+            "area": "ok"
+          },
+          "exact": {
+            "central": 10427.42715503691,
+            "low": 9593.232982633957,
+            "high": 11261.621327439863
+          }
+        }
+      }
+    }
+  ],
+  "fees": {
+    "nightsRevenue": 12882.227158039408,
+    "airbnbOnNights": 1996.7452094961081,
+    "netBeforeCommission": 10885.4819485433,
+    "commission": 2177.09638970866,
+    "owner": 8708.38555883464,
+    "cleaningCollected": 2200,
+    "airbnbOnCleaning": 341,
+    "cleaningNetEmeraude": 1859,
+    "emeraudeTotal": 4036.09638970866,
+    "chainExact": true,
+    "cleaningIndependent": true
+  },
+  "coherence": [
+    {
+      "name": "Qualité croissante → revenu non décroissant",
+      "ok": true,
+      "detail": "10427 ≤ 10636 ≤ 11699"
+    },
+    {
+      "name": "T2 → T3 : prix par nuit en hausse",
+      "ok": true,
+      "detail": "68.5 → 99.3 € (×1.45)"
+    },
+    {
+      "name": "Capacité 2 → 3 → 4 (T2) : revenu non décroissant",
+      "ok": true,
+      "detail": "10427 ≤ 11053 ≤ 11679"
+    },
+    {
+      "name": "Chambres croissantes : prix et revenu croissants",
+      "ok": true,
+      "detail": "9063 < 10427 < 14516 < 16208 < 21902"
+    },
+    {
+      "name": "Standard → hypercentre : prix non décroissant",
+      "ok": true,
+      "detail": "68.5 → 75.3 €"
+    },
+    {
+      "name": "Ajout « rénové » : prix non décroissant",
+      "ok": true,
+      "detail": "68.5 → 71.2 €"
+    },
+    {
+      "name": "Moins de mois (nombre) : CA en baisse, prix par nuit inchangé",
+      "ok": true,
+      "detail": "CA 12513 → 8342 ; prix 68.49 → 68.49 €"
+    },
+    {
+      "name": "Mois choisis (sans juillet-août) : prix par nuit expliqué par la saisonnalité, pas par un artefact",
+      "ok": true,
+      "detail": "prix 68.49 → 66.78 € (écart -2.5 %)"
+    },
+    {
+      "name": "Ordre prudent ≤ réaliste ≤ performant (8 logements)",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

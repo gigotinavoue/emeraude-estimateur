@@ -1,0 +1,23 @@
+{
+  "year": 2025,
+  "writtenAt": "2026-10-04T21:40:39.274Z",
+  "usage": "Séries mensuelles utilisées pour les profils saisonniers (PROXY)",
+  "inputs": {
+    "urbain.occupancy": {
+      "source": "insee_hotels",
+      "sourceUrl": "https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_TOUR_FREQ",
+      "publicationDate": null,
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31",
+      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "territory": "Ille-et-Vilaine (département)",
+      "methodology": "Taux d'occupation mensuel des hôtels utilisé comme forme de saisonnalité urbaine.",
+      "license": "Licence Ouverte Etalab 2.0",
+      "dataClass": "PROXY",
+      "freshnessDays": 278,
+      "freshnessMonths": 9,
+      "status": "HIGH",
+      "freshnessComputedAt": "2026-10-04T21:40:39.179Z"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "description": "Logements fictifs utilisés pour les tests et la comparaison ancien / nouveau moteur. Commission 20 %, ménage 40 €, séjour moyen 3 nuits (identiques pour les deux moteurs).",
+  "defaults": { "bathrooms": 1, "commissionPct": 20, "cleaningFee": 40, "avgStay": 3, "months": { "mode": "count", "count": 10 }, "amenities": [], "location": "standard" },
+  "properties": [
+    { "id": "rennes-t2-standard", "label": "Rennes · T2 40 m² · standard", "commune": "rennes", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "rennes-t2-hyper-renove", "label": "Rennes · T2 40 m² · hypercentre · rénové", "commune": "rennes", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2, "location": "hypercentre", "amenities": ["renove"] },
+    { "id": "rennes-studio-20", "label": "Rennes · studio 20 m² · 1 voyageur", "commune": "rennes", "type": "studio", "bedrooms": 0, "area": 20, "guests": 1 },
+    { "id": "rennes-t3-70", "label": "Rennes · T3 70 m² · 4 voyageurs · central", "commune": "rennes", "type": "t3", "bedrooms": 2, "area": 70, "guests": 4, "location": "central", "amenities": ["lave-vaisselle", "lave-linge"] },
+    { "id": "rennes-maison-120", "label": "Rennes · maison 120 m² · 4 ch. · 8 voyageurs", "commune": "rennes", "type": "maison", "bedrooms": 4, "bathrooms": 2, "area": 120, "guests": 8, "amenities": ["terrasse", "parking-prive"] },
+    { "id": "rennes-t2-tous-equipements", "label": "Rennes · T2 40 m² · hypercentre · 32 équipements", "commune": "rennes", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2, "location": "hypercentre", "amenities": "ALL" },
+    { "id": "rennes-studio-tous-equipements", "label": "Rennes · studio 20 m² · hypercentre · 32 équipements", "commune": "rennes", "type": "studio", "bedrooms": 0, "area": 20, "guests": 1, "location": "hypercentre", "amenities": "ALL" },
+    { "id": "rennes-t2-12-mois", "label": "Rennes · T2 40 m² · 12 mois", "commune": "rennes", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2, "months": { "mode": "count", "count": 12 } },
+    { "id": "cesson-t2-quartier", "label": "Cesson-Sévigné · T2 · quartier recherché · balcon + serrure", "commune": "cesson-sevigne", "type": "t2", "bedrooms": 1, "area": 42, "guests": 2, "location": "quartier-recherche", "amenities": ["balcon", "serrure-connectee"] },
+    { "id": "betton-t2", "label": "Betton · T2 40 m²", "commune": "betton", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "vezin-t2", "label": "Vezin-le-Coquet · T2 40 m²", "commune": "vezin-le-coquet", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "saint-malo-t2", "label": "Saint-Malo · T2 40 m² · 10 mois", "commune": "saint-malo", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "saint-malo-t2-sans-juillet-aout", "label": "Saint-Malo · T2 40 m² · juillet et août exclus", "commune": "saint-malo", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2, "months": { "mode": "select", "months": [0, 1, 2, 3, 4, 5, 8, 9, 10, 11] } },
+    { "id": "vitre-t2", "label": "Vitré · T2 40 m²", "commune": "vitre", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "chateaubourg-t2", "label": "Châteaubourg · T2 40 m²", "commune": "chateaubourg", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "val-d-ize-t2", "label": "Val-d'Izé · T2 40 m²", "commune": "val-d-ize", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 },
+    { "id": "liffre-t3", "label": "Liffré · T3 65 m² · 4 voyageurs", "commune": "liffre", "type": "t3", "bedrooms": 2, "area": 65, "guests": 4 },
+    { "id": "saint-aubin-t2", "label": "Saint-Aubin-du-Cormier · T2 40 m²", "commune": "saint-aubin-du-cormier", "type": "t2", "bedrooms": 1, "area": 40, "guests": 2 }
+  ]
+}

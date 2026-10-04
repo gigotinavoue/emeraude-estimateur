@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-10-04T22:09:32.369Z",
+  "marketGeneratedAt": "2026-10-04T22:09:32.267Z",
+  "years": [
+    {
+      "year": 2024,
+      "baseMarkets": 16,
+      "seasonalityInputs": [
+        "urbain.adr",
+        "littoral.occupancy",
+        "littoral.adr"
+      ],
+      "indicators": 0,
+      "controls": []
+    },
+    {
+      "year": 2025,
+      "baseMarkets": 0,
+      "seasonalityInputs": [
+        "urbain.occupancy"
+      ],
+      "indicators": 23,
+      "controls": [
+        "eurostatRennes"
+      ]
+    }
+  ],
+  "baseYearInUse": [
+    2024
+  ]
+}

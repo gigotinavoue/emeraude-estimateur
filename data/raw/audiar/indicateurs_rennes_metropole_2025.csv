@@ -1,0 +1,7 @@
+indicator,value,unit,geo_id,label,period_start,period_end,definition,page,comparable_with_2024_base,note
+active_listings_monthly_avg,2360,listings,epci:rennes-metropole,Rennes Métropole,2025-01-01,2025-12-31,Annonces actives de meublés touristiques en moyenne par mois (source AirDNA citée par l'AUDIAR),24,non,"2024 : 2 400 (même publication) ; fournisseur différent de la base (Lighthouse)"
+active_entire_homes_monthly_avg,1710,listings,epci:rennes-metropole,Rennes Métropole,2025-01-01,2025-12-31,Annonces actives de logements entiers en moyenne par mois (AirDNA),24,non,"« baisse d'une soixantaine d'annonces » vs 2024"
+platform_nights_yoy_pct_jan_oct,-8,percent,epci:rennes-metropole,Rennes Métropole,2025-01-01,2025-10-31,Évolution des nuitées des plateformes internet sur les dix premiers mois vs 2024,10,non,"Nuitées (personnes × nuits) et non nuits réservées ; juillet-août en hausse (+4 % et +5 %)"
+market_nights_yoy_pct,-6,percent,epci:rennes-metropole,Rennes Métropole,2025-01-01,2025-12-31,Évolution des nuitées marchandes (tous hébergements) vs 2024,4,non,
+declared_furnished_units,1909,units,epci:rennes-metropole,Rennes Métropole,2025-01-01,2025-12-31,Meublés de tourisme déclarés pour la taxe de séjour,22,non,"+61 % vs 2024 (effet réglementaire : déclarations) ; 1 500 à Rennes"
+platform_tourist_tax_eur,703591,EUR,epci:rennes-metropole,Rennes Métropole,2025-01-01,2025-12-31,Taxe de séjour collectée via les plateformes (Airbnb…),11,non,"2024 : 682 000 € (graphique p. 11)"

@@ -1,0 +1,17 @@
+geo_id,label,occupancy_pct,occupancy_yoy_pts,nights_booked,nights_yoy_pct,adr_eur,avg_stay_nights,period_year,published,source_page
+departement:35,Ille-et-Vilaine,42,-3,1281472,6,104.3,3.3,2024,2025-04,4
+epci:rennes-metropole,Rennes Métropole,49,-5,352046,9.5,80,3.0,2024,2025-04,4
+epci:saint-malo-agglomeration,Saint-Malo Agglomération,45,-3,418795,0,119,3.7,2024,2025-04,4
+epci:cote-d-emeraude,Côte d'Emeraude,35,-2,216031,4.9,138.4,4.1,2024,2025-04,4
+epci:pays-de-dol,Pays de Dol et de la Baie du Mont-Saint-Michel,42,-3,69343,8.6,108.7,3.2,2024,2025-04,4
+epci:couesnon-marches-de-bretagne,Couesnon-Marches de Bretagne,38,0,18757,15.7,102,2.8,2024,2025-04,4
+epci:fougeres-agglomeration,Fougères Agglomération,41,-2,30904,19,93.5,2.8,2024,2025-04,4
+epci:vitre-communaute,Vitré Communauté,48,-7,34359,16.9,81.3,2.8,2024,2025-04,4
+epci:broceliande-communaute,Brocéliande Communauté,46,-2,18364,16.4,135.5,2.7,2024,2025-04,4
+epci:montfort-communaute,Montfort Communauté,43,-1,9988,17.4,122.3,3.0,2024,2025-04,4
+epci:saint-meen-montauban,Saint-Méen Montauban,44,-4,14400,26.9,95.2,3.1,2024,2025-04,4
+epci:bretagne-romantique,Bretagne Romantique,36,-6,24242,3.4,114.2,3.4,2024,2025-04,4
+epci:vallons-de-haute-bretagne,Vallons de Haute Bretagne Communauté,43,-4,14935,7.9,96,2.8,2024,2025-04,4
+epci:roche-aux-fees,Roche-aux-Fées Communauté,39,-7,9431,6.4,108.7,2.6,2024,2025-04,4
+epci:liffre-cormier,Liffré-Cormier Communauté,45,-2,9482,5.4,87.9,3.5,2024,2025-04,4
+epci:val-d-ille-aubigne,Val d'Ille-Aubigné,40,-3,12246,14,96.8,3.3,2024,2025-04,4

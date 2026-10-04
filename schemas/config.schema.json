@@ -1,0 +1,161 @@
+{
+  "$id": "config.schema.json",
+  "description": "config/config.json — coefficients et paramètres Émeraude. Toute valeur hors de ces bornes bloque la construction.",
+  "type": "object",
+  "required": ["schemaVersion", "version", "referenceProperty", "types", "size", "location", "amenities", "guards", "cleaning", "fees", "commission", "scenarios", "months", "seasonality", "freshness", "confidence", "emeraude", "validation", "inputs", "defaults", "texts"],
+  "definitions": {
+    "pct": { "type": "number", "minimum": -0.5, "maximum": 0.5 },
+    "range": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } },
+    "bedroom": {
+      "type": "object",
+      "required": ["adr", "occPts", "typicalArea", "typicalGuests"],
+      "additionalProperties": false,
+      "properties": {
+        "adr": { "type": "number", "minimum": 0.3, "maximum": 4 },
+        "occPts": { "type": "number", "minimum": -20, "maximum": 20 },
+        "typicalArea": { "type": "number", "minimum": 8, "maximum": 400 },
+        "typicalGuests": { "type": "number", "minimum": 1, "maximum": 20 },
+        "typicalBathrooms": { "type": "number", "minimum": 0, "maximum": 6 }
+      }
+    },
+    "scenario": {
+      "type": "object",
+      "required": ["label", "positiveBonusFactor", "occupancyDeltaSign", "managementAdr", "description"],
+      "properties": {
+        "positiveBonusFactor": { "type": "number", "minimum": 0, "maximum": 1 },
+        "occupancyDeltaSign": { "enum": [-1, 0, 1] },
+        "managementAdr": { "type": "number", "minimum": 0, "maximum": 0.1 }
+      }
+    }
+  },
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "version": { "type": "string" },
+    "referenceProperty": { "type": "object", "required": ["bedrooms", "nature", "description"], "properties": { "nature": { "const": "hypothese_emeraude" } } },
+    "size": {
+      "type": "object",
+      "required": ["bedrooms", "area", "guests", "bathrooms", "house"],
+      "properties": {
+        "bedrooms": {
+          "type": "object",
+          "required": ["0", "1", "2", "3", "4+"],
+          "additionalProperties": false,
+          "properties": { "0": { "$ref": "#/definitions/bedroom" }, "1": { "$ref": "#/definitions/bedroom" }, "2": { "$ref": "#/definitions/bedroom" }, "3": { "$ref": "#/definitions/bedroom" }, "4+": { "$ref": "#/definitions/bedroom" } }
+        },
+        "area": { "type": "object", "required": ["perM2", "cap"], "properties": { "perM2": { "type": "number", "minimum": 0, "maximum": 0.02 }, "cap": { "type": "number", "minimum": 0, "maximum": 0.15 } } },
+        "guests": { "type": "object", "required": ["perGuest", "cap"], "properties": { "perGuest": { "type": "number", "minimum": 0, "maximum": 0.1 }, "cap": { "type": "number", "minimum": 0, "maximum": 0.15 } } },
+        "bathrooms": {
+          "anyOf": [
+            { "type": "object", "required": ["perExtraBathroom", "cap"], "properties": { "perExtraBathroom": { "type": "number", "minimum": 0, "maximum": 0.1 }, "cap": { "type": "number", "minimum": 0, "maximum": 0.15 } } },
+            { "type": "object", "required": ["bonus"], "properties": { "bonus": { "type": "number", "minimum": 0, "maximum": 0.1 } } }
+          ]
+        },
+        "house": { "type": "object", "required": ["adr"], "properties": { "adr": { "type": "number", "minimum": 0, "maximum": 0.15 } } }
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "required": ["basePct", "capPct", "atypicalFloorPct", "roundingStep", "smallMarketNights", "property", "weights", "components", "groupCaps", "levels", "peripheryWatch", "texts"],
+      "properties": {
+        "basePct": { "type": "object", "required": ["urbain", "littoral"], "additionalProperties": { "type": "number", "minimum": 1, "maximum": 30 } },
+        "capPct": { "type": "number", "minimum": 5, "maximum": 50 },
+        "atypicalFloorPct": { "type": "number", "minimum": 0, "maximum": 30 },
+        "roundingStep": { "type": "number", "minimum": 1, "maximum": 1000 },
+        "weights": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 5 } },
+        "components": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 20 } },
+        "groupCaps": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 5 } },
+        "levels": { "type": "object", "required": ["mediumFromScore", "lowFromScore"] },
+        "texts": { "type": "object", "required": ["rangeNote", "scenariosNote"] }
+      }
+    },
+    "referenceCalibration": {
+      "type": "object",
+      "required": ["enabled", "nature", "mixByProfile"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "nature": { "const": "hypothese_emeraude" },
+        "mixByProfile": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["label", "nightsShare", "listingShare"],
+            "properties": {
+              "nightsShare": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 } },
+              "listingShare": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 } }
+            }
+          }
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "required": ["default", "levels"],
+      "properties": {
+        "levels": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["label", "adr", "occPts"],
+            "properties": { "adr": { "type": "number", "minimum": -0.2, "maximum": 0.2 }, "occPts": { "type": "number", "minimum": -10, "maximum": 10 } }
+          }
+        }
+      }
+    },
+    "amenities": {
+      "type": "object",
+      "required": ["caps", "groups", "items"],
+      "properties": {
+        "caps": { "type": "object", "required": ["adr", "occPts"], "properties": { "adr": { "type": "number", "minimum": 0, "maximum": 0.2 }, "occPts": { "type": "number", "minimum": 0, "maximum": 8 } } },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "group", "adr", "occPts"],
+            "properties": {
+              "group": { "enum": ["base", "confort", "differenciant"] },
+              "adr": { "type": "number", "minimum": 0, "maximum": 0.1 },
+              "occPts": { "type": "number", "minimum": 0, "maximum": 3 },
+              "legacyIndex": { "type": "integer", "minimum": 0, "maximum": 31 }
+            }
+          }
+        }
+      }
+    },
+    "guards": {
+      "type": "object",
+      "required": ["adrSecondaryMultiplier", "occupancy", "occupancyMaxDeviationPts", "monthlyOccupancyMax"],
+      "properties": {
+        "adrSecondaryMultiplier": { "$ref": "#/definitions/range" },
+        "occupancy": { "$ref": "#/definitions/range" },
+        "occupancyMaxDeviationPts": { "type": "number", "minimum": 0, "maximum": 30 },
+        "monthlyOccupancyMax": { "type": "number", "minimum": 0.5, "maximum": 1 }
+      }
+    },
+    "cleaning": { "type": "object", "required": ["defaultFee", "adrIncludesCleaningPolicy", "unknownDefinitionNote"], "properties": { "adrIncludesCleaningPolicy": { "const": "no_adjustment" } } },
+    "fees": {
+      "type": "object",
+      "required": ["airbnbHostFeeRate", "airbnbFeeBase", "vat", "cleaningFeeShareBearer"],
+      "properties": {
+        "airbnbHostFeeRate": { "type": "number", "minimum": 0, "maximum": 0.3 },
+        "airbnbFeeBase": { "enum": ["nights_plus_cleaning", "nights_only"] },
+        "vat": { "type": "object", "required": ["enabledByDefault", "rate"], "properties": { "enabledByDefault": { "type": "boolean" }, "rate": { "type": "number", "minimum": 0, "maximum": 0.3 } } },
+        "cleaningFeeShareBearer": { "enum": ["emeraude", "owner"] }
+      }
+    },
+    "commission": { "type": "object", "required": ["defaultRate", "base"], "properties": { "base": { "enum": ["nights_net_of_host_fee", "nights_gross"] } } },
+    "scenarios": {
+      "type": "object",
+      "required": ["occupancyDeltaPts", "prudent", "realiste", "performant"],
+      "properties": {
+        "occupancyDeltaPts": { "type": "object", "required": ["min", "max"], "properties": { "min": { "type": "number", "minimum": 0 }, "max": { "type": "number", "maximum": 20 } } },
+        "prudent": { "$ref": "#/definitions/scenario" },
+        "realiste": { "$ref": "#/definitions/scenario" },
+        "performant": { "$ref": "#/definitions/scenario" }
+      }
+    },
+    "months": { "type": "object", "required": ["referenceYearDays", "labels"], "properties": { "referenceYearDays": { "type": "array", "minItems": 12, "maxItems": 12 }, "labels": { "type": "array", "minItems": 12, "maxItems": 12 } } },
+    "freshness": { "type": "object", "required": ["greenMaxMonths", "orangeMaxMonths"] },
+    "emeraude": { "type": "object", "required": ["levels", "weightHalfSaturation", "minListingsToPublishAggregate"] },
+    "texts": { "type": "object", "required": ["attribution", "methodologyMarket", "methodologyAdjustments", "methodologyResult", "disclaimer"] }
+  }
+}

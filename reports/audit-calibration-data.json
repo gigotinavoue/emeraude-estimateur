@@ -1,0 +1,825 @@
+{
+  "generatedAt": "2026-10-04T20:58:50.696Z",
+  "configs": {
+    "v2": "2026-10-v1",
+    "calibree": "2026-10-v2-calibration"
+  },
+  "rows": [
+    {
+      "id": "rennes-studio",
+      "label": "Rennes · studio 22 m² · 2 voy.",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 68,
+        "occ": 0.665,
+        "ca": 13754.41666666667,
+        "owner": 9297.98566666667,
+        "commission": 2324.4964166666673
+      },
+      "v2": {
+        "adr": 65.32694020039585,
+        "occ": 0.5199975780821918,
+        "ca": 10332.496250849998,
+        "owner": 6984.767465574599,
+        "commission": 1746.1918663936497
+      },
+      "calibree": {
+        "adr": 57.32395660080965,
+        "occ": 0.5405574823232876,
+        "ca": 9425.180153986852,
+        "owner": 6371.421784095111,
+        "commission": 1592.855446023778,
+        "prudent": 8342.908383940216,
+        "performant": 10605.88727151589
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres -20.0 → -18.0 % prix, 2.0 → 3.0 pts occ."
+    },
+    {
+      "id": "rennes-t2",
+      "label": "Rennes · T2 40 m² · 2 voy. · standard",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 76,
+        "occ": 0.67,
+        "ca": 15488.166666666668,
+        "owner": 10470.000666666669,
+        "commission": 2617.500166666667
+      },
+      "v2": {
+        "adr": 77.60026157062099,
+        "occ": 0.48999771780821927,
+        "ca": 11565.618450739732,
+        "owner": 7818.358072700059,
+        "commission": 1954.5895181750147
+      },
+      "calibree": {
+        "adr": 68.48751790123625,
+        "occ": 0.5005576686246574,
+        "ca": 10427.42715503691,
+        "owner": 7048.940756804952,
+        "commission": 1762.235189201238,
+        "prudent": 9385.851004821461,
+        "performant": 11813.07340440993
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "rennes-t2-premium",
+      "label": "Rennes · T2 45 m² · hypercentre · rénové · serrure connectée",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 96,
+        "occ": 0.7600000000000001,
+        "ca": 22192.000000000004,
+        "owner": 15001.792000000001,
+        "commission": 3750.4480000000003
+      },
+      "v2": {
+        "adr": 92.70554048665025,
+        "occ": 0.5399974849315069,
+        "ca": 15226.814105193833,
+        "owner": 10293.32633511103,
+        "commission": 2573.3315837777577
+      },
+      "calibree": {
+        "adr": 81.81895569830138,
+        "occ": 0.5505574357479451,
+        "ca": 13701.50214363626,
+        "owner": 9262.215449098112,
+        "commission": 2315.553862274528,
+        "prudent": 10927.530620414736,
+        "performant": 15394.201088353057
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "rennes-t3",
+      "label": "Rennes · T3 62 m² · 4 voy. · central",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 100,
+        "occ": 0.7550000000000001,
+        "ca": 22964.58333333334,
+        "owner": 15524.058333333338,
+        "commission": 3881.0145833333345
+      },
+      "v2": {
+        "adr": 106.62079455941029,
+        "occ": 0.4799977643835617,
+        "ca": 15566.563503533602,
+        "owner": 10522.996928388715,
+        "commission": 2630.749232097179
+      },
+      "calibree": {
+        "adr": 104.95782112607748,
+        "occ": 0.4905577152,
+        "ca": 15660.893464376904,
+        "owner": 10586.763981918786,
+        "commission": 2646.690995479697,
+        "prudent": 13568.205440186455,
+        "performant": 17774.833146275047
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 30.0 → 45.0 % prix ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "rennes-t4",
+      "label": "Rennes · T4 3 ch. 80 m² · 6 voy.",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 112,
+        "occ": 0.7700000000000001,
+        "ca": 26231.333333333343,
+        "owner": 17732.381333333342,
+        "commission": 4433.0953333333355
+      },
+      "v2": {
+        "adr": 128.00043145669443,
+        "occ": 0.44999790410958906,
+        "ca": 17519.97745536,
+        "owner": 11843.50475982336,
+        "commission": 2960.87618995584
+      },
+      "calibree": {
+        "adr": 126.701908117287,
+        "occ": 0.4205580412273973,
+        "ca": 16207.674832180553,
+        "owner": 10956.388186554055,
+        "commission": 2739.097046638514,
+        "prudent": 14280.758954281971,
+        "performant": 18678.62843138151
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 60.0 → 85.0 % prix, -4.0 → -8.0 pts occ."
+    },
+    {
+      "id": "rennes-t5",
+      "label": "Rennes · T5 4 ch. 110 m² · 8 voy. · 2 sdb",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 116,
+        "occ": 0.79,
+        "ca": 27873.833333333336,
+        "owner": 18842.711333333333,
+        "commission": 4710.677833333333
+      },
+      "v2": {
+        "adr": 156.5605277254694,
+        "occ": 0.42999799726027405,
+        "ca": 20476.716983972216,
+        "owner": 13842.260681165219,
+        "commission": 3460.565170291305
+      },
+      "calibree": {
+        "adr": 171.21879475309058,
+        "occ": 0.4205580412273973,
+        "ca": 21902.263286730482,
+        "owner": 14805.929981829806,
+        "commission": 3701.4824954574515,
+        "prudent": 19298.32291119185,
+        "performant": 25241.38977213717
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 90.0 → 150.0 % prix, -6.0 → -8.0 pts occ. ; salles de bain 3.0 → 0.0 % prix"
+    },
+    {
+      "id": "rennes-maison",
+      "label": "Rennes · maison 3 ch. 95 m² · 6 voy. · jardin · quartier recherché",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 116,
+        "occ": 0.7950000000000002,
+        "ca": 28050.250000000007,
+        "owner": 18961.969000000005,
+        "commission": 4740.492250000001
+      },
+      "v2": {
+        "adr": 148.98774059954218,
+        "occ": 0.4599978575342465,
+        "ca": 20845.77094854165,
+        "owner": 14091.741161214155,
+        "commission": 3522.935290303539
+      },
+      "calibree": {
+        "adr": 140.45362641670488,
+        "occ": 0.43055799465205474,
+        "ca": 18394.002151690536,
+        "owner": 12434.345454542803,
+        "commission": 3108.5863636357008,
+        "prudent": 15581.523442122307,
+        "performant": 21145.959504452105
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 60.0 → 85.0 % prix, -4.0 → -8.0 pts occ. ; bonus maison 5.0 → 0.0 % prix"
+    },
+    {
+      "id": "cesson-t2",
+      "label": "Cesson-Sévigné · T2 42 m² · 2 voy.",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 87,
+        "occ": 0.6,
+        "ca": 15877.5,
+        "owner": 10733.189999999999,
+        "commission": 2683.2975
+      },
+      "v2": {
+        "adr": 80.40783903424608,
+        "occ": 0.4999976712328767,
+        "ca": 12228.63523090561,
+        "owner": 8266.557416092191,
+        "commission": 2066.639354023048
+      },
+      "calibree": {
+        "adr": 70.96539629890296,
+        "occ": 0.5105576220493151,
+        "ca": 11020.543544572196,
+        "owner": 7449.887436130804,
+        "commission": 1862.471859032701,
+        "prudent": 9690.152901635494,
+        "performant": 12462.798037499513
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "saint-gregoire-t3",
+      "label": "Saint-Grégoire · T3 65 m² · 4 voy. · parking",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 124,
+        "occ": 0.6350000000000001,
+        "ca": 23950.08333333334,
+        "owner": 16190.256333333338,
+        "commission": 4047.5640833333346
+      },
+      "v2": {
+        "adr": 105.46535149670744,
+        "occ": 0.4799977643835617,
+        "ca": 15397.86960208027,
+        "owner": 10408.959851006262,
+        "commission": 2602.239962751566
+      },
+      "calibree": {
+        "adr": 103.82039960527872,
+        "occ": 0.4905577152,
+        "ca": 15491.177314877941,
+        "owner": 10472.035864857487,
+        "commission": 2618.0089662143723,
+        "prudent": 13554.050471221433,
+        "performant": 17582.20836107782
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 30.0 → 45.0 % prix ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "chantepie-t2",
+      "label": "Chantepie · T2 40 m² · 2 voy.",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 69,
+        "occ": 0.59,
+        "ca": 12382.625,
+        "owner": 8370.6545,
+        "commission": 2092.6636249999997
+      },
+      "v2": {
+        "adr": 77.60026157062099,
+        "occ": 0.48999771780821927,
+        "ca": 11565.618450739732,
+        "owner": 7818.358072700059,
+        "commission": 1954.5895181750147
+      },
+      "calibree": {
+        "adr": 68.48751790123625,
+        "occ": 0.5005576686246574,
+        "ca": 10427.42715503691,
+        "owner": 7048.940756804952,
+        "commission": 1762.235189201238,
+        "prudent": 9385.851004821461,
+        "performant": 11813.07340440993
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "bruz-t3",
+      "label": "Bruz · T3 60 m² · 4 voy.",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 106,
+        "occ": 0.635,
+        "ca": 20473.458333333336,
+        "owner": 13840.057833333334,
+        "commission": 3460.0144583333336
+      },
+      "v2": {
+        "adr": 100.88034004180732,
+        "occ": 0.46999781095890414,
+        "ca": 14421.618108983628,
+        "owner": 9749.013841672933,
+        "commission": 2437.2534604182333
+      },
+      "calibree": {
+        "adr": 99.30690095679255,
+        "occ": 0.4805577617753424,
+        "ca": 14515.65520767856,
+        "owner": 9812.582920390707,
+        "commission": 2453.1457300976767,
+        "prudent": 13005.369789866154,
+        "performant": 16506.71884425569
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 30.0 → 45.0 % prix ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "pace-maison",
+      "label": "Pacé · maison 3 ch. 100 m² · 6 voy. · terrasse · parking",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 150,
+        "occ": 0.7550000000000001,
+        "ca": 34446.87500000001,
+        "owner": 23286.087500000005,
+        "commission": 5821.521875000001
+      },
+      "v2": {
+        "adr": 152.43699382609205,
+        "occ": 0.4599978575342465,
+        "ca": 21328.3767147264,
+        "owner": 14417.982659155046,
+        "commission": 3604.4956647887616
+      },
+      "calibree": {
+        "adr": 143.705304186627,
+        "occ": 0.43055799465205474,
+        "ca": 18819.8463924017,
+        "owner": 12722.21616126355,
+        "commission": 3180.554040315888,
+        "prudent": 15878.822589707006,
+        "performant": 21635.515012547705
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 60.0 → 85.0 % prix, -4.0 → -8.0 pts occ. ; bonus maison 5.0 → 0.0 % prix"
+    },
+    {
+      "id": "betton-t2",
+      "label": "Betton · T2 42 m² · 2 voy.",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 101,
+        "occ": 0.59,
+        "ca": 18125.291666666668,
+        "owner": 12252.697166666669,
+        "commission": 3063.174291666667
+      },
+      "v2": {
+        "adr": 78.06586314004473,
+        "occ": 0.48999771780821927,
+        "ca": 11635.012161444172,
+        "owner": 7865.268221136261,
+        "commission": 1966.3170552840654
+      },
+      "calibree": {
+        "adr": 68.89844300864365,
+        "occ": 0.5005576686246574,
+        "ca": 10489.99171796713,
+        "owner": 7091.23440134578,
+        "commission": 1772.8086003364451,
+        "prudent": 9442.16611085039,
+        "performant": 11883.951844836394
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "saint-jacques-t2",
+      "label": "Saint-Jacques-de-la-Lande · T2 40 m² · 2 voy.",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 88,
+        "occ": 0.59,
+        "ca": 15792.333333333334,
+        "owner": 10675.617333333334,
+        "commission": 2668.9043333333334
+      },
+      "v2": {
+        "adr": 77.60026157062099,
+        "occ": 0.48999771780821927,
+        "ca": 11565.618450739732,
+        "owner": 7818.358072700059,
+        "commission": 1954.5895181750147
+      },
+      "calibree": {
+        "adr": 68.48751790123625,
+        "occ": 0.5005576686246574,
+        "ca": 10427.42715503691,
+        "owner": 7048.940756804952,
+        "commission": 1762.235189201238,
+        "prudent": 9385.851004821461,
+        "performant": 11813.07340440993
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "vezin-t2",
+      "label": "Vezin-le-Coquet · T2 38 m² · 2 voy.",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 163,
+        "occ": 0.54,
+        "ca": 26772.750000000004,
+        "owner": 18098.379000000004,
+        "commission": 4524.594750000001
+      },
+      "v2": {
+        "adr": 77.13466000119729,
+        "occ": 0.48999771780821927,
+        "ca": 11496.224740035297,
+        "owner": 7771.447924263861,
+        "commission": 1942.8619810659654
+      },
+      "calibree": {
+        "adr": 68.07659279382882,
+        "occ": 0.5005576686246574,
+        "ca": 10364.862592106689,
+        "owner": 7006.6471122641215,
+        "commission": 1751.6617780660306,
+        "prudent": 9329.535898792532,
+        "performant": 11742.194963983473
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "chartres-maison",
+      "label": "Chartres-de-Bretagne · maison 3 ch. 90 m² · 6 voy.",
+      "zone": "Rennes Métropole",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 114,
+        "occ": 0.6650000000000001,
+        "ca": 23058.875000000004,
+        "owner": 15587.799500000003,
+        "commission": 3896.9498750000002
+      },
+      "v2": {
+        "adr": 143.9697652852317,
+        "occ": 0.44999790410958906,
+        "ca": 19705.76984269072,
+        "owner": 13321.100413658927,
+        "commission": 3330.275103414732
+      },
+      "calibree": {
+        "adr": 135.72308397523784,
+        "occ": 0.4205580412273973,
+        "ca": 17361.66128023181,
+        "owner": 11736.483025436703,
+        "commission": 2934.120756359176,
+        "prudent": 15003.365357368639,
+        "performant": 20008.546775695875
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 60.0 → 85.0 % prix, -4.0 → -8.0 pts occ. ; bonus maison 5.0 → 0.0 % prix"
+    },
+    {
+      "id": "chateaubourg-maison",
+      "label": "Châteaubourg · maison 3 ch. 95 m² · 6 voy. · terrasse",
+      "zone": "Vitré Communauté",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 111,
+        "occ": 0.6850000000000002,
+        "ca": 23127.312500000007,
+        "owner": 15634.063250000007,
+        "commission": 3908.5158125000016
+      },
+      "v2": {
+        "adr": 148.43999155322035,
+        "occ": 0.43999795068493147,
+        "ca": 19866.12634194459,
+        "owner": 13429.501407154541,
+        "commission": 3357.3753517886357
+      },
+      "calibree": {
+        "adr": 139.9372527901729,
+        "occ": 0.4105580878027397,
+        "ca": 17475.096154195187,
+        "owner": 11813.165000235947,
+        "commission": 2953.291250058987,
+        "prudent": 14216.850908136183,
+        "performant": 21068.21700627397
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 60.0 → 85.0 % prix, -4.0 → -8.0 pts occ. ; bonus maison 5.0 → 0.0 % prix"
+    },
+    {
+      "id": "liffre-t2",
+      "label": "Liffré · T2 40 m² · 2 voy.",
+      "zone": "Liffré-Cormier Communauté",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 111,
+        "occ": 0.58,
+        "ca": 19582.25,
+        "owner": 13237.601,
+        "commission": 3309.40025
+      },
+      "v2": {
+        "adr": 85.26328740071985,
+        "occ": 0.44999790410958906,
+        "ca": 11670.358107627813,
+        "owner": 7889.162080756401,
+        "commission": 1972.2905201891006
+      },
+      "calibree": {
+        "adr": 75.25066029398333,
+        "occ": 0.46055785492602735,
+        "ca": 10541.590150557427,
+        "owner": 7126.11494177682,
+        "commission": 1781.5287354442053,
+        "prudent": 9854.931073527892,
+        "performant": 11565.096704414571
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "vitre-t2",
+      "label": "Vitré · T2 45 m² · 2 voy. · central",
+      "zone": "Vitré Communauté",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 71,
+        "occ": 0.64,
+        "ca": 13821.333333333336,
+        "owner": 9343.221333333335,
+        "commission": 2335.8053333333337
+      },
+      "v2": {
+        "adr": 82.44551035271455,
+        "occ": 0.48999771780821927,
+        "ca": 12287.759041227398,
+        "owner": 8306.525111869722,
+        "commission": 2076.6312779674304
+      },
+      "calibree": {
+        "adr": 72.76378006818246,
+        "occ": 0.5005576686246574,
+        "ca": 11078.50071717088,
+        "owner": 7489.066484807515,
+        "commission": 1872.2666212018787,
+        "prudent": 9281.420860436752,
+        "performant": 13006.588321609172
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "saint-aubin-maison",
+      "label": "Saint-Aubin-du-Cormier · maison 3 ch. 90 m² · 6 voy.",
+      "zone": "Liffré-Cormier Communauté",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 180,
+        "occ": 0.5750000000000001,
+        "ca": 31481.250000000004,
+        "owner": 21281.325000000004,
+        "commission": 5320.331250000001
+      },
+      "v2": {
+        "adr": 158.1867796071483,
+        "occ": 0.4099980904109589,
+        "ca": 19727.1177600203,
+        "owner": 13335.531605773722,
+        "commission": 3333.8829014434305
+      },
+      "calibree": {
+        "adr": 149.12573851779266,
+        "occ": 0.3805582275287671,
+        "ca": 17261.770630146744,
+        "owner": 11668.9569459792,
+        "commission": 2917.2392364948,
+        "prudent": 15595.216053938546,
+        "performant": 19181.212755966048
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 60.0 → 85.0 % prix, -4.0 → -8.0 pts occ. ; bonus maison 5.0 → 0.0 % prix"
+    },
+    {
+      "id": "val-d-ize-maison",
+      "label": "Val-d'Izé · maison 3 ch. 100 m² · 6 voy.",
+      "zone": "Vitré Communauté",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 157,
+        "occ": 0.7750000000000001,
+        "ca": 37009.47916666668,
+        "owner": 25018.407916666674,
+        "commission": 6254.601979166669
+      },
+      "v2": {
+        "adr": 154.91409497576603,
+        "occ": 0.44999790410958895,
+        "ca": 21203.767992072426,
+        "owner": 14333.747162640959,
+        "commission": 3583.43679066024
+      },
+      "calibree": {
+        "adr": 146.04051537965964,
+        "occ": 0.4205580412273973,
+        "ca": 18681.4643975724,
+        "owner": 12628.669932758941,
+        "commission": 3157.167483189736,
+        "prudent": 14847.830121760207,
+        "performant": 22444.622765168606
+      },
+      "explication": "recalage marché → 1 chambre -14 % prix, +1.1 pt occupation ; courbe chambres 60.0 → 85.0 % prix, -4.0 → -8.0 pts occ. ; bonus maison 5.0 → 0.0 % prix"
+    },
+    {
+      "id": "saint-malo-studio",
+      "label": "Saint-Malo · studio 22 m² · intra-muros (hypercentre)",
+      "zone": "Saint-Malo Agglomération",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 127,
+        "occ": 0.645,
+        "ca": 24915.812500000004,
+        "owner": 16843.08925,
+        "commission": 4210.772312500001
+      },
+      "v2": {
+        "adr": 103.77687744175181,
+        "occ": 0.5000006849315068,
+        "ca": 15782.75506444922,
+        "owner": 10669.142423567673,
+        "commission": 2667.2856058919187
+      },
+      "calibree": {
+        "adr": 78.91174864544662,
+        "occ": 0.5388195569267896,
+        "ca": 12932.921338443399,
+        "owner": 8742.654824787738,
+        "commission": 2185.6637061969345,
+        "prudent": 11314.050967478857,
+        "performant": 14055.673581430381
+      },
+      "explication": "recalage marché → 1 chambre -26 % prix, +2.9 pt occupation ; courbe chambres -20.0 → -18.0 % prix, 2.0 → 3.0 pts occ."
+    },
+    {
+      "id": "saint-malo-t2",
+      "label": "Saint-Malo · T2 40 m² · 2 voy. · central",
+      "zone": "Saint-Malo Agglomération",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 137,
+        "occ": 0.65,
+        "ca": 27086.041666666668,
+        "owner": 18310.164166666666,
+        "commission": 4577.541041666666
+      },
+      "v2": {
+        "adr": 118.89216385200235,
+        "occ": 0.4600006301369862,
+        "ca": 16635.018046624067,
+        "owner": 11245.272199517869,
+        "commission": 2811.3180498794677
+      },
+      "calibree": {
+        "adr": 90.92822218683229,
+        "occ": 0.4888194884336392,
+        "ca": 13519.443978787409,
+        "owner": 9139.14412966029,
+        "commission": 2284.7860324150724,
+        "prudent": 12368.648051810012,
+        "performant": 14779.640097130381
+      },
+      "explication": "recalage marché → 1 chambre -26 % prix, +2.9 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "saint-malo-t2-sans-ete",
+      "label": "Saint-Malo · T2 40 m² · central · juillet et août exclus",
+      "zone": "Saint-Malo Agglomération",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 137,
+        "occ": 0.65,
+        "ca": 27086.041666666668,
+        "owner": 18310.164166666666,
+        "commission": 4577.541041666666
+      },
+      "v2": {
+        "adr": 111.59862387782505,
+        "occ": 0.4192444554455446,
+        "ca": 14176.492601727667,
+        "owner": 9583.308998767903,
+        "commission": 2395.827249691976
+      },
+      "calibree": {
+        "adr": 85.3501537774956,
+        "occ": 0.4455099554505,
+        "ca": 11521.375991752933,
+        "owner": 7788.450170424982,
+        "commission": 1947.1125426062456,
+        "prudent": 10540.658694111997,
+        "performant": 12595.324988883156
+      },
+      "explication": "recalage marché → 1 chambre -26 % prix, +2.9 pt occupation ; capacité -3.0 → 0.0 % prix"
+    },
+    {
+      "id": "saint-malo-maison",
+      "label": "Saint-Malo · maison 4 ch. 120 m² · 8 voy. · 2 sdb · terrasse · vue",
+      "zone": "Saint-Malo Agglomération",
+      "confidence": "Moyenne",
+      "legacy": {
+        "adr": 209,
+        "occ": 0.7750000000000001,
+        "ca": 49267.39583333334,
+        "owner": 33304.75958333334,
+        "commission": 8326.189895833335
+      },
+      "v2": {
+        "adr": 266.9730893451178,
+        "occ": 0.3900005342465754,
+        "ca": 31669.72610669162,
+        "owner": 21408.734848123535,
+        "commission": 5352.183712030885
+      },
+      "calibree": {
+        "adr": 240.9597887951056,
+        "occ": 0.3988193651459679,
+        "ca": 29230.243289528535,
+        "owner": 19759.64446372129,
+        "commission": 4939.911115930323,
+        "prudent": 26266.440255584064,
+        "performant": 32371.874505509666
+      },
+      "explication": "recalage marché → 1 chambre -26 % prix, +2.9 pt occupation ; courbe chambres 90.0 → 150.0 % prix, -6.0 → -8.0 pts occ. ; salles de bain 3.0 → 0.0 % prix ; bonus maison 5.0 → 0.0 % prix"
+    }
+  ],
+  "rentSensitivity": {
+    "note": "Non appliqué. Pondération Rennes = 3/4 des annonces de logements entiers de la métropole (AUDIAR 2024, données AirDNA citées) ; élasticité 0,5 hypothétique.",
+    "weightedRentT1T2": 16.66,
+    "rows": [
+      {
+        "commune": "Rennes",
+        "rentT1T2": 17.186133652377,
+        "ratioToEpciWeighted": 1.031,
+        "factorElasticity05": 1.016
+      },
+      {
+        "commune": "Cesson-Sévigné",
+        "rentT1T2": 15.5495489297055,
+        "ratioToEpciWeighted": 0.933,
+        "factorElasticity05": 0.966
+      },
+      {
+        "commune": "Saint-Grégoire",
+        "rentT1T2": 15.5858564493871,
+        "ratioToEpciWeighted": 0.935,
+        "factorElasticity05": 0.967
+      },
+      {
+        "commune": "Chantepie",
+        "rentT1T2": 15.5220851117619,
+        "ratioToEpciWeighted": 0.932,
+        "factorElasticity05": 0.965
+      },
+      {
+        "commune": "Bruz",
+        "rentT1T2": 14.7468406212245,
+        "ratioToEpciWeighted": 0.885,
+        "factorElasticity05": 0.941
+      },
+      {
+        "commune": "Pacé",
+        "rentT1T2": 14.7849614964056,
+        "ratioToEpciWeighted": 0.887,
+        "factorElasticity05": 0.942
+      },
+      {
+        "commune": "Betton",
+        "rentT1T2": 14.1175522419792,
+        "ratioToEpciWeighted": 0.847,
+        "factorElasticity05": 0.92
+      },
+      {
+        "commune": "Saint-Jacques-de-la-Lande",
+        "rentT1T2": 15.329699659538,
+        "ratioToEpciWeighted": 0.92,
+        "factorElasticity05": 0.959
+      },
+      {
+        "commune": "Vezin-le-Coquet",
+        "rentT1T2": 15.4804250158776,
+        "ratioToEpciWeighted": 0.929,
+        "factorElasticity05": 0.964
+      },
+      {
+        "commune": "Chartres-de-Bretagne",
+        "rentT1T2": 14.7332616967932,
+        "ratioToEpciWeighted": 0.884,
+        "factorElasticity05": 0.94
+      }
+    ]
+  }
+}

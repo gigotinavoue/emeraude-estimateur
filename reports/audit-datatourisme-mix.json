@@ -1,0 +1,310 @@
+{
+  "source": "DATAtourisme, export régional Bretagne (Licence Ouverte), offices de tourisme",
+  "generatedAt": "2026-10-04T21:07:37.188Z",
+  "communes": {
+    "rennes": {
+      "commune": "Rennes",
+      "listed": 43,
+      "withSize": 2,
+      "counts": {
+        "0": 2,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      }
+    },
+    "cesson-sevigne": {
+      "commune": "Cesson-Sévigné",
+      "listed": 1,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "saint-gregoire": {
+      "commune": "Saint-Grégoire",
+      "listed": 0,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "chantepie": {
+      "commune": "Chantepie",
+      "listed": 1,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "bruz": {
+      "commune": "Bruz",
+      "listed": 5,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "pace": {
+      "commune": "Pacé",
+      "listed": 1,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "betton": {
+      "commune": "Betton",
+      "listed": 2,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "saint-jacques-de-la-lande": {
+      "commune": "Saint-Jacques-de-la-Lande",
+      "listed": 0,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "vezin-le-coquet": {
+      "commune": "Vezin-le-Coquet",
+      "listed": 3,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "chartres-de-bretagne": {
+      "commune": "Chartres-de-Bretagne",
+      "listed": 0,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "chateaubourg": {
+      "commune": "Châteaubourg",
+      "listed": 0,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "liffre": {
+      "commune": "Liffré",
+      "listed": 0,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "vitre": {
+      "commune": "Vitré",
+      "listed": 3,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "saint-aubin-du-cormier": {
+      "commune": "Saint-Aubin-du-Cormier",
+      "listed": 4,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    "saint-malo": {
+      "commune": "Saint-Malo",
+      "listed": 223,
+      "withSize": 12,
+      "counts": {
+        "0": 12,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      }
+    },
+    "val-d-ize": {
+      "commune": "Val-d'Izé",
+      "listed": 0,
+      "withSize": 0,
+      "counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4+": 0
+      },
+      "share": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    }
+  }
+}
