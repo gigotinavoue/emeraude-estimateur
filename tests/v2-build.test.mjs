@@ -6,6 +6,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import crypto from 'node:crypto';
 import { buildEmbed } from '../scripts/build-embed.mjs';
+import { buildArtifact } from '../scripts/build-artifact.mjs';
 import { estimate, ENGINE_VERSION } from '../engine/index.js';
 import { ROOT, J, ctx, baseRaw } from './helpers.mjs';
 
@@ -47,6 +48,29 @@ test('V4. Le moteur embarqué dans la page donne exactement le même résultat q
     assert.equal(JSON.stringify(b.summary), JSON.stringify(a.summary));
     assert.equal(b.scenarios.realiste.nightsRevenue, a.scenarios.realiste.nightsRevenue);
   }
+});
+
+test('V6. Génération stable : relancer la génération ne réécrit aucun fichier versionné (builtAt n\'est pas un changement)', () => {
+  const files = ['embed/estimateur-v2.html', 'deploy/estimateur-v2/estimateur-v2-validation.html', 'dist/preview.html', 'reports/preview-artifact.html'];
+  const snap = () => files.map((f) => read(f));
+  const before = snap();
+  const r = buildEmbed();
+  assert.equal(r.changed, false);
+  assert.deepEqual(snap(), before);
+});
+
+test('V7. Artifact Claude : dist/estimateur-artifact.html est à jour, stable, et reproduit les 8 logements de référence', () => {
+  const r = buildArtifact({ write: false });
+  assert.equal(r.changed, false, 'artifact désynchronisé des données validées : lancer npm run build:artifact');
+  assert.equal(r.references.length, 8);
+  assert.ok(r.references.every((x) => x.ok), JSON.stringify(r.references.filter((x) => !x.ok)));
+  assert.equal(r.engineVersion, ENGINE_VERSION);
+  const h = read('dist/estimateur-artifact.html');
+  const snap = JSON.parse(/const SNAPSHOT=(\{.*\});\r?\nconst REMOTE/.exec(h)[1]);
+  assert.equal(JSON.stringify(snap.market), JSON.stringify(J('dist/market.json')));
+  assert.equal(JSON.stringify(snap.dataStatus), JSON.stringify(J('dist/data-status.json')));
+  assert.ok(h.includes("timeZone:'Europe/Paris'"), 'dates affichées en heure de Paris');
+  assert.ok(!/window\.print\(|window\.open\(/.test(h), 'aucune fonction bloquée par le cadre d\'un artifact');
 });
 
 test('V5. Les pages générées affichent l\'avertissement « non une garantie » et distinguent scénarios et fourchette', () => {

@@ -32,7 +32,10 @@ const wr = (root, rel, data) => {
   fs.writeFileSync(path.join(root, rel), typeof data === 'string' ? data : JSON.stringify(data, null, 2) + '\n', 'utf8');
 };
 const stampOf = (iso) => String(iso).replace(/[:.]/g, '-');
-const fr = (iso) => new Date(iso).toLocaleDateString('fr-FR', { timeZone: 'UTC' });
+// Convention des dates : stockage en UTC (ISO 8601, « Z ») ; affichage en heure de Paris, toujours signalé.
+const fr = (iso) => new Date(iso).toLocaleDateString('fr-FR', { timeZone: 'Europe/Paris' });
+const frTime = (iso) => `${fr(iso)} à ${new Date(iso).toLocaleTimeString('fr-FR', { timeZone: 'Europe/Paris', hour: '2-digit', minute: '2-digit' })} (heure de Paris)`;
+const sha256 = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 
 // Fichiers dont le contenu détermine market.json : leur empreinte permet de détecter une saisie manuelle (ex. epci_2025.csv).
 const INPUT_GLOBS = [/^data\/raw\/[^/]+\/[^/]+\.(csv|json)$/, /^data\/raw\/manifest\.json$/, /^config\/(config|communes|sources)\.json$/];
@@ -81,7 +84,7 @@ export async function runRefresh(opts = {}) {
   const config = rd(root, 'config/config.json');
   const communes = rd(root, 'config/communes.json');
   const now = new Date();
-  const report = { startedAt: now.toISOString(), today: today.toISOString().slice(0, 10), mode: dryRun ? 'dry-run' : 'réel', sources: [], publications: { pages: [], pending: [] }, rebuild: null, market: [], references: [], tests: null, decision: null, status: null, promoted: false, alerts: [], notes: [] };
+  const report = { startedAt: now.toISOString(), today: today.toISOString().slice(0, 10), mode: dryRun ? 'dry-run' : 'réel', sources: [], publications: { pages: [], pending: [] }, rebuild: null, market: [], references: [], tests: null, decision: null, status: null, promoted: false, alerts: [], manualActions: [], artifact: null, notes: [] };
   const alert = (kind, msg) => report.alerts.push({ kind, msg });
   let staging = null;
 
@@ -200,6 +203,21 @@ export async function runRefresh(opts = {}) {
       report.references = compareReferences(before, after, automation.thresholds);
       wr(staging, 'data/history/reference-accepted.json', { acceptedAt: now.toISOString(), computedFor: today.toISOString().slice(0, 10), marketGeneratedAt: cand.generatedAt, properties: after });
 
+      // 5 bis. Artifact Claude (dist/estimateur-artifact.html) : régénéré dans la zone de préparation avec la version
+      // candidate ; son contrôle d'intégrité doit reproduire les logements de référence. Activé avec le reste, ou pas du tout.
+      const ab = run(staging, 'scripts/build-artifact.mjs', ['--json']);
+      const abInfo = ab.ok ? JSON.parse(ab.out.trim().split('\n').filter((l) => l.startsWith('{')).pop()) : null;
+      report.artifact = {
+        generated: ab.ok,
+        file: 'dist/estimateur-artifact.html',
+        ...(abInfo ? { changed: abInfo.changed, builtAt: abInfo.builtAt, version: abInfo.version, engineVersion: abInfo.engineVersion, configVersion: abInfo.configVersion, references: abInfo.references } : {}),
+        marketGeneratedAt: cand.generatedAt,
+        marketSha256: sha256(path.join(staging, 'dist/market.json')),
+        dataPeriod: (() => { const st = rdIf(staging, 'dist/data-status.json'); const m = Object.values(cand.markets)[0]; return `${st ? st.marketDataYear : '?'} (${m.period.start} → ${m.period.end})`; })()
+      };
+      pipeline.push({ step: 'scripts/build-artifact.mjs', ok: ab.ok });
+      if (!ab.ok) alert('artifact Claude', `Génération de dist/estimateur-artifact.html en échec : ${ab.out.trim().split('\n').slice(-3).join(' | ')}`);
+
       // 6. Tests dans la zone de préparation (moteur + pipeline + invariants).
       if (runTests) {
         const t = spawnSync(process.execPath, ['--test', 'tests/*.test.mjs'], { cwd: staging, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
@@ -210,7 +228,7 @@ export async function runRefresh(opts = {}) {
         }
       }
 
-      const levels = [...Object.values(candidates).map((c) => c.chk.level), ...report.market.map((c) => c.level), ...report.references.map((r) => r.level), ...(report.tests && !report.tests.ok ? ['REJECT'] : [])];
+      const levels = [...Object.values(candidates).map((c) => c.chk.level), ...report.market.map((c) => c.level), ...report.references.map((r) => r.level), ...(report.tests && !report.tests.ok ? ['REJECT'] : []), ...(report.artifact.generated ? [] : ['REJECT'])];
       report.decision = worst(levels);
       for (const c of report.market.filter((x) => x.level !== 'ACCEPT')) if (c.level === 'REJECT' || automation.alerts.onReview) alert(c.level === 'REJECT' ? 'variation anormale' : 'variation à vérifier', `${c.scope} : ${c.msg}`);
       for (const r of report.references.filter((x) => x.level !== 'ACCEPT')) alert(r.level === 'REJECT' ? 'variation anormale' : 'variation à vérifier', `${r.label} : CA ${r.before.nightsRevenue} → ${r.after ? r.after.nightsRevenue : '—'} € (${r.revenuePct} %)${r.notes.length ? ' — ' + r.notes.join(' ; ') : ''}`);
@@ -222,6 +240,8 @@ export async function runRefresh(opts = {}) {
         promote(root, staging, active, now);
         report.promoted = true;
         finalMarket = cand;
+        // La republication sur claude.ai ne peut pas être faite par le pipeline (aucune API de publication) : action manuelle.
+        if (report.artifact.changed) report.manualActions.push({ kind: 'republication de l\'artifact Claude', msg: `Nouvelle version de dist/estimateur-artifact.html (version ${report.artifact.version}, moteur ${report.artifact.engineVersion}, données ${report.artifact.dataPeriod}). Récupérer le dépôt à jour (GitHub Desktop → Fetch/Pull), puis demander à Claude Code de republier ce fichier sur l'artifact officiel « Estimateur Émeraude — V2 Data Refresh » (même URL). Procédure : docs/procedure-donnees-annuelles.md.` });
       } else if (blocked) {
         report.notes.push('Activation bloquée : la version active est conservée.');
       }
@@ -273,7 +293,8 @@ function finish(root, report, { dryRun, staging, keepStaging, newHealth, health 
     else report.status = 'OK';
     if (rejectedSource && report.status === 'OK') report.status = 'WARNING';
   }
-  report.needsAttention = report.alerts.length > 0;
+  // Une action manuelle (republication de l'artifact) ouvre l'issue d'alerte sans dégrader le statut des données.
+  report.needsAttention = report.alerts.length > 0 || report.manualActions.length > 0;
   report.needsReview = report.decision === 'REVIEW' || report.decision === 'REJECT';
   report.finishedAt = new Date().toISOString();
   // État des sources : écrit seulement s'il change réellement (pas de commit hebdomadaire inutile).
@@ -282,14 +303,15 @@ function finish(root, report, { dryRun, staging, keepStaging, newHealth, health 
   const md = toMarkdown(report);
   wr(root, 'out/refresh-report.json', report);
   wr(root, 'out/refresh-report.md', md);
-  if (!dryRun && (report.promoted || report.alerts.length)) wr(root, `data/history/refresh-reports/${report.startedAt.slice(0, 10)}-${stampOf(report.startedAt).slice(11, 19)}.md`, md);
+  if (!dryRun && (report.promoted || report.alerts.length || report.manualActions.length)) wr(root, `data/history/refresh-reports/${report.startedAt.slice(0, 10)}-${stampOf(report.startedAt).slice(11, 19)}.md`, md);
   return report;
 }
 
 const ICON = { NEW_PERIOD: '✓', REVISION: '✓', UNCHANGED: '=', UNAVAILABLE: '✗', REJECTED: '✗', NOT_FETCHED: '·' };
 export function toMarkdown(r) {
   const L = [];
-  L.push(`# DATA REFRESH — ${fr(r.startedAt)}${r.mode === 'dry-run' ? ' (simulation : aucune donnée active modifiée)' : ''}`, '');
+  L.push(`# DATA REFRESH — ${frTime(r.startedAt)}${r.mode === 'dry-run' ? ' (simulation : aucune donnée active modifiée)' : ''}`, '');
+  L.push(`Exécution : ${r.startedAt} (UTC) · date de référence des calculs : ${r.today}`, '');
   L.push(`**Statut : ${r.status}**${r.status === 'WARNING' && !r.promoted && r.decision !== 'REJECT' ? ' — aucune donnée perdue' : ''} · décision : ${r.decision}${r.promoted ? ' · nouvelle version activée' : ''}${r.needsReview ? ' · NEEDS_REVIEW=true' : ''}`, '');
   L.push('## Sources automatiques', '', '| Source | Période active | Période reçue | Résultat | Détail |', '|---|---|---|---|---|');
   for (const s of r.sources) {
@@ -314,6 +336,25 @@ export function toMarkdown(r) {
     if (!anyMove) L.push('', '✓ aucune variation');
   }
   if (r.tests) L.push('', '## Tests', '', `${r.tests.ok ? '✓' : '✗'} ${r.tests.pass}/${r.tests.total}${r.tests.fail ? ` — ${r.tests.fail} échec(s)` : ''}`);
+  L.push('', '## Artifact Claude (dist/estimateur-artifact.html)', '');
+  const a = r.artifact;
+  if (!a) L.push('Aucune nouvelle version validée : artifact non régénéré, aucune republication nécessaire.');
+  else if (!a.generated) L.push('✗ Génération en échec : la version active (données et artifact) est conservée.');
+  else {
+    const refs = a.references || [];
+    const okRefs = refs.filter((x) => x.ok).length;
+    const state = r.promoted ? (a.changed ? '**Nouvelle version disponible**' : 'version inchangée') : r.mode === 'dry-run' ? 'générée en simulation uniquement (non activée)' : 'générée mais non activée (version active conservée)';
+    L.push(`- État : ${state}`);
+    L.push(`- Générée le : ${frTime(a.builtAt)} · version de l'artifact ${a.version}`);
+    L.push(`- Moteur : ${a.engineVersion} · configuration ${a.configVersion}`);
+    L.push(`- Données de marché : ${a.dataPeriod}`);
+    L.push(`- market.json : version du ${frTime(a.marketGeneratedAt)} (${a.marketGeneratedAt}) · SHA-256 ${a.marketSha256}`);
+    L.push(`- Tests : ${r.tests ? `${r.tests.pass}/${r.tests.total}${r.tests.ok ? ' ✓' : ' ✗'}` : 'non exécutés'}`);
+    L.push(`- Logements de référence reproduits par l'artifact : ${okRefs}/${refs.length}${okRefs === refs.length && refs.length ? ' ✓' : ' ✗'}`);
+    L.push(r.promoted && a.changed
+      ? '- **Action manuelle nécessaire** : la publication sur claude.ai ne peut pas être automatisée. Récupérer le dépôt à jour, puis demander à Claude Code de republier dist/estimateur-artifact.html sur l\'artifact officiel « Estimateur Émeraude — V2 Data Refresh » (même URL). Tant que ce n\'est pas fait, l\'artifact en ligne affiche la version précédente (il indique lui-même sa période de données).'
+      : '- Aucune republication nécessaire.');
+  }
   if (r.publications && r.publications.pages && r.publications.pages.length) {
     L.push('', '## Publications annuelles', '');
     if (r.publications.pending.length) for (const p of r.publications.pending) L.push(`⚠️ NOUVELLE PUBLICATION À VÉRIFIER — ${p.label}`, `   ${p.url}`, '   Aucune modification de la base de calcul n\'est effectuée automatiquement.');
@@ -322,8 +363,9 @@ export function toMarkdown(r) {
   }
   if (r.freshness) L.push('', '## Fraîcheur', '', `Confiance « données » : ${r.freshness.global} · données de marché : ${r.freshness.marketDataYear}`, ...r.freshness.families.map((f) => `- ${f.label} : ${f.status} (fin ${f.newestEnd})`));
   L.push('', '## Alertes', '');
-  if (r.alerts.length) for (const a of r.alerts) L.push(`- **${a.kind}** : ${a.msg}`);
-  else L.push('Aucune intervention nécessaire.');
+  if (r.alerts.length) for (const x of r.alerts) L.push(`- **${x.kind}** : ${x.msg}`);
+  for (const x of r.manualActions || []) L.push(`- **ACTION MANUELLE — ${x.kind}** : ${x.msg}`);
+  if (!r.alerts.length && !(r.manualActions || []).length) L.push('Aucune intervention nécessaire.');
   if (r.notes.length) L.push('', '## Notes', '', ...r.notes.map((n) => `- ${n}`));
   return L.join('\n') + '\n';
 }

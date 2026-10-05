@@ -36,6 +36,7 @@ npm run data:update -- --dry-run    # simulation : décision ACCEPT / REVIEW / R
 npm run data:integrate              # après une saisie annuelle (data/raw/...) : reconstruction contrôlée sans téléchargement
 npm run data:restore -- --list      # versions archivées de market.json (restauration : voir docs/procedure-donnees-annuelles.md)
 npm run security                    # contrôle : aucun secret, aucune donnée privée, aucun PDF publiable
+npm run build:artifact              # estimateur officiel (artifact Claude) → dist/estimateur-artifact.html, à republier après chaque version validée
 npm run fetch        # (compatibilité) = simulation de l'actualisation
 npm run build        # reconstruction directe SANS contrôle de variation (développement uniquement ; préférer data:integrate)
 npm test             # tests automatiques (moteur, pipeline, parité ancien moteur, invariants, automatisation)

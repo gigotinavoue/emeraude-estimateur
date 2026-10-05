@@ -180,6 +180,18 @@ test('DR11. Fraîcheur par famille : marché MEDIUM, saisonnalité MEDIUM, indic
   for (const c of ['OBSERVÉE', 'HYPOTHÈSE', 'PROXY', 'CALIBRATION', 'FALLBACK']) assert.ok(classes.has(c), c);
 });
 
+test('DR11b. Dates du contrôle : checkedAt = heure réelle d\'exécution, distincte de la date de référence des âges', () => {
+  const t0 = Date.now();
+  const s = dataStatus({ market: MARKET, communes: COMMUNES, config: CONFIG, today: NOW });
+  assert.equal(s.freshnessAsOf, NOW.toISOString());
+  assert.ok(Date.parse(s.checkedAt) >= t0 && Date.parse(s.checkedAt) <= Date.now(), 'checkedAt doit être l\'heure réelle du contrôle');
+  assert.match(s.checkedAt, /Z$/, 'horodatage en UTC');
+  const fixed = new Date('2026-10-05T07:00:00Z');
+  assert.equal(dataStatus({ market: MARKET, communes: COMMUNES, config: CONFIG, today: NOW, checkedAt: fixed }).checkedAt, fixed.toISOString());
+  const st = J('dist/data-status.json');
+  assert.ok(st.freshnessAsOf, 'dist/data-status.json doit distinguer freshnessAsOf et checkedAt');
+});
+
 test('DR12. Sources automatiques : la dernière période enregistrée est bien celle des données', () => {
   for (const f of ['data/raw/eurostat/tour_ce_oarc_FR016C.json', 'data/raw/eurostat/tour_ce_omn12_FRH0.json', 'data/raw/insee/ds_tour_freq_dep35_hotels.json']) {
     const raw = J(f);

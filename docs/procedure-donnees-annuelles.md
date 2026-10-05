@@ -32,6 +32,31 @@ Au 2026-10-04, le bilan « hébergements locatifs 2025 » par EPCI **n'est pas p
    - si l'activation est bloquée (REJECT) alors que l'écart est compris et justifié (ex. série révisée assumée) : `node scripts/refresh.mjs --no-fetch --force-accept` (décision humaine, jamais utilisée par le workflow) ;
    - ajouter l'adresse du PDF à `config/automation.json → publications.known` et passer son statut à « INTÉGRÉE » ou « CONTRÔLE » dans `data/inbox/publications.json` (l'alerte s'arrête).
 7. **Comparer** : `npm run reference` (8 logements de référence) avant et après ; documenter les écarts dans un rapport `reports/data-refresh-AAAA-MM.md`.
+8. **Republier l'artifact Claude** (voir ci-dessous).
+
+## Artifact Claude : ce qui est automatique, ce qui reste manuel
+
+L'estimateur officiel est l'artifact claude.ai « Estimateur Émeraude — V2 Data Refresh » (l'Embed Framer est abandonné).
+
+**Automatique** (GitHub Actions ou `npm run data:update` / `data:integrate`) : à chaque nouvelle version reconstruite, `scripts/refresh.mjs` génère `dist/estimateur-artifact.html` dans la zone de préparation, avec la version candidate. Le moteur embarqué doit reproduire les 8 logements de référence, et la suite de tests tourne avant l'activation. Si la génération échoue, rien n'est activé (REJECT). Si la version est acceptée, l'artifact est activé et commité avec les données. Le rapport (section « Artifact Claude ») indique la version, la date, le moteur, la période des données, l'empreinte SHA-256 de `market.json`, les tests et les références. L'issue GitHub « Données : intervention nécessaire » signale l'action manuelle. Sans nouvelle version validée, l'artifact n'est pas régénéré et aucune action n'est demandée.
+
+**Manuel (obligatoire)** : la publication sur claude.ai. Elle passe par l'outil de publication d'une session Claude (Claude Code ou claude.ai) ouverte avec le compte du propriétaire de l'artifact. GitHub Actions ne dispose d'aucune API documentée pour publier ou mettre à jour un artifact claude.ai, donc le pipeline ne republie jamais. Procédure :
+
+1. GitHub Desktop → *Fetch origin* puis *Pull* pour récupérer le commit « Données : actualisation automatique… ».
+2. Dans Claude Code, ouvert dans le dossier `emeraude-estimateur` : « Republie `dist/estimateur-artifact.html` sur l'artifact officiel <lien de l'artifact> » (toujours la **même URL**, pour garder le lien).
+3. Ouvrir l'artifact. Le pied de page doit indiquer la nouvelle période de données et « 8/8 logements de référence reproduits à l'identique ».
+4. Fermer l'issue GitHub.
+
+Tant que l'étape manuelle n'est pas faite, l'artifact en ligne reste sur la version précédente. Il reste cohérent : il affiche lui-même sa période de données et son âge.
+
+En local, `npm run build:artifact` régénère le fichier, uniquement si son contenu change. Le test V7 échoue si `dist/estimateur-artifact.html` n'est plus synchronisé avec les données validées.
+
+## Convention des dates
+
+- **Stockage** : horodatages en UTC, ISO 8601 avec « Z » (`generatedAt`, `checkedAt`, `acceptedAt`, `retrievedAt`, `builtAt`). Une date seule (`AAAA-MM-JJ` : périodes, `computedFor`, `retrievedAt` saisi à la main) est un jour calendaire, sans heure.
+- **Affichage** (artifact, rapports, issue) : heure de Paris (Europe/Paris), toujours indiquée comme telle. Exemple : `market.json` généré le `2026-10-04T22:09:32Z` s'affiche « 5 octobre 2026 à 00 h 09 (heure de Paris) ».
+- `dist/data-status.json` : `checkedAt` = heure réelle de l'exécution du contrôle ; `freshnessAsOf` = date de référence utilisée pour calculer les âges (le jour du calcul, ou `--today` / `ESTIMATEUR_TODAY` lors d'une reconstruction datée).
+- **Fichiers générés versionnés** (`embed/`, `deploy/`, `dist/preview.html`, `reports/preview-artifact.html`, `dist/estimateur-artifact.html`) : réécrits seulement si leur contenu change. `builtAt` est la date du dernier vrai changement, ce qui évite les commits artificiels.
 
 ## Ordre de repli (déjà assuré par le moteur et le pipeline)
 

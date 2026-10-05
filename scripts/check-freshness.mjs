@@ -23,7 +23,10 @@ export const CLASSIFICATION = [
   { item: 'Données des logements Émeraude', dataClass: 'CALIBRATION', family: 'emeraude', note: 'Architecture prête, aucune donnée chargée ; privées, jamais publiées.' }
 ];
 
-export function dataStatus({ market, communes, config, today }) {
+// Dates (convention du dépôt, docs/procedure-donnees-annuelles.md) : horodatages en UTC (ISO 8601, « Z »).
+//  - checkedAt     : heure RÉELLE du contrôle (horloge au moment de l'exécution), jamais une date fixée ;
+//  - freshnessAsOf : date de référence des âges (« aujourd'hui » du calcul ; --today ou ESTIMATEUR_TODAY s'il est fourni).
+export function dataStatus({ market, communes, config, today, checkedAt = new Date() }) {
   const used = new Set(communes.communes.map((c) => `epci:${c.epci}`));
   const fam = (id, label, role, items) => {
     const status = items.length ? minStatus(items.map((x) => x.status)) : 'LOW';
@@ -60,7 +63,8 @@ export function dataStatus({ market, communes, config, today }) {
   const global = minStatus(families.filter((f) => f.role === 'calcul').map((f) => f.status));
   const marketYear = [...new Set(marketItems.map((x) => x.periodEnd.slice(0, 4)))].sort();
   return {
-    checkedAt: today.toISOString(),
+    checkedAt: checkedAt.toISOString(),
+    freshnessAsOf: today.toISOString(),
     marketGeneratedAt: market.generatedAt,
     marketDataYear: marketYear.join(', '),
     thresholds: { HIGH: `≤ ${config.freshness.greenMaxMonths} mois`, MEDIUM: `> ${config.freshness.greenMaxMonths} et ≤ ${config.freshness.orangeMaxMonths} mois`, LOW: `> ${config.freshness.orangeMaxMonths} mois` },
@@ -89,7 +93,7 @@ if (process.argv[1].endsWith('check-freshness.mjs')) {
   const worst = rows.some((r) => r.level === 'red') ? 'red' : rows.some((r) => r.level === 'orange') ? 'orange' : 'green';
   const needsAttention = worst === 'red' || pipelineStale;
 
-  writeJson('dist/freshness.json', { checkedAt: today.toISOString(), buildAgeDays, pipelineStale, worst, rows });
+  writeJson('dist/freshness.json', { checkedAt: new Date().toISOString(), freshnessAsOf: today.toISOString(), buildAgeDays, pipelineStale, worst, rows });
   const status = dataStatus({ market, communes, config, today });
   status.pipeline = { buildAgeDays, pipelineStale };
   const prev = readJsonIfExists('dist/data-status.json');

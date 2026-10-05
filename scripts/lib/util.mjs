@@ -27,6 +27,24 @@ export function writeText(rel, text) {
   fs.writeFileSync(p(rel), text, 'utf8');
 }
 
+// Génération stable des fichiers versionnés : un fichier n'est réécrit que si son contenu change réellement.
+// render(builtAt) → { chemin: texte }. On réutilise d'abord l'horodatage de la génération précédente (lu dans le
+// premier fichier) : si tout est identique (fins de ligne ignorées), rien n'est écrit et builtAt reste la date du
+// dernier changement réel. Sinon, tout est régénéré avec l'heure actuelle.
+export function stableBuild(files, render, { write = true, now = new Date() } = {}) {
+  const norm = (s) => s.replace(/\r\n/g, '\n');
+  const read = (rel) => (fs.existsSync(p(rel)) ? fs.readFileSync(p(rel), 'utf8') : null);
+  const prev = /"builtAt":"([^"]+)"/.exec(read(files[0]) || '');
+  if (prev) {
+    const out = render(prev[1]);
+    if (files.every((rel) => { const cur = read(rel); return cur !== null && norm(cur) === norm(out[rel]); })) return { changed: false, builtAt: prev[1], out };
+  }
+  const builtAt = now.toISOString();
+  const out = render(builtAt);
+  if (write) for (const rel of files) writeText(rel, out[rel]);
+  return { changed: true, builtAt, out };
+}
+
 // CSV simple (séparateur virgule, guillemets doubles), première ligne = en-têtes.
 export function parseCsv(text) {
   const rows = [];

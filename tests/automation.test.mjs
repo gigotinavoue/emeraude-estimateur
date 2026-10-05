@@ -193,6 +193,11 @@ test('A8. Aucune nouvelle période : rien n\'est reconstruit ni modifié, statut
     assert.equal(r.promoted, false);
     assert.equal(treeHash(root), h0, 'les données actives ont été modifiées');
     assert.ok(fs.existsSync(path.join(root, 'out/refresh-report.md')));
+    // Sans nouvelle version validée : l'artifact n'est ni régénéré ni à republier, aucune issue.
+    assert.equal(r.artifact, null);
+    assert.deepEqual(r.manualActions, []);
+    assert.equal(r.needsAttention, false);
+    assert.match(toMarkdown(r), /artifact non régénéré, aucune republication nécessaire/);
   } finally { fs.rmSync(root, { recursive: true, force: true }); }
 });
 
@@ -213,6 +218,11 @@ test('A9. Simulation (dry-run) d\'une nouvelle période : décision et impact ca
     const md = toMarkdown(r);
     assert.match(md, /simulation/);
     assert.match(md, new RegExp(next));
+    // L'artifact est construit et contrôlé en zone de préparation, jamais activé en simulation.
+    assert.equal(r.artifact.generated, true);
+    assert.ok(r.artifact.references.every((x) => x.ok));
+    assert.deepEqual(r.manualActions, []);
+    assert.match(md, /générée en simulation uniquement/);
   } finally { fs.rmSync(root, { recursive: true, force: true }); }
 });
 
@@ -234,9 +244,30 @@ test('A10. Nouvelle période réelle : ancienne version archivée, nouvelle acti
     for (const k of Object.keys(before.markets)) assert.equal(after.markets[k].adr, before.markets[k].adr, 'la base de marché ne doit pas changer avec une source de contrôle');
     assert.ok(fs.existsSync(path.join(root, 'data/history/build-inputs.json')));
     assert.ok(fs.readdirSync(path.join(root, 'data/history/refresh-reports')).length >= 1);
-    // Deuxième passage avec la même réponse : plus rien à faire.
+    // Artifact Claude régénéré avec la nouvelle version, contrôlé, et republication signalée comme action manuelle.
+    const art = fs.readFileSync(path.join(root, 'dist/estimateur-artifact.html'), 'utf8');
+    const snap = JSON.parse(/const SNAPSHOT=(\{.*\});\r?\nconst REMOTE/.exec(art)[1]);
+    assert.equal(snap.market.generatedAt, after.generatedAt);
+    assert.equal(snap.referenceAccepted.marketGeneratedAt, after.generatedAt);
+    assert.equal(r.artifact.generated, true);
+    assert.equal(r.artifact.changed, true);
+    assert.equal(r.artifact.references.length, 8);
+    assert.ok(r.artifact.references.every((x) => x.ok));
+    assert.equal(r.artifact.marketSha256, crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'dist/market.json'))).digest('hex'));
+    assert.equal(r.manualActions.length, 1);
+    assert.equal(r.needsAttention, true, 'la republication manuelle doit ouvrir l\'issue d\'alerte');
+    assert.equal(r.status, 'OK', 'une action manuelle ne dégrade pas le statut des données');
+    const md = toMarkdown(r);
+    assert.match(md, /Nouvelle version disponible/);
+    assert.match(md, /Action manuelle nécessaire/);
+    assert.match(md, /SHA-256 [0-9a-f]{64}/);
+    assert.match(alertBody(r).body, /ACTION MANUELLE — republication de l'artifact Claude/);
+    // Deuxième passage avec la même réponse : plus rien à faire, rien à republier.
+    const h1 = treeHash(root);
     const r2 = await runRefresh(opts(root, { fetchImpl: fakeFetch({ insee: data }) }));
     assert.equal(r2.decision, 'NO_CHANGE');
+    assert.deepEqual(r2.manualActions, []);
+    assert.equal(treeHash(root), h1, 'aucun fichier versionné ne doit changer sans nouvelle version');
   } finally { fs.rmSync(root, { recursive: true, force: true }); }
 });
 

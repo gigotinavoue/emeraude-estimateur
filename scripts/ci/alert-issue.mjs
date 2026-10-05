@@ -6,9 +6,13 @@ import crypto from 'node:crypto';
 
 const TITLE = 'Données : intervention nécessaire';
 
+// Alertes (problème de données) et actions manuelles (ex. republier l'artifact Claude après une nouvelle version).
+const items = (report) => [...report.alerts, ...(report.manualActions || []).map((a) => ({ kind: `ACTION MANUELLE — ${a.kind}`, msg: a.msg }))];
+
 export function alertBody(report) {
-  const lines = report.alerts.map((a) => `- **${a.kind}** : ${a.msg}`);
-  const key = crypto.createHash('sha256').update(report.alerts.map((a) => `${a.kind}|${a.msg.replace(/\(détectée le [^)]+\)/, '')}`).sort().join('\n')).digest('hex').slice(0, 16);
+  const all = items(report);
+  const lines = all.map((a) => `- **${a.kind}** : ${a.msg}`);
+  const key = crypto.createHash('sha256').update(all.map((a) => `${a.kind}|${a.msg.replace(/\(détectée le [^)]+\)/, '')}`).sort().join('\n')).digest('hex').slice(0, 16);
   return { key, body: `<!-- alert-key:${key} -->\n**Statut : ${report.status}** · décision : ${report.decision} · ${report.startedAt.slice(0, 10)}\n\n${lines.join('\n')}\n\nRapport complet : artefact « refresh-report » de l'exécution, ou \`out/refresh-report.md\` en local.\n\nQue faire : voir *reports/automation-data-refresh-2026-10.md → Instructions pour moi*.` };
 }
 
@@ -20,7 +24,7 @@ async function gh(path, init = {}) {
 
 if (process.argv[1].endsWith('alert-issue.mjs')) {
   const report = JSON.parse(fs.readFileSync('out/refresh-report.json', 'utf8'));
-  if (!report.alerts.length) {
+  if (!items(report).length) {
     console.log('Aucune alerte : aucune issue.');
     process.exit(0);
   }

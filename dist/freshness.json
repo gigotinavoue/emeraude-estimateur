@@ -1,5 +1,6 @@
 {
-  "checkedAt": "2026-10-05T12:00:00.000Z",
+  "checkedAt": "2026-10-05T09:03:51.741Z",
+  "freshnessAsOf": "2026-10-05T12:00:00.000Z",
   "buildAgeDays": 1,
   "pipelineStale": false,
   "worst": "orange",
