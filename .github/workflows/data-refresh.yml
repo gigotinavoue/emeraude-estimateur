@@ -77,7 +77,11 @@ jobs:
         run: |
           git config user.name "estimateur-bot"
           git config user.email "estimateur-bot@users.noreply.github.com"
-          git add data/raw data/observations data/market data/history data/inbox dist embed/estimateur-v2.html deploy/estimateur-v2/estimateur-v2-validation.html reports/preview-artifact.html
+          # Seuls les chemins présents ou déjà suivis sont ajoutés : data/inbox n'existe que si une publication a été détectée
+          # (un chemin absent ferait échouer git add avec le code 128).
+          for p in data/raw data/observations data/market data/history data/inbox dist embed/estimateur-v2.html deploy/estimateur-v2/estimateur-v2-validation.html reports/preview-artifact.html; do
+            if [ -e "$p" ] || [ -n "$(git ls-files -- "$p")" ]; then git add -- "$p"; fi
+          done
           node scripts/security-check.mjs
           if git diff --cached --quiet; then
             echo "Aucun changement : rien à enregistrer."
