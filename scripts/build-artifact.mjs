@@ -51,9 +51,9 @@ function replaceBlock(text, start, end, repl, label) {
 }
 
 // Reproduit les logements de référence avec un moteur donné ; mêmes champs que scripts/audit/reference-properties.mjs.
-export function checkReferences(estimate, snap) {
+export function checkReferences(estimate, snap, makeDate = (iso) => new Date(iso)) {
   const ref = snap.referenceAccepted;
-  const today = new Date(`${ref.computedFor}T12:00:00Z`);
+  const today = makeDate(`${ref.computedFor}T12:00:00Z`);
   const ctx = { config: snap.config, communes: snap.communes, sources: snap.sources, marketSources: [{ origin: 'remote', data: snap.market }], today };
   return snap.referenceCases.map(([label, over]) => {
     const exp = ref.properties.find((x) => x.label === label);
@@ -247,7 +247,11 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
   // Le moteur embarqué doit reproduire les références validées avant toute écriture.
   const sandbox = { window: {} };
   vm.runInNewContext(engine, sandbox);
-  const check = checkReferences(sandbox.window.EmeraudeEngine.estimate, snapshot);
+  const check = checkReferences(
+  sandbox.window.EmeraudeEngine.estimate,
+  snapshot,
+  vm.runInContext('(iso) => new Date(iso)', sandbox)
+);
   const failed = check.filter((x) => !x.ok);
   if (failed.length) throw new Error(`Logements de référence non reproduits : ${failed.map((x) => `${x.label} (${x.diff.join(', ')})`).join(' ; ')}`);
 
