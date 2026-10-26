@@ -6,3 +6,6 @@
 {"at":"2026-10-04T21:44:15.523Z","buildId":"local","markets":16,"profiles":["urbain","littoral"],"changes":[],"notes":[]}
 {"at":"2026-10-04T22:09:32.267Z","buildId":"local","markets":16,"profiles":["urbain","littoral"],"changes":[],"notes":[]}
 {"at":"2026-10-04T22:09:31.754Z","kind":"promotion","archivedMarket":"data/history/market-versions/market-2026-10-04T21-44-15-523Z.json"}
+{"at":"2026-10-26T14:32:33.401Z","buildId":"b6b91b025c8ffd36895a9b2c3de1ed642fb2c898","markets":16,"profiles":["urbain","littoral"],"changes":[],"notes":[]}
+{"at":"2026-10-26T14:32:33.461Z","kind":"history","changes":[{"file":"data/market/2025/seasonality-inputs.json","action":"replaced","archivedAs":"data/market/2025/seasonality-inputs.replaced-2026-10-04T21-40-39-274Z.json"}]}
+{"at":"2026-10-26T14:32:27.303Z","kind":"promotion","archivedMarket":"data/history/market-versions/market-2026-10-04T22-09-32-267Z.json"}

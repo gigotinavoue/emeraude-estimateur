@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-04T22:09:31.754Z",
+  "at": "2026-10-26T14:32:27.303Z",
   "files": {
     "config/communes.json": "0afaa2d961ec2e634a21660219aac777bb1e63d120669cf38d96a242b509ce21",
     "config/config.json": "9c6249d70aabb40b3f3659e5ea756df21a88b25f4d95690cb6c57b2b845e3f60",
@@ -14,7 +14,7 @@
     "data/raw/carte-loyers/2025_mai_dep35.csv": "a83a7a9a3e15b78bc05c0e22628be06142817f5b3dbf967a6efc108237611bea",
     "data/raw/eurostat/tour_ce_oarc_FR016C.json": "38422268ce3553c9a579b4e6f3cce00251b9e64f4c1df90fb5d2e5eddb3371e2",
     "data/raw/eurostat/tour_ce_omn12_FRH0.json": "08117fbc3e8515d596bbb23957fdef0e783fdc0b331ca0942fa67be8183155e4",
-    "data/raw/insee/ds_tour_freq_dep35_hotels.json": "395368f06304002efe1dfca24782adb544b25c9fcde74376e1fd3228f8d09b21",
+    "data/raw/insee/ds_tour_freq_dep35_hotels.json": "9020dfccaf5b8f1e552cffafafd01106356d206b3ee6afb74b3290a41e6db80e",
     "data/raw/manifest.json": "20f393355c640cc74d6eae8cdb7a813a0ff3530aedb2bc8391ef8b1a1201e86b"
   }
 }

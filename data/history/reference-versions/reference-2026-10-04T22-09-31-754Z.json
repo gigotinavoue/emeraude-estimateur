@@ -1,0 +1,111 @@
+{
+  "acceptedAt": "2026-10-04T22:09:31.754Z",
+  "computedFor": "2026-10-05",
+  "marketGeneratedAt": "2026-10-04T22:09:32.267Z",
+  "properties": [
+    {
+      "label": "Rennes T2 standard",
+      "marketKey": "epci:rennes-metropole",
+      "adr": 68.49,
+      "occupancyPct": 50.1,
+      "nightsRevenue": 10427,
+      "central": 10400,
+      "low": 9700,
+      "high": 11200,
+      "uncertaintyPct": 7,
+      "confidence": "MEDIUM",
+      "freshnessMonths": 21
+    },
+    {
+      "label": "Rennes T2 hypercentre rénové",
+      "marketKey": "epci:rennes-metropole",
+      "adr": 78.35,
+      "occupancyPct": 54.1,
+      "nightsRevenue": 12882,
+      "central": 12900,
+      "low": 12000,
+      "high": 13800,
+      "uncertaintyPct": 7,
+      "confidence": "MEDIUM",
+      "freshnessMonths": 21
+    },
+    {
+      "label": "Rennes T3",
+      "marketKey": "epci:rennes-metropole",
+      "adr": 99.31,
+      "occupancyPct": 48.1,
+      "nightsRevenue": 14516,
+      "central": 14500,
+      "low": 13500,
+      "high": 15500,
+      "uncertaintyPct": 7,
+      "confidence": "MEDIUM",
+      "freshnessMonths": 21
+    },
+    {
+      "label": "Saint-Malo T2",
+      "marketKey": "epci:saint-malo-agglomeration",
+      "adr": 88.28,
+      "occupancyPct": 47.9,
+      "nightsRevenue": 12857,
+      "central": 12900,
+      "low": 11300,
+      "high": 14400,
+      "uncertaintyPct": 12,
+      "confidence": "MEDIUM",
+      "freshnessMonths": 21
+    },
+    {
+      "label": "Saint-Malo T3",
+      "marketKey": "epci:saint-malo-agglomeration",
+      "adr": 128.01,
+      "occupancyPct": 45.9,
+      "nightsRevenue": 17864,
+      "central": 17900,
+      "low": 15700,
+      "high": 20000,
+      "uncertaintyPct": 12,
+      "confidence": "MEDIUM",
+      "freshnessMonths": 21
+    },
+    {
+      "label": "Vitré T2",
+      "marketKey": "epci:vitre-communaute",
+      "adr": 69.6,
+      "occupancyPct": 49.1,
+      "nightsRevenue": 10385,
+      "central": 10400,
+      "low": 9600,
+      "high": 11200,
+      "uncertaintyPct": 8,
+      "confidence": "MEDIUM",
+      "freshnessMonths": 21
+    },
+    {
+      "label": "Bruz T2",
+      "marketKey": "epci:rennes-metropole",
+      "adr": 68.49,
+      "occupancyPct": 50.1,
+      "nightsRevenue": 10427,
+      "central": 10400,
+      "low": 9600,
+      "high": 11300,
+      "uncertaintyPct": 8,
+      "confidence": "MEDIUM",
+      "freshnessMonths": 21
+    },
+    {
+      "label": "Betton T2",
+      "marketKey": "epci:rennes-metropole",
+      "adr": 68.49,
+      "occupancyPct": 50.1,
+      "nightsRevenue": 10427,
+      "central": 10400,
+      "low": 9600,
+      "high": 11300,
+      "uncertaintyPct": 8,
+      "confidence": "MEDIUM",
+      "freshnessMonths": 21
+    }
+  ]
+}

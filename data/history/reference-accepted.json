@@ -1,7 +1,7 @@
 {
-  "acceptedAt": "2026-10-04T22:09:31.754Z",
-  "computedFor": "2026-10-05",
-  "marketGeneratedAt": "2026-10-04T22:09:32.267Z",
+  "acceptedAt": "2026-10-26T14:32:27.303Z",
+  "computedFor": "2026-10-26",
+  "marketGeneratedAt": "2026-10-26T14:32:33.401Z",
   "properties": [
     {
       "label": "Rennes T2 standard",
@@ -14,7 +14,7 @@
       "high": 11200,
       "uncertaintyPct": 7,
       "confidence": "MEDIUM",
-      "freshnessMonths": 21
+      "freshnessMonths": 22
     },
     {
       "label": "Rennes T2 hypercentre rénové",
@@ -27,7 +27,7 @@
       "high": 13800,
       "uncertaintyPct": 7,
       "confidence": "MEDIUM",
-      "freshnessMonths": 21
+      "freshnessMonths": 22
     },
     {
       "label": "Rennes T3",
@@ -40,7 +40,7 @@
       "high": 15500,
       "uncertaintyPct": 7,
       "confidence": "MEDIUM",
-      "freshnessMonths": 21
+      "freshnessMonths": 22
     },
     {
       "label": "Saint-Malo T2",
@@ -53,7 +53,7 @@
       "high": 14400,
       "uncertaintyPct": 12,
       "confidence": "MEDIUM",
-      "freshnessMonths": 21
+      "freshnessMonths": 22
     },
     {
       "label": "Saint-Malo T3",
@@ -66,7 +66,7 @@
       "high": 20000,
       "uncertaintyPct": 12,
       "confidence": "MEDIUM",
-      "freshnessMonths": 21
+      "freshnessMonths": 22
     },
     {
       "label": "Vitré T2",
@@ -79,7 +79,7 @@
       "high": 11200,
       "uncertaintyPct": 8,
       "confidence": "MEDIUM",
-      "freshnessMonths": 21
+      "freshnessMonths": 22
     },
     {
       "label": "Bruz T2",
@@ -92,7 +92,7 @@
       "high": 11300,
       "uncertaintyPct": 8,
       "confidence": "MEDIUM",
-      "freshnessMonths": 21
+      "freshnessMonths": 22
     },
     {
       "label": "Betton T2",
@@ -105,7 +105,7 @@
       "high": 11300,
       "uncertaintyPct": 8,
       "confidence": "MEDIUM",
-      "freshnessMonths": 21
+      "freshnessMonths": 22
     }
   ]
 }

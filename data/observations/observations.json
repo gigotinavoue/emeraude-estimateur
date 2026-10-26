@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-04T22:09:32.087Z",
-  "count": 426,
+  "generatedAt": "2026-10-26T14:32:33.301Z",
+  "count": 427,
   "observations": [
     {
       "id": "adt35_lighthouse|2024|departement:35|adr",
@@ -7711,7 +7711,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7735,7 +7735,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7759,7 +7759,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7783,7 +7783,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7807,7 +7807,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7831,7 +7831,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7855,7 +7855,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7879,7 +7879,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7903,7 +7903,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7927,7 +7927,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7951,7 +7951,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7975,7 +7975,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -7999,7 +7999,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8023,7 +8023,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8047,7 +8047,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8071,7 +8071,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8095,7 +8095,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8119,7 +8119,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8143,7 +8143,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8167,7 +8167,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8191,7 +8191,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8215,7 +8215,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8239,7 +8239,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8263,7 +8263,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8287,7 +8287,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8311,7 +8311,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8335,7 +8335,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8359,7 +8359,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8383,7 +8383,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8407,7 +8407,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8431,7 +8431,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8455,7 +8455,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8479,7 +8479,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8503,7 +8503,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8527,7 +8527,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8551,7 +8551,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8575,7 +8575,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8599,7 +8599,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8623,7 +8623,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8647,7 +8647,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8671,7 +8671,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8695,7 +8695,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8719,7 +8719,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8743,7 +8743,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8767,7 +8767,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8791,7 +8791,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8815,7 +8815,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8839,7 +8839,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8863,7 +8863,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8887,7 +8887,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8911,7 +8911,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8935,7 +8935,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8959,7 +8959,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -8983,7 +8983,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9007,7 +9007,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9031,7 +9031,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9055,7 +9055,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9079,7 +9079,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9103,7 +9103,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9127,7 +9127,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9151,7 +9151,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9175,7 +9175,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9199,7 +9199,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9223,7 +9223,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9247,7 +9247,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9271,7 +9271,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9295,7 +9295,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9319,7 +9319,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9343,7 +9343,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9367,7 +9367,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9391,7 +9391,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9415,7 +9415,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9439,7 +9439,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9463,7 +9463,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9487,7 +9487,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9511,7 +9511,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9535,7 +9535,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9559,7 +9559,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9583,7 +9583,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9607,7 +9607,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9631,7 +9631,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9655,7 +9655,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9679,7 +9679,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9703,7 +9703,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9727,7 +9727,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9751,7 +9751,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9775,7 +9775,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9799,7 +9799,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9823,7 +9823,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9847,7 +9847,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9871,7 +9871,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9895,7 +9895,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9919,7 +9919,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9943,7 +9943,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9967,7 +9967,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -9991,7 +9991,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10015,7 +10015,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10039,7 +10039,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10063,7 +10063,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10087,7 +10087,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10111,7 +10111,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10135,7 +10135,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10159,7 +10159,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10183,7 +10183,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10207,7 +10207,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10231,7 +10231,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10255,7 +10255,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10279,7 +10279,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10303,7 +10303,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10327,7 +10327,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10351,7 +10351,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10375,7 +10375,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10399,7 +10399,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10423,7 +10423,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10447,7 +10447,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10471,7 +10471,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10495,7 +10495,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10519,7 +10519,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10543,7 +10543,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10567,7 +10567,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10591,7 +10591,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10615,7 +10615,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10639,7 +10639,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10663,7 +10663,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10687,7 +10687,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10711,7 +10711,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10735,7 +10735,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10759,7 +10759,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10783,7 +10783,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10807,7 +10807,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10831,7 +10831,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10855,7 +10855,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10879,7 +10879,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10903,7 +10903,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10927,7 +10927,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10951,7 +10951,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10975,7 +10975,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -10999,7 +10999,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11023,7 +11023,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11047,7 +11047,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11071,7 +11071,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11095,7 +11095,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11119,7 +11119,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11143,7 +11143,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11167,7 +11167,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11191,7 +11191,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11215,7 +11215,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11239,7 +11239,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11263,7 +11263,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11287,7 +11287,7 @@
         "granularity": "month",
         "month": 10
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11311,7 +11311,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11335,7 +11335,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11359,7 +11359,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11383,7 +11383,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11407,7 +11407,7 @@
         "granularity": "month",
         "month": 7
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11431,7 +11431,7 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11455,7 +11455,7 @@
         "granularity": "month",
         "month": 11
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11479,7 +11479,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11503,7 +11503,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11527,7 +11527,7 @@
         "granularity": "month",
         "month": 8
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11551,7 +11551,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11575,7 +11575,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11599,7 +11599,7 @@
         "granularity": "month",
         "month": 2
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11623,7 +11623,7 @@
         "granularity": "month",
         "month": 3
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11647,7 +11647,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11671,7 +11671,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11695,7 +11695,7 @@
         "granularity": "month",
         "month": 9
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11719,7 +11719,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11743,7 +11743,7 @@
         "granularity": "month",
         "month": 4
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11767,7 +11767,7 @@
         "granularity": "month",
         "month": 0
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11791,7 +11791,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11815,7 +11815,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11839,7 +11839,7 @@
         "granularity": "month",
         "month": 1
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11863,7 +11863,7 @@
         "granularity": "month",
         "month": 5
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     },
     {
@@ -11879,7 +11879,7 @@
         "bedrooms": "all"
       },
       "metric": "hotelOccupancy",
-      "value": 0.6890000000000001,
+      "value": 0.688,
       "unit": "ratio",
       "period": {
         "start": "2026-07-01",
@@ -11887,7 +11887,31 @@
         "granularity": "month",
         "month": 6
       },
-      "retrievedAt": "2026-10-04T21:40:38.389Z",
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
+      "status": "ok"
+    },
+    {
+      "id": "insee_hotels|2026-08|departement:35|hotelOccupancy",
+      "source": "insee_hotels",
+      "geo": {
+        "level": "departement",
+        "id": "35",
+        "label": "Ille-et-Vilaine"
+      },
+      "segment": {
+        "roomType": "hotel",
+        "bedrooms": "all"
+      },
+      "metric": "hotelOccupancy",
+      "value": 0.75,
+      "unit": "ratio",
+      "period": {
+        "start": "2026-08-01",
+        "end": "2026-08-31",
+        "granularity": "month",
+        "month": 7
+      },
+      "retrievedAt": "2026-10-26T14:32:28.736Z",
       "status": "ok"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T22:09:32.267Z",
-  "buildId": "local",
+  "generatedAt": "2026-10-26T14:32:33.401Z",
+  "buildId": "b6b91b025c8ffd36895a9b2c3de1ed642fb2c898",
   "markets": {
     "departement:35": {
       "label": "Ille-et-Vilaine",
@@ -44,10 +44,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:rennes-metropole": {
@@ -91,10 +91,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:saint-malo-agglomeration": {
@@ -138,10 +138,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:cote-d-emeraude": {
@@ -185,10 +185,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:pays-de-dol": {
@@ -232,10 +232,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:couesnon-marches-de-bretagne": {
@@ -279,10 +279,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:fougeres-agglomeration": {
@@ -326,10 +326,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:vitre-communaute": {
@@ -373,10 +373,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:broceliande-communaute": {
@@ -420,10 +420,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:montfort-communaute": {
@@ -467,10 +467,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:saint-meen-montauban": {
@@ -514,10 +514,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:bretagne-romantique": {
@@ -561,10 +561,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:vallons-de-haute-bretagne": {
@@ -608,10 +608,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:roche-aux-fees": {
@@ -655,10 +655,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:liffre-cormier": {
@@ -702,10 +702,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "epci:val-d-ille-aubigne": {
@@ -749,10 +749,10 @@
         "methodology": "Lighthouse : réservations Airbnb, VRBO, Booking ; logements entiers ; données consolidées en mars 2025 (p. 5). Changement de fournisseur en 2024 (anciennement AirDNA) : pas de comparaison avec les années antérieures.",
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 643,
-        "freshnessMonths": 21,
+        "freshnessDays": 665,
+        "freshnessMonths": 22,
         "status": "MEDIUM",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     }
   },
@@ -800,15 +800,15 @@
           "publicationDate": null,
           "periodStart": "2025-01-01",
           "periodEnd": "2025-12-31",
-          "retrievedAt": "2026-10-04T21:40:38.389Z",
+          "retrievedAt": "2026-10-26T14:32:28.736Z",
           "territory": "Ille-et-Vilaine (département)",
           "methodology": "Taux d'occupation mensuel des hôtels utilisé comme forme de saisonnalité urbaine.",
           "license": "Licence Ouverte Etalab 2.0",
           "dataClass": "PROXY",
-          "freshnessDays": 278,
-          "freshnessMonths": 9,
+          "freshnessDays": 300,
+          "freshnessMonths": 10,
           "status": "HIGH",
-          "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+          "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
         },
         "adr": {
           "source": "adt35_lighthouse",
@@ -821,10 +821,10 @@
           "methodology": "Prix mensuels des meublés du département, amortis (coefficient 0.5).",
           "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
           "dataClass": "PROXY",
-          "freshnessDays": 643,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
-          "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+          "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
         }
       }
     },
@@ -875,10 +875,10 @@
           "methodology": "Taux d'occupation mensuel des meublés (logements entiers) du département.",
           "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
           "dataClass": "PROXY",
-          "freshnessDays": 643,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
-          "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+          "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
         },
         "adr": {
           "source": "adt35_lighthouse",
@@ -891,10 +891,10 @@
           "methodology": "Prix mensuels des meublés du département, amortis (coefficient 1).",
           "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
           "dataClass": "PROXY",
-          "freshnessDays": 643,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
-          "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+          "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
         }
       }
     }
@@ -930,10 +930,10 @@
         "methodology": "Séjours et nuits louées via Airbnb, Booking, Expedia, Tripadvisor (toutes catégories d'hébergement de courte durée).",
         "license": "Réutilisation autorisée, y compris commerciale, avec mention de la source (Décision 2011/833/UE)",
         "dataClass": "OBSERVÉE",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH",
-        "freshnessComputedAt": "2026-10-04T22:09:32.267Z"
+        "freshnessComputedAt": "2026-10-26T14:32:33.401Z"
       }
     },
     "indicatorComparisons": [
@@ -1011,8 +1011,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1040,8 +1040,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1069,8 +1069,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1098,8 +1098,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1127,8 +1127,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1156,8 +1156,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1185,8 +1185,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1214,8 +1214,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1243,8 +1243,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1272,8 +1272,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1301,8 +1301,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1330,8 +1330,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1359,8 +1359,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1388,8 +1388,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1417,8 +1417,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1446,8 +1446,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1475,8 +1475,8 @@
         "license": "Non précisée par la source — citation de chiffres agrégés avec mention de la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1504,8 +1504,8 @@
         "license": "Non précisée par la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1533,8 +1533,8 @@
         "license": "Non précisée par la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1562,8 +1562,8 @@
         "license": "Non précisée par la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 339,
-        "freshnessMonths": 11,
+        "freshnessDays": 361,
+        "freshnessMonths": 12,
         "status": "HIGH"
       },
       {
@@ -1591,8 +1591,8 @@
         "license": "Non précisée par la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1620,8 +1620,8 @@
         "license": "Non précisée par la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       },
       {
@@ -1649,8 +1649,8 @@
         "license": "Non précisée par la source",
         "dataClass": "OBSERVÉE",
         "usage": "indicator",
-        "freshnessDays": 278,
-        "freshnessMonths": 9,
+        "freshnessDays": 300,
+        "freshnessMonths": 10,
         "status": "HIGH"
       }
     ]

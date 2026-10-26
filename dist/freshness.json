@@ -1,14 +1,14 @@
 {
-  "checkedAt": "2026-10-05T09:03:51.741Z",
-  "freshnessAsOf": "2026-10-05T12:00:00.000Z",
-  "buildAgeDays": 1,
+  "checkedAt": "2026-10-26T14:32:33.497Z",
+  "freshnessAsOf": "2026-10-26T14:32:27.302Z",
+  "buildAgeDays": 0,
   "pipelineStale": false,
   "worst": "orange",
   "rows": [
     {
       "key": "departement:35",
       "level": "orange",
-      "months": 21,
+      "months": 22,
       "label": "Ille-et-Vilaine",
       "text": "année 2024 · publiées en avril 2025",
       "freshnessLabel": "Données anciennes",
@@ -17,7 +17,7 @@
     {
       "key": "epci:rennes-metropole",
       "level": "orange",
-      "months": 21,
+      "months": 22,
       "label": "Rennes Métropole",
       "text": "année 2024 · publiées en avril 2025",
       "freshnessLabel": "Données anciennes",
@@ -26,7 +26,7 @@
     {
       "key": "epci:saint-malo-agglomeration",
       "level": "orange",
-      "months": 21,
+      "months": 22,
       "label": "Saint-Malo Agglomération",
       "text": "année 2024 · publiées en avril 2025",
       "freshnessLabel": "Données anciennes",
@@ -35,7 +35,7 @@
     {
       "key": "epci:vitre-communaute",
       "level": "orange",
-      "months": 21,
+      "months": 22,
       "label": "Vitré Communauté",
       "text": "année 2024 · publiées en avril 2025",
       "freshnessLabel": "Données anciennes",
@@ -44,7 +44,7 @@
     {
       "key": "epci:liffre-cormier",
       "level": "orange",
-      "months": 21,
+      "months": 22,
       "label": "Liffré-Cormier Communauté",
       "text": "année 2024 · publiées en avril 2025",
       "freshnessLabel": "Données anciennes",

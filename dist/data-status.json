@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-05T09:03:51.744Z",
-  "freshnessAsOf": "2026-10-05T12:00:00.000Z",
-  "marketGeneratedAt": "2026-10-04T22:09:32.267Z",
+  "checkedAt": "2026-10-26T14:32:33.497Z",
+  "freshnessAsOf": "2026-10-26T14:32:27.302Z",
+  "marketGeneratedAt": "2026-10-26T14:32:33.401Z",
   "marketDataYear": "2024",
   "thresholds": {
     "HIGH": "≤ 15 mois",
@@ -26,8 +26,8 @@
           "source": "adt35_lighthouse",
           "periodEnd": "2024-12-31",
           "dataClass": "OBSERVÉE",
-          "freshnessDays": 644,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
           "key": "epci:rennes-metropole",
           "retrievedAt": "2026-10-04"
@@ -37,8 +37,8 @@
           "source": "adt35_lighthouse",
           "periodEnd": "2024-12-31",
           "dataClass": "OBSERVÉE",
-          "freshnessDays": 644,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
           "key": "epci:saint-malo-agglomeration",
           "retrievedAt": "2026-10-04"
@@ -48,8 +48,8 @@
           "source": "adt35_lighthouse",
           "periodEnd": "2024-12-31",
           "dataClass": "OBSERVÉE",
-          "freshnessDays": 644,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
           "key": "epci:vitre-communaute",
           "retrievedAt": "2026-10-04"
@@ -59,8 +59,8 @@
           "source": "adt35_lighthouse",
           "periodEnd": "2024-12-31",
           "dataClass": "OBSERVÉE",
-          "freshnessDays": 644,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
           "key": "epci:liffre-cormier",
           "retrievedAt": "2026-10-04"
@@ -82,18 +82,18 @@
           "source": "insee_hotels",
           "periodEnd": "2025-12-31",
           "dataClass": "PROXY",
-          "freshnessDays": 279,
-          "freshnessMonths": 9,
+          "freshnessDays": 300,
+          "freshnessMonths": 10,
           "status": "HIGH",
-          "retrievedAt": "2026-10-04T21:40:38.389Z"
+          "retrievedAt": "2026-10-26T14:32:28.736Z"
         },
         {
           "label": "Profil urbain — prix",
           "source": "adt35_lighthouse",
           "periodEnd": "2024-12-31",
           "dataClass": "PROXY",
-          "freshnessDays": 644,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
           "retrievedAt": "2026-10-04"
         },
@@ -102,8 +102,8 @@
           "source": "adt35_lighthouse",
           "periodEnd": "2024-12-31",
           "dataClass": "PROXY",
-          "freshnessDays": 644,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
           "retrievedAt": "2026-10-04"
         },
@@ -112,8 +112,8 @@
           "source": "adt35_lighthouse",
           "periodEnd": "2024-12-31",
           "dataClass": "PROXY",
-          "freshnessDays": 644,
-          "freshnessMonths": 21,
+          "freshnessDays": 665,
+          "freshnessMonths": 22,
           "status": "MEDIUM",
           "retrievedAt": "2026-10-04"
         }
@@ -134,8 +134,8 @@
           "source": "adt35_chiffres_cles",
           "periodEnd": "2025-12-31",
           "dataClass": "OBSERVÉE",
-          "freshnessDays": 279,
-          "freshnessMonths": 9,
+          "freshnessDays": 300,
+          "freshnessMonths": 10,
           "status": "HIGH",
           "retrievedAt": "2026-10-04T21:23:56Z",
           "publicationDate": "2026-05"
@@ -145,8 +145,8 @@
           "source": "audiar_observatoire",
           "periodEnd": "2025-12-31",
           "dataClass": "OBSERVÉE",
-          "freshnessDays": 279,
-          "freshnessMonths": 9,
+          "freshnessDays": 300,
+          "freshnessMonths": 10,
           "status": "HIGH",
           "retrievedAt": "2026-10-04T21:23:58Z",
           "publicationDate": "2026-07"
@@ -168,8 +168,8 @@
           "source": "eurostat_platforms",
           "periodEnd": "2025-12-31",
           "dataClass": "OBSERVÉE",
-          "freshnessDays": 279,
-          "freshnessMonths": 9,
+          "freshnessDays": 300,
+          "freshnessMonths": 10,
           "status": "HIGH",
           "retrievedAt": "2026-10-04T21:40:37.958Z"
         }
@@ -257,7 +257,7 @@
     }
   ],
   "pipeline": {
-    "buildAgeDays": 1,
+    "buildAgeDays": 0,
     "pipelineStale": false
   }
 }
