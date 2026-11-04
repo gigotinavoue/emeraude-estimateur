@@ -84,7 +84,7 @@ test('C7. Pages générées : plus aucune référence à l\'ancienne TVA ni à l
   const interdit = /fees\.vat|vatLabel|vatHint|vatMetric|vatAmount|vatEnabled|vatOn|\$\('vat'\)|id="vat"|"vat":|15,5 % HT|nights_net_of_host_fee|nights_gross|"cleaningFeeShareBearer":"emeraude"|charge d.Émeraude|Revenu net après Airbnb|defaultRate/;
   for (const f of [...GENERATED, 'dist/config.json', 'embed/template.html', 'engine/core.js', 'engine/inputs.js', 'engine/index.js', 'scripts/build-artifact.mjs']) {
     assert.equal(interdit.exec(read(f))?.[0], undefined, f);
-    assert.equal(/\bTVA\b(?! incluse le cas échéant)/.exec(read(f))?.[0], undefined, f); // seule mention admise : la note sur les frais Airbnb
+    assert.equal(/\bTVA\b/.exec(read(f).split(CFG.texts.disclaimer).join('').split(JSON.stringify(CFG.texts.disclaimer).slice(1, -1)).join(''))?.[0], undefined, f); // seule mention admise : l'avertissement validé
   }
 });
 
@@ -113,4 +113,20 @@ test('C9. Interface, rapport imprimable, e-mail et pages générées énoncent l
   for (const [nom, [texte, phrases]] of Object.entries(attendu)) for (const x of phrases) assert.ok(texte.includes(x), `${nom} : ${x}`);
   assert.ok(t.includes('Valeur indicative modifiable : le taux est négocié avec chaque propriétaire'));
   for (const f of GENERATED) assert.ok(read(f).includes(interfaceBloc), f);
+});
+
+test('C10. TVA : aucune TVA calculée dans la simulation et avertissement sans ambiguïté', () => {
+  const f = computeFinancials(NIGHTS, { cleaningFee: 50, commissionPct: 20 }, 5, CFG);
+  close(f.airbnb.onNights + f.airbnb.onCleaning, 1100 * 0.155);
+  close(f.commission.amount, 1100 * 0.845 * 0.2);
+  close(f.ownerIncome + f.commission.amount + f.emeraude.cleaningNet + f.airbnb.onNights + f.airbnb.onCleaning, 1100);
+  const t = CFG.texts.disclaimer;
+  assert.ok(!t.includes('TVA incluse le cas échéant'));
+  assert.ok(t.includes("Le taux de 15,5 % correspond aux frais de service Airbnb, à titre indicatif et TVA comprise lorsqu'elle est applicable. Aucune TVA supplémentaire n'est ajoutée à ce taux."));
+  assert.ok(t.includes("Pour les besoins de cette simulation, les revenus issus de la location meublée classique (LMNP/LMP) sont considérés comme exonérés de TVA. La commission de conciergerie est calculée selon le taux convenu avec le propriétaire, sans ajout automatique de TVA. Le traitement fiscal réel dépend de la situation de chaque partie."));
+});
+
+test('C11. L\'avertissement garde ses paragraphes à l\'écran et à l\'impression', () => {
+  assert.ok(CFG.texts.disclaimer.includes('\n\n'));
+  for (const f of ['embed/template.html', ...GENERATED]) assert.ok(read(f).includes('#emeraude-estimateur #note,#emeraude-estimateur .present-foot{white-space:pre-line}'), f);
 });

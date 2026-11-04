@@ -27,7 +27,7 @@ import { RANGE_CASES, raw as referenceRaw } from './audit/final-review.mjs';
 export const ARTIFACT = {
   name: 'Estimateur Émeraude — V2 Data Refresh',
   title: 'Estimateur Émeraude V2 Data Refresh',
-  version: '2.2.1',
+  version: '2.2.2',
   output: 'dist/estimateur-artifact.html'
 };
 
