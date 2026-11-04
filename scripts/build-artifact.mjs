@@ -27,7 +27,7 @@ import { RANGE_CASES, raw as referenceRaw } from './audit/final-review.mjs';
 export const ARTIFACT = {
   name: 'Estimateur Émeraude — V2 Data Refresh',
   title: 'Estimateur Émeraude V2 Data Refresh',
-  version: '2.1.0',
+  version: '2.2.0',
   output: 'dist/estimateur-artifact.html'
 };
 
@@ -186,7 +186,7 @@ $('mClass').innerHTML=own?dcTag(meta.dataClass||'OBSERVÉE')+' moyenne de l’in
 $('mRetrieved').textContent=meta.retrievedAt?dayDate(meta.retrievedAt):'non précisée';
 $('mUpdated').textContent=d.marketGeneratedAt?fmtDateTime(d.marketGeneratedAt):'non précisée';
 $('mSeasonClass').innerHTML=dcTag(d.seasonality.fallback?'FALLBACK':'PROXY')+' profils départementaux, non locaux';
-const tiles=[['Nuits réservées (période)',num(s.nightsBooked)],['Mois disponibles',num(s.monthsCount)+' mois · '+num(s.nightsAvailable)+' nuits'],['Séjours estimés × ménage',num(s.cleaning.stays)+' × '+euro(s.cleaning.feePerStay)],['Frais Airbnb sur le ménage (Émeraude)',e10(s.cleaning.hostFee)]];
+const tiles=[['Nuits réservées (période)',num(s.nightsBooked)],['Mois disponibles',num(s.monthsCount)+' mois · '+num(s.nightsAvailable)+' nuits'],['Séjours estimés × ménage',num(s.cleaning.stays)+' × '+euro(s.cleaning.feePerStay)],['Frais Airbnb sur le ménage (propriétaire)',e10(s.cleaning.hostFee)]];
 $('drMetrics').innerHTML=tiles.map(([k,v])=>'<div class="metric"><span>'+esc(k)+'</span><strong>'+v+'</strong></div>').join('');
 const age=$('drAge');if(age)age.innerHTML=esc(d.freshness.months)+' mois · <span class="pill '+freshClass(d.freshness.level)+'">'+esc(d.freshness.label)+'</span>';
 const st=$('drStale');

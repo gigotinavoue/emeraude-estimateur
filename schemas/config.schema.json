@@ -134,15 +134,14 @@
     "cleaning": { "type": "object", "required": ["defaultFee", "adrIncludesCleaningPolicy", "unknownDefinitionNote"], "properties": { "adrIncludesCleaningPolicy": { "const": "no_adjustment" } } },
     "fees": {
       "type": "object",
-      "required": ["airbnbHostFeeRate", "airbnbFeeBase", "vat", "cleaningFeeShareBearer"],
+      "required": ["airbnbHostFeeRate", "airbnbFeeBase", "cleaningFeeShareBearer"],
       "properties": {
         "airbnbHostFeeRate": { "type": "number", "minimum": 0, "maximum": 0.3 },
         "airbnbFeeBase": { "enum": ["nights_plus_cleaning", "nights_only"] },
-        "vat": { "type": "object", "required": ["enabledByDefault", "rate"], "properties": { "enabledByDefault": { "type": "boolean" }, "rate": { "type": "number", "minimum": 0, "maximum": 0.3 } } },
         "cleaningFeeShareBearer": { "enum": ["emeraude", "owner"] }
       }
     },
-    "commission": { "type": "object", "required": ["defaultRate", "base"], "properties": { "base": { "enum": ["nights_net_of_host_fee", "nights_gross"] } } },
+    "commission": { "type": "object", "required": ["defaultRate", "base"], "properties": { "base": { "enum": ["payout_net_of_host_fee"] } } },
     "scenarios": {
       "type": "object",
       "required": ["occupancyDeltaPts", "prudent", "realiste", "performant"],

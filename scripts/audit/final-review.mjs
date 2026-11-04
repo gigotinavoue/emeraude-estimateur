@@ -105,8 +105,9 @@ export function feeChain() {
   return {
     nightsRevenue: s.nightsRevenue, airbnbOnNights: s.airbnb.onNights, netBeforeCommission: s.nightsNetOfHostFee, commission: s.commission.amount, owner: s.ownerIncome,
     cleaningCollected: s.cleaning.collected, airbnbOnCleaning: s.airbnb.onCleaning, cleaningNetEmeraude: s.emeraude.cleaningNet, emeraudeTotal: s.emeraude.total,
-    chainExact: Math.abs(s.nightsRevenue - s.airbnb.onNights - s.nightsNetOfHostFee) < 1e-9 && Math.abs(s.nightsNetOfHostFee - s.commission.amount - s.ownerIncome) < 1e-9,
-    cleaningIndependent: [s0, s200].every((x) => x.nightsRevenue === s.nightsRevenue && x.ownerIncome === s.ownerIncome && x.commission.amount === s.commission.amount)
+    chainExact: Math.abs(s.nightsRevenue - s.airbnb.onNights - s.nightsNetOfHostFee) < 1e-9 && Math.abs(s.nightsNetOfHostFee - s.airbnb.onCleaning - s.commission.amount - s.ownerIncome) < 1e-9,
+    baseIncludesNetCleaning: [s, s0, s200].every((x) => Math.abs(x.commission.base - (x.nightsNetOfHostFee + x.cleaning.collected - x.airbnb.onCleaning)) < 1e-9),
+    nightsIndependentOfCleaning: [s0, s200].every((x) => x.nightsRevenue === s.nightsRevenue && x.airbnb.onNights === s.airbnb.onNights)
   };
 }
 

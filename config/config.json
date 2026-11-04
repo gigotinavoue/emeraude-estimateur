@@ -137,21 +137,15 @@
 
   "fees": {
     "airbnbHostFeeRate": 0.155,
-    "airbnbHostFeeLabel": "Frais de service Airbnb (15,5 % HT)",
+    "airbnbHostFeeLabel": "Frais de service Airbnb (15,5 %)",
     "airbnbFeeBase": "nights_plus_cleaning",
-    "vat": {
-      "enabledByDefault": false,
-      "rate": 0.20,
-      "label": "Appliquer la TVA sur les frais Airbnb",
-      "note": "Selon la situation du propriétaire. Non appliquée par défaut."
-    },
-    "cleaningFeeShareBearer": "emeraude"
+    "cleaningFeeShareBearer": "owner"
   },
 
   "commission": {
     "defaultRate": 0.20,
-    "base": "nights_net_of_host_fee",
-    "baseLabel": "Revenu des nuits net des frais Airbnb sur les nuits"
+    "base": "payout_net_of_host_fee",
+    "baseLabel": "Revenus nets des nuits et du ménage (frais Airbnb déduits)"
   },
 
   "scenarios": {
@@ -307,6 +301,6 @@
     "methodologyMarket": "Données publiques observées sur l'intercommunalité (logements entiers loués sur Airbnb, Abritel et Booking). Ce sont des moyennes de marché, pas des chiffres propres au logement.",
     "methodologyAdjustments": "Hypothèses de modélisation Émeraude appliquées au logement, avec des plafonds. Elles ne proviennent d'aucune source de marché.",
     "methodologyResult": "Résultat calculé par le modèle. Ce n'est pas une statistique observée : c'est une estimation indicative, qui ne constitue pas une garantie de revenus.",
-    "disclaimer": "Estimation indicative et non garantie. Les performances réelles dépendent notamment de la demande, de la saisonnalité, du positionnement, des avis, de la disponibilité et de la tarification. Revenus présentés avant fiscalité, charges, linge, consommables et autres coûts non intégrés."
+    "disclaimer": "Estimation indicative et non garantie. Les performances réelles dépendent notamment de la demande, de la saisonnalité, du positionnement, des avis, de la disponibilité et de la tarification. Revenus présentés avant fiscalité, charges, linge, consommables et autres coûts non intégrés. Frais Airbnb estimés à 15,5 %, TVA incluse le cas échéant : le montant réel dépend de la situation de l'hôte et figure sur son relevé Airbnb. Frais pour animaux, voyageurs supplémentaires et autres options non intégrés."
   }
 }

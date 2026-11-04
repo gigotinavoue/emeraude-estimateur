@@ -128,15 +128,15 @@ test('12. Équipements essentiels uniquement : aucun effet', () => {
   close(s.occupancyAnnual, REF.occ);
 });
 
-test('13. Ménage : de 0 à 500 € par séjour, le prix, l\'occupation et le CA des nuits ne changent jamais', () => {
+test('13. Ménage : de 0 à 500 € par séjour, le prix, l\'occupation et le CA des nuits ne changent jamais ; la base de commission suit le ménage net', () => {
   const a = R(baseRaw({ cleaningFee: '0' })).scenarios;
   const b = R(baseRaw({ cleaningFee: '500' })).scenarios;
   for (const id of ['prudent', 'realiste', 'performant']) {
     close(a[id].adr, b[id].adr);
     close(a[id].occupancy, b[id].occupancy);
     close(a[id].nightsRevenue, b[id].nightsRevenue);
-    close(a[id].commission.amount, b[id].commission.amount);
-    close(a[id].ownerIncome, b[id].ownerIncome);
+    close(a[id].airbnb.onNights, b[id].airbnb.onNights);
+    close(b[id].commission.base - a[id].commission.base, b[id].cleaning.collected * (1 - 0.155), 1e-6);
     assert.equal(a[id].cleaning.collected, 0);
     assert.ok(b[id].cleaning.collected > 0);
   }
@@ -156,25 +156,26 @@ test('14b. Ménage : changer la durée de séjour ne modifie que le ménage', ()
   assert.ok(a.cleaning.collected > b.cleaning.collected);
 });
 
-test('15. Commission : linéaire et répartition exacte du CA des nuits (D2, D1)', () => {
+test('15. Commission : linéaire, assise sur nuits + ménage nets d’Airbnb, répartition exacte du CA des nuits', () => {
   for (const pct of ['0', '20', '50']) {
     const s = R(baseRaw({ commissionPct: pct })).scenarios.realiste;
-    close(s.commission.base, s.nightsRevenue * (1 - 0.155));
+    close(s.commission.base, (s.nightsRevenue + s.cleaning.collected) * (1 - 0.155), 1e-6);
+    close(s.commission.base, s.netPayout);
     close(s.commission.amount, s.commission.base * Number(pct) / 100);
-    close(s.ownerIncome + s.commission.amount + s.airbnb.onNights, s.nightsRevenue, 1e-6);
-    close(s.emeraude.cleaningNet, s.cleaning.collected * (1 - 0.155), 1e-6);
+    close(s.ownerIncome + s.commission.amount + s.airbnb.onNights + s.airbnb.onCleaning, s.nightsRevenue, 1e-6);
+    close(s.emeraude.cleaningNet, s.cleaning.collected, 1e-6);
+    close(s.airbnb.onCleaning, s.cleaning.collected * 0.155, 1e-6);
   }
 });
 
-test('16. TVA sur frais Airbnb : désactivée par défaut ; activée, seules les lignes TVA, propriétaire et ménage net changent', () => {
-  const off = R(baseRaw()).scenarios.realiste;
-  const on = R(baseRaw({ vat: true })).scenarios.realiste;
-  assert.equal(off.airbnb.vatEnabled, false);
-  close(off.airbnb.vatOnNightsFee, 0);
-  close(on.nightsRevenue, off.nightsRevenue);
-  close(on.commission.amount, off.commission.amount);
-  close(on.airbnb.vatOnNightsFee, off.airbnb.onNights * 0.2);
-  close(off.ownerIncome - on.ownerIncome, on.airbnb.vatOnNightsFee);
+test('16. Frais Airbnb : 15,5 % sans TVA ajoutée, l\'ancienne option de TVA n\'a plus aucun effet', () => {
+  const a = R(baseRaw()).scenarios.realiste;
+  const b = R(baseRaw({ vat: true })).scenarios.realiste;
+  close(a.airbnb.onNights, a.nightsRevenue * 0.155);
+  close(a.airbnb.onCleaning, a.cleaning.collected * 0.155);
+  close(a.ownerIncome, b.ownerIncome);
+  close(a.commission.amount, b.commission.amount);
+  assert.equal(a.airbnb.vatEnabled, undefined);
 });
 
 test('17. Données absentes : bascule sur les données de secours, confiance faible', () => {
@@ -288,4 +289,14 @@ test('26. Calibration Émeraude : observation/signal sans effet, calibration et 
   r = mk(20, 1.5);
   assert.equal(r.data.calibration.level, 'solide');
   close(r.scenarios.realiste.adrAnnual, REF.adr * 1.2); // effet plafonné à +20 %
+});
+
+test('15 bis. Exemple chiffré de la règle : taux variable, jamais figé', () => {
+  const s0 = R(baseRaw({ commissionPct: '20' })).scenarios.realiste;
+  for (const pct of ['15', '17.5', '20', '25']) {
+    const s = R(baseRaw({ commissionPct: pct })).scenarios.realiste;
+    close(s.commission.rate, Number(pct) / 100);
+    close(s.commission.amount, (s.nightsRevenue * 0.845 + s.cleaning.collected * 0.845) * Number(pct) / 100, 1e-6);
+    close(s.commission.base, s0.commission.base, 1e-6);
+  }
 });
