@@ -37,8 +37,7 @@ export function toRaw(prop, defaults, config) {
     monthsSelected: d.months.months || [],
     commissionPct: String(d.commissionPct),
     cleaningFee: String(d.cleaningFee),
-    avgStay: d.avgStay === null ? '' : String(d.avgStay),
-    vat: !!d.vat
+    avgStay: d.avgStay === null ? '' : String(d.avgStay)
   };
 }
 
@@ -65,7 +64,7 @@ export function toLegacy(prop, defaults, config, communes) {
 export function baseRaw(over = {}) {
   return {
     commune: 'rennes', type: 't2', bedrooms: '1', bathrooms: '1', area: '40', guests: '2', location: 'standard', amenities: [],
-    monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '3', vat: false,
+    monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '3',
     ...over
   };
 }

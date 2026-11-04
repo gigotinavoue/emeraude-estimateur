@@ -38,7 +38,7 @@ export function aggregate(rows, { config, communes, sources, market }) {
       commune: L.commune.id, type: f.type, bedrooms: f.bedrooms, bathrooms: f.bathrooms, area: f.area_m2, guests: f.guests,
       location: f.location_level, amenities: f.amenities.split(';').map((s) => s.trim()).filter(Boolean),
       monthsMode: 'select', monthsSelected: [...new Set(L.months.map((x) => x.month))], monthsCount: '12',
-      commissionPct: '20', cleaningFee: '0', avgStay: '', vat: false
+      commissionPct: '20', cleaningFee: '0', avgStay: ''
     };
     const est = estimate(raw, { config, communes, sources, marketSources: [{ origin: 'remote', data: marketNoCalib }], today: new Date() });
     if (!est.ok) { log.push(`logement ignoré (saisie invalide pour le modèle) : ${JSON.stringify(est.errors)}`); continue; }

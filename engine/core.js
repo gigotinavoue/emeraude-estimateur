@@ -97,7 +97,7 @@ export function computeNights(p, adr, occupancy, profile, config) {
 }
 
 // ---------- Répartition financière ----------
-// Le CA des nuits et le ménage restent deux objets distincts ; seule l'assiette des frais Airbnb les combine, explicitement.
+// Le CA des nuits et le ménage restent deux objets distincts ; seules les assiettes des frais Airbnb et de la commission les combinent, explicitement.
 export function computeFinancials(nights, p, avgStay, config) {
   const rate = config.fees.airbnbHostFeeRate;
   const nightsRevenue = nights.nightsRevenue;
@@ -106,37 +106,31 @@ export function computeFinancials(nights, p, avgStay, config) {
 
   const hostFeeNights = nightsRevenue * rate;
   const hostFeeCleaning = config.fees.airbnbFeeBase === 'nights_plus_cleaning' ? cleaningCollected * rate : 0;
-  const vatRate = p.vat ? config.fees.vat.rate : 0;
-  const vatOnNightsFee = hostFeeNights * vatRate;
-  const vatOnCleaningFee = hostFeeCleaning * vatRate;
 
   const nightsNetOfHostFee = nightsRevenue - hostFeeNights;
-  let commissionBase;
-  if (config.commission.base === 'nights_gross') commissionBase = nightsRevenue;
-  else commissionBase = nightsNetOfHostFee; // D2 : revenu des nuits net des frais Airbnb sur les nuits
+  const cleaningNetOfHostFee = cleaningCollected - hostFeeCleaning;
+  const netPayout = nightsNetOfHostFee + cleaningNetOfHostFee;
+  const commissionBase = netPayout; // revenus nets des nuits et du ménage, frais Airbnb déduits des deux postes
   const commissionRate = p.commissionPct / 100;
   const commission = commissionBase * commissionRate;
 
-  let ownerIncome = nightsNetOfHostFee - vatOnNightsFee - commission;
-  let cleaningNetForEmeraude;
-  if (config.fees.cleaningFeeShareBearer === 'owner') {
-    ownerIncome -= hostFeeCleaning + vatOnCleaningFee;
-    cleaningNetForEmeraude = cleaningCollected;
-  } else {
-    cleaningNetForEmeraude = cleaningCollected - hostFeeCleaning - vatOnCleaningFee; // D1
-  }
+  // Les frais Airbnb sur le ménage restent à la charge du propriétaire ; le ménage brut revient à Émeraude.
+  const ownerIncome = nightsNetOfHostFee - hostFeeCleaning - commission;
+  const cleaningForEmeraude = cleaningCollected;
 
   const months = nights.monthsCount;
   return {
     nightsRevenue,
     nightsRevenueMonthlyAverage: nightsRevenue / months,
-    cleaning: { avgStay, stays, feePerStay: p.cleaningFee, collected: cleaningCollected, hostFee: hostFeeCleaning, vatOnHostFee: vatOnCleaningFee, netForEmeraude: cleaningNetForEmeraude, bearer: config.fees.cleaningFeeShareBearer },
-    airbnb: { rate, onNights: hostFeeNights, onCleaning: hostFeeCleaning, vatEnabled: p.vat, vatRate: config.fees.vat.rate, vatOnNightsFee, vatOnCleaningFee },
+    cleaning: { avgStay, stays, feePerStay: p.cleaningFee, collected: cleaningCollected, hostFee: hostFeeCleaning, netForEmeraude: cleaningForEmeraude, bearer: 'owner' },
+    airbnb: { rate, onNights: hostFeeNights, onCleaning: hostFeeCleaning },
     nightsNetOfHostFee,
+    cleaningNetOfHostFee,
+    netPayout,
     commission: { rate: commissionRate, base: commissionBase, amount: commission },
     ownerIncome,
     ownerIncomeMonthlyAverage: ownerIncome / months,
-    emeraude: { commission, cleaningNet: cleaningNetForEmeraude, total: commission + cleaningNetForEmeraude }
+    emeraude: { commission, cleaningNet: cleaningForEmeraude, total: commission + cleaningForEmeraude }
   };
 }
 

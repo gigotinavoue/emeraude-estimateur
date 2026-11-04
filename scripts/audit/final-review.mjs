@@ -13,7 +13,7 @@ const SOURCES = readJson('config/sources.json');
 export const ESSENTIALS = CFG.amenities.items.filter((a) => a.group === 'base').map((a) => a.id);
 
 export const ctx = (config = CFG, today = NOW, market = MARKET) => ({ config, communes: COMMUNES, sources: SOURCES, marketSources: [{ origin: 'remote', data: market }], today });
-export const raw = (over = {}) => ({ commune: 'rennes', type: 't2', bedrooms: '1', bathrooms: '1', area: '40', guests: '2', location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '', vat: false, ...over });
+export const raw = (over = {}) => ({ commune: 'rennes', type: 't2', bedrooms: '1', bathrooms: '1', area: '40', guests: '2', location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '', ...over });
 export const run = (over, config = CFG, today = NOW, market = MARKET) => {
   const r = estimate(raw(over), ctx(config, today, market));
   if (!r.ok) throw new Error(JSON.stringify(r.errors));
@@ -105,8 +105,9 @@ export function feeChain() {
   return {
     nightsRevenue: s.nightsRevenue, airbnbOnNights: s.airbnb.onNights, netBeforeCommission: s.nightsNetOfHostFee, commission: s.commission.amount, owner: s.ownerIncome,
     cleaningCollected: s.cleaning.collected, airbnbOnCleaning: s.airbnb.onCleaning, cleaningNetEmeraude: s.emeraude.cleaningNet, emeraudeTotal: s.emeraude.total,
-    chainExact: Math.abs(s.nightsRevenue - s.airbnb.onNights - s.nightsNetOfHostFee) < 1e-9 && Math.abs(s.nightsNetOfHostFee - s.commission.amount - s.ownerIncome) < 1e-9,
-    cleaningIndependent: [s0, s200].every((x) => x.nightsRevenue === s.nightsRevenue && x.ownerIncome === s.ownerIncome && x.commission.amount === s.commission.amount)
+    chainExact: Math.abs(s.nightsRevenue - s.airbnb.onNights - s.nightsNetOfHostFee) < 1e-9 && Math.abs(s.nightsNetOfHostFee - s.airbnb.onCleaning - s.commission.amount - s.ownerIncome) < 1e-9,
+    baseIncludesNetCleaning: [s, s0, s200].every((x) => Math.abs(x.commission.base - (x.nightsNetOfHostFee + x.cleaning.collected - x.airbnb.onCleaning)) < 1e-9),
+    nightsIndependentOfCleaning: [s0, s200].every((x) => x.nightsRevenue === s.nightsRevenue && x.airbnb.onNights === s.airbnb.onNights)
   };
 }
 

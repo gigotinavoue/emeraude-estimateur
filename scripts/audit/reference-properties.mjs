@@ -9,7 +9,7 @@ export function referenceProperties(market = readJson('dist/market.json'), today
   const config = readJson('config/config.json');
   const ctx = { config, communes: readJson('config/communes.json'), sources: readJson('config/sources.json'), marketSources: [{ origin: 'remote', data: market }], today };
   return RANGE_CASES.map(([label, over]) => {
-    const r = estimate({ commune: 'rennes', type: 't2', bedrooms: '1', bathrooms: '1', area: '40', guests: '2', location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '', vat: false, ...over }, ctx);
+    const r = estimate({ commune: 'rennes', type: 't2', bedrooms: '1', bathrooms: '1', area: '40', guests: '2', location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '', ...over }, ctx);
     if (!r.ok) throw new Error(`${label} : ${JSON.stringify(r.errors)}`);
     const s = r.scenarios.realiste;
     return {

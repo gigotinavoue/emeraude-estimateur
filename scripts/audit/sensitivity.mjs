@@ -121,7 +121,7 @@ export const PROPERTIES = [
 export function runProperty(config, prop, market) {
   const raw = {
     commune: prop.commune, type: prop.type, bedrooms: String(prop.bedrooms), bathrooms: String(prop.bathrooms), area: String(prop.area), guests: String(prop.guests),
-    location: prop.location, amenities: prop.amenities, monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '3', vat: false
+    location: prop.location, amenities: prop.amenities, monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '3'
   };
   const r = estimate(raw, { config, communes: readJson('config/communes.json'), sources: readJson('config/sources.json'), marketSources: [{ origin: 'remote', data: market }], today: TODAY });
   if (!r.ok) throw new Error(`${prop.id} : ${JSON.stringify(r.errors)}`);

@@ -8,7 +8,7 @@ import { computeAdr, computeOccupancy, seasonalProfile, computeNights, computeFi
 import { freshness, confidence, describePeriod, formatMonthYear } from './quality.js';
 import { propertyProfile, getConfidence, getUncertainty, buildRange, roundTo } from './uncertainty.js';
 
-export const ENGINE_VERSION = '1.2.0';
+export const ENGINE_VERSION = '1.3.1';
 const LEVEL_FR = { HIGH: 'elevee', MEDIUM: 'moyenne', LOW: 'faible' };
 const SCENARIO_IDS = ['prudent', 'realiste', 'performant'];
 
@@ -254,8 +254,7 @@ export function estimate(raw, ctx) {
       commissionPct: p.commissionPct,
       cleaningFee: p.cleaningFee,
       avgStayUsed: avgStay,
-      avgStaySource: isNum(p.avgStay) ? 'saisie' : 'marché',
-      vat: p.vat
+      avgStaySource: isNum(p.avgStay) ? 'saisie' : 'marché'
     },
     data: {
       origin: used.origin,

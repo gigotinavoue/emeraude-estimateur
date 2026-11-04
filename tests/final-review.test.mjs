@@ -47,11 +47,12 @@ test('R4. Fourchettes : bornes positives, largeur bornée, logements plus incert
   for (const l of ['Vitré T2', 'Bruz T2', 'Betton T2']) assert.ok(by[l].uncertaintyPct >= by['Rennes T2 standard'].uncertaintyPct, l);
 });
 
-test('R5. Chaîne des frais exacte et ménage sans effet sur nuits, commission et revenu propriétaire', () => {
+test('R5. Chaîne des frais exacte : le ménage net entre dans la base de commission, sans effet sur le CA des nuits', () => {
   const f = feeChain();
   assert.ok(f.chainExact);
-  assert.ok(f.cleaningIndependent);
-  assert.ok(Math.abs(f.cleaningNetEmeraude - (f.cleaningCollected - f.airbnbOnCleaning)) < 1e-9);
+  assert.ok(f.baseIncludesNetCleaning);
+  assert.ok(f.nightsIndependentOfCleaning);
+  assert.ok(Math.abs(f.cleaningNetEmeraude - f.cleaningCollected) < 1e-9);
 });
 
 test('R6. Contrôles de cohérence de la revue finale : tous satisfaits', () => {

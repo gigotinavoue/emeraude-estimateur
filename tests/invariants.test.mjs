@@ -35,11 +35,12 @@ test('21. 500 combinaisons aléatoires : aucune valeur invalide, garde-fous et o
     const { prudent, realiste, performant } = r.scenarios;
     assert.ok(prudent.nightsRevenue <= realiste.nightsRevenue + 1e-6 && realiste.nightsRevenue <= performant.nightsRevenue + 1e-6, `ordre des scénarios, combinaison ${i}`);
     for (const s of [prudent, realiste, performant]) {
-      assert.ok(s.nightsRevenue > 0 && s.ownerIncome > 0 && s.adr > 0);
+      assert.ok(s.nightsRevenue > 0 && s.adr > 0);
+      assert.ok(Math.abs(s.commission.base - (s.nightsRevenue - s.airbnb.onNights + s.cleaning.collected - s.airbnb.onCleaning)) < 1e-6, 'base de commission');
       assert.ok(s.occupancyAnnual >= config.guards.occupancy[0] - 1e-9 && s.occupancyAnnual <= config.guards.occupancy[1] + 1e-9);
       assert.ok(s.monthly.every((m) => m.occupancy <= config.guards.monthlyOccupancyMax + 1e-9));
       assert.ok(s.model.secondaryMultiplier >= config.guards.adrSecondaryMultiplier[0] - 1e-9 && s.model.secondaryMultiplier <= config.guards.adrSecondaryMultiplier[1] + 1e-9);
-      assert.ok(Math.abs(s.ownerIncome + s.commission.amount + s.airbnb.onNights + s.airbnb.vatOnNightsFee - s.nightsRevenue) < 1e-6, 'répartition du CA des nuits');
+      assert.ok(Math.abs(s.ownerIncome + s.commission.amount + s.airbnb.onNights + s.airbnb.onCleaning - s.nightsRevenue) < 1e-6, 'répartition du CA des nuits');
     }
   }
 });

@@ -111,7 +111,8 @@ export function getUncertainty(factors, profileId, config) {
 
 // Fourchette arrondie à la centaine (affichage) ; calculs internes conservés.
 export function buildRange(central, pct, step) {
-  const low = central * (1 - pct / 100);
-  const high = central * (1 + pct / 100);
+  // min/max : un revenu propriétaire peut être négatif (ménage élevé, commission élevée) ; la borne basse reste la plus petite.
+  const low = Math.min(central * (1 - pct / 100), central * (1 + pct / 100));
+  const high = Math.max(central * (1 - pct / 100), central * (1 + pct / 100));
   return { central: roundTo(central, step), low: roundTo(low, step), high: roundTo(high, step), exact: { central, low, high } };
 }

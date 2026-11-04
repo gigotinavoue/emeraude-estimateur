@@ -76,7 +76,6 @@ export function validateInputs(raw, config, communesCfg) {
   p.amenities = [...new Set(amen.filter((id) => known.has(id)))];
   if (amen.some((id) => !known.has(id))) warnings.push({ field: 'amenities', message: 'Équipement inconnu ignoré.' });
 
-  p.vat = raw.vat === true;
 
   // Cohérences (avertissements, sans effet sur le calcul).
   if (isNum(p.bedrooms) && isNum(p.guests) && p.guests > 2 * p.bedrooms + 2) {
