@@ -1,5 +1,7 @@
 # Audit et calibration du modèle V2 — phase 4
 
+> **Note du 4 novembre 2026** — Document historique, conservé tel quel. Ses passages sur la TVA, la mention « 15,5 % HT », le ménage et la commission décrivent l'ancienne règle. Règle en vigueur (moteur 1.3.1) : commission = taux négocié pour chaque propriétaire × (nuits nettes + ménage net des frais Airbnb) ; frais Airbnb sur le ménage à la charge du propriétaire ; ménage brut revenant à Émeraude ; aucune TVA ajoutée.
+
 Date : 4 octobre 2026 · moteur 1.1.0 · configuration `2026-10-v2-calibration` (la configuration précédente est archivée dans `config/history/config-2026-10-v1.json`).
 
 Rien n'a été modifié dans Framer ni publié sur /estimateur. Aucun coefficient n'a été changé parce qu'il « semblait » trop haut ou trop bas : chaque changement ci-dessous s'appuie sur une donnée publique gratuite ou sur un double comptage démontré par un test.

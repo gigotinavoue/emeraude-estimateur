@@ -13,7 +13,7 @@ const SOURCES = readJson('config/sources.json');
 export const ESSENTIALS = CFG.amenities.items.filter((a) => a.group === 'base').map((a) => a.id);
 
 export const ctx = (config = CFG, today = NOW, market = MARKET) => ({ config, communes: COMMUNES, sources: SOURCES, marketSources: [{ origin: 'remote', data: market }], today });
-export const raw = (over = {}) => ({ commune: 'rennes', type: 't2', bedrooms: '1', bathrooms: '1', area: '40', guests: '2', location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '', vat: false, ...over });
+export const raw = (over = {}) => ({ commune: 'rennes', type: 't2', bedrooms: '1', bathrooms: '1', area: '40', guests: '2', location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '', ...over });
 export const run = (over, config = CFG, today = NOW, market = MARKET) => {
   const r = estimate(raw(over), ctx(config, today, market));
   if (!r.ok) throw new Error(JSON.stringify(r.errors));

@@ -8,7 +8,7 @@ import { computeAdr, computeOccupancy, seasonalProfile, computeNights, computeFi
 import { freshness, confidence, describePeriod, formatMonthYear } from './quality.js';
 import { propertyProfile, getConfidence, getUncertainty, buildRange, roundTo } from './uncertainty.js';
 
-export const ENGINE_VERSION = '1.3.0';
+export const ENGINE_VERSION = '1.3.1';
 const LEVEL_FR = { HIGH: 'elevee', MEDIUM: 'moyenne', LOW: 'faible' };
 const SCENARIO_IDS = ['prudent', 'realiste', 'performant'];
 

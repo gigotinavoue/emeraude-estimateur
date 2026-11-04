@@ -2,7 +2,7 @@
 // Produit reports/comparaison-ancien-nouveau.md, reports/comparaison.json et dist/compare.html.
 // N'ajuste AUCUN coefficient : rapport uniquement.
 import { readJson, writeJson, writeText } from './lib/util.mjs';
-import { estimate } from '../engine/index.js';
+import { estimate, ENGINE_VERSION } from '../engine/index.js';
 import { legacyCalculate, LEGACY_MARKETS } from '../legacy/legacy-engine.js';
 import { toRaw, toLegacy } from '../tests/helpers.mjs';
 
@@ -56,8 +56,8 @@ const sorted = [...rows].sort((a, b) => Math.abs(b.nouveau.ca / b.legacy.ca - 1)
 const avg = (f) => rows.reduce((s, r) => s + f(r), 0) / rows.length;
 
 let md = `# Comparaison ancien / nouveau moteur — scénario réaliste\n\n`;
-md += `Date d'exécution : ${today.toISOString().slice(0, 10)} · moteur ${N_VERSION()} · configuration ${config.version} · données de marché générées le ${market.generatedAt.slice(0, 10)}.\n\n`;
-md += `Hypothèses communes aux deux moteurs : commission 20 %, ménage 40 € par séjour, séjour moyen 3 nuits, TVA sur frais Airbnb non appliquée. Aucun coefficient n'a été modifié à la suite de cette comparaison.\n\n`;
+md += `Date d'exécution : ${today.toISOString().slice(0, 10)} · moteur ${ENGINE_VERSION} · configuration ${config.version} · données de marché générées le ${market.generatedAt.slice(0, 10)}.\n\n`;
+md += `Hypothèses communes aux deux moteurs : commission 20 %, ménage 40 € par séjour, séjour moyen 3 nuits. Aucun coefficient n'a été modifié à la suite de cette comparaison.\n\n`;
 md += `## Synthèse\n\n`;
 md += `- CA des nuits : écart moyen ${dpct(1, avg((r) => r.nouveau.ca / r.legacy.ca))} (nouveau vs ancien).\n`;
 md += `- Prix moyen par nuit : écart moyen ${dpct(1, avg((r) => r.nouveau.adr / r.legacy.adr))}.\n`;
@@ -70,7 +70,7 @@ for (const r of rows) {
 }
 md += `\n## Fourchettes\n\n| Logement | Ancien : prudent – optimisé | Nouveau : prudent – performant |\n|---|---|---|\n`;
 for (const r of rows) md += `| ${r.label} | ${eur(r.legacy.low)} – ${eur(r.legacy.high)} | ${eur(r.nouveau.prudent)} – ${eur(r.nouveau.performant)} |\n`;
-md += `\n## Ménage (séparé du CA des nuits)\n\n| Logement | Ménage collecté ancien → nouveau | Ménage net pour Émeraude (après 15,5 % Airbnb, D1) | Revenu Émeraude total (nouveau) |\n|---|---|---|---|\n`;
+md += `\n## Ménage (séparé du CA des nuits)\n\n| Logement | Ménage collecté ancien → nouveau | Ménage brut pour Émeraude (frais Airbnb à la charge du propriétaire) | Revenu Émeraude total (nouveau) |\n|---|---|---|---|\n`;
 for (const r of rows) md += `| ${r.label} | ${eur(r.legacy.cleaning)} → ${eur(r.nouveau.cleaning)} | ${eur(r.nouveau.cleaningNetEmeraude)} | ${eur(r.nouveau.emeraudeTotal)} |\n`;
 md += `\n## Écarts les plus importants et leurs raisons\n\n`;
 for (const r of sorted.slice(0, 8)) {
@@ -91,6 +91,3 @@ writeText('dist/compare.html', html);
 
 console.log(md);
 
-function N_VERSION() {
-  return '1.0.0';
-}

@@ -285,6 +285,7 @@ body{background:#fff}
 <div class="metric"><span>Ménages collectés / an</span><strong id="cleaningCollected">—</strong></div>
 <div class="metric"><span>Ménages nets d’Airbnb / an</span><strong id="cleaningNet">—</strong></div>
 <div class="metric"><span>Frais Airbnb sur le ménage (charge propriétaire) / an</span><strong id="cleaningFeeOwner">—</strong></div>
+<div class="metric"><span>Ménage brut revenant à Émeraude / an</span><strong id="cleaningEmeraude">—</strong></div>
 <div class="metric"><span>Base de commission (nuits + ménage nets)</span><strong id="commissionBase">—</strong></div>
 <div class="metric wide"><span>Revenu propriétaire après commission</span><strong id="owner">—</strong> <span id="ownerMonthly" style="display:inline;margin-left:6px">—</span></div>
 </div>
@@ -407,7 +408,7 @@ try{const r=await fetch(url,{signal:ctl?ctl.signal:undefined,cache:'no-cache'});
 finally{clearTimeout(t);}
 }
 function validMarket(m){return !!(m&&m.schemaVersion===1&&m.markets&&typeof m.markets==='object');}
-function validBundle(b){return !!(b&&b.schemaVersion===1&&b.config&&b.config.schemaVersion===1&&b.communes&&b.sources);}
+function validBundle(b){return !!(b&&b.schemaVersion===1&&b.config&&b.config.schemaVersion===1&&b.config.commission&&b.config.commission.base==='payout_net_of_host_fee'&&b.communes&&b.sources);}
 function readCache(){try{const s=localStorage.getItem(CACHE_KEY);if(!s)return null;const c=JSON.parse(s);return validMarket(c.market)?c:null;}catch(e){return null;}}
 function writeCache(market,cfg){try{localStorage.setItem(CACHE_KEY,JSON.stringify({savedAt:new Date().toISOString(),market:market,bundle:cfg||null}));}catch(e){}}
 function clone(x){return JSON.parse(JSON.stringify(x));}
@@ -566,7 +567,7 @@ $('airbnbLabel').textContent=cfg.fees.airbnbHostFeeLabel.replace('Frais de servi
 $('airbnb').textContent=e10(s.airbnb.onNights);
 $('netAfterAirbnb').textContent=e100(s.nightsNetOfHostFee);
 $('concierge').textContent=e10(s.commission.amount);
-$('cleaningCollected').textContent=e10(s.cleaning.collected);$('cleaningNet').textContent=e10(s.cleaningNetOfHostFee);$('cleaningFeeOwner').textContent=e10(s.cleaning.hostFee);$('commissionBase').textContent=e100(s.commission.base);
+$('cleaningCollected').textContent=e10(s.cleaning.collected);$('cleaningNet').textContent=e10(s.cleaningNetOfHostFee);$('cleaningFeeOwner').textContent=e10(s.cleaning.hostFee);$('cleaningEmeraude').textContent=e10(s.emeraude.cleaningNet);$('commissionBase').textContent=e100(s.commission.base);
 $('owner').textContent=euro(S.owner.central);
 $('ownerMonthly').textContent='fourchette '+euro(S.owner.low)+' à '+euro(S.owner.high)+' · soit ≈ '+e100(s.ownerIncomeMonthlyAverage)+' / mois disponible';
 $('occ').textContent=pct(s.occupancy);
@@ -615,8 +616,9 @@ h+='<div><h4>'+esc(e.result.title)+'<span class="tag">Estimation</span></h4><p>'
 h+='<tr><td>Nuits disponibles / louées</td><td>'+num(s.nightsAvailable)+' / '+num(s.nightsBooked)+'</td></tr>';
 h+='<tr><td>Ménage (séparé du CA des nuits)</td><td>'+num(s.cleaning.stays)+' séjours × '+euro(s.cleaning.feePerStay)+' = '+euro(s.cleaning.collected)+'</td></tr>';
 h+='<tr><td>Frais Airbnb sur le ménage (à la charge du propriétaire)</td><td>'+euro(s.cleaning.hostFee)+'</td></tr>';
+h+='<tr><td>Ménage brut revenant à Émeraude</td><td>'+euro(s.emeraude.cleaningNet)+'</td></tr>';
 h+='<tr><td>Base de commission : nuits nettes + ménage net</td><td>'+euro(s.nightsNetOfHostFee)+' + '+euro(s.cleaningNetOfHostFee)+' = '+euro(s.commission.base)+'</td></tr>';
-h+='<tr><td>Commission : '+pct(s.commission.rate,1)+' × '+esc(bundle.config.commission.baseLabel.toLowerCase())+'</td><td>'+euro(s.commission.amount)+'</td></tr>';
+h+='<tr><td>Commission : '+pct(s.commission.rate,1)+' × '+esc(bundle.config.commission.baseLabel.charAt(0).toLowerCase()+bundle.config.commission.baseLabel.slice(1))+'</td><td>'+euro(s.commission.amount)+'</td></tr>';
 h+='</table></div>';
 return h;
 }
@@ -624,7 +626,7 @@ return h;
 function presentBoxes(r){
 const s=r.scenarios.realiste,S=summaryOf(r);
 const b=[['CA des nuits — estimation centrale','≈ '+euro(S.central)],['Fourchette d’incertitude',euro(S.low)+' – '+euro(S.high)],['Niveau de confiance',CONF_LABEL[S.confidence]+(S.uncertaintyPct?' (±'+S.uncertaintyPct+' %)':'')],['Prix moyen estimé / nuit','≈ '+euro(s.adr)],['Occupation estimée','≈ '+pct(s.occupancy)],['CA moyen / mois disponible',e100(s.nightsRevenueMonthlyAverage)],['Frais Airbnb sur les nuits (15,5 %)',e10(s.airbnb.onNights)],['Revenu des nuits net d’Airbnb',e100(s.nightsNetOfHostFee)]];
-b.push(['Ménages collectés',e10(s.cleaning.collected)],['Ménages nets d’Airbnb',e10(s.cleaningNetOfHostFee)],['Frais Airbnb sur le ménage (charge propriétaire)',e10(s.cleaning.hostFee)],['Base de commission (nuits + ménage nets)',e100(s.commission.base)],['Commission Émeraude (taux indicatif '+pct(s.commission.rate,1)+')',e10(s.commission.amount)],['Revenu propriétaire*','≈ '+euro(S.owner.central)+' ('+euro(S.owner.low)+' – '+euro(S.owner.high)+')']);
+b.push(['Ménages collectés',e10(s.cleaning.collected)],['Ménages nets d’Airbnb',e10(s.cleaningNetOfHostFee)],['Frais Airbnb sur le ménage (charge propriétaire)',e10(s.cleaning.hostFee)],['Ménage brut revenant à Émeraude',e10(s.emeraude.cleaningNet)],['Base de commission (nuits + ménage nets)',e100(s.commission.base)],['Commission Émeraude (taux indicatif '+pct(s.commission.rate,1)+')',e10(s.commission.amount)],['Revenu propriétaire*','≈ '+euro(S.owner.central)+' ('+euro(S.owner.low)+' – '+euro(S.owner.high)+')']);
 return b;
 }
 
@@ -649,7 +651,7 @@ $('pMethod').innerHTML='<p><b>Niveau de confiance : '+esc(CONF_LABEL[SP.confiden
 +'<p><b>Ajustements du modèle Émeraude (hypothèses)</b> — '+esc(e.adjustments.reference)+' Ajustements appliqués : '+e.adjustments.items.filter(a=>Math.abs(a.adrEffectPct)>1e-9||Math.abs(a.occEffectPts)>1e-9).map(a=>esc(a.label)).join(', ')+'. Saisonnalité : '+esc(e.adjustments.seasonality.label.toLowerCase())+'.</p>'
 +'<p><b>Résultat estimé</b> — '+esc(bundle.config.texts.methodologyResult)+'</p>'
 +(e.market.definitionNotes.length?'<p>'+e.market.definitionNotes.map(esc).join(' ')+'</p>':'');
-$('pFoot').textContent=bundle.config.texts.disclaimer+' *Revenu propriétaire avant fiscalité et charges. Les frais de ménage sont collectés séparément pour financer les prestations de ménage. Nets des frais Airbnb, ils entrent dans la base de calcul de la commission ; les frais Airbnb prélevés sur le ménage réduisent le revenu propriétaire. Le taux de commission affiché est indicatif : il est négocié avec chaque propriétaire et fixé dans son contrat. '+bundle.config.texts.attribution+' '+bundle.config.texts.attributionSuffix;
+$('pFoot').textContent=bundle.config.texts.disclaimer+' *Revenu propriétaire avant fiscalité et charges. Les frais de ménage sont collectés séparément pour financer les prestations de ménage : leur montant brut revient à Émeraude. Nets des frais Airbnb, ils entrent dans la base de calcul de la commission ; les frais Airbnb prélevés sur le ménage réduisent le revenu propriétaire. Le taux de commission affiché est indicatif : il est négocié avec chaque propriétaire et fixé dans son contrat. '+bundle.config.texts.attribution+' '+bundle.config.texts.attributionSuffix;
 }
 
 function renderLegacy(raw){
@@ -702,7 +704,7 @@ const lines=['Bonjour','','Suite à notre échange, voici l’estimation indicat
 '• Prix moyen estimé par nuit : environ '+euro(s.adr),'• Taux d’occupation estimé : environ '+pct(s.occupancy),'• CA moyen par mois disponible : environ '+e100(s.nightsRevenueMonthlyAverage),
 '• Frais Airbnb sur les nuits (15,5 %) : environ '+e10(s.airbnb.onNights)];
 lines.push('• Revenu des nuits net d’Airbnb : environ '+e100(s.nightsNetOfHostFee),'• Base de commission (nuits + ménage nets des frais Airbnb) : environ '+e100(s.commission.base),'• Commission Émeraude (taux indicatif '+pct(s.commission.rate,1)+', négocié pour chaque propriétaire) : environ '+e10(s.commission.amount),'• Revenu propriétaire après commission : environ '+euro(summaryOf(r).owner.central)+' (fourchette '+euro(summaryOf(r).owner.low)+' à '+euro(summaryOf(r).owner.high)+')',
-'• Frais de ménage : '+euro(s.cleaning.feePerStay)+' par séjour, collectés séparément (environ '+e10(s.cleaning.collected)+' sur la période), inclus nets dans la base de commission ; les frais Airbnb sur le ménage (environ '+e10(s.cleaning.hostFee)+') restent à la charge du propriétaire','',
+'• Frais de ménage : '+euro(s.cleaning.feePerStay)+' par séjour, collectés séparément (environ '+e10(s.cleaning.collected)+' sur la période), inclus nets dans la base de commission ; les frais Airbnb sur le ménage (environ '+e10(s.cleaning.hostFee)+') restent à la charge du propriétaire et le ménage brut revient à Émeraude','',
 summaryOf(r).notes.range,'',
 'SCÉNARIOS DE PERFORMANCE',...['prudent','realiste','performant'].map(id=>{const x=r.scenarios[id];return '• '+x.label+' : '+pct(x.occupancy)+' · '+euro(x.adr)+'/nuit — CA des nuits environ '+e100(x.nightsRevenue);}),summaryOf(r).notes.scenarios,'',
 cfg.texts.disclaimer,'',cfg.texts.attribution+' '+cfg.texts.attributionSuffix,'','Bien cordialement,','Émeraude Conciergerie');

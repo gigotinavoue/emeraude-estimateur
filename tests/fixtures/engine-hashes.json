@@ -1,14 +1,14 @@
 {
-  "capturedAt": "2026-10-04",
-  "note": "Empreintes du moteur 1.2.0 au début de l'actualisation des données (aucune modification autorisée sans validation).",
+  "capturedAt": "2026-11-04",
+  "note": "Empreintes du moteur 1.3.1 (assiette de commission du 2026-11-04) ; aucune modification autorisée sans validation.",
   "files": {
     "inputs.js": "02808ad38dc9badba51615818343b671ac30cfe94650ff2c8a24a3ccce877ac1",
     "resolveMarket.js": "78f4bb94634265514a1d4d8f8bef00ad73bbd54a399de8f64d75b66fd01005cb",
     "safe.js": "49b925f51095baeff89bd5c5c558081902eb5940d1b593c7e1e0aeed40709a65",
-    "index.js": "5b60d7349e81c8c78a2a49f03ca773e8fa611f7c89db883e122b00ee8b4d02ea",
+    "index.js": "62c874193413bc65a497ed7f2f9d72553ebdf154858d0df46122e1ccf1e47f1e",
     "quality.js": "305ed304a46f82cc8b394ce1bb7e71580cbdac89c2f42a7172deaeb9b28e1d9d",
-    "uncertainty.js": "193936a4b78fb2af03f8b92e6e24dc56328127a99f9f3377f730392e13ad6695",
-    "core.js": "59e9a29a38e8c7ca423eaed13d090e4922d4340b3b2982125fcf5ae5a7fb0f91",
+    "uncertainty.js": "40ff982afcd1d0bc25d1ab4c18d9437eceb8cfe89538ccee5d0b94f385189959",
+    "core.js": "0850088106b9b0bc972a1e78cb7d79774d5cda4ff79516beb0cb641d0c97c9b9",
     "adjustments.js": "aa49ef88fb25ef5724e6bb3bc358c656450cbea26a3c23541062cea16e9b2f00"
   }
 }

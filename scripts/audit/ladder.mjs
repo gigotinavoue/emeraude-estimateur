@@ -16,7 +16,7 @@ export const LADDER = [
 export function runLadder(config, commune = 'rennes', market = readJson('dist/market.json'), extra = {}) {
   const ctx = { config, communes: readJson('config/communes.json'), sources: readJson('config/sources.json'), marketSources: [{ origin: 'remote', data: market }], today: new Date('2026-10-04') };
   return LADDER.map((l) => {
-    const r = estimate({ commune, type: l.type, bedrooms: String(l.bedrooms), bathrooms: String(l.bathrooms), area: String(l.area), guests: String(l.guests), location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '', vat: false, ...extra }, ctx);
+    const r = estimate({ commune, type: l.type, bedrooms: String(l.bedrooms), bathrooms: String(l.bathrooms), area: String(l.area), guests: String(l.guests), location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '', ...extra }, ctx);
     const s = r.scenarios.realiste;
     return { ...l, adr: s.adr, occ: s.occupancy, ca: s.nightsRevenue, owner: s.ownerIncome };
   });

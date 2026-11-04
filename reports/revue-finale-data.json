@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T21:25:49.582Z",
+  "generatedAt": "2026-11-04T13:59:00.434Z",
   "decomposition": {
     "marketSame": true,
     "referenceSame": true,
@@ -171,9 +171,9 @@
           "Données de marché datant de 21 mois (dernière publication disponible)"
         ],
         "owner": {
-          "central": 7000,
-          "low": 6600,
-          "high": 7500
+          "central": 6400,
+          "low": 5900,
+          "high": 6800
         },
         "adr": 68,
         "occupancyPct": 50,
@@ -230,9 +230,9 @@
           "Données de marché datant de 21 mois (dernière publication disponible)"
         ],
         "owner": {
-          "central": 9100,
-          "low": 8500,
-          "high": 9700
+          "central": 8400,
+          "low": 7800,
+          "high": 8900
         },
         "adr": 80,
         "occupancyPct": 55,
@@ -298,8 +298,8 @@
       "revenue": 14311.154651127585,
       "airbnb": 2218.2289709247757,
       "netBeforeCommission": 12092.925680202809,
-      "commission": 2418.585136040562,
-      "owner": 9674.340544162247,
+      "commission": 2783.625136040562,
+      "owner": 8974.500544162247,
       "cleaning": 2160
     },
     "C": {
@@ -310,8 +310,8 @@
       "revenue": 12882.227158039408,
       "airbnb": 1996.7452094961081,
       "netBeforeCommission": 10885.4819485433,
-      "commission": 2177.09638970866,
-      "owner": 8708.38555883464,
+      "commission": 2548.89638970866,
+      "owner": 7995.58555883464,
       "cleaning": 2200
     },
     "D": {
@@ -322,8 +322,8 @@
       "revenue": 12882.227158039408,
       "airbnb": 1996.7452094961081,
       "netBeforeCommission": 10885.4819485433,
-      "commission": 2177.09638970866,
-      "owner": 8708.38555883464,
+      "commission": 2548.89638970866,
+      "owner": 7995.58555883464,
       "cleaning": 2200
     },
     "summary": {
@@ -340,9 +340,9 @@
         "Données de marché datant de 21 mois (dernière publication disponible)"
       ],
       "owner": {
-        "central": 8700,
-        "low": 8100,
-        "high": 9300
+        "central": 8000,
+        "low": 7400,
+        "high": 8600
       },
       "adr": 78,
       "occupancyPct": 54,
@@ -399,9 +399,9 @@
       ],
       "uncertaintyReasons": [],
       "owner": {
-        "central": 8700,
-        "low": 8100,
-        "high": 9300
+        "central": 8000,
+        "low": 7400,
+        "high": 8600
       },
       "adr": 78,
       "occupancyPct": 54,
@@ -506,9 +506,9 @@
           "Données de marché datant de 21 mois (dernière publication disponible)"
         ],
         "owner": {
-          "central": 7000,
-          "low": 6600,
-          "high": 7500
+          "central": 6400,
+          "low": 5900,
+          "high": 6800
         },
         "adr": 68,
         "occupancyPct": 50,
@@ -565,9 +565,9 @@
         ],
         "uncertaintyReasons": [],
         "owner": {
-          "central": 7000,
-          "low": 6600,
-          "high": 7500
+          "central": 6400,
+          "low": 5900,
+          "high": 6800
         },
         "adr": 68,
         "occupancyPct": 50,
@@ -620,9 +620,9 @@
           "Données de marché datant de 21 mois (dernière publication disponible)"
         ],
         "owner": {
-          "central": 8700,
-          "low": 8100,
-          "high": 9300
+          "central": 8000,
+          "low": 7400,
+          "high": 8600
         },
         "adr": 78,
         "occupancyPct": 54,
@@ -679,9 +679,9 @@
         ],
         "uncertaintyReasons": [],
         "owner": {
-          "central": 8700,
-          "low": 8100,
-          "high": 9300
+          "central": 8000,
+          "low": 7400,
+          "high": 8600
         },
         "adr": 78,
         "occupancyPct": 54,
@@ -734,9 +734,9 @@
           "Données de marché datant de 21 mois (dernière publication disponible)"
         ],
         "owner": {
-          "central": 9800,
-          "low": 9100,
-          "high": 10500
+          "central": 9200,
+          "low": 8500,
+          "high": 9800
         },
         "adr": 99,
         "occupancyPct": 48,
@@ -793,9 +793,9 @@
         ],
         "uncertaintyReasons": [],
         "owner": {
-          "central": 9800,
-          "low": 9100,
-          "high": 10500
+          "central": 9200,
+          "low": 8500,
+          "high": 9800
         },
         "adr": 99,
         "occupancyPct": 48,
@@ -849,9 +849,9 @@
           "Données de marché datant de 21 mois (dernière publication disponible)"
         ],
         "owner": {
-          "central": 8700,
-          "low": 7600,
-          "high": 9700
+          "central": 8200,
+          "low": 7200,
+          "high": 9200
         },
         "adr": 88,
         "occupancyPct": 48,
@@ -907,9 +907,9 @@
         ],
         "uncertaintyReasons": [],
         "owner": {
-          "central": 8700,
-          "low": 7600,
-          "high": 9700
+          "central": 8200,
+          "low": 7200,
+          "high": 9200
         },
         "adr": 88,
         "occupancyPct": 48,
@@ -965,9 +965,9 @@
           "Données de marché datant de 21 mois (dernière publication disponible)"
         ],
         "owner": {
-          "central": 12100,
-          "low": 10600,
-          "high": 13500
+          "central": 11600,
+          "low": 10200,
+          "high": 13000
         },
         "adr": 128,
         "occupancyPct": 46,
@@ -1023,9 +1023,9 @@
         ],
         "uncertaintyReasons": [],
         "owner": {
-          "central": 12100,
-          "low": 10600,
-          "high": 13500
+          "central": 11600,
+          "low": 10200,
+          "high": 13000
         },
         "adr": 128,
         "occupancyPct": 46,
@@ -1082,9 +1082,9 @@
           "Marché de petite taille (34 359 nuits réservées sur la période)"
         ],
         "owner": {
-          "central": 7000,
-          "low": 6500,
-          "high": 7600
+          "central": 6300,
+          "low": 5800,
+          "high": 6800
         },
         "adr": 70,
         "occupancyPct": 49,
@@ -1145,9 +1145,9 @@
           "Marché de petite taille (34 359 nuits réservées sur la période)"
         ],
         "owner": {
-          "central": 7000,
-          "low": 6500,
-          "high": 7600
+          "central": 6300,
+          "low": 5800,
+          "high": 6800
         },
         "adr": 70,
         "occupancyPct": 49,
@@ -1209,9 +1209,9 @@
           "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
         ],
         "owner": {
-          "central": 7000,
-          "low": 6500,
-          "high": 7600
+          "central": 6400,
+          "low": 5900,
+          "high": 6900
         },
         "adr": 68,
         "occupancyPct": 50,
@@ -1273,9 +1273,9 @@
           "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
         ],
         "owner": {
-          "central": 7000,
-          "low": 6500,
-          "high": 7600
+          "central": 6400,
+          "low": 5900,
+          "high": 6900
         },
         "adr": 68,
         "occupancyPct": 50,
@@ -1337,9 +1337,9 @@
           "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
         ],
         "owner": {
-          "central": 7000,
-          "low": 6500,
-          "high": 7600
+          "central": 6400,
+          "low": 5900,
+          "high": 6900
         },
         "adr": 68,
         "occupancyPct": 50,
@@ -1401,9 +1401,9 @@
           "Commune aux loyers nettement inférieurs à la moyenne de Rennes Métropole : l'estimation, fondée sur la moyenne intercommunale, peut être un peu haute (non corrigé)."
         ],
         "owner": {
-          "central": 7000,
-          "low": 6500,
-          "high": 7600
+          "central": 6400,
+          "low": 5900,
+          "high": 6900
         },
         "adr": 68,
         "occupancyPct": 50,
@@ -1452,14 +1452,15 @@
     "nightsRevenue": 12882.227158039408,
     "airbnbOnNights": 1996.7452094961081,
     "netBeforeCommission": 10885.4819485433,
-    "commission": 2177.09638970866,
-    "owner": 8708.38555883464,
+    "commission": 2548.89638970866,
+    "owner": 7995.58555883464,
     "cleaningCollected": 2200,
     "airbnbOnCleaning": 341,
-    "cleaningNetEmeraude": 1859,
-    "emeraudeTotal": 4036.09638970866,
+    "cleaningNetEmeraude": 2200,
+    "emeraudeTotal": 4748.89638970866,
     "chainExact": true,
-    "cleaningIndependent": true
+    "baseIncludesNetCleaning": true,
+    "nightsIndependentOfCleaning": true
   },
   "coherence": [
     {

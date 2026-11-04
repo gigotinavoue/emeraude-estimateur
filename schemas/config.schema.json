@@ -138,10 +138,10 @@
       "properties": {
         "airbnbHostFeeRate": { "type": "number", "minimum": 0, "maximum": 0.3 },
         "airbnbFeeBase": { "enum": ["nights_plus_cleaning", "nights_only"] },
-        "cleaningFeeShareBearer": { "enum": ["emeraude", "owner"] }
+        "cleaningFeeShareBearer": { "const": "owner" }
       }
     },
-    "commission": { "type": "object", "required": ["defaultRate", "base"], "properties": { "base": { "enum": ["payout_net_of_host_fee"] } } },
+    "commission": { "type": "object", "required": ["base"], "properties": { "base": { "enum": ["payout_net_of_host_fee"] } } },
     "scenarios": {
       "type": "object",
       "required": ["occupancyDeltaPts", "prudent", "realiste", "performant"],

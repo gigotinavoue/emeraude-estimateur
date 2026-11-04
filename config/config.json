@@ -143,7 +143,6 @@
   },
 
   "commission": {
-    "defaultRate": 0.20,
     "base": "payout_net_of_host_fee",
     "baseLabel": "Revenus nets des nuits et du ménage (frais Airbnb déduits)"
   },

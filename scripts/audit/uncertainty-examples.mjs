@@ -6,7 +6,7 @@ import { estimate } from '../../engine/index.js';
 const NOW = new Date('2026-10-04T12:00:00Z');
 const FRESH = new Date('2026-01-15T12:00:00Z');
 const ctx = (today) => ({ config: readJson('config/config.json'), communes: readJson('config/communes.json'), sources: readJson('config/sources.json'), marketSources: [{ origin: 'remote', data: readJson('dist/market.json') }], today });
-const base = { bathrooms: '1', location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '', vat: false };
+const base = { bathrooms: '1', location: 'standard', amenities: [], monthsMode: 'count', monthsCount: '10', monthsSelected: [], commissionPct: '20', cleaningFee: '40', avgStay: '' };
 export const EXAMPLES = [
   ['Rennes · T2 40 m², 2 voy.', { commune: 'rennes', type: 't2', bedrooms: '1', area: '40', guests: '2' }],
   ['Rennes · T3 60 m², 4 voy.', { commune: 'rennes', type: 't3', bedrooms: '2', area: '60', guests: '4' }],
