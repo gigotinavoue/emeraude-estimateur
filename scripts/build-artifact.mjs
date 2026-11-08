@@ -31,7 +31,7 @@ import { RANGE_CASES, raw as referenceRaw } from './audit/final-review.mjs';
 export const ARTIFACT = {
   name: 'Estimateur Émeraude',
   title: 'Estimateur Émeraude',
-  version: '2.3.0',
+  version: '2.4.0',
   output: 'dist/estimateur-artifact.html'
 };
 
@@ -121,6 +121,7 @@ const CSS = `/* Artifact V2 Data Refresh : données embarquées, classes de donn
 #emeraude-estimateur .sc-meta b{font-size:13px;font-variant-numeric:tabular-nums}
 #emeraude-estimateur .sc-row p{margin:8px 0 0;font-size:11px;color:var(--muted);line-height:1.45}
 #emeraude-estimateur .detail-title{font-size:15px;font-weight:800;margin:18px 0 0}
+#emeraude-estimateur .cleaning-notice{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--g2);font-size:12px;line-height:1.45}
 #emeraude-estimateur .method-wrap{background:var(--card);margin-top:18px}
 #emeraude-estimateur .method-wrap .dr-panel{margin-top:0;padding-bottom:14px}
 @media(max-width:820px){#emeraude-estimateur .result{min-width:0}#emeraude-estimateur .mtable td:last-child{white-space:normal}}
@@ -165,6 +166,13 @@ const SC_LABEL={prudent:'Prudent',realiste:'Central',performant:'Optimiste'};
 function scName(id){return SC_LABEL[id]||id;}
 /* Les montants portent sur les seuls mois disponibles saisis, pas nécessairement sur douze mois. */
 function availText(n){return num(n)+' mois disponible'+(n>1?'s':'');}
+/* Forfait ménage : calculé depuis la grille, sauf montant saisi. Si le logement est incomplet, le moteur signale le champ concerné. */
+function autoCleaningFee(){
+const type=bundle.config.types[$('type').value]||{};
+const fee=window.EmeraudeForfaitMenage.estimerForfaitMenage({isHouse:!!type.isHouse,area:$('area').value,bedrooms:$('bed').value,bathrooms:$('bath').value,guests:$('guest').value},SNAPSHOT.forfaitMenage);
+return fee===null?bundle.config.defaults.cleaningFee:fee;
+}
+function cleaningNotice(fee){return 'Forfait ménage indicatif : '+euro(fee)+" par séjour. Payé par le voyageur et facturé au propriétaire par Émeraude. Ce montant n'est pas un revenu : ses frais Airbnb et la commission associée sont déduits du revenu propriétaire.";}
 function scenarioGap(r,id){const d=round100(r.scenarios[id].ownerIncome)-round100(r.scenarios.realiste.ownerIncome);return (d>0?'+':d<0?'−':'')+euro(Math.abs(d));}
 function monthYear(s){if(!s)return '—';const m=String(s).match(/^(\\d{4})-(\\d{2})/);if(!m)return esc(s);return new Intl.DateTimeFormat('fr-FR',{month:'long',year:'numeric',timeZone:'Europe/Paris'}).format(new Date(Date.UTC(+m[1],+m[2]-1,15)));}
 /* Dates : stockées en UTC ; une date seule (AAAA-MM-JJ) est un jour calendaire, un horodatage est affiché en heure de Paris. */
@@ -228,7 +236,7 @@ const meta=((SNAPSHOT.market.markets||{})[d.marketKey]||{}).meta||{};
 const own=d.geoRole==='epci'||d.geoRole==='commune';
 $('mClass').innerHTML=own?dcTag(meta.dataClass||'OBSERVÉE')+' moyenne de l’intercommunalité, appliquée à la commune':dcTag('FALLBACK')+(d.geoRole==='epci_voisin'?' marché voisin':' données départementales');
 $('mSeasonClass').innerHTML=dcTag(d.seasonality.fallback?'FALLBACK':'PROXY')+' profils départementaux, non locaux';
-const tiles=[['Mois disponibles',num(s.monthsCount)+' mois · '+num(s.nightsAvailable)+' nuits'],['Séjours estimés × ménage',num(s.cleaning.stays)+' × '+euro(s.cleaning.feePerStay)],['Frais Airbnb sur le ménage (propriétaire)',e10(s.cleaning.hostFee)]];
+const tiles=[['Mois disponibles',num(s.monthsCount)+' mois · '+num(s.nightsAvailable)+' nuits'],['Séjours estimés × ménage',num(s.cleaning.stays)+' × '+euro(s.cleaning.feePerStay)]];
 $('drMetrics').innerHTML=tiles.map(([k,v])=>'<div class="metric"><span>'+esc(k)+'</span><strong>'+v+'</strong></div>').join('');
 }
 `;
@@ -242,6 +250,7 @@ const lines=['Bonjour','','Suite à notre échange, voici l’estimation réalis
 'VOTRE POTENTIEL LOCATIF (scénario central, sur '+availText(s.monthsCount)+')','• CA des nuits : environ '+euro(S.central),'• Revenu propriétaire après commission : environ '+euro(S.owner.central),'• Prix moyen estimé par nuit : environ '+euro(s.adr),'• Taux d’occupation estimé : environ '+pct(s.occupancy),'• CA moyen par mois disponible : environ '+e100(s.nightsRevenueMonthlyAverage),'',
 'COMPARAISON DES SCÉNARIOS (sur '+availText(s.monthsCount)+')',...['prudent','realiste','performant'].map(id=>{const x=r.scenarios[id];return '• '+scName(id)+' : revenu propriétaire environ '+e100(x.ownerIncome)+(id==='realiste'?' (référence)':' ('+scenarioGap(r,id)+' par rapport au scénario central)')+' — CA des nuits environ '+e100(x.nightsRevenue)+' · '+pct(x.occupancy)+' · '+euro(x.adr)+'/nuit';}),'',
 'DÉTAIL FINANCIER (scénario central, sur '+availText(s.monthsCount)+')','• Frais Airbnb sur les nuits (15,5 %) : environ '+e10(s.airbnb.onNights),'• Revenu des nuits net d’Airbnb : environ '+e100(s.nightsNetOfHostFee),'• Base de commission (nuits + ménage nets des frais Airbnb) : environ '+e100(s.commission.base),'• Commission Émeraude (taux indicatif '+pct(s.commission.rate,1)+', négocié pour chaque propriétaire) : environ '+e10(s.commission.amount),
+'• '+cleaningNotice(s.cleaning.feePerStay),
 '• Frais de ménage : '+euro(s.cleaning.feePerStay)+' par séjour, collectés séparément (environ '+e10(s.cleaning.collected)+' sur la période), inclus nets dans la base de commission ; les frais Airbnb sur le ménage (environ '+e10(s.cleaning.hostFee)+') restent à la charge du propriétaire et le ménage brut revient à Émeraude','',
 'MÉTHODOLOGIE','• Marché de référence : '+d.zone+' — prix moyen '+euro(d.market.adr)+' / nuit, occupation '+pct(d.market.occupancy),'• Période de référence : '+d.periodText+' (publiées en '+d.publishedText+')','• Source : '+d.source.attribution,
 ...r.explanation.adjustments.items.filter(a=>Math.abs(a.adrEffectPct)>1e-9||Math.abs(a.occEffectPts)>1e-9).map(a=>'• Ajustement Émeraude — '+a.label+' : '+[Math.abs(a.adrEffectPct)>1e-9?'prix '+signedPct(a.adrEffectPct):'',Math.abs(a.occEffectPts)>1e-9?'occupation '+signedPts(a.occEffectPts):''].filter(Boolean).join(', ')),
@@ -270,7 +279,8 @@ $('scenarios').innerHTML=sc;
 
 `;
 
-const PRESENT_SCENARIOS = `$('pScTitle').textContent='Scénarios sur '+availText(r.scenarios.realiste.monthsCount);
+const PRESENT_SCENARIOS = `$('pCleaningNotice').textContent=cleaningNotice(r.scenarios.realiste.cleaning.feePerStay);
+$('pScTitle').textContent='Scénarios sur '+availText(r.scenarios.realiste.monthsCount);
 let t='<thead><tr><th>Scénario</th><th class="num">Occupation</th><th class="num">Prix / nuit</th><th class="num">CA des nuits</th><th class="num">Revenu propriétaire</th><th class="num">Écart / central</th></tr></thead><tbody>';
 for(const id of ['prudent','realiste','performant']){const x=r.scenarios[id];t+='<tr><td><b>'+esc(scName(id))+'</b><br><span style="color:var(--muted);font-size:11px">'+esc(x.description)+'</span></td><td class="num">'+pct(x.occupancy)+'</td><td class="num">'+euro(x.adr)+'</td><td class="num">'+e100(x.nightsRevenue)+'</td><td class="num"><b>'+e100(x.ownerIncome)+'</b></td><td class="num">'+(id==='realiste'?'référence':scenarioGap(r,id))+'</td></tr>';}
 `;
@@ -310,6 +320,7 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
   const market = readJson('dist/market.json');
   const dataStatus = readJson('dist/data-status.json');
   const referenceAccepted = readJson('data/history/reference-accepted.json');
+  const forfaitMenage = readJson('config/forfait-menage.json');
 
   // Cohérence des fichiers validés : on s'arrête plutôt que de choisir une version.
   if (dataStatus.marketGeneratedAt !== market.generatedAt) throw new Error(`dist/data-status.json (${dataStatus.marketGeneratedAt}) ne correspond pas à dist/market.json (${market.generatedAt}).`);
@@ -321,11 +332,12 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
   }
 
   const engine = bundleModules('engine', ENGINE_ORDER, 'window.EmeraudeEngine={estimate:estimate,ENGINE_VERSION:ENGINE_VERSION};');
+  const forfaitScript = bundleModules('scripts/lib', ['forfait-menage.js'], 'window.EmeraudeForfaitMenage={estimerForfaitMenage:estimerForfaitMenage};');
   const engineVersion = /ENGINE_VERSION = '([^']+)'/.exec(fs.readFileSync(p('engine/index.js'), 'utf8'))[1];
   const snapshot = {
     builtAt: null, // rempli par stableBuild
     artifact: { name: ARTIFACT.name, version: ARTIFACT.version },
-    config, communes, sources, market, dataStatus, referenceAccepted,
+    config, communes, sources, market, dataStatus, referenceAccepted, forfaitMenage,
     referenceCases: RANGE_CASES,
     referenceBase: referenceRaw({})
   };
@@ -367,6 +379,7 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
 <div class="scenarios" id="scenarios"></div>
 
 <div class="detail-title" id="detailTitle">Détail financier</div>
+<div class="cleaning-notice" id="cleaningNotice"></div>
 
 `, 'niveau de confiance');
   t = replaceOnce(t, '<h3>Données utilisées et méthode</h3>', '<h3>Méthodologie</h3>', 'titre méthode');
@@ -374,7 +387,15 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
   t = replaceOnce(t, '<span>CA des nuits / an</span>', '<span id="annualLabel">CA des nuits sur la période</span>', 'libellé CA');
   t = replaceOnce(t, "'Frais Airbnb sur les nuits')+' / an';", "'Frais Airbnb sur les nuits');", 'libellé frais Airbnb');
   for (const label of ['Commission Émeraude', 'Ménages collectés', 'Ménages nets d’Airbnb', 'Frais Airbnb sur le ménage (charge propriétaire)', 'Ménage brut revenant à Émeraude']) t = replaceOnce(t, `<span>${label} / an</span>`, `<span>${label}</span>`, `libellé ${label}`);
-  t = replaceOnce(t, '<h3>Scénarios</h3>', '<h3 id="pScTitle">Scénarios</h3>', 'titre scénarios');
+  t = replaceOnce(t, '<h3>Scénarios</h3>', '<div class="cleaning-notice" id="pCleaningNotice"></div>\n<h3 id="pScTitle">Scénarios</h3>', 'titre scénarios');
+  // Forfait ménage automatique : le champ existant reste modifiable ; vide, il utilise la grille.
+  t = replaceOnce(t, '<div class="field-error" id="err-cleaningFee" hidden></div>', '<div class="field-hint" id="cleaningHint"></div><div class="field-error" id="err-cleaningFee" hidden></div>', 'aide forfait ménage');
+  t = replaceOnce(t, 'let stayEdited=false;', 'let stayEdited=false;\nlet cleaningEdited=false;', 'état forfait ménage');
+  t = replaceOnce(t, "$('cleaningFee').value=d.cleaningFee;", "$('cleaningFee').value='';cleaningEdited=false;", 'valeur initiale du forfait');
+  t = replaceOnce(t, "cleaningFee:$('cleaningFee').value,", "cleaningFee:cleaningEdited?$('cleaningFee').value:autoCleaningFee(),", 'lecture du forfait');
+  t = replaceOnce(t, ",'commission','cleaningFee'].forEach", ",'commission'].forEach", 'événements du formulaire');
+  t = replaceOnce(t, "$('stayLength').addEventListener('input',", "$('cleaningFee').addEventListener('input',()=>{cleaningEdited=$('cleaningFee').value.trim()!=='';calculate();});\n$('stayLength').addEventListener('input',", 'saisie du forfait');
+  t = replaceOnce(t, '%%LEGACY_SCRIPT%%', '<script>\n%%FORFAIT_MENAGE%%\n</script>\n%%LEGACY_SCRIPT%%', 'script du forfait');
   // Vouvoiement dans les textes visibles par le propriétaire.
   t = replaceOnce(t, 'Renseigne les informations pendant la visite.', 'Renseignez les informations pendant la visite.', 'consigne logement');
   t = replaceOnce(t, 'Coche uniquement ce qui est réellement présent ou prévu.', 'Cochez uniquement ce qui est réellement présent ou prévu.', 'consigne équipements');
@@ -383,7 +404,7 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
   t = replaceBlock(t, '/* Millésime, âge et actualisation', 'const usedMarket=', '', 'âge des données');
   t = replaceBlock(t, "const sb=$('staleBanner');", "const fb=$('fallbackBanner');", '', 'alerte d\'ancienneté');
   t = replaceBlock(t, "$('uncRange').textContent=", "$('range').textContent=", '', 'fourchette principale');
-  t = replaceBlock(t, "$('confPill2').className=", "$('adr').textContent=", "$('heroLabel').textContent='Potentiel locatif estimé · CA des nuits sur '+availText(s.monthsCount)+' (scénario central)';\n$('annualLabel').textContent='CA des nuits sur '+num(s.monthsCount)+' mois';\n$('detailTitle').textContent='Détail financier sur '+availText(s.monthsCount);\n$('heroOwner').textContent='≈ '+euro(S.owner.central);\n$('heroOwnerMonthly').textContent='sur '+availText(s.monthsCount)+', soit ≈ '+e100(s.ownerIncomeMonthlyAverage)+' / mois · avant fiscalité et charges';\n$('nightsBooked').textContent=num(s.nightsBooked);\n", 'niveau de confiance (affichage)');
+  t = replaceBlock(t, "$('confPill2').className=", "$('adr').textContent=", "$('heroLabel').textContent='Potentiel locatif estimé · CA des nuits sur '+availText(s.monthsCount)+' (scénario central)';\n$('annualLabel').textContent='CA des nuits sur '+num(s.monthsCount)+' mois';\n$('detailTitle').textContent='Détail financier sur '+availText(s.monthsCount);\n$('heroOwner').textContent='≈ '+euro(S.owner.central);\n$('heroOwnerMonthly').textContent='sur '+availText(s.monthsCount)+', soit ≈ '+e100(s.ownerIncomeMonthlyAverage)+' / mois · avant fiscalité et charges';\n$('nightsBooked').textContent=num(s.nightsBooked);\nconst autoFee=autoCleaningFee();\n$('cleaningFee').placeholder=num(autoFee);\n$('cleaningHint').textContent=cleaningEdited?'Montant saisi (forfait indicatif calculé : '+euro(autoFee)+').':'Forfait indicatif calculé : '+euro(autoFee)+'. Saisissez un montant pour le remplacer.';\n$('cleaningNotice').textContent=cleaningNotice(s.cleaning.feePerStay);\n", 'niveau de confiance (affichage)');
   t = replaceOnce(t, "'fourchette '+euro(S.owner.low)+' à '+euro(S.owner.high)+' · soit ≈ '", "'soit ≈ '", 'revenu mensuel');
   t = replaceBlock(t, 'let sc=', 'const w=r.warnings.filter', RENDER_SCENARIOS, 'affichage des scénarios');
   t = replaceBlock(t, 'function presentBoxes(r){', 'function propertySummary(r){', PRESENT_BOXES, 'présentation : indicateurs');
@@ -418,9 +439,9 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
       TESTBAR: '', LEGACY_SCRIPT: '', IS_PREVIEW: 'false', MARKET_URL: '', CONFIG_URL: '',
       V2_BADGE: '',
       ENGINE_VERSION: engineVersion, BUILT_AT: builtAt.slice(0, 10),
-      ENGINE: engine, SNAPSHOT: snap
+      ENGINE: engine, FORFAIT_MENAGE: forfaitScript, SNAPSHOT: snap
     });
-    if (/%%[A-Z_]+%%/.test(body.replace(engine, '').replace(snap, ''))) throw new Error('Gabarit : jeton %%…%% non rempli.');
+    if (/%%[A-Z_]+%%/.test(body.replace(engine, '').replace(snap, '').replace(forfaitScript, ''))) throw new Error('Gabarit : jeton %%…%% non rempli.');
     return { [ARTIFACT.output]: `<title>${ARTIFACT.title}</title>\n${body}` };
   }, { write, now });
   const html = res.out[ARTIFACT.output];

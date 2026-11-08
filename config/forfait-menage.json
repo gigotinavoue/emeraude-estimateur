@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "aide": "Grille indicative du forfait ménage par séjour, modifiable ici sans toucher au moteur. Linge et consommables exclus. Après modification : npm run build:artifact puis npm test.",
+  "appartement": {
+    "bases": [
+      { "chambresMin": 0, "libelle": "Studio / T1", "forfait": 35, "surfaceReference": 25, "capaciteReference": 2 },
+      { "chambresMin": 1, "libelle": "T2", "forfait": 45, "surfaceReference": 40, "capaciteReference": 2 },
+      { "chambresMin": 2, "libelle": "T3", "forfait": 60, "surfaceReference": 60, "capaciteReference": 4 },
+      { "chambresMin": 3, "libelle": "T4 et plus", "forfait": 80, "surfaceReference": 80, "capaciteReference": 6 }
+    ],
+    "supplements": {
+      "surface": { "trancheM2": 15, "montant": 5, "plafond": 15 },
+      "salleDeBain": { "reference": 1, "montant": 5 },
+      "capacite": { "ecartMin": 2, "montant": 5 },
+      "plafondTotal": 20
+    }
+  },
+  "maison": {
+    "paliers": [
+      { "surfaceLimite": 100, "limiteIncluse": false, "libelle": "Maison de moins de 100 m²", "forfait": 90, "sallesDeBainReference": 1 },
+      { "surfaceLimite": 150, "limiteIncluse": true, "libelle": "Maison de 100 à 150 m²", "forfait": 110, "sallesDeBainReference": 2 },
+      { "surfaceLimite": 200, "limiteIncluse": true, "libelle": "Grande maison de plus de 150 à 200 m²", "forfait": 140, "sallesDeBainReference": 2 },
+      { "surfaceLimite": null, "limiteIncluse": true, "libelle": "Maison de plus de 200 m²", "forfait": 170, "sallesDeBainReference": 2 }
+    ],
+    "supplementSalleDeBain": 5,
+    "plafondSupplements": 20,
+    "plafondForfait": 170
+  }
+}
