@@ -112,7 +112,10 @@ test('C9. Interface, rapport imprimable, e-mail et pages générées énoncent l
   };
   for (const [nom, [texte, phrases]] of Object.entries(attendu)) for (const x of phrases) assert.ok(texte.includes(x), `${nom} : ${x}`);
   assert.ok(t.includes('Valeur indicative modifiable : le taux est négocié avec chaque propriétaire'));
-  for (const f of GENERATED) assert.ok(read(f).includes(interfaceBloc), f);
+  // L'artifact précise la période réelle des montants (pas de libellé « / an ») : mêmes règles, sans copie mot à mot du bloc.
+  for (const f of GENERATED.filter((x) => x !== 'dist/estimateur-artifact.html')) assert.ok(read(f).includes(interfaceBloc), f);
+  const artifact = read('dist/estimateur-artifact.html');
+  for (const x of attendu.interface[1]) assert.ok(artifact.includes(x), `artifact : ${x}`);
 });
 
 test('C10. TVA : aucune TVA calculée dans la simulation et avertissement sans ambiguïté', () => {

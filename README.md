@@ -15,6 +15,10 @@ Moteur d'estimation de location courte durée **indépendant des fournisseurs de
 
 Les coefficients et paramètres métier sont **tous** dans `config/config.json`. Les communes et intercommunalités sont dans `config/communes.json`. Les sources, licences et définitions sont dans `config/sources.json`.
 
+## Présentation commerciale de l'artifact (documentation interne)
+
+Depuis la version 2.3.0, `scripts/build-artifact.mjs` adapte uniquement l'affichage de l'artifact. Le moteur continue de calculer fraîcheur, niveau de confiance et fourchette du modèle (`summary.low`, `summary.high`, `summary.uncertaintyPct`, `summary.confidence`, y compris sur le revenu propriétaire), mais ces valeurs ne sont plus affichées au propriétaire. Les scénarios `realiste` et `performant` sont présentés sous les noms « Central » et « Optimiste » ; leurs identifiants et leurs hypothèses sont inchangés. L'Embed (`embed/template.html`) n'est pas concerné.
+
 ## Sources de données
 
 | Source | Usage | Mise à jour | Collecte | Licence |
