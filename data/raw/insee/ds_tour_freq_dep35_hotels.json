@@ -1,8 +1,8 @@
 {
-  "retrievedAt": "2026-10-26T14:32:28.736Z",
+  "retrievedAt": "2026-11-09T14:01:51.200Z",
   "url": "https://api.insee.fr/melodi/data/DS_TOUR_FREQ?GEO=2026-DEP-35&FREQ=M&ACTIVITY=I551&TOUR_MEASURE=PLACE_OCCUPANCY_RATE&maxResult=1000",
   "describe": "Insee — taux d'occupation hôtelier mensuel, Ille-et-Vilaine",
-  "lastPeriod": "2026-08",
+  "lastPeriod": "2026-09",
   "data": {
     "observations": [
       {
@@ -5970,7 +5970,7 @@
           "OBS_STATUS": "A",
           "DECIMALS": "1",
           "UNIT_MULT": "0",
-          "OBS_STATUS_FR": "PROV",
+          "OBS_STATUS_FR": "D",
           "CONF_STATUS": "F"
         },
         "dimensions": {
@@ -5993,7 +5993,39 @@
         },
         "measures": {
           "OBS_VALUE_NIVEAU": {
-            "value": 75
+            "value": 75.1
+          }
+        }
+      },
+      {
+        "attributes": {
+          "OBS_STATUS": "A",
+          "DECIMALS": "1",
+          "UNIT_MULT": "0",
+          "OBS_STATUS_FR": "PROV",
+          "CONF_STATUS": "F"
+        },
+        "dimensions": {
+          "EQUIP": "_Z",
+          "TOUR_MEASURE": "PLACE_OCCUPANCY_RATE",
+          "COASTAL_AREA": "_Z",
+          "TOUR_RESID": "_T",
+          "UNIT_LOC_RANKING": "_T",
+          "GEO": "2026-DEP-35",
+          "SEASONALITY": "_Z",
+          "MOUNTAIN_MASSIF": "_Z",
+          "HOTEL_STA": "_T",
+          "FREQ": "M",
+          "MOUNTAIN_AREA": "_Z",
+          "TIME_PERIOD": "2026-09",
+          "UNIT_MEASURE": "PT",
+          "COASTAL_FACADE": "_Z",
+          "DEG_URBA": "_Z",
+          "ACTIVITY": "I551"
+        },
+        "measures": {
+          "OBS_VALUE_NIVEAU": {
+            "value": 76.3
           }
         }
       }
