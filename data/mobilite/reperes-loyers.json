@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "carte_loyers",
+    "label": "Carte des loyers 2025 (ANIL / ministère du Logement)",
+    "url": "https://www.data.gouv.fr/fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/",
+    "licence": "Licence Ouverte Etalab 2.0",
+    "periode": "Annonces SeLoger et leboncoin publiées jusqu’au 30/09/2025",
+    "recupereLe": "2026-10-04"
+  },
+  "definition": "Loyer d’annonce prédit au m², charges comprises, logement NON meublé loué à l’année, avec intervalle de prédiction à 95 %. Repère indicatif : ce n’est ni un loyer meublé, ni un loyer de bail mobilité.",
+  "meuble": {
+    "donnees": null,
+    "note": "Aucune source publique fiable de loyers meublés par commune et par typologie n’a été identifiée : loyer à saisir."
+  },
+  "dureeBail": {
+    "donnees": null,
+    "note": "Aucune statistique publique de durée moyenne des baux mobilité par commune n’a été identifiée : durée à saisir."
+  },
+  "vacance": {
+    "donnees": null,
+    "note": "Aucune statistique publique de vacance entre deux baux mobilité n’a été identifiée : vacance à saisir."
+  },
+  "communes": {
+    "rennes": {
+      "insee": "35238",
+      "label": "Rennes",
+      "app12": {
+        "loyerM2": 17.19,
+        "basM2": 13.79,
+        "hautM2": 21.41,
+        "maille": "commune",
+        "annoncesCommune": 33194,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 13.86,
+        "basM2": 10.42,
+        "hautM2": 18.42,
+        "maille": "commune",
+        "annoncesCommune": 15457,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 15.28,
+        "basM2": 10,
+        "hautM2": 23.32,
+        "maille": "commune",
+        "annoncesCommune": 1453,
+        "fiabilite": "indicatif"
+      }
+    },
+    "cesson-sevigne": {
+      "insee": "35051",
+      "label": "Cesson-Sévigné",
+      "app12": {
+        "loyerM2": 15.55,
+        "basM2": 13.12,
+        "hautM2": 18.43,
+        "maille": "commune",
+        "annoncesCommune": 1319,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 12.49,
+        "basM2": 10.72,
+        "hautM2": 14.56,
+        "maille": "commune",
+        "annoncesCommune": 849,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 12.62,
+        "basM2": 9.75,
+        "hautM2": 16.35,
+        "maille": "commune",
+        "annoncesCommune": 331,
+        "fiabilite": "indicatif"
+      }
+    },
+    "saint-gregoire": {
+      "insee": "35278",
+      "label": "Saint-Grégoire",
+      "app12": {
+        "loyerM2": 15.59,
+        "basM2": 13.05,
+        "hautM2": 18.62,
+        "maille": "commune",
+        "annoncesCommune": 576,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 12.34,
+        "basM2": 10.52,
+        "hautM2": 14.48,
+        "maille": "commune",
+        "annoncesCommune": 408,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 12.47,
+        "basM2": 9.8,
+        "hautM2": 15.88,
+        "maille": "commune",
+        "annoncesCommune": 246,
+        "fiabilite": "indicatif"
+      }
+    },
+    "chantepie": {
+      "insee": "35055",
+      "label": "Chantepie",
+      "app12": {
+        "loyerM2": 15.52,
+        "basM2": 13.17,
+        "hautM2": 18.29,
+        "maille": "commune",
+        "annoncesCommune": 670,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 12.13,
+        "basM2": 10.25,
+        "hautM2": 14.35,
+        "maille": "commune",
+        "annoncesCommune": 794,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 12.02,
+        "basM2": 9.42,
+        "hautM2": 15.34,
+        "maille": "commune",
+        "annoncesCommune": 122,
+        "fiabilite": "indicatif"
+      }
+    },
+    "bruz": {
+      "insee": "35047",
+      "label": "Bruz",
+      "app12": {
+        "loyerM2": 14.75,
+        "basM2": 12.35,
+        "hautM2": 17.6,
+        "maille": "commune",
+        "annoncesCommune": 1865,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 11.28,
+        "basM2": 9.68,
+        "hautM2": 13.15,
+        "maille": "commune",
+        "annoncesCommune": 1064,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 11.08,
+        "basM2": 8.69,
+        "hautM2": 14.12,
+        "maille": "commune",
+        "annoncesCommune": 644,
+        "fiabilite": "indicatif"
+      }
+    },
+    "pace": {
+      "insee": "35210",
+      "label": "Pacé",
+      "app12": {
+        "loyerM2": 14.78,
+        "basM2": 12.68,
+        "hautM2": 17.24,
+        "maille": "commune",
+        "annoncesCommune": 740,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 11.58,
+        "basM2": 10.07,
+        "hautM2": 13.32,
+        "maille": "commune",
+        "annoncesCommune": 476,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 11.43,
+        "basM2": 8.95,
+        "hautM2": 14.61,
+        "maille": "commune",
+        "annoncesCommune": 319,
+        "fiabilite": "indicatif"
+      }
+    },
+    "betton": {
+      "insee": "35024",
+      "label": "Betton",
+      "app12": {
+        "loyerM2": 14.12,
+        "basM2": 12.15,
+        "hautM2": 16.4,
+        "maille": "commune",
+        "annoncesCommune": 651,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 11.19,
+        "basM2": 9.49,
+        "hautM2": 13.2,
+        "maille": "commune",
+        "annoncesCommune": 606,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 11.06,
+        "basM2": 8.92,
+        "hautM2": 13.73,
+        "maille": "commune",
+        "annoncesCommune": 365,
+        "fiabilite": "indicatif"
+      }
+    },
+    "saint-jacques-de-la-lande": {
+      "insee": "35281",
+      "label": "Saint-Jacques-de-la-Lande",
+      "app12": {
+        "loyerM2": 15.33,
+        "basM2": 12.91,
+        "hautM2": 18.2,
+        "maille": "commune",
+        "annoncesCommune": 923,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 12.37,
+        "basM2": 9.29,
+        "hautM2": 16.48,
+        "maille": "commune",
+        "annoncesCommune": 829,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 12.46,
+        "basM2": 8.1,
+        "hautM2": 19.16,
+        "maille": "commune",
+        "annoncesCommune": 135,
+        "fiabilite": "indicatif"
+      }
+    },
+    "vezin-le-coquet": {
+      "insee": "35353",
+      "label": "Vezin-le-Coquet",
+      "app12": {
+        "loyerM2": 15.48,
+        "basM2": 12.42,
+        "hautM2": 19.3,
+        "maille": "commune",
+        "annoncesCommune": 248,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 12,
+        "basM2": 10.35,
+        "hautM2": 13.91,
+        "maille": "commune",
+        "annoncesCommune": 276,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 10.92,
+        "basM2": 9.1,
+        "hautM2": 13.09,
+        "maille": "commune",
+        "annoncesCommune": 121,
+        "fiabilite": "indicatif"
+      }
+    },
+    "chartres-de-bretagne": {
+      "insee": "35066",
+      "label": "Chartres-de-Bretagne",
+      "app12": {
+        "loyerM2": 14.73,
+        "basM2": 12.34,
+        "hautM2": 17.59,
+        "maille": "commune",
+        "annoncesCommune": 779,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 11.33,
+        "basM2": 9.72,
+        "hautM2": 13.2,
+        "maille": "commune",
+        "annoncesCommune": 499,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 12.03,
+        "basM2": 7.8,
+        "hautM2": 18.55,
+        "maille": "commune",
+        "annoncesCommune": 173,
+        "fiabilite": "indicatif"
+      }
+    },
+    "chateaubourg": {
+      "insee": "35068",
+      "label": "Châteaubourg",
+      "app12": {
+        "loyerM2": 13.79,
+        "basM2": 11.25,
+        "hautM2": 16.91,
+        "maille": "commune",
+        "annoncesCommune": 287,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 10.45,
+        "basM2": 8.52,
+        "hautM2": 12.8,
+        "maille": "commune",
+        "annoncesCommune": 262,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 11.73,
+        "basM2": 9.41,
+        "hautM2": 14.61,
+        "maille": "commune",
+        "annoncesCommune": 409,
+        "fiabilite": "indicatif"
+      }
+    },
+    "liffre": {
+      "insee": "35152",
+      "label": "Liffré",
+      "app12": {
+        "loyerM2": 13.89,
+        "basM2": 11.25,
+        "hautM2": 17.14,
+        "maille": "commune",
+        "annoncesCommune": 336,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 11.61,
+        "basM2": 9.22,
+        "hautM2": 14.61,
+        "maille": "commune",
+        "annoncesCommune": 275,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 10.64,
+        "basM2": 8.38,
+        "hautM2": 13.49,
+        "maille": "commune",
+        "annoncesCommune": 434,
+        "fiabilite": "indicatif"
+      }
+    },
+    "vitre": {
+      "insee": "35360",
+      "label": "Vitré",
+      "app12": {
+        "loyerM2": 14.96,
+        "basM2": 11.75,
+        "hautM2": 19.05,
+        "maille": "commune",
+        "annoncesCommune": 1511,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 10.23,
+        "basM2": 8.17,
+        "hautM2": 12.81,
+        "maille": "commune",
+        "annoncesCommune": 1046,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 9.93,
+        "basM2": 8.12,
+        "hautM2": 12.14,
+        "maille": "commune",
+        "annoncesCommune": 819,
+        "fiabilite": "indicatif"
+      }
+    },
+    "saint-aubin-du-cormier": {
+      "insee": "35253",
+      "label": "Saint-Aubin-du-Cormier",
+      "app12": {
+        "loyerM2": 12.04,
+        "basM2": 9.69,
+        "hautM2": 14.95,
+        "maille": "commune",
+        "annoncesCommune": 141,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 9.65,
+        "basM2": 7.6,
+        "hautM2": 12.24,
+        "maille": "commune",
+        "annoncesCommune": 147,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 9.43,
+        "basM2": 7.44,
+        "hautM2": 11.95,
+        "maille": "commune",
+        "annoncesCommune": 283,
+        "fiabilite": "indicatif"
+      }
+    },
+    "saint-malo": {
+      "insee": "35288",
+      "label": "Saint-Malo",
+      "app12": {
+        "loyerM2": 15.73,
+        "basM2": 12.6,
+        "hautM2": 19.65,
+        "maille": "commune",
+        "annoncesCommune": 3185,
+        "fiabilite": "indicatif"
+      },
+      "app3": {
+        "loyerM2": 12.48,
+        "basM2": 9.86,
+        "hautM2": 15.8,
+        "maille": "commune",
+        "annoncesCommune": 2058,
+        "fiabilite": "indicatif"
+      },
+      "mai": {
+        "loyerM2": 12.46,
+        "basM2": 9.52,
+        "hautM2": 16.31,
+        "maille": "commune",
+        "annoncesCommune": 741,
+        "fiabilite": "indicatif"
+      }
+    },
+    "val-d-ize": {
+      "insee": "35347",
+      "label": "Val-d'Izé",
+      "app12": {
+        "loyerM2": 12.09,
+        "basM2": 9.86,
+        "hautM2": 14.82,
+        "maille": "maille",
+        "annoncesCommune": 38,
+        "fiabilite": "faible"
+      },
+      "app3": {
+        "loyerM2": 8.86,
+        "basM2": 7.03,
+        "hautM2": 11.17,
+        "maille": "maille",
+        "annoncesCommune": 21,
+        "fiabilite": "faible"
+      },
+      "mai": {
+        "loyerM2": 8.78,
+        "basM2": 6.96,
+        "hautM2": 11.07,
+        "maille": "commune",
+        "annoncesCommune": 137,
+        "fiabilite": "indicatif"
+      }
+    }
+  }
+}

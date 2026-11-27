@@ -1,0 +1,1448 @@
+{
+  "capturedAt": "2026-11-27",
+  "engineVersion": "1.3.1",
+  "base": "main 5d71ac4",
+  "today": "2026-11-27T12:00:00.000Z",
+  "cases": {
+    "rennes|studio|0": {
+      "sha256": "bf57f39fc27eefa17463b2dad8368493bb4c7e248337bb2ec72d251dddad139d",
+      "ok": true,
+      "owner": 6338
+    },
+    "rennes|studio|1": {
+      "sha256": "45c0f2151ebcc4e06769d7c242f1c01e8a06db7ac7888a5848345720df53aa8b",
+      "ok": true,
+      "owner": 5787
+    },
+    "rennes|studio|2": {
+      "sha256": "d1e3a8668a2c48e1723fa33269534d32e695344ffe9a80107dbdeee91ac5c8df",
+      "ok": true,
+      "owner": 2130
+    },
+    "rennes|t1|0": {
+      "sha256": "8035719683c35ce91731b5255b48406903a158f0db295c5bf4a6fb6d303ffc68",
+      "ok": true,
+      "owner": 6514
+    },
+    "rennes|t1|1": {
+      "sha256": "caa0b518fbb22205335170d7485e50f7ea545cf16eaa841fa4693ca091b9ea1b",
+      "ok": true,
+      "owner": 5939
+    },
+    "rennes|t1|2": {
+      "sha256": "6c58801e569c9bddfcb19120378d5560d8ab5d9dcf8365ae319d75c68219f165",
+      "ok": true,
+      "owner": 2200
+    },
+    "rennes|t2|0": {
+      "sha256": "5e8627c5bc043bf4415104de78d26c28ea7c9c548942ba61099dcb928805e86a",
+      "ok": true,
+      "owner": 8641
+    },
+    "rennes|t2|1": {
+      "sha256": "09cbc31a92d3f09e9a80c62828d8768419e2cd4ec22e372c555f5ef5e641e6c3",
+      "ok": true,
+      "owner": 7463
+    },
+    "rennes|t2|2": {
+      "sha256": "2745c232331493aa8703f0e80019a5309f53c674baed988331c1c3b4c5a76229",
+      "ok": true,
+      "owner": 3061
+    },
+    "rennes|t3|0": {
+      "sha256": "df05d1f7c1deec379671d19fc55adee834fe797124e54c88ce1e08a8fdb0278e",
+      "ok": true,
+      "owner": 11823
+    },
+    "rennes|t3|1": {
+      "sha256": "4385d2865bb14b7e0e809f3c0eeb64ec5579c86d5ec1b0931624a9eb7ae03161",
+      "ok": true,
+      "owner": 10577
+    },
+    "rennes|t3|2": {
+      "sha256": "6f5ce988bc05ab211dc723744534bc33c10006f3b64ebe7d72159088f1a690e8",
+      "ok": true,
+      "owner": 4322
+    },
+    "rennes|t4|0": {
+      "sha256": "563c96cfaa9bb071f767b553c9b83f59bf03fa0624b5cc0427b7ce92d204252e",
+      "ok": true,
+      "owner": 13002
+    },
+    "rennes|t4|1": {
+      "sha256": "f7a48d432697c58aaa6a2b25041edb4e8b3c07efa5d6c661ecac3ef7fac6c1a5",
+      "ok": true,
+      "owner": 11730
+    },
+    "rennes|t4|2": {
+      "sha256": "86c57b3d60d4f14282470816baa3912f23b5d822198944a61fafedd9109a9de2",
+      "ok": true,
+      "owner": 4836
+    },
+    "rennes|maison|0": {
+      "sha256": "630aed6af927b9bcbbe62ff9fb9a53bf7f79915e90f22fde2b6cd95db18b79ca",
+      "ok": true,
+      "owner": 13611
+    },
+    "rennes|maison|1": {
+      "sha256": "447b9e202ec5d99a5e443c21a5ca1e6e4f99c3c7a601f455fa277c35b290606c",
+      "ok": true,
+      "owner": 12157
+    },
+    "rennes|maison|2": {
+      "sha256": "fb42d1343688a23cf3a571f2d28d626115eff274ebf811a92a68d56d5a55b7d4",
+      "ok": true,
+      "owner": 5076
+    },
+    "cesson-sevigne|studio|0": {
+      "sha256": "9f35918f73f6c62149107d29e20dc9cfbf92410615f1f9605c2e4084abd52a45",
+      "ok": true,
+      "owner": 6338
+    },
+    "cesson-sevigne|studio|1": {
+      "sha256": "2077fa50f9db9b89838feda0881fef594fe2a6af8a1932b75e5d25fcd471a867",
+      "ok": true,
+      "owner": 5787
+    },
+    "cesson-sevigne|studio|2": {
+      "sha256": "91e29a8bcb1134f041e7fa6426eeafeb84fc63a593cd72a59fe758807eddf73f",
+      "ok": true,
+      "owner": 2130
+    },
+    "cesson-sevigne|t1|0": {
+      "sha256": "fbbe6f30e0de446af3870811ab708915b4b60cceaa947d74588aeb73e4cde8d7",
+      "ok": true,
+      "owner": 6514
+    },
+    "cesson-sevigne|t1|1": {
+      "sha256": "a4a261383be3e39491e9aadbadeca8df06c99c3eab4c8b2d1c6ccdb547673d87",
+      "ok": true,
+      "owner": 5939
+    },
+    "cesson-sevigne|t1|2": {
+      "sha256": "9de2f460faa06fa924e8e25ee4717602e8a244fb1f8b0828c50b6b02f9b6f1cb",
+      "ok": true,
+      "owner": 2200
+    },
+    "cesson-sevigne|t2|0": {
+      "sha256": "05ad4e94184d71d3197efaece628ea8512eb44f89a5edc7287ea6a7cff1d4698",
+      "ok": true,
+      "owner": 8641
+    },
+    "cesson-sevigne|t2|1": {
+      "sha256": "78bb2439c0efcc6775e7dc895a23f448ea19de1b27c1019342fafe2f7d881278",
+      "ok": true,
+      "owner": 7463
+    },
+    "cesson-sevigne|t2|2": {
+      "sha256": "94b01c4a7dec60d7e7a09c2e13d5e3c58f5334bb59e85f20c95a65019b96feda",
+      "ok": true,
+      "owner": 3061
+    },
+    "cesson-sevigne|t3|0": {
+      "sha256": "3b0aa732e4a3a674e65a378a954e29ffa24bdc477547b3dd0ab2fb91c76e6207",
+      "ok": true,
+      "owner": 11823
+    },
+    "cesson-sevigne|t3|1": {
+      "sha256": "4698074ff52943cd35922cca35d06cdd2ca1ef7e2c07570c09ce1ebdc7636205",
+      "ok": true,
+      "owner": 10577
+    },
+    "cesson-sevigne|t3|2": {
+      "sha256": "5a1e16c89f0b1ac20bb4261ce4926ac598bc2ece748739b7c0ca16482c02454f",
+      "ok": true,
+      "owner": 4322
+    },
+    "cesson-sevigne|t4|0": {
+      "sha256": "5071b63363301a3a5271c5027cea8b1378679164ec068cd7765e4bb35e2ab593",
+      "ok": true,
+      "owner": 13002
+    },
+    "cesson-sevigne|t4|1": {
+      "sha256": "89e7ac4bcbd0c6d6b6d052f10f87b8fbb262f9a64ce1e2fe15bc230a75751b8c",
+      "ok": true,
+      "owner": 11730
+    },
+    "cesson-sevigne|t4|2": {
+      "sha256": "85345d1618e797e83e10e7828ca7be97b431d9b82f572ddf1909b07cd3582832",
+      "ok": true,
+      "owner": 4836
+    },
+    "cesson-sevigne|maison|0": {
+      "sha256": "03538b7d509173ba2bc54fd88036c1b0ecf20112e1803b924f0d98515e15c2b8",
+      "ok": true,
+      "owner": 13611
+    },
+    "cesson-sevigne|maison|1": {
+      "sha256": "900a288c7d0505b8a3f97f653d8d18e089c59f9bcdfe884aceda01baf1d11fa9",
+      "ok": true,
+      "owner": 12157
+    },
+    "cesson-sevigne|maison|2": {
+      "sha256": "4c5cfb0df5a416297cb83bb6ec245b39b68ded8e7de23d437c59b4c6b662f3d1",
+      "ok": true,
+      "owner": 5076
+    },
+    "saint-gregoire|studio|0": {
+      "sha256": "9a0ec82a52f069820652e2757b59c07a61bb6c1275e3d341ed93a91880b772c6",
+      "ok": true,
+      "owner": 6338
+    },
+    "saint-gregoire|studio|1": {
+      "sha256": "8b71512a8a50f171b779e6bd805e4adbaf262cbb87d9f2973761a48e3146e4ca",
+      "ok": true,
+      "owner": 5787
+    },
+    "saint-gregoire|studio|2": {
+      "sha256": "a5b25cb8699af9b24c205a8407ba565ebea487096d91c44460ee75da79fd0366",
+      "ok": true,
+      "owner": 2130
+    },
+    "saint-gregoire|t1|0": {
+      "sha256": "65224d885f7b726f8853335cfdd0a16556c41085bdfdcc732b7b214489361d31",
+      "ok": true,
+      "owner": 6514
+    },
+    "saint-gregoire|t1|1": {
+      "sha256": "29c0fecfba9c572c1f4f7bc9552e505afc8de2620d4af98707e20e9287d756cd",
+      "ok": true,
+      "owner": 5939
+    },
+    "saint-gregoire|t1|2": {
+      "sha256": "f32ad657e09fd36fd9f205a4f98150acb6d8cdaaea9e4c8ce0b1fca826d3960a",
+      "ok": true,
+      "owner": 2200
+    },
+    "saint-gregoire|t2|0": {
+      "sha256": "d5af520309b84dbf7f10b0d69c48ddb81d3eabf86aa58f4bddc146a0851d1bbb",
+      "ok": true,
+      "owner": 8641
+    },
+    "saint-gregoire|t2|1": {
+      "sha256": "56810512f17e98b3ded5552987e9f4e7ed2048d28c608655f0e336fb4c0bbc2c",
+      "ok": true,
+      "owner": 7463
+    },
+    "saint-gregoire|t2|2": {
+      "sha256": "2aed6a824d3101dcb4ad95bf3f16fa757b4c018c15d5827fef9288e3e6a484fb",
+      "ok": true,
+      "owner": 3061
+    },
+    "saint-gregoire|t3|0": {
+      "sha256": "a94f66806b7131824eb6758d33153bf02e4a9c1f116cc2f18d14bb285c84e211",
+      "ok": true,
+      "owner": 11823
+    },
+    "saint-gregoire|t3|1": {
+      "sha256": "1e6781adf3166f199e6d435b17e10e424dc36f7c916cba36ba7168217445e49f",
+      "ok": true,
+      "owner": 10577
+    },
+    "saint-gregoire|t3|2": {
+      "sha256": "6be951e7f521766d01a0b132167c3225a6bedd8a365e8a9f910109d248052d81",
+      "ok": true,
+      "owner": 4322
+    },
+    "saint-gregoire|t4|0": {
+      "sha256": "d8cca5bfccbc618938a74791a16bd5449a681c39b94d8b8aa8da6629943791d6",
+      "ok": true,
+      "owner": 13002
+    },
+    "saint-gregoire|t4|1": {
+      "sha256": "4f6d74c659277a0a7f768ef86ed96810f342cd071ecac0b5370c8843ad43721e",
+      "ok": true,
+      "owner": 11730
+    },
+    "saint-gregoire|t4|2": {
+      "sha256": "5665e61d60894c407527cb373e185c4aedaab55fa604d413c3440efa6d57fc88",
+      "ok": true,
+      "owner": 4836
+    },
+    "saint-gregoire|maison|0": {
+      "sha256": "e896e662a7c941785aaf34c35522b4c19a3a2c0cf421ea6c6114bb7eab4c731a",
+      "ok": true,
+      "owner": 13611
+    },
+    "saint-gregoire|maison|1": {
+      "sha256": "1c5a24928d0e1026d89c737a6c87403409de9e32ce8ca80a2a85594cc9a77230",
+      "ok": true,
+      "owner": 12157
+    },
+    "saint-gregoire|maison|2": {
+      "sha256": "7490b97b25f5bb059b9a40585c9def7ee7de030218de2a65c54c38617c8e386b",
+      "ok": true,
+      "owner": 5076
+    },
+    "chantepie|studio|0": {
+      "sha256": "92ce728fca14a5336bed445164b8922d7059261a9aa80e8ff680152a2523d8a2",
+      "ok": true,
+      "owner": 6338
+    },
+    "chantepie|studio|1": {
+      "sha256": "bf18ccf7381dba667b7519981b367814e39fc52b6fef034aaa52107fc5ea08a9",
+      "ok": true,
+      "owner": 5787
+    },
+    "chantepie|studio|2": {
+      "sha256": "6650bac4efe31f9cab7e6edd344cc39e66d415767021ad2c0e53e69436b25d70",
+      "ok": true,
+      "owner": 2130
+    },
+    "chantepie|t1|0": {
+      "sha256": "f0b003786542dc37920faa8e41cbe9c6a8dc590725b67ba2ae606c5d9d844a16",
+      "ok": true,
+      "owner": 6514
+    },
+    "chantepie|t1|1": {
+      "sha256": "d5b02814c3d283c0c4a2b01f89c2ee3156e05977669caca235093b2b37bc1331",
+      "ok": true,
+      "owner": 5939
+    },
+    "chantepie|t1|2": {
+      "sha256": "c7c4db665b5e8dcc1492fc1c3248dddff60bc9f02377a12f681c9da91cfe1343",
+      "ok": true,
+      "owner": 2200
+    },
+    "chantepie|t2|0": {
+      "sha256": "2c95d56286277cdcbe0e343de78a7d6de48ff281a11ea428db001977a61f89cd",
+      "ok": true,
+      "owner": 8641
+    },
+    "chantepie|t2|1": {
+      "sha256": "75daacada783a2e5d89e792e9af1e726fde1d7e08dccc1e4547b0d313cc0e0ac",
+      "ok": true,
+      "owner": 7463
+    },
+    "chantepie|t2|2": {
+      "sha256": "1c464646ceba2794de891c16f29f0300f1eac7f5226923f94b62bbb03c86bb41",
+      "ok": true,
+      "owner": 3061
+    },
+    "chantepie|t3|0": {
+      "sha256": "c2a556ce50b28902ddd33c18d51a0d51e96774e6c494dc40cbff7319f4a4373a",
+      "ok": true,
+      "owner": 11823
+    },
+    "chantepie|t3|1": {
+      "sha256": "f54e99c0b04bb4840790ec3d8e1e79a90aa55892af7490fbb93a8f5f8ec5d241",
+      "ok": true,
+      "owner": 10577
+    },
+    "chantepie|t3|2": {
+      "sha256": "1fbcb9aa0e38363b6deaa645961eed89fcde4bf4d5621a98494c30260bf06972",
+      "ok": true,
+      "owner": 4322
+    },
+    "chantepie|t4|0": {
+      "sha256": "6e85a290d8f9c7b926016007ba14281ceb07b69e77d84c373602bd352e25902a",
+      "ok": true,
+      "owner": 13002
+    },
+    "chantepie|t4|1": {
+      "sha256": "425b1505d5fa4668706d367ca07e5d5ba57c7aece274084005e3d75a98f25786",
+      "ok": true,
+      "owner": 11730
+    },
+    "chantepie|t4|2": {
+      "sha256": "db82ea4112a219186ab1f89ae4f19b5a44a8ad5e03fc27f38d250c1a35d48f5c",
+      "ok": true,
+      "owner": 4836
+    },
+    "chantepie|maison|0": {
+      "sha256": "f624b86ced6e0b3dbfac225b2289cd1101226d3856566347c045ba723f2b63cf",
+      "ok": true,
+      "owner": 13611
+    },
+    "chantepie|maison|1": {
+      "sha256": "c12eee99664a84ce1491bba92388f8fb93b699abaa6f94cb48294527e4946d18",
+      "ok": true,
+      "owner": 12157
+    },
+    "chantepie|maison|2": {
+      "sha256": "a7eb1346e8036ac914d72f2414f70e52e6064f352b9c39acc1f6e66b80a0f3d0",
+      "ok": true,
+      "owner": 5076
+    },
+    "bruz|studio|0": {
+      "sha256": "d51730bf51baa937a296518a0924dfaf759ca1d81f030861f58231d8a0abb8a8",
+      "ok": true,
+      "owner": 6338
+    },
+    "bruz|studio|1": {
+      "sha256": "09661a1c8c476015b66d7e6ed0dcc851e4362ed6d00e5d0ccfa5cb5b76f42de2",
+      "ok": true,
+      "owner": 5787
+    },
+    "bruz|studio|2": {
+      "sha256": "a6037eaa3f4324ae8f1256a17124d64cb9920a366cd2edec503294bb26af322d",
+      "ok": true,
+      "owner": 2130
+    },
+    "bruz|t1|0": {
+      "sha256": "59aa8f9ec7dbff268d04637654783d9c910f319f98f63321803d3ef0726c58df",
+      "ok": true,
+      "owner": 6514
+    },
+    "bruz|t1|1": {
+      "sha256": "387ba96a7ad494cf0318e3ba43d0ad0b25661493b2de9434bbdb57db6bc03ff6",
+      "ok": true,
+      "owner": 5939
+    },
+    "bruz|t1|2": {
+      "sha256": "eae5bc0d6c9ffc5123a2494987dbfd750b6892fd2d73988a71e0262e470e8484",
+      "ok": true,
+      "owner": 2200
+    },
+    "bruz|t2|0": {
+      "sha256": "50cdb2e25a6a7c4ccb7f33ca11e2223c7703d004ec726d996ca1d4b15363ecda",
+      "ok": true,
+      "owner": 8641
+    },
+    "bruz|t2|1": {
+      "sha256": "8a78505335b5a591903a055556a7fdc689d7841627a78b5e376f2977e0da622c",
+      "ok": true,
+      "owner": 7463
+    },
+    "bruz|t2|2": {
+      "sha256": "7281481b9b4428d1ea324cfb7efc60cd1452bab65b1363a963a0cc519812b719",
+      "ok": true,
+      "owner": 3061
+    },
+    "bruz|t3|0": {
+      "sha256": "427214190da0fa2a75205ecec33e6c35ff83e2628b45aa6dafcf07bf898482c1",
+      "ok": true,
+      "owner": 11823
+    },
+    "bruz|t3|1": {
+      "sha256": "893a8c29ecd2c4c032502b80c12f9e430894f6462fc4b03cc72b1b6811837eee",
+      "ok": true,
+      "owner": 10577
+    },
+    "bruz|t3|2": {
+      "sha256": "a3ac83eeb2227a249fe185be638b52b51280310955ed56a554f5ad8b78b30f94",
+      "ok": true,
+      "owner": 4322
+    },
+    "bruz|t4|0": {
+      "sha256": "93cc110702457fbdbc8b1306a614b423ce8ac207546202744f314aae848a4e15",
+      "ok": true,
+      "owner": 13002
+    },
+    "bruz|t4|1": {
+      "sha256": "4ab1cbc1b36180f1c63bdb5301e463cef1141e2f8dfe364d760f91773bdc2fd1",
+      "ok": true,
+      "owner": 11730
+    },
+    "bruz|t4|2": {
+      "sha256": "31fcd95cb6a6198fbd357b493e2e302c557a53b19d2cde1ce3b3f906d89d4524",
+      "ok": true,
+      "owner": 4836
+    },
+    "bruz|maison|0": {
+      "sha256": "5d1e7e8445e918e933af25f3f132f4b6f6dc3545c93369202dc2a4bf5759c0df",
+      "ok": true,
+      "owner": 13611
+    },
+    "bruz|maison|1": {
+      "sha256": "dc9dc98708b9da8b51aba54acd2fe92457dba116d40f272be54efe47f56d9e66",
+      "ok": true,
+      "owner": 12157
+    },
+    "bruz|maison|2": {
+      "sha256": "8feae2d6ec2300f6f09a15769c5575adc86b9edef73da05ccbd6b3d9445e7be9",
+      "ok": true,
+      "owner": 5076
+    },
+    "pace|studio|0": {
+      "sha256": "7afcb82e1cb639fed64b4a24f0f665bba8c7596356ced7b0b65264224fe533d4",
+      "ok": true,
+      "owner": 6338
+    },
+    "pace|studio|1": {
+      "sha256": "ffc29991e79d15a1cfd8d3b64cafef78b59673ed1dee600d7ee32b05321bab34",
+      "ok": true,
+      "owner": 5787
+    },
+    "pace|studio|2": {
+      "sha256": "ec85b3664770bbff0d7780431d953b0e3ce23f160a4a3b98dbebb0d5035e1718",
+      "ok": true,
+      "owner": 2130
+    },
+    "pace|t1|0": {
+      "sha256": "f0bbeca5a794fc1fe8e3a01e44c2b74abc1079c6188942e29cbb017da192e575",
+      "ok": true,
+      "owner": 6514
+    },
+    "pace|t1|1": {
+      "sha256": "7f895d83e1aaf978b1a70265189ec977c47ff4634b0d8339f7c5b2202ace797c",
+      "ok": true,
+      "owner": 5939
+    },
+    "pace|t1|2": {
+      "sha256": "5832c6fa13457cb1b62a8468a6a6c1cdde0972b99b9efeef8473a07cfc08cae6",
+      "ok": true,
+      "owner": 2200
+    },
+    "pace|t2|0": {
+      "sha256": "dc0bc50c241569dc3ee6654368a24411d197d29cc66b34635d83952639f0f99b",
+      "ok": true,
+      "owner": 8641
+    },
+    "pace|t2|1": {
+      "sha256": "f36e48ff791603ffe800cdc1a33aa105e8db4bdb2920801d902b5e6d42e16e29",
+      "ok": true,
+      "owner": 7463
+    },
+    "pace|t2|2": {
+      "sha256": "a52f36043bb4d9eafcafe44a535a3e8f4675d412401005523922a131ee4f0018",
+      "ok": true,
+      "owner": 3061
+    },
+    "pace|t3|0": {
+      "sha256": "88a02f7aa07eb3dcc1eaba56309b3a05980e0223efec65f8a730517b216eac1b",
+      "ok": true,
+      "owner": 11823
+    },
+    "pace|t3|1": {
+      "sha256": "1474f813192a33fffb82aba351177a19c5e0f58fa867e70e6c49abbe0fb6f25c",
+      "ok": true,
+      "owner": 10577
+    },
+    "pace|t3|2": {
+      "sha256": "7eb833f555fe47162337e83b0144ce5eaec0e0d05514ec839f09c70b969815ee",
+      "ok": true,
+      "owner": 4322
+    },
+    "pace|t4|0": {
+      "sha256": "9921332df5cbcd52ee756662ba4c1f76ec577d95590b04aea5b9a5e3fa259a04",
+      "ok": true,
+      "owner": 13002
+    },
+    "pace|t4|1": {
+      "sha256": "b0ead9a09cae4f83dcee0b066e74090a9eb85a52926bdae5940151182b603ef6",
+      "ok": true,
+      "owner": 11730
+    },
+    "pace|t4|2": {
+      "sha256": "1da3e3452c657fc854fd4428972b420f56ebf39850750621ae703f5305fa5a19",
+      "ok": true,
+      "owner": 4836
+    },
+    "pace|maison|0": {
+      "sha256": "025a39349d4f40d68efa117091528ee35ba1c44b043a15b43fa3fbb933cc2697",
+      "ok": true,
+      "owner": 13611
+    },
+    "pace|maison|1": {
+      "sha256": "36b41e77c28c06f560f3c81bea367a596161cb6518f2b82fa811db0cd0239b18",
+      "ok": true,
+      "owner": 12157
+    },
+    "pace|maison|2": {
+      "sha256": "b56257d09514313451855d7c1d659629886b90ebe2616d66f8eeb57fe461aad8",
+      "ok": true,
+      "owner": 5076
+    },
+    "betton|studio|0": {
+      "sha256": "7996cb5903f6a9ed417d66297d387b7669331c36aaac4083e4788864047d4a07",
+      "ok": true,
+      "owner": 6338
+    },
+    "betton|studio|1": {
+      "sha256": "8e4c2d8a474c7dfa3e4d22128dc8c0df97cbfe2d251011a13f6ba8b8815a6c75",
+      "ok": true,
+      "owner": 5787
+    },
+    "betton|studio|2": {
+      "sha256": "a926221b260deb5163fd49f9b7fd2269deb15f6ad3a9b6ca38b36df732b1a13a",
+      "ok": true,
+      "owner": 2130
+    },
+    "betton|t1|0": {
+      "sha256": "8807da35566b6e40f9504541bf2f0062a929da48772c039b373ccf1079626abf",
+      "ok": true,
+      "owner": 6514
+    },
+    "betton|t1|1": {
+      "sha256": "10b91d22a3a482cf15c30443f73a348d82cd3086e9673454bf7e3a5c9bc705a2",
+      "ok": true,
+      "owner": 5939
+    },
+    "betton|t1|2": {
+      "sha256": "16e30e68ca517c12e3b13f813e5dec663389b6a0f59c2c0f0b173705fb8ce0dc",
+      "ok": true,
+      "owner": 2200
+    },
+    "betton|t2|0": {
+      "sha256": "2228f3907db44135400d5534560566dc7e310491b456996773cdf7bf84c0c9f0",
+      "ok": true,
+      "owner": 8641
+    },
+    "betton|t2|1": {
+      "sha256": "f932283fab393b91617f070bfe555335928e151532dfc68045208e2974c8024a",
+      "ok": true,
+      "owner": 7463
+    },
+    "betton|t2|2": {
+      "sha256": "0986707a530e32ffb968c89578b74ac8c5d91900a710020605a70025ed8da946",
+      "ok": true,
+      "owner": 3061
+    },
+    "betton|t3|0": {
+      "sha256": "d05c6ce8a911817a1c228e9d8182522d7dcb354e9a2ebd6711761f01abef25a8",
+      "ok": true,
+      "owner": 11823
+    },
+    "betton|t3|1": {
+      "sha256": "ac695e6b85d454dd330fe05d5a54ffc8ccfbd524641daf5fd2e0eff6c2fb15f1",
+      "ok": true,
+      "owner": 10577
+    },
+    "betton|t3|2": {
+      "sha256": "487dbd94cb907947b5550c1ffe2adc04575f191775cc4e48fd8e75a82e62a78f",
+      "ok": true,
+      "owner": 4322
+    },
+    "betton|t4|0": {
+      "sha256": "0df968871a848f67875f91e0d9b3ae2f485fdaefce7d702a4c3aae8e99986dd2",
+      "ok": true,
+      "owner": 13002
+    },
+    "betton|t4|1": {
+      "sha256": "7d4d152681d2e872097d0185bb7deca5132436837c2ccad8b75a9e436a406234",
+      "ok": true,
+      "owner": 11730
+    },
+    "betton|t4|2": {
+      "sha256": "1d23f330522f166e6d6a87fe6d56a8f738f511644e7e108eb677ea31705f67fc",
+      "ok": true,
+      "owner": 4836
+    },
+    "betton|maison|0": {
+      "sha256": "1f6cc64eb37a57b527a559f0db8e94903c22aedc73109178d427380268c7ccd5",
+      "ok": true,
+      "owner": 13611
+    },
+    "betton|maison|1": {
+      "sha256": "8a78a1e99591920afa35c072ace98a5b1e1c164ab839fdcd56c77d11fc61c023",
+      "ok": true,
+      "owner": 12157
+    },
+    "betton|maison|2": {
+      "sha256": "5c37550eb5adb0bf2dd52d7b6e29630191fc5a0978eb271d3e39b809a40032eb",
+      "ok": true,
+      "owner": 5076
+    },
+    "saint-jacques-de-la-lande|studio|0": {
+      "sha256": "88451ac557ad0b6fa16ef8e94e87f645fde6bfd54f975f4d390dac0a75d113f5",
+      "ok": true,
+      "owner": 6338
+    },
+    "saint-jacques-de-la-lande|studio|1": {
+      "sha256": "d4b5bf4aeb852bf9dab201f44c9d64acc34a85ffe95d427d026b3033f0735a86",
+      "ok": true,
+      "owner": 5787
+    },
+    "saint-jacques-de-la-lande|studio|2": {
+      "sha256": "521434af1a773385d856f24b540b8c191f52db301e5a40ff01628bd278c6ec35",
+      "ok": true,
+      "owner": 2130
+    },
+    "saint-jacques-de-la-lande|t1|0": {
+      "sha256": "33162b33a6dd7538ad924c1043b1ef537e5c795186e46b151389676c36b9cc61",
+      "ok": true,
+      "owner": 6514
+    },
+    "saint-jacques-de-la-lande|t1|1": {
+      "sha256": "902ca27afb6d3c66127e55132f616b4593bfefef43a456e42ef56947ca09b9bc",
+      "ok": true,
+      "owner": 5939
+    },
+    "saint-jacques-de-la-lande|t1|2": {
+      "sha256": "798f011daf37f32365495c25d9dbb2c989d001ef789329bb71746c8943b19916",
+      "ok": true,
+      "owner": 2200
+    },
+    "saint-jacques-de-la-lande|t2|0": {
+      "sha256": "71ef80f2cf91539399a3db04c3ecacd5bee28aee98a2c26cf1d24a24cb93fb0b",
+      "ok": true,
+      "owner": 8641
+    },
+    "saint-jacques-de-la-lande|t2|1": {
+      "sha256": "3bcb4d21d064fe70801b5df073e7416b14aa185e3b0fa83c79c126a37ce491da",
+      "ok": true,
+      "owner": 7463
+    },
+    "saint-jacques-de-la-lande|t2|2": {
+      "sha256": "ea43a9baa5e41724c8ec4b529c6d5596c84ddc16e4d7e804d882e8bdb21b60c4",
+      "ok": true,
+      "owner": 3061
+    },
+    "saint-jacques-de-la-lande|t3|0": {
+      "sha256": "ae66b55eb075bd5518316ed318708390f39562573855bee4a7d242831cff4233",
+      "ok": true,
+      "owner": 11823
+    },
+    "saint-jacques-de-la-lande|t3|1": {
+      "sha256": "a13a04428b7750714c26ea1e64a3d88779298d0236380d0f42f40941cc4f6653",
+      "ok": true,
+      "owner": 10577
+    },
+    "saint-jacques-de-la-lande|t3|2": {
+      "sha256": "54b73414f5507dfa9539624be4d1e45338ddc8e828b7a56a1e838e7f92ad18d2",
+      "ok": true,
+      "owner": 4322
+    },
+    "saint-jacques-de-la-lande|t4|0": {
+      "sha256": "22f3f9722fe3bcaf1af874f7fc448d0c565fe0225e43173168f08dc93ed6c080",
+      "ok": true,
+      "owner": 13002
+    },
+    "saint-jacques-de-la-lande|t4|1": {
+      "sha256": "1ef93d33727f0a880061f6fc7cdfabfe4a0f45facd9391c167c9ab5a40d84cc2",
+      "ok": true,
+      "owner": 11730
+    },
+    "saint-jacques-de-la-lande|t4|2": {
+      "sha256": "06b96f0c78e7e26529bb1d0aaa76cd52e9c7cdf3e72de82803a70f674b6f5e7c",
+      "ok": true,
+      "owner": 4836
+    },
+    "saint-jacques-de-la-lande|maison|0": {
+      "sha256": "4b7da21db1c000bb33760a0c4b6028ba6a44f760665c158223dae591ce1c6c8f",
+      "ok": true,
+      "owner": 13611
+    },
+    "saint-jacques-de-la-lande|maison|1": {
+      "sha256": "11cf1edc341f77613707cc01589c18b6322e97a9b981620149436003fb71849c",
+      "ok": true,
+      "owner": 12157
+    },
+    "saint-jacques-de-la-lande|maison|2": {
+      "sha256": "1b026bdce38c19f03fd63d3091128e63bf9596b2f2361b62d1339690dded1804",
+      "ok": true,
+      "owner": 5076
+    },
+    "vezin-le-coquet|studio|0": {
+      "sha256": "b46d7db1117c3c4ef817a74c82d226256231fd751ad4b41012b56bfe4007b1f9",
+      "ok": true,
+      "owner": 6338
+    },
+    "vezin-le-coquet|studio|1": {
+      "sha256": "f5ebc5e3e0a64b369e295207c8af26b7ce10d01ea9a0c2e20dd86e1ed15bf9f4",
+      "ok": true,
+      "owner": 5787
+    },
+    "vezin-le-coquet|studio|2": {
+      "sha256": "adc0abc3c66142d315b2efa1b8682301e12e772ed8eaab74c82162fe4b8cfbea",
+      "ok": true,
+      "owner": 2130
+    },
+    "vezin-le-coquet|t1|0": {
+      "sha256": "ef26ada3a1f0a59a15596534c3628129039d8a1f42948eed969cd02b56bc620b",
+      "ok": true,
+      "owner": 6514
+    },
+    "vezin-le-coquet|t1|1": {
+      "sha256": "7a7421c6c52433c854decc4c2702b63f1995865d6e054e35e275af762b02979c",
+      "ok": true,
+      "owner": 5939
+    },
+    "vezin-le-coquet|t1|2": {
+      "sha256": "e4d256e9cf92bf0075fbb00dbd6c24c0c3fbd5dfde00732c60bfc359542c2f4c",
+      "ok": true,
+      "owner": 2200
+    },
+    "vezin-le-coquet|t2|0": {
+      "sha256": "8acf1c8f9567f205c8d6c63b182de572e4be1a1451842bcd1ba9ae3eac69a64b",
+      "ok": true,
+      "owner": 8641
+    },
+    "vezin-le-coquet|t2|1": {
+      "sha256": "6e0c8f78498403122aba57bd78d43db967dc96ebc79ecd8bbd57e680a5323f22",
+      "ok": true,
+      "owner": 7463
+    },
+    "vezin-le-coquet|t2|2": {
+      "sha256": "bbbb073cdd1a1d02e9cefafe82ef72bfdf6a9e2146cebf72231b4a8389b78320",
+      "ok": true,
+      "owner": 3061
+    },
+    "vezin-le-coquet|t3|0": {
+      "sha256": "9efb5bc175b5e6e3bb15ccf90a39700a51c8617d55bb06d2105a0088851aadad",
+      "ok": true,
+      "owner": 11823
+    },
+    "vezin-le-coquet|t3|1": {
+      "sha256": "810c47aa5f54714a00cc6c281beea698c406711722f29d00cdb6a5560aff7c5c",
+      "ok": true,
+      "owner": 10577
+    },
+    "vezin-le-coquet|t3|2": {
+      "sha256": "79d35001445c54038bcdd4b613d7573ca85c6a700dcd985607e6d040e3216de8",
+      "ok": true,
+      "owner": 4322
+    },
+    "vezin-le-coquet|t4|0": {
+      "sha256": "0f0ddcccd35b0aa57d3a0560d9c2e35262bf738269dbddfd123b2e074d0886ce",
+      "ok": true,
+      "owner": 13002
+    },
+    "vezin-le-coquet|t4|1": {
+      "sha256": "bbf2bf2ffb674282ae56d2e463bf1c6b7f151c7270d9d4a30213954bb3b92e9f",
+      "ok": true,
+      "owner": 11730
+    },
+    "vezin-le-coquet|t4|2": {
+      "sha256": "f20448dc56be9ffcea8b1b08c3d4aa4831ce34ee3cd322100a9cf01134877a23",
+      "ok": true,
+      "owner": 4836
+    },
+    "vezin-le-coquet|maison|0": {
+      "sha256": "963e32a74633d77c786786b328b9ab86e6c0629b314ad25b692554579e19ac93",
+      "ok": true,
+      "owner": 13611
+    },
+    "vezin-le-coquet|maison|1": {
+      "sha256": "0774672dc99fcac6796deef3355447f3bc9fde42534a16548ecee27466f33144",
+      "ok": true,
+      "owner": 12157
+    },
+    "vezin-le-coquet|maison|2": {
+      "sha256": "76299b7c6b9025683ee65be7b900c73f6b9c881f2caec549c0e1a7235e541274",
+      "ok": true,
+      "owner": 5076
+    },
+    "chartres-de-bretagne|studio|0": {
+      "sha256": "b355ceadad541f4fab19e881535775c38d0acbf6a0eeb72927e7631ede8442f4",
+      "ok": true,
+      "owner": 6338
+    },
+    "chartres-de-bretagne|studio|1": {
+      "sha256": "2c5ad4cdfbb803b985d387c3979683765acd19a020e325359a8c00610e08fd6d",
+      "ok": true,
+      "owner": 5787
+    },
+    "chartres-de-bretagne|studio|2": {
+      "sha256": "9030af582cacbf8c749c09146cff67e6284158feeec3fc6965a10747745b0fe7",
+      "ok": true,
+      "owner": 2130
+    },
+    "chartres-de-bretagne|t1|0": {
+      "sha256": "784d4070f378f04e229c7f650b3d39f21921add9dc81ee7147e6860a5a9c67ba",
+      "ok": true,
+      "owner": 6514
+    },
+    "chartres-de-bretagne|t1|1": {
+      "sha256": "6dde44484c24895a675a1c97afde94e5033dbfde7b458b87c9a24e158254e429",
+      "ok": true,
+      "owner": 5939
+    },
+    "chartres-de-bretagne|t1|2": {
+      "sha256": "ae088c0b51e0323ba9fc3ca9f1e0dc656f9c5ff44fa59450f250b4d8295ca360",
+      "ok": true,
+      "owner": 2200
+    },
+    "chartres-de-bretagne|t2|0": {
+      "sha256": "5acb9873de8f2ae8fccd1a86a1f5acb7b7bfa427e6b3cef1bd2c50942f476c7e",
+      "ok": true,
+      "owner": 8641
+    },
+    "chartres-de-bretagne|t2|1": {
+      "sha256": "e7c51de825db0f11e8779d4b556d00cd4bb75fbb6e960c38efe53dce5922ae70",
+      "ok": true,
+      "owner": 7463
+    },
+    "chartres-de-bretagne|t2|2": {
+      "sha256": "fbbe09178f6db72f671780faeb0eab97f200d35f20679f2d2977e8476019914e",
+      "ok": true,
+      "owner": 3061
+    },
+    "chartres-de-bretagne|t3|0": {
+      "sha256": "a4d7727ea0ad366b192f97fef5d2b8e85bbad8ad350c35c1027e19108dffad66",
+      "ok": true,
+      "owner": 11823
+    },
+    "chartres-de-bretagne|t3|1": {
+      "sha256": "cfebd8fad75eaaf57f8863235c68d80572f77cf2ba6f15eecaf369333cf3d8a3",
+      "ok": true,
+      "owner": 10577
+    },
+    "chartres-de-bretagne|t3|2": {
+      "sha256": "ca89c4c4a03182570f50412f66f6f304ca24ab482d3872720223dd2333bfda18",
+      "ok": true,
+      "owner": 4322
+    },
+    "chartres-de-bretagne|t4|0": {
+      "sha256": "f07a24bc3ff68584f13e61cd449c1647126ab2d660921531214dd00bc0532b38",
+      "ok": true,
+      "owner": 13002
+    },
+    "chartres-de-bretagne|t4|1": {
+      "sha256": "066f479721757a29e798020ba63674c207342fb04184184ae415bce43ff1e130",
+      "ok": true,
+      "owner": 11730
+    },
+    "chartres-de-bretagne|t4|2": {
+      "sha256": "48e5f043c11a8898c73b28a64175aed8dd488a8b5e89224786dd00f43b561423",
+      "ok": true,
+      "owner": 4836
+    },
+    "chartres-de-bretagne|maison|0": {
+      "sha256": "7ffa08c1c7197156d6a6f2212350953220a6fa108ed70840a5b9e84714c0cc03",
+      "ok": true,
+      "owner": 13611
+    },
+    "chartres-de-bretagne|maison|1": {
+      "sha256": "9559c160d3504395b94e12bbbaceeed1365738b17410d2f2e9b7f81f6da0bd56",
+      "ok": true,
+      "owner": 12157
+    },
+    "chartres-de-bretagne|maison|2": {
+      "sha256": "b888b707e255ee4ecc9266f9fc0d7331067f3b9aac34f8dee72385ac5765e6ea",
+      "ok": true,
+      "owner": 5076
+    },
+    "chateaubourg|studio|0": {
+      "sha256": "8f2e091f1de6d74f32941e09d94f8cf9768aca0aa8ee2ea4922f82e111465de4",
+      "ok": true,
+      "owner": 6273
+    },
+    "chateaubourg|studio|1": {
+      "sha256": "e94436afe65ccc20f17c5e5594198b60da1866f7f737ff59138dea4f838eaa7c",
+      "ok": true,
+      "owner": 5790
+    },
+    "chateaubourg|studio|2": {
+      "sha256": "1bd29536204be5d295d9d88c6de7f9dde491df824339f75372849f1976832852",
+      "ok": true,
+      "owner": 2144
+    },
+    "chateaubourg|t1|0": {
+      "sha256": "7aab8c8c3488d6fa64f59672b5bc462ae224b6a5c6dccf868b9b13ba5a578095",
+      "ok": true,
+      "owner": 6449
+    },
+    "chateaubourg|t1|1": {
+      "sha256": "76d69f3fbde23181bed25c74cad910127d92bbf8edfeabbf747c6be6d023a772",
+      "ok": true,
+      "owner": 5942
+    },
+    "chateaubourg|t1|2": {
+      "sha256": "090797a8b995329e45fb87305b52e6aa52747f38fa3175593ff22a2a374bafd9",
+      "ok": true,
+      "owner": 2214
+    },
+    "chateaubourg|t2|0": {
+      "sha256": "4350f04d52b89e366e5d2364817d5aa334fd66d30ea2bc94cf15a944bf34fbf2",
+      "ok": true,
+      "owner": 8559
+    },
+    "chateaubourg|t2|1": {
+      "sha256": "118c48ad7989743ec050f0a7d598358a878c5ac9a60585187fceed5569d06c1e",
+      "ok": true,
+      "owner": 7456
+    },
+    "chateaubourg|t2|2": {
+      "sha256": "e2f93cc988c8eceba322f1a38296ece2fe50e951a96787415498599a9cc0c6f4",
+      "ok": true,
+      "owner": 3068
+    },
+    "chateaubourg|t3|0": {
+      "sha256": "21b475926c7d55622dff5b6f3d92cd5b649bc3186a914788c10dabf8ef9a8d9c",
+      "ok": true,
+      "owner": 11717
+    },
+    "chateaubourg|t3|1": {
+      "sha256": "38f48f47210cd00f35bc52cdd25d4aee45bb50dd6a6d7de063b5fbf0986e12aa",
+      "ok": true,
+      "owner": 10556
+    },
+    "chateaubourg|t3|2": {
+      "sha256": "0bff41958ccc8d1cac6cb281400a0d1346d57a60e9e3a0dcc73d82f8a472696d",
+      "ok": true,
+      "owner": 4320
+    },
+    "chateaubourg|t4|0": {
+      "sha256": "1dcd0ec61d447f719af497f863ae4ba0ce802ce5a7606edb9ed528f38372a469",
+      "ok": true,
+      "owner": 12849
+    },
+    "chateaubourg|t4|1": {
+      "sha256": "ccd341ea0c85997a5b857e28bb9186ee451caa47ded4036025a626a38a480c21",
+      "ok": true,
+      "owner": 11676
+    },
+    "chateaubourg|t4|2": {
+      "sha256": "cbdbe408afa2ebcb6fe5f4f2442e1292f1b4f9477f333fd2978d2551b12e1643",
+      "ok": true,
+      "owner": 4815
+    },
+    "chateaubourg|maison|0": {
+      "sha256": "6ab223a242f69d41a60ad867312fdd83a0a9f1965d05f99188a8acaf23890cba",
+      "ok": true,
+      "owner": 13454
+    },
+    "chateaubourg|maison|1": {
+      "sha256": "36f9916d0d14a39b9e03f6775a4fe5c7c79ac87e82ccfb2e6962a9dd8ad0330b",
+      "ok": true,
+      "owner": 12101
+    },
+    "chateaubourg|maison|2": {
+      "sha256": "64fe06192653ff73b144845329a907707514bdeba7ec1375cfd3362af6513ffa",
+      "ok": true,
+      "owner": 5053
+    },
+    "liffre|studio|0": {
+      "sha256": "cffb5fd7f7412b1e1a796e48f4898ee77d2ef9bd453e3b4180514a4a425f2819",
+      "ok": true,
+      "owner": 6658
+    },
+    "liffre|studio|1": {
+      "sha256": "848f84d8fb280c7f095520a3b905c46dce70daf4f87352fce465f9100419100b",
+      "ok": true,
+      "owner": 5964
+    },
+    "liffre|studio|2": {
+      "sha256": "a01c19c6cb6911dda989adc378c53270f1e1008f6fcd44a05e5e413aab8921f7",
+      "ok": true,
+      "owner": 2242
+    },
+    "liffre|t1|0": {
+      "sha256": "8588b653b306c5f5c49cf4b2bb8ac37a46bc01c5ee7f83c843e29b9859dd22ad",
+      "ok": true,
+      "owner": 6837
+    },
+    "liffre|t1|1": {
+      "sha256": "6dd91bdb3e824ae5bfece48f12bb9146b68d7b3a3fc8a1f9307328fab15d5b44",
+      "ok": true,
+      "owner": 6120
+    },
+    "liffre|t1|2": {
+      "sha256": "918c49faa21b488e57d31267d20ff27c5f12e7983aaf196d6fbf545c87a5fe3a",
+      "ok": true,
+      "owner": 2313
+    },
+    "liffre|t2|0": {
+      "sha256": "9a6ed6eec7ef3655c88627b3b2f155d87cf2932cd2f1e51428d6e225723a8fb4",
+      "ok": true,
+      "owner": 8935
+    },
+    "liffre|t2|1": {
+      "sha256": "59fd0d6b4f7df789e2b0f4c2f3cd35283acdc3c8cb4b633abfb4dd2e19883d23",
+      "ok": true,
+      "owner": 7657
+    },
+    "liffre|t2|2": {
+      "sha256": "c0c93f60503a2dc9c8f61fc813024036c23bfbacbcca41f40a72bfab261b6fd2",
+      "ok": true,
+      "owner": 3168
+    },
+    "liffre|t3|0": {
+      "sha256": "dcf6b2d258ca82cc71f4eedd67a43a8ceb22c6eb72d445578adc5c360245232a",
+      "ok": true,
+      "owner": 12091
+    },
+    "liffre|t3|1": {
+      "sha256": "65d930f6f6890eb4e62417167285afab93401f48a241d2250e1401d5312fdd08",
+      "ok": true,
+      "owner": 10785
+    },
+    "liffre|t3|2": {
+      "sha256": "2c4ff07be405faf322a4504d4351e6fef247f1ef30014337b0f4832a5a4b5258",
+      "ok": true,
+      "owner": 4425
+    },
+    "liffre|t4|0": {
+      "sha256": "6a976630a7a004a5490c09fdac55f8a5b5fc4abf18f35ec33fbf661306f94725",
+      "ok": true,
+      "owner": 13083
+    },
+    "liffre|t4|1": {
+      "sha256": "84103c95bf70a76a00bf3b7cc401d863f05008b572d1e047f697c7b2f1b4ff37",
+      "ok": true,
+      "owner": 11827
+    },
+    "liffre|t4|2": {
+      "sha256": "a5cd65d32177ce699f432e240bbebeabf3cc899efaaba8f7e4b49a07b4027b40",
+      "ok": true,
+      "owner": 4870
+    },
+    "liffre|maison|0": {
+      "sha256": "31e82c76c95249aef21876d4132d9c53eab9981788506820271c88ed712a2201",
+      "ok": true,
+      "owner": 13689
+    },
+    "liffre|maison|1": {
+      "sha256": "5e1af7176a536d0b9cabd07bbac8ae45c7bd79ef4f7007367b565f36fce8be76",
+      "ok": true,
+      "owner": 12256
+    },
+    "liffre|maison|2": {
+      "sha256": "c57150cbbbf6313193026c8dd59d8360155d371029eaded018a6e2083a2c7882",
+      "ok": true,
+      "owner": 5110
+    },
+    "vitre|studio|0": {
+      "sha256": "00fed111bc64363a5143851a4f0aa4a6aa99b26a786e341df4e30184fe7ea2bc",
+      "ok": true,
+      "owner": 6273
+    },
+    "vitre|studio|1": {
+      "sha256": "a8c5fe0bb42b691576fb221d39e0ce2f1314a9269764cfb702a57abefe7028f2",
+      "ok": true,
+      "owner": 5790
+    },
+    "vitre|studio|2": {
+      "sha256": "da3dac4af17990b17045b06330246c6dcc7c833ddd9a6c4d2f72ea49c9bbb6c4",
+      "ok": true,
+      "owner": 2144
+    },
+    "vitre|t1|0": {
+      "sha256": "9c7a11cd73fc8505d097f0e131411c05bc65b6b97e9c1e6e65105cdf029ef49c",
+      "ok": true,
+      "owner": 6449
+    },
+    "vitre|t1|1": {
+      "sha256": "c1eb4fb13bbe4c5ee0578055e385421b865b87b9a4fa936de8a3cde84198f8ac",
+      "ok": true,
+      "owner": 5942
+    },
+    "vitre|t1|2": {
+      "sha256": "1fbb1c71bd062ff7b052fbf97f7ffedf12ddc7a4f1a4e765938a3db5281dae2c",
+      "ok": true,
+      "owner": 2214
+    },
+    "vitre|t2|0": {
+      "sha256": "19435f9c4c20c9abf7cf92ec7aaa6fea55ab39aa3b7b60d4d827339a86baf4f5",
+      "ok": true,
+      "owner": 8559
+    },
+    "vitre|t2|1": {
+      "sha256": "af48980d849f08f8722d3359bc647a9a481daddce3d736d65a60742503010fa5",
+      "ok": true,
+      "owner": 7456
+    },
+    "vitre|t2|2": {
+      "sha256": "9a0f4b482e56424ef5a36c61f5886375f8241eb85bbabe537075250b5c121c8f",
+      "ok": true,
+      "owner": 3068
+    },
+    "vitre|t3|0": {
+      "sha256": "ab2dbb3b0000dce6dfc21dcf2ce95b3a42b4bf31568e343bfd4a88d7751fd3fa",
+      "ok": true,
+      "owner": 11717
+    },
+    "vitre|t3|1": {
+      "sha256": "2a9807817271bbc7fd5bcb857728a99cf83a51e2829f879497766364bd4465f7",
+      "ok": true,
+      "owner": 10556
+    },
+    "vitre|t3|2": {
+      "sha256": "d91552e7ff9a0a3e685f8277819eddfdf218e326db4090f9d6bdc0bcbb29efdf",
+      "ok": true,
+      "owner": 4320
+    },
+    "vitre|t4|0": {
+      "sha256": "3fba8e6ff37d957b8714607d5bcfbc60cffbe4f993a868ebd2d82ea75dd3d808",
+      "ok": true,
+      "owner": 12849
+    },
+    "vitre|t4|1": {
+      "sha256": "4c1a59feb43b76ed5c0eea0e891d8f60591de51bb278ed2369b6592b499f02d4",
+      "ok": true,
+      "owner": 11676
+    },
+    "vitre|t4|2": {
+      "sha256": "d28428b10f1dad2b871db2d75985ba43585b791c013fa3bfb835a6f5da761d92",
+      "ok": true,
+      "owner": 4815
+    },
+    "vitre|maison|0": {
+      "sha256": "47887be53c20b3fc0619b6743a748bb90029171778ea5f0d9c49e82c07575e36",
+      "ok": true,
+      "owner": 13454
+    },
+    "vitre|maison|1": {
+      "sha256": "f691673aee662dd5d9a9e0bf54b8eadfb911826870960fe58470a5b09b751593",
+      "ok": true,
+      "owner": 12101
+    },
+    "vitre|maison|2": {
+      "sha256": "b88c6c8ec3774ab182794ef0df3da284fd701c28018ea615e0259665f203aac7",
+      "ok": true,
+      "owner": 5053
+    },
+    "saint-aubin-du-cormier|studio|0": {
+      "sha256": "380ca186c819bda801c7292bfeb56f646aca9563c3cb251525f01f2d4ea44951",
+      "ok": true,
+      "owner": 6658
+    },
+    "saint-aubin-du-cormier|studio|1": {
+      "sha256": "cd29b7edc7abb4f6dd65047c7dada0a49792328eab53fd430f6592382e91d982",
+      "ok": true,
+      "owner": 5964
+    },
+    "saint-aubin-du-cormier|studio|2": {
+      "sha256": "111b95e86f4914c6bfbafe81c40aabba90ab24fc40d5e6d441f5093368c02c8a",
+      "ok": true,
+      "owner": 2242
+    },
+    "saint-aubin-du-cormier|t1|0": {
+      "sha256": "23a0d34da9fd1ca1d368e00d7549fbd7e144b055d54e39aafe61d909507e4ae7",
+      "ok": true,
+      "owner": 6837
+    },
+    "saint-aubin-du-cormier|t1|1": {
+      "sha256": "8f5b7b4250721b070897b8dd108b2acd3c53ba21d0787f762b6183361a97df37",
+      "ok": true,
+      "owner": 6120
+    },
+    "saint-aubin-du-cormier|t1|2": {
+      "sha256": "637b225e31454916f953f2f1d8c7a8b12bd971cc9eab60acbc3890fe40db62b8",
+      "ok": true,
+      "owner": 2313
+    },
+    "saint-aubin-du-cormier|t2|0": {
+      "sha256": "5441b9a2bf2c6c6abd74e525a74480f1e0b6956ccff146ef1ed07608c1709260",
+      "ok": true,
+      "owner": 8935
+    },
+    "saint-aubin-du-cormier|t2|1": {
+      "sha256": "3246acd2ff47e3bad5a859ab9d0124750ed825436296e52685128e96f669a948",
+      "ok": true,
+      "owner": 7657
+    },
+    "saint-aubin-du-cormier|t2|2": {
+      "sha256": "5ad9354a756229f54698fb740e8807978ad3358e62b1390501f4307e5657d300",
+      "ok": true,
+      "owner": 3168
+    },
+    "saint-aubin-du-cormier|t3|0": {
+      "sha256": "0b160a042496ca99371e6fb1eff34956ba6ffdd839d7633b22bc01a96439c754",
+      "ok": true,
+      "owner": 12091
+    },
+    "saint-aubin-du-cormier|t3|1": {
+      "sha256": "b3803d97fd09004d407c1ac5c7ef0491ea89f487bd0309c1fe5b536f1bb1c3c8",
+      "ok": true,
+      "owner": 10785
+    },
+    "saint-aubin-du-cormier|t3|2": {
+      "sha256": "152d8f1378fb35442ab2ce564912a33ea28e8231752345c904a6fce5df302c06",
+      "ok": true,
+      "owner": 4425
+    },
+    "saint-aubin-du-cormier|t4|0": {
+      "sha256": "0e216c852f5d79fafdd373970e92b28b031ea092995b2754704834be524df21e",
+      "ok": true,
+      "owner": 13083
+    },
+    "saint-aubin-du-cormier|t4|1": {
+      "sha256": "9a05ce296ca65b2625d85e7d65ddcdd7a346a32bdebde8297b88d5390988c021",
+      "ok": true,
+      "owner": 11827
+    },
+    "saint-aubin-du-cormier|t4|2": {
+      "sha256": "8f63aba5979518afd83f24ad5182c91be9da9d5eb1271c58e812aa39adac2a8e",
+      "ok": true,
+      "owner": 4870
+    },
+    "saint-aubin-du-cormier|maison|0": {
+      "sha256": "dbf7c55bb2e7bbfa911fcdf7604dface28b2230fa6e787596ce7e0296089388e",
+      "ok": true,
+      "owner": 13689
+    },
+    "saint-aubin-du-cormier|maison|1": {
+      "sha256": "9cb5cb48cd5786739c700b0868e42203794b7c9df8a0dcaac19766975916e860",
+      "ok": true,
+      "owner": 12256
+    },
+    "saint-aubin-du-cormier|maison|2": {
+      "sha256": "3823e44c7e8ab335bea49c8521ff2a7b7fba47d91c2c9fa1590e50d54bf08857",
+      "ok": true,
+      "owner": 5110
+    },
+    "saint-malo|studio|0": {
+      "sha256": "276e7016943cbd38955161672158f821ddfee3ddf0d3ef1cebfbe4ff31d83b1d",
+      "ok": true,
+      "owner": 8277
+    },
+    "saint-malo|studio|1": {
+      "sha256": "cab525e1b4467232d0a3334262f207c75a46b85ac425b8343da4d79151be4bc2",
+      "ok": true,
+      "owner": 7323
+    },
+    "saint-malo|studio|2": {
+      "sha256": "5328ffdc3f975e9a6f8b5bff949cc0177ecac717251b96b6517b7aaac9e06044",
+      "ok": true,
+      "owner": 2463
+    },
+    "saint-malo|t1|0": {
+      "sha256": "eb0a8275c6231612a44e2f0664eb3ffbe25c7fc14dc303bfae8fb24d73feb41e",
+      "ok": true,
+      "owner": 8496
+    },
+    "saint-malo|t1|1": {
+      "sha256": "627e18a70b354b7ffd4354f5996218f660078c3a0f77a385e3de666b4dace845",
+      "ok": true,
+      "owner": 7512
+    },
+    "saint-malo|t1|2": {
+      "sha256": "060ebec6b5d3bad50c9ce4d91aae20884a353adb6880910fc2ef5d196d9bb223",
+      "ok": true,
+      "owner": 2538
+    },
+    "saint-malo|t2|0": {
+      "sha256": "fa75409c7999bf80d4048490cd83839802578e6ce1dc58f32dee023444594aad",
+      "ok": true,
+      "owner": 11066
+    },
+    "saint-malo|t2|1": {
+      "sha256": "03e296f0ff993b7c01e629824deb893009e3534035bb40219430cc06b751e375",
+      "ok": true,
+      "owner": 9377
+    },
+    "saint-malo|t2|2": {
+      "sha256": "cca5b7e140a950fee28687d6d18b1a8bb71daeb95349f021eb283f8822e52b30",
+      "ok": true,
+      "owner": 3458
+    },
+    "saint-malo|t3|0": {
+      "sha256": "11d9181d6801850a65921f1d579f32ecec9b05eb02e4fd1ae29c97b6ae6ed386",
+      "ok": true,
+      "owner": 14935
+    },
+    "saint-malo|t3|1": {
+      "sha256": "1e4e8f8f53720c19abd751e66a3ffe86e5ed6c641c8f5856d14a11f5c8410313",
+      "ok": true,
+      "owner": 13206
+    },
+    "saint-malo|t3|2": {
+      "sha256": "8a0de83ade6b906b649c2cf1ba86af8f1c66b13bd18de8d449ef203c9394c8f5",
+      "ok": true,
+      "owner": 4811
+    },
+    "saint-malo|t4|0": {
+      "sha256": "9e9a6ef878aef08b4aae1a4ccc828abb252050519cadb62b4f63746a637f047e",
+      "ok": true,
+      "owner": 16233
+    },
+    "saint-malo|t4|1": {
+      "sha256": "dda066a9359247bd429951e795c710c9db90d8eb334789abf78af612d5585307",
+      "ok": true,
+      "owner": 14536
+    },
+    "saint-malo|t4|2": {
+      "sha256": "ca1ea2a4633fe251d7a7ec45d07ea68d1a6d09c8fe2fdf5303e172b531efdb19",
+      "ok": true,
+      "owner": 5297
+    },
+    "saint-malo|maison|0": {
+      "sha256": "b62725b1f3f9b68618ab8b5cb6e3d03491ccedeaed2d8069d226d2c7513fcb8d",
+      "ok": true,
+      "owner": 16978
+    },
+    "saint-malo|maison|1": {
+      "sha256": "2a279f2c92899d0460bfad84ddabfc8bcf229ed5c2f25bc6b1a730452c465310",
+      "ok": true,
+      "owner": 15062
+    },
+    "saint-malo|maison|2": {
+      "sha256": "3baab948a9eca6dadac8e9290d35efdd21c7d782ca867e1784d6e90f1bc8caf9",
+      "ok": true,
+      "owner": 5555
+    },
+    "val-d-ize|studio|0": {
+      "sha256": "849c9a700eb90c3bdda1089c3b94f49bb0c0f9450539d30d4ddadf4b8e298f86",
+      "ok": true,
+      "owner": 6273
+    },
+    "val-d-ize|studio|1": {
+      "sha256": "9c7800459aae12ccb8f729589ba834dff91d861f0adedca7f8ebf7bc175761f0",
+      "ok": true,
+      "owner": 5790
+    },
+    "val-d-ize|studio|2": {
+      "sha256": "fa699a72ea8d5f49a55e65591cb2e1d97789b5c6a5b11af96da6571fe461e0ab",
+      "ok": true,
+      "owner": 2144
+    },
+    "val-d-ize|t1|0": {
+      "sha256": "e64444d99bf9f01d95cdd50bf0ad8684aa8a215e0fddcd873f0f0b529fac2d0d",
+      "ok": true,
+      "owner": 6449
+    },
+    "val-d-ize|t1|1": {
+      "sha256": "3edba6c64e93fbbad273d53d7686a814c91ef6b5a9d0591f03c61f6bd7b147a0",
+      "ok": true,
+      "owner": 5942
+    },
+    "val-d-ize|t1|2": {
+      "sha256": "f23e941caef0c0630f28e62d090a1c9b9dfbd88f1b87d286874780b8353adb44",
+      "ok": true,
+      "owner": 2214
+    },
+    "val-d-ize|t2|0": {
+      "sha256": "145e92347277d53ed8301f7ab9d58ba84ef9e14b15508b0ea980fda3f3f5c733",
+      "ok": true,
+      "owner": 8559
+    },
+    "val-d-ize|t2|1": {
+      "sha256": "bf27c837ab7c1c40a96d7f7b110c68263468b484cf386c8f60ad965733d062bf",
+      "ok": true,
+      "owner": 7456
+    },
+    "val-d-ize|t2|2": {
+      "sha256": "537dccc2f0beabf47f7cac5a56e3b839aac59ad48e5aa90410ea6aacb5a094e9",
+      "ok": true,
+      "owner": 3068
+    },
+    "val-d-ize|t3|0": {
+      "sha256": "00a1d42cf7a471c65bf19ccd4cf2c4ed5053d10b67183415337f24e142c29d85",
+      "ok": true,
+      "owner": 11717
+    },
+    "val-d-ize|t3|1": {
+      "sha256": "cf5387becf646c48f135fb8eef9f396230b8a032f529ab99c94aa8238faf7c22",
+      "ok": true,
+      "owner": 10556
+    },
+    "val-d-ize|t3|2": {
+      "sha256": "cd3eaf9cf6dde23b1a7884934867d5c746511335186e79a4087f4b292bff1d38",
+      "ok": true,
+      "owner": 4320
+    },
+    "val-d-ize|t4|0": {
+      "sha256": "87a6aa88125044f9a8d6ba63f1ccd10678ca51530ee517c59bb3f257bdbbfa6a",
+      "ok": true,
+      "owner": 12849
+    },
+    "val-d-ize|t4|1": {
+      "sha256": "a73cd3631253f91ffa4bb365400a9228afef9c9a163b08679168acf179c224d7",
+      "ok": true,
+      "owner": 11676
+    },
+    "val-d-ize|t4|2": {
+      "sha256": "cf35b4947a879e00fa708d4a273924df6eef6dc951491ce7671b3e29fc68aa91",
+      "ok": true,
+      "owner": 4815
+    },
+    "val-d-ize|maison|0": {
+      "sha256": "24e70fd342aeda1efe56b23e5f2fb6be66a549b6d4bdc7e854772dfc8c1719dc",
+      "ok": true,
+      "owner": 13454
+    },
+    "val-d-ize|maison|1": {
+      "sha256": "febe0fa53c142bbddfebbac71cdd8ced21ef4ede26dd3c56861ad19c11dd17f6",
+      "ok": true,
+      "owner": 12101
+    },
+    "val-d-ize|maison|2": {
+      "sha256": "6bf55fedaa9cb322c8f349624b6b4afeb8a3c20209c0713c661bee9d89339734",
+      "ok": true,
+      "owner": 5053
+    }
+  }
+}

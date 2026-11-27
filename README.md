@@ -19,6 +19,24 @@ Les coefficients et paramètres métier sont **tous** dans `config/config.json`.
 
 Depuis la version 2.3.0, `scripts/build-artifact.mjs` adapte uniquement l'affichage de l'artifact. Le moteur continue de calculer fraîcheur, niveau de confiance et fourchette du modèle (`summary.low`, `summary.high`, `summary.uncertaintyPct`, `summary.confidence`, y compris sur le revenu propriétaire), mais ces valeurs ne sont plus affichées au propriétaire. Les scénarios `realiste` et `performant` sont présentés sous les noms « Central » et « Optimiste » ; leurs identifiants et leurs hypothèses sont inchangés. L'Embed (`embed/template.html`) n'est pas concerné.
 
+## Parcours « bail mobilité » (version 2.5.0)
+
+L'artifact propose d'abord un choix : **Location courte durée Airbnb** (parcours existant, inchangé : moteur 1.3.1, mêmes formules, mêmes données) ou **Location en bail mobilité** (parcours nouveau et indépendant).
+
+| Élément | Fichier | Remarque |
+|---|---|---|
+| Moteur | `engine/mobilite.js` (moteur bail mobilité 1.0.0) | Aucun import du moteur courte durée ; les empreintes des 8 fichiers figés d'`engine/` ne changent pas |
+| Configuration | `config/mobilite.json` + `schemas/mobilite-config.schema.json` | Bornes, typologies, modes de rémunération et de plateforme, hypothèses des scénarios ; aucun taux ni montant par défaut |
+| Repères | `data/mobilite/reperes-loyers.json` + `schemas/mobilite-reperes.schema.json` | Construits par `node scripts/build-mobilite-reperes.mjs` à partir de la Carte des loyers 2025 déjà présente dans `data/raw/carte-loyers/` (location **nue**, repère affiché, jamais utilisé dans le calcul) |
+| Interface | `scripts/lib/mobilite-ui.mjs`, assemblée par `scripts/build-artifact.mjs` | Identifiants préfixés `m`, script et données séparés (`MOBILITE`) |
+| Tests | `tests/mobilite.test.mjs` (18) | Dont la parité stricte du parcours courte durée sur 288 cas (`tests/fixtures/courte-duree-parite.json`, `node scripts/audit/parite-courte-duree.mjs` ; données de marché figées dans `tests/fixtures/courte-duree-parite-market.json` pour que l'actualisation automatique ne fasse pas échouer ce contrôle) |
+
+Calcul : cycle = durée du bail + vacance ; rotations = 12 ÷ cycle ; mois loués = min(12 ; rotations × durée) ; occupation pendant un bail = 100 %. Revenu net = loyers + forfait de charges perçus − charges réelles annuelles − frais de plateforme − (ménage + linge + kit) × rotations − rémunération Émeraude. Le forfait de charges est affiché comme « charges récupérées », jamais comme un revenu net. Scénarios : prudent (départ un mois plus tôt, préavis légal, et un mois de vacance en plus), central (valeurs saisies), optimiste (vacance réduite d'un demi-mois) : hypothèses Émeraude, modifiables dans l'outil.
+
+Aucune source publique fiable n'a été trouvée pour les loyers meublés en bail mobilité, la durée moyenne des baux ou la vacance par commune : ces valeurs sont saisies, jamais inventées. Les données Lighthouse, AirROI, Eurostat et Insee ne sont pas utilisées par ce parcours.
+
+L'actualisation automatique (`data-refresh.yml`) ne lit ni n'écrit les fichiers du parcours bail mobilité ; elle régénère l'artifact complet (les deux parcours) lorsqu'une nouvelle période de données courte durée est activée.
+
 ## Sources de données
 
 | Source | Usage | Mise à jour | Collecte | Licence |

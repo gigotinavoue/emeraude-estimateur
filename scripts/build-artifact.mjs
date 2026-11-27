@@ -27,15 +27,19 @@ import vm from 'node:vm';
 import { readJson, stableBuild, p } from './lib/util.mjs';
 import { bundleModules } from './build-embed.mjs';
 import { RANGE_CASES, raw as referenceRaw } from './audit/final-review.mjs';
+import { validateSchema } from './lib/schema.mjs';
+import { MOB_CSS, CHOOSER_HTML, MOB_HTML, MOB_JS } from './lib/mobilite-ui.mjs';
 
 export const ARTIFACT = {
   name: 'Estimateur Émeraude',
   title: 'Estimateur Émeraude',
-  version: '2.4.0',
+  version: '2.5.0',
   output: 'dist/estimateur-artifact.html'
 };
 
 const ENGINE_ORDER = ['safe.js', 'inputs.js', 'quality.js', 'resolveMarket.js', 'adjustments.js', 'core.js', 'uncertainty.js', 'index.js'];
+// Parcours bail mobilité (2.5.0) : moteur, configuration et données SÉPARÉS du parcours courte durée.
+export const MOBILITE_FILES = { engine: 'engine/mobilite.js', config: 'config/mobilite.json', reperes: 'data/mobilite/reperes-loyers.json' };
 const LS = new RegExp(String.fromCharCode(0x2028), 'g');
 const PS = new RegExp(String.fromCharCode(0x2029), 'g');
 const safeJson = (x) => JSON.stringify(x).replace(/</g, '\\u003c').replace(LS, '\\u2028').replace(PS, '\\u2029');
@@ -334,6 +338,15 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
   const engine = bundleModules('engine', ENGINE_ORDER, 'window.EmeraudeEngine={estimate:estimate,ENGINE_VERSION:ENGINE_VERSION};');
   const forfaitScript = bundleModules('scripts/lib', ['forfait-menage.js'], 'window.EmeraudeForfaitMenage={estimerForfaitMenage:estimerForfaitMenage};');
   const engineVersion = /ENGINE_VERSION = '([^']+)'/.exec(fs.readFileSync(p('engine/index.js'), 'utf8'))[1];
+  // Bail mobilité : schémas dédiés ; une configuration ou des repères invalides bloquent la génération.
+  const mobConfig = readJson(MOBILITE_FILES.config);
+  const mobReperes = readJson(MOBILITE_FILES.reperes);
+  for (const [data, schema] of [[mobConfig, 'schemas/mobilite-config.schema.json'], [mobReperes, 'schemas/mobilite-reperes.schema.json']]) {
+    const errs = validateSchema(data, readJson(schema));
+    if (errs.length) throw new Error(`${schema} : ${errs.slice(0, 3).join(' ; ')}`);
+  }
+  const mobEngine = bundleModules('engine', ['mobilite.js'], 'window.EmeraudeMobilite={estimerMobilite:estimerMobilite,cycleMobilite:cycleMobilite,repereLoyer:repereLoyer,MOBILITE_ENGINE_VERSION:MOBILITE_ENGINE_VERSION};');
+  const mobVersion = /MOBILITE_ENGINE_VERSION = '([^']+)'/.exec(fs.readFileSync(p(MOBILITE_FILES.engine), 'utf8'))[1];
   const snapshot = {
     builtAt: null, // rempli par stableBuild
     artifact: { name: ARTIFACT.name, version: ARTIFACT.version },
@@ -356,8 +369,10 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
   let t = fs.readFileSync(p('embed/template.html'), 'utf8').replace(/\r\n/g, '\n');
   t = replaceOnce(t, '<!-- Fichier GÉNÉRÉ par scripts/build-embed.mjs à partir de embed/template.html : ne pas modifier à la main. -->',
     `<!-- Fichier GÉNÉRÉ par scripts/build-artifact.mjs à partir de embed/template.html : ne pas modifier à la main. -->\n<!-- ${ARTIFACT.name} · version ${ARTIFACT.version} -->`, 'commentaire de génération');
-  t = replaceOnce(t, '</style>', `${CSS}</style>`, 'fin du CSS');
-  t = replaceOnce(t, '<div class="app" id="app">\n', '<div class="app" id="app">\n<div class="banner bad" id="integrityBanner" hidden></div>\n', 'début de l\'application');
+  t = replaceOnce(t, '</style>', `${CSS}${MOB_CSS}</style>`, 'fin du CSS');
+  // 2.5.0 : choix initial du type de location ; le parcours courte durée est affiché après ce choix, inchangé.
+  t = replaceOnce(t, '<div class="app" id="app">\n', `${CHOOSER_HTML}<div class="app" id="app" hidden>\n<div class="banner bad" id="integrityBanner" hidden></div>\n`, 'début de l\'application');
+  t = replaceOnce(t, '<div class="present-close" id="presentClose">', `${MOB_HTML}<div class="present-close" id="presentClose">`, 'parcours bail mobilité');
   // Présentation commerciale : en-tête, résultats puis scénarios ; méthodologie repliée en bas de page.
   t = replaceOnce(t, 'Estimateur interne : données publiques du marché local, ajustées par le modèle Émeraude.', 'Le potentiel de revenus de votre logement, calculé à partir du marché local et de ses caractéristiques.', 'sous-titre');
   t = replaceOnce(t, 'OUTIL INTERNE · ÉMERAUDE', 'ESTIMATION PERSONNALISÉE', 'badge');
@@ -442,10 +457,11 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
       ENGINE: engine, FORFAIT_MENAGE: forfaitScript, SNAPSHOT: snap
     });
     if (/%%[A-Z_]+%%/.test(body.replace(engine, '').replace(snap, '').replace(forfaitScript, ''))) throw new Error('Gabarit : jeton %%…%% non rempli.');
-    return { [ARTIFACT.output]: `<title>${ARTIFACT.title}</title>\n${body}` };
+    const mob = `\n<script>\n/* Moteur bail mobilité (généré depuis engine/mobilite.js, ${mobVersion}) */\n${mobEngine}\n</script>\n<script>\nconst MOBILITE=${safeJson({ config: mobConfig, reperes: mobReperes })};\n${MOB_JS}</script>\n`;
+    return { [ARTIFACT.output]: `<title>${ARTIFACT.title}</title>\n${body}${mob}` };
   }, { write, now });
   const html = res.out[ARTIFACT.output];
-  return { bytes: Buffer.byteLength(html), builtAt: res.builtAt, changed: res.changed, version: ARTIFACT.version, engineVersion, configVersion: config.version, marketGeneratedAt: market.generatedAt, references: check.map(({ label, ok, diff }) => ({ label, ok, diff })) };
+  return { bytes: Buffer.byteLength(html), builtAt: res.builtAt, changed: res.changed, version: ARTIFACT.version, engineVersion, configVersion: config.version, mobiliteEngineVersion: mobVersion, mobiliteConfigVersion: mobConfig.version, marketGeneratedAt: market.generatedAt, references: check.map(({ label, ok, diff }) => ({ label, ok, diff })) };
 }
 
 if (process.argv[1].endsWith('build-artifact.mjs')) {

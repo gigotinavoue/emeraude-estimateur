@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "version": "mobilite-1.0.0",
+  "description": "Parcours « bail mobilité » de l'estimateur : paramètres propres, indépendants du parcours courte durée (config/config.json n'est pas lu). Aucun montant par défaut : loyer, forfait de charges, durée, vacance, charges, frais et rémunération sont saisis pour chaque logement.",
+  "cadreLegal": {
+    "texte": "Loi n° 89-462 du 6 juillet 1989, titre Ier ter (bail mobilité), créé par la loi n° 2018-1021 du 23 novembre 2018 (ELAN).",
+    "dureeBailMois": { "min": 1, "max": 10 },
+    "preavisLocataireMois": 1,
+    "note": "Bail meublé de 1 à 10 mois, sans dépôt de garantie ; le locataire peut partir à tout moment avec un préavis d'un mois ; charges récupérées sous forme d'un forfait sans régularisation. Références à vérifier par un professionnel du droit avant tout usage commercial."
+  },
+  "bornes": {
+    "loyerMensuel": [50, 10000],
+    "forfaitChargesMensuel": [0, 2000],
+    "surface": [8, 500],
+    "vacanceMois": [0, 12],
+    "fraisParRotation": [0, 2000],
+    "chargesAnnuelles": [0, 50000],
+    "fraisAnnuels": [0, 50000],
+    "pourcentage": [0, 100]
+  },
+  "typologies": {
+    "studio": { "label": "Studio", "repere": "app12" },
+    "t1": { "label": "T1", "repere": "app12" },
+    "t2": { "label": "T2", "repere": "app12" },
+    "t3": { "label": "T3", "repere": "app3" },
+    "t4": { "label": "T4", "repere": "app3" },
+    "t5": { "label": "T5 ou plus", "repere": "app3" },
+    "maison": { "label": "Maison", "repere": "mai" }
+  },
+  "remuneration": {
+    "modes": {
+      "pourcentage": "Pourcentage d'une assiette",
+      "forfait_mensuel": "Forfait par mois de collaboration (loué ou non)",
+      "forfait_mois_loue": "Forfait par mois loué",
+      "forfait_rotation": "Forfait par rotation"
+    },
+    "assiettes": {
+      "loyer": "Loyer hors forfait de charges",
+      "loyer_charges": "Loyer et forfait de charges"
+    },
+    "note": "Aucun taux ni montant n'est fixé : la rémunération est négociée pour chaque logement. Le parcours courte durée et sa commission ne sont pas concernés."
+  },
+  "plateforme": {
+    "modes": {
+      "aucun": "Aucun frais de plateforme",
+      "pourcentage_loyer": "Pourcentage du loyer encaissé",
+      "forfait_bail": "Forfait par bail signé"
+    }
+  },
+  "scenarios": {
+    "nature": "HYPOTHÈSE",
+    "note": "Hypothèses du modèle Émeraude, et non des statistiques : elles s'appliquent aux valeurs saisies et restent modifiables dans l'outil.",
+    "prudent": {
+      "label": "Prudent",
+      "departAnticipeMois": 1,
+      "vacanceSupplementaireMois": 1,
+      "description": "Chaque locataire part un mois plus tôt que prévu (préavis légal d'un mois) et la vacance entre deux baux s'allonge d'un mois."
+    },
+    "central": {
+      "label": "Central",
+      "departAnticipeMois": 0,
+      "vacanceSupplementaireMois": 0,
+      "description": "Durée de bail et vacance telles que saisies."
+    },
+    "optimiste": {
+      "label": "Optimiste",
+      "departAnticipeMois": 0,
+      "vacanceSupplementaireMois": -0.5,
+      "description": "Durée de bail saisie ; vacance réduite d'un demi-mois entre deux baux (jamais négative)."
+    }
+  },
+  "arrondis": { "euros": 10, "mois": 0.1 },
+  "texts": {
+    "avertissement": "Simulation indicative, avant impôts, établie à partir des valeurs saisies. Elle ne constitue ni une garantie de loyer, ni une garantie d'occupation, ni un conseil juridique ou fiscal. Le propriétaire reste le bailleur : il fixe le loyer et le forfait de charges, choisit son locataire et signe le bail.",
+    "charges": "Le forfait de charges compense des charges récupérables : ce n'est pas un revenu net. Le revenu net ci-dessous déduit toutes les charges réelles du logement, y compris pendant la vacance.",
+    "vacance": "Vacance : mois sans locataire entre deux baux (recherche, préparation, délai entre départ et arrivée). Le loyer n'est pas perçu ; les charges du logement continuent de courir.",
+    "repere": "Source du repère : Carte des loyers 2025 (ANIL, ministère du Logement), loyers d'annonce charges comprises d'un logement NON meublé loué à l'année. Ce n'est ni un loyer meublé ni un loyer de bail mobilité, et le calcul ne l'utilise pas.",
+    "sansDonnees": "Aucune source publique fiable n'a été identifiée pour les loyers meublés en bail mobilité, la durée moyenne de ces baux ou la vacance entre deux baux à l'échelle de la commune : ces valeurs sont à saisir à partir de l'expérience du propriétaire ou d'annonces comparables.",
+    "attribution": "Repère de loyer : Carte des loyers 2025 (ANIL, ministère du Logement), Licence Ouverte Etalab 2.0."
+  }
+}

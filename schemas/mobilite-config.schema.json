@@ -1,0 +1,65 @@
+{
+  "$id": "mobilite-config.schema.json",
+  "description": "config/mobilite.json — paramètres du parcours bail mobilité. Indépendant de config/config.json.",
+  "type": "object",
+  "required": ["schemaVersion", "version", "cadreLegal", "bornes", "typologies", "remuneration", "plateforme", "scenarios", "arrondis", "texts"],
+  "definitions": {
+    "range": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number", "minimum": 0 } },
+    "scenario": {
+      "type": "object",
+      "required": ["label", "departAnticipeMois", "vacanceSupplementaireMois", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string", "minLength": 1 },
+        "departAnticipeMois": { "type": "number", "minimum": 0, "maximum": 3 },
+        "vacanceSupplementaireMois": { "type": "number", "minimum": -3, "maximum": 6 },
+        "description": { "type": "string", "minLength": 1 }
+      }
+    }
+  },
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "version": { "type": "string", "pattern": "^mobilite-\\d+\\.\\d+\\.\\d+$" },
+    "cadreLegal": {
+      "type": "object",
+      "required": ["texte", "dureeBailMois", "preavisLocataireMois", "note"],
+      "properties": {
+        "dureeBailMois": { "type": "object", "required": ["min", "max"], "properties": { "min": { "const": 1 }, "max": { "const": 10 } } },
+        "preavisLocataireMois": { "const": 1 }
+      }
+    },
+    "bornes": {
+      "type": "object",
+      "required": ["loyerMensuel", "forfaitChargesMensuel", "surface", "vacanceMois", "fraisParRotation", "chargesAnnuelles", "fraisAnnuels", "pourcentage"],
+      "additionalProperties": false,
+      "patternProperties": { ".*": { "$ref": "#/definitions/range" } }
+    },
+    "typologies": {
+      "type": "object",
+      "patternProperties": {
+        ".*": { "type": "object", "required": ["label", "repere"], "properties": { "repere": { "enum": ["app12", "app3", "mai"] } } }
+      }
+    },
+    "remuneration": {
+      "type": "object",
+      "required": ["modes", "assiettes", "note"],
+      "properties": {
+        "modes": { "type": "object", "required": ["pourcentage", "forfait_mensuel", "forfait_mois_loue", "forfait_rotation"] },
+        "assiettes": { "type": "object", "required": ["loyer", "loyer_charges"] }
+      }
+    },
+    "plateforme": { "type": "object", "required": ["modes"], "properties": { "modes": { "type": "object", "required": ["aucun", "pourcentage_loyer", "forfait_bail"] } } },
+    "scenarios": {
+      "type": "object",
+      "required": ["nature", "note", "prudent", "central", "optimiste"],
+      "properties": {
+        "nature": { "const": "HYPOTHÈSE" },
+        "prudent": { "$ref": "#/definitions/scenario" },
+        "central": { "$ref": "#/definitions/scenario" },
+        "optimiste": { "$ref": "#/definitions/scenario" }
+      }
+    },
+    "arrondis": { "type": "object", "required": ["euros", "mois"], "properties": { "euros": { "type": "number", "minimum": 1 }, "mois": { "type": "number", "minimum": 0.1 } } },
+    "texts": { "type": "object", "required": ["avertissement", "charges", "vacance", "repere", "sansDonnees", "attribution"] }
+  }
+}

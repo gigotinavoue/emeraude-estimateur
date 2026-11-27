@@ -1,0 +1,49 @@
+{
+  "$id": "mobilite-reperes.schema.json",
+  "description": "data/mobilite/reperes-loyers.json — repères de loyer du parcours bail mobilité (Carte des loyers, location nue). Aucune donnée Lighthouse ni AirROI.",
+  "type": "object",
+  "required": ["schemaVersion", "source", "definition", "meuble", "dureeBail", "vacance", "communes"],
+  "definitions": {
+    "repere": {
+      "anyOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["loyerM2", "basM2", "hautM2", "maille", "annoncesCommune", "fiabilite"],
+          "additionalProperties": false,
+          "properties": {
+            "loyerM2": { "type": "number", "minimum": 3, "maximum": 60 },
+            "basM2": { "type": "number", "minimum": 1, "maximum": 60 },
+            "hautM2": { "type": "number", "minimum": 3, "maximum": 80 },
+            "maille": { "enum": ["commune", "maille"] },
+            "annoncesCommune": { "type": "integer", "minimum": 0 },
+            "fiabilite": { "enum": ["indicatif", "faible"] }
+          }
+        }
+      ]
+    }
+  },
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "source": { "type": "object", "required": ["id", "label", "url", "licence", "periode", "recupereLe"], "properties": { "id": { "const": "carte_loyers" } } },
+    "definition": { "type": "string", "minLength": 20 },
+    "meuble": { "type": "object", "required": ["donnees", "note"], "properties": { "donnees": { "type": "null" } } },
+    "dureeBail": { "type": "object", "required": ["donnees", "note"], "properties": { "donnees": { "type": "null" } } },
+    "vacance": { "type": "object", "required": ["donnees", "note"], "properties": { "donnees": { "type": "null" } } },
+    "communes": {
+      "type": "object",
+      "patternProperties": {
+        ".*": {
+          "type": "object",
+          "required": ["insee", "label", "app12", "app3", "mai"],
+          "properties": {
+            "insee": { "type": "string", "pattern": "^35\\d{3}$" },
+            "app12": { "$ref": "#/definitions/repere" },
+            "app3": { "$ref": "#/definitions/repere" },
+            "mai": { "$ref": "#/definitions/repere" }
+          }
+        }
+      }
+    }
+  }
+}
