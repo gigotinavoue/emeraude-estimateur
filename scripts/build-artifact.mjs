@@ -33,13 +33,13 @@ import { MOB_CSS, CHOOSER_HTML, MOB_HTML, MOB_JS } from './lib/mobilite-ui.mjs';
 export const ARTIFACT = {
   name: 'Estimateur Émeraude',
   title: 'Estimateur Émeraude',
-  version: '2.5.0',
+  version: '2.6.0',
   output: 'dist/estimateur-artifact.html'
 };
 
 const ENGINE_ORDER = ['safe.js', 'inputs.js', 'quality.js', 'resolveMarket.js', 'adjustments.js', 'core.js', 'uncertainty.js', 'index.js'];
 // Parcours bail mobilité (2.5.0) : moteur, configuration et données SÉPARÉS du parcours courte durée.
-export const MOBILITE_FILES = { engine: 'engine/mobilite.js', config: 'config/mobilite.json', reperes: 'data/mobilite/reperes-loyers.json' };
+export const MOBILITE_FILES = { engine: 'engine/mobilite.js', config: 'config/mobilite.json', reperes: 'data/mobilite/reperes-loyers.json', loyer: 'config/mobilite-loyer.json' };
 const LS = new RegExp(String.fromCharCode(0x2028), 'g');
 const PS = new RegExp(String.fromCharCode(0x2029), 'g');
 const safeJson = (x) => JSON.stringify(x).replace(/</g, '\\u003c').replace(LS, '\\u2028').replace(PS, '\\u2029');
@@ -341,11 +341,12 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
   // Bail mobilité : schémas dédiés ; une configuration ou des repères invalides bloquent la génération.
   const mobConfig = readJson(MOBILITE_FILES.config);
   const mobReperes = readJson(MOBILITE_FILES.reperes);
-  for (const [data, schema] of [[mobConfig, 'schemas/mobilite-config.schema.json'], [mobReperes, 'schemas/mobilite-reperes.schema.json']]) {
+  const mobLoyer = readJson(MOBILITE_FILES.loyer);
+  for (const [data, schema] of [[mobConfig, 'schemas/mobilite-config.schema.json'], [mobReperes, 'schemas/mobilite-reperes.schema.json'], [mobLoyer, 'schemas/mobilite-loyer.schema.json']]) {
     const errs = validateSchema(data, readJson(schema));
     if (errs.length) throw new Error(`${schema} : ${errs.slice(0, 3).join(' ; ')}`);
   }
-  const mobEngine = bundleModules('engine', ['mobilite.js'], 'window.EmeraudeMobilite={estimerMobilite:estimerMobilite,cycleMobilite:cycleMobilite,repereLoyer:repereLoyer,MOBILITE_ENGINE_VERSION:MOBILITE_ENGINE_VERSION};');
+  const mobEngine = bundleModules('engine', ['mobilite.js'], 'window.EmeraudeMobilite={estimerMobilite:estimerMobilite,estimerLoyerMobilite:estimerLoyerMobilite,cycleMobilite:cycleMobilite,repereLoyer:repereLoyer,MOBILITE_ENGINE_VERSION:MOBILITE_ENGINE_VERSION};');
   const mobVersion = /MOBILITE_ENGINE_VERSION = '([^']+)'/.exec(fs.readFileSync(p(MOBILITE_FILES.engine), 'utf8'))[1];
   const snapshot = {
     builtAt: null, // rempli par stableBuild
@@ -457,11 +458,11 @@ export function buildArtifact({ write = true, now = new Date() } = {}) {
       ENGINE: engine, FORFAIT_MENAGE: forfaitScript, SNAPSHOT: snap
     });
     if (/%%[A-Z_]+%%/.test(body.replace(engine, '').replace(snap, '').replace(forfaitScript, ''))) throw new Error('Gabarit : jeton %%…%% non rempli.');
-    const mob = `\n<script>\n/* Moteur bail mobilité (généré depuis engine/mobilite.js, ${mobVersion}) */\n${mobEngine}\n</script>\n<script>\nconst MOBILITE=${safeJson({ config: mobConfig, reperes: mobReperes })};\n${MOB_JS}</script>\n`;
+    const mob = `\n<script>\n/* Moteur bail mobilité (généré depuis engine/mobilite.js, ${mobVersion}) */\n${mobEngine}\n</script>\n<script>\nconst MOBILITE=${safeJson({ config: mobConfig, reperes: mobReperes, loyer: mobLoyer })};\n${MOB_JS}</script>\n`;
     return { [ARTIFACT.output]: `<title>${ARTIFACT.title}</title>\n${body}${mob}` };
   }, { write, now });
   const html = res.out[ARTIFACT.output];
-  return { bytes: Buffer.byteLength(html), builtAt: res.builtAt, changed: res.changed, version: ARTIFACT.version, engineVersion, configVersion: config.version, mobiliteEngineVersion: mobVersion, mobiliteConfigVersion: mobConfig.version, marketGeneratedAt: market.generatedAt, references: check.map(({ label, ok, diff }) => ({ label, ok, diff })) };
+  return { bytes: Buffer.byteLength(html), builtAt: res.builtAt, changed: res.changed, version: ARTIFACT.version, engineVersion, configVersion: config.version, mobiliteEngineVersion: mobVersion, mobiliteConfigVersion: mobConfig.version, mobiliteLoyerVersion: mobLoyer.version, marketGeneratedAt: market.generatedAt, references: check.map(({ label, ok, diff }) => ({ label, ok, diff })) };
 }
 
 if (process.argv[1].endsWith('build-artifact.mjs')) {

@@ -222,10 +222,10 @@ test('MB15. Repère de loyer : location nue, intervalle arrondi, jamais utilisé
   close(sansRep.scenarios.central.revenuNet, central({}).revenuNet);
 });
 
-test('MB16. Artifact 2.5.0 : choix initial, deux parcours séparés, moteur courte durée embarqué à l’identique', () => {
+test('MB16. Artifact 2.6.0 : choix initial, deux parcours séparés, moteur courte durée embarqué à l’identique', () => {
   const r = buildArtifact({ write: false });
   assert.equal(r.changed, false, 'artifact désynchronisé : npm run build:artifact');
-  assert.equal(r.version, '2.5.0');
+  assert.equal(r.version, '2.6.0');
   assert.equal(r.engineVersion, '1.3.1');
   assert.equal(r.mobiliteEngineVersion, MOBILITE_ENGINE_VERSION);
   assert.ok(r.references.every((x) => x.ok));
@@ -237,6 +237,7 @@ test('MB16. Artifact 2.5.0 : choix initial, deux parcours séparés, moteur cour
   const mob = JSON.parse(/const MOBILITE=(\{.*\});\n/.exec(h)[1]);
   assert.deepEqual(mob.config, CFG);
   assert.deepEqual(mob.reperes, REP);
+  assert.deepEqual(mob.loyer, J('config/mobilite-loyer.json'));
   assert.ok(!JSON.stringify(mob).includes('markets'), 'aucune donnée de marché courte durée dans le parcours bail mobilité');
   // Le moteur bail mobilité embarqué donne les mêmes résultats que le module.
   const box = { window: {} };

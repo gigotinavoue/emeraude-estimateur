@@ -33,7 +33,29 @@ L'artifact propose d'abord un choix : **Location courte durée Airbnb** (parcour
 
 Calcul : cycle = durée du bail + vacance ; rotations = 12 ÷ cycle ; mois loués = min(12 ; rotations × durée) ; occupation pendant un bail = 100 %. Revenu net = loyers + forfait de charges perçus − charges réelles annuelles − frais de plateforme − (ménage + linge + kit) × rotations − rémunération Émeraude. Le forfait de charges est affiché comme « charges récupérées », jamais comme un revenu net. Scénarios : prudent (départ un mois plus tôt, préavis légal, et un mois de vacance en plus), central (valeurs saisies), optimiste (vacance réduite d'un demi-mois) : hypothèses Émeraude, modifiables dans l'outil.
 
-Aucune source publique fiable n'a été trouvée pour les loyers meublés en bail mobilité, la durée moyenne des baux ou la vacance par commune : ces valeurs sont saisies, jamais inventées. Les données Lighthouse, AirROI, Eurostat et Insee ne sont pas utilisées par ce parcours.
+Aucune source publique fiable n’a été trouvée pour les loyers de bail mobilité, la durée moyenne des baux ou la vacance par commune : durée et vacance sont saisies ; depuis 2.6.0, le loyer est estimé à partir de références de location nue et meublée (ci-dessous), jamais présenté comme une valeur de marché certaine. Les données Lighthouse, AirROI, Eurostat et Insee ne sont pas utilisées par ce parcours.
+
+### Loyer conseillé calculé automatiquement (version 2.6.0, moteur bail mobilité 1.1.0)
+
+Le propriétaire ne saisit plus le loyer : il décrit le logement (commune, adresse, type, surface, pièces, chambres, capacité, état, aménagement, mobilier, literie, équipements, étage et ascenseur, luminosité, extérieur, stationnement, calme). Il garde la main sur le **forfait de charges** et peut **modifier le loyer conseillé** (champ facultatif, signalé comme modification personnelle dans les résultats, le résumé et l'e-mail).
+
+| Élément | Fichier |
+|---|---|
+| Coefficients, sources, plafonds, confiance | `config/mobilite-loyer.json` (+ `schemas/mobilite-loyer.schema.json`) — chaque valeur porte sa nature : SOURCE, LECTURE ou HYPOTHÈSE |
+| Calcul | `estimerLoyerMobilite()` dans `engine/mobilite.js` ; `estimerMobilite(raw, cfg, reperes, cfgLoyer)` l'utilise si `raw.logement` est fourni (sinon contrat 1.0.0 : `raw.loyer` saisi) |
+| Tests | `tests/mobilite-loyer.test.mjs` (15) |
+
+Méthode :
+
+1. Base : loyer d'annonce au m² de la location **nue**, charges comprises, de la commune et de la catégorie (Carte des loyers 2025 : appartements 1-2 pièces, 3 pièces et plus, maisons) — `data/mobilite/reperes-loyers.json`.
+2. × (1 + écart meublé / nu) : étude ANIL du 28/10/2026 (environ 10 % en moyenne nationale ; carte 9 par unité urbaine, en classes, sans valeur chiffrée publiée). Les 10 communes desservies de l'unité urbaine INSEE de Rennes (35701 : Rennes, Betton, Bruz, Cesson-Sévigné, Chantepie, Chartres-de-Bretagne, Pacé, Saint-Grégoire, Saint-Jacques-de-la-Lande, Vezin-le-Coquet) : 10 % (borne basse de la classe « 10 à 12,5 % ») ; Saint-Malo, Vitré (lecture incertaine), Châteaubourg, Liffré, Saint-Aubin-du-Cormier et Val-d'Izé (aucune mesure identifiable ou hors unité urbaine) : 8,5 %, valeur prudente. **Lecture visuelle d'une carte en classes, à confirmer auprès de l'ANIL.** L'écart est mesuré hors charges et appliqué à une base charges comprises (effet de quelques euros, sous l'arrondi).
+3. × (1 + écart bail mobilité / meublé classique) = 0 % : aucune donnée (l'ANIL indique que les baux mobilité ne peuvent pas être isolés).
+4. × (1 + critères) : ajustements HYPOTHÈSES Émeraude (− 5 % à + 5 % par critère, ≤ 2 % par équipement), additionnés et plafonnés à ± 12 %. Chambres, capacité et adresse : 0 % (justifié dans la configuration). Équipements obligatoires du meublé (décret n° 2015-981) : aucune décote, mais signalés et confiance faible s'ils manquent.
+5. Loyer total conseillé = prix au m² × surface (arrondi à 10 €). **Loyer conseillé hors charges = loyer total − forfait choisi par le propriétaire** : un forfait plus élevé réduit d'autant le loyer hors charges ; il n'augmente jamais le revenu.
+6. Fourchette : intervalle de prédiction à 95 % de la Carte des loyers ramené à 50 % (confiance moyenne) ou 80 % (confiance faible), erreur supposée log-normale.
+7. Confiance « moyenne » au mieux (jamais « élevée ») ; « faible » si fiabilité communale faible, moins de 100 annonces, surface atypique pour la catégorie, maison, ou équipements minimaux non cochés.
+
+Contrôle (non utilisé dans le calcul) : OLL d'Ille-et-Vilaine 2025, loyers hors charges du parc loué vide de l'agglomération de Rennes (1 pièce 17,0 €/m², 2 pièces 12,8, 3 pièces 10,8, 4 et plus 9,9 ; emménagés récents 12,6). La Carte des loyers mesure des loyers **d'annonce**, en général supérieurs aux loyers signés observés par l'OLL : le loyer conseillé est un prix de mise en location, pas un loyer garanti.
 
 L'actualisation automatique (`data-refresh.yml`) ne lit ni n'écrit les fichiers du parcours bail mobilité ; elle régénère l'artifact complet (les deux parcours) lorsqu'une nouvelle période de données courte durée est activée.
 

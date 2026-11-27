@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "version": "mobilite-loyer-1.1.0",
+  "description": "Calcul automatique du loyer conseillé en bail mobilité (parcours bail mobilité uniquement ; le parcours courte durée ne lit pas ce fichier). Chaque coefficient porte sa nature : SOURCE (valeur publiée), LECTURE (valeur lue sur une carte publiée, à confirmer) ou HYPOTHÈSE (choix Émeraude prudent, modifiable, non issu de données de marché).",
+  "methode": [
+    "1. Base : loyer d'annonce au m² de la location NUE, charges comprises, par commune et par catégorie (Carte des loyers 2025 : appartements 1-2 pièces, appartements 3 pièces et plus, maisons).",
+    "2. Passage au meublé : base × (1 + écart meublé / nu mesuré par l'ANIL pour l'unité urbaine de la commune, lu sur une carte en classes).",
+    "3. Passage au bail mobilité : × (1 + écart bail mobilité / meublé classique) — fixé à 0 % faute de données.",
+    "4. Critères du logement : × (1 + somme des ajustements), somme plafonnée.",
+    "5. Loyer total conseillé (charges comprises) = prix au m² × surface.",
+    "6. Loyer conseillé hors charges = loyer total conseillé − forfait de charges choisi par le propriétaire : le forfait ne s'ajoute jamais au loyer de marché.",
+    "7. Fourchette : intervalle de la Carte des loyers ramené à 50 % (confiance moyenne) ou 80 % (confiance faible), sous l'hypothèse d'une erreur log-normale (modèle de la Carte des loyers estimé en logarithme)."
+  ],
+  "sources": {
+    "carteLoyers": {
+      "label": "Carte des loyers 2025 (ANIL / ministère du Logement)",
+      "url": "https://www.data.gouv.fr/fr/datasets/carte-des-loyers-indicateurs-de-loyers-dannonce-par-commune-en-2025/",
+      "nature": "SOURCE",
+      "portee": "Loyer d'annonce prédit au m², charges comprises, pour un bien type loué vide (NON meublé) mis en location au 3e trimestre 2025 ; annonces leboncoin et SeLoger 2019 – 2025 ; intervalle de prédiction à 95 %. Mention imposée : « Estimations ANIL, à partir des données du Groupe SeLoger et de leboncoin ». Fichier : data/mobilite/reperes-loyers.json."
+    },
+    "anilMeuble": {
+      "label": "ANIL, « L'essor de la location meublée de longue durée, un facteur de recomposition du parc locatif privé ? », 28 octobre 2026",
+      "url": "https://www.anil.org/documentation-experte/etudes-eclairages/etudes-et-eclairages-2026/lessor-de-la-location-meublee-de-longue-duree-un-facteur-de-recomposition-du-parc-locatif-prive/",
+      "nature": "SOURCE",
+      "portee": "Écart de loyer meublé / nu « toutes choses égales par ailleurs » (modèle hédonique par unité urbaine, annonces leboncoin et SeLoger, T1 2022 – T1 2026, loyers hors charges, appartement type de 38 m², encadré 5) : environ 10 % en moyenne nationale ; carte 9 par unité urbaine en classes seulement (0–6,5 ; 6,5–8,5 ; 8,5–10 ; 10–12,5 ; > 12,5 %), sans tableau chiffré ; unités urbaines de moins de 500 annonces retirées. L'étude précise que les baux mobilité ne peuvent pas être isolés dans les données."
+    },
+    "ollRennes": {
+      "label": "Observatoire local des loyers d'Ille-et-Vilaine (ADIL 35), résultats 2025",
+      "url": "https://www.observatoires-des-loyers.org/connaitre-les-loyers/carte-des-niveaux-de-loyers/agglomeration-de-rennes/rennes-35238",
+      "nature": "SOURCE (contrôle seulement)",
+      "portee": "Loyers hors charges du parc privé loué vide, agglomération de Rennes, 2025 : médiane 17,0 €/m² (1 pièce), 12,8 (2 pièces), 10,8 (3 pièces), 9,9 (4 pièces et plus) ; emménagés depuis moins d'un an 12,6 €/m². Non utilisé dans le calcul : sert à contrôler l'ordre de grandeur."
+    },
+    "inseeUnitesUrbaines": {
+      "label": "INSEE, base des unités urbaines 2020 (composition communale au 1er janvier 2026)",
+      "url": "https://www.insee.fr/fr/information/4802589",
+      "nature": "SOURCE",
+      "portee": "Sert uniquement à rattacher chaque commune desservie à l'unité urbaine utilisée par la carte 9 de l'ANIL : 10 communes dans l'unité urbaine de Rennes (35701) ; Saint-Malo, Vitré, Châteaubourg, Liffré et Saint-Aubin-du-Cormier forment leur propre unité urbaine ; Val-d'Izé est hors unité urbaine."
+    },
+    "decretMeuble": {
+      "label": "Décret n° 2015-981 du 31 juillet 2015 (liste des éléments de mobilier d'un logement meublé)",
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000030967884",
+      "nature": "SOURCE",
+      "portee": "Plaques de cuisson, four ou four à micro-ondes, réfrigérateur et congélateur, literie, vaisselle, ustensiles, table et sièges, rangements, luminaires, matériel d'entretien : obligatoires, donc déjà compris dans l'écart meublé / nu ; leur absence n'est pas « décotée » mais signalée."
+    }
+  },
+  "segments": {
+    "app12": { "label": "appartement de 1 ou 2 pièces", "surfaceTypique": [14, 60] },
+    "app3": { "label": "appartement de 3 pièces et plus", "surfaceTypique": [45, 130] },
+    "mai": { "label": "maison", "surfaceTypique": [50, 180] },
+    "nature": "HYPOTHÈSE",
+    "note": "Plages de surface au-delà desquelles le prix au m² moyen de la catégorie est jugé moins représentatif (la confiance passe alors à « faible »)."
+  },
+  "meuble": {
+    "nature": "LECTURE",
+    "defaut": 0.085,
+    "parCommune": {
+      "rennes": 0.10, "betton": 0.10, "bruz": 0.10, "cesson-sevigne": 0.10, "chantepie": 0.10,
+      "chartres-de-bretagne": 0.10, "pace": 0.10, "saint-gregoire": 0.10, "saint-jacques-de-la-lande": 0.10, "vezin-le-coquet": 0.10
+    },
+    "parCommuneNature": {
+      "uniteUrbaineRennes": "SOURCE pour l'appartenance (INSEE, unités urbaines 2020, composition au 01/01/2026 : unité urbaine 35701 « Rennes », 16 communes, dont les 10 communes desservies ci-dessus) ; LECTURE pour la classe (carte 9 : « + 10 % à + 12,5 % »).",
+      "saint-malo, vitre": "LECTURE incertaine : unités urbaines propres (35402, 35303), polygones de petite taille lus dans la classe « + 8,5 % à + 10 % » ; non confirmé.",
+      "chateaubourg, liffre, saint-aubin-du-cormier": "HYPOTHÈSE : unités urbaines propres (35222, 35217, 35117) non identifiables avec certitude sur la carte (l'ANIL retire les unités urbaines de moins de 500 annonces) ; valeur prudente par défaut.",
+      "val-d-ize": "HYPOTHÈSE : commune hors unité urbaine, non couverte par la carte 9 ; valeur prudente par défaut."
+    },
+    "justification": "L'ANIL mesure l'écart meublé / nu par unité urbaine : il s'applique donc à toutes les communes d'une même unité urbaine. Unité urbaine de Rennes (Rennes, Betton, Bruz, Cesson-Sévigné, Chantepie, Chartres-de-Bretagne, Pacé, Saint-Grégoire, Saint-Jacques-de-la-Lande, Vezin-le-Coquet : appartenance vérifiée dans la base INSEE des unités urbaines 2020) : classe « + 10 % à + 12,5 % » lue sur la carte 9, borne basse retenue (10 %), égale à la moyenne nationale. Autres communes : 8,5 %, valeur prudente inférieure à la moyenne nationale de 10 % — lecture incertaine pour Saint-Malo et Vitré, aucune mesure identifiable pour Châteaubourg, Liffré, Saint-Aubin-du-Cormier et Val-d'Izé. L'étude ne publie pas de valeur chiffrée par unité urbaine : lecture visuelle d'une carte en classes, à confirmer auprès de l'ANIL. L'écart est mesuré sur des loyers hors charges et appliqué ici à une base charges comprises : la part des charges est donc aussi majorée (quelques euros par mois, en deçà de l'arrondi à 10 €)."
+  },
+  "mobilite": {
+    "nature": "HYPOTHÈSE",
+    "valeur": 0,
+    "justification": "Aucune source publique ne mesure l'écart entre un loyer de bail mobilité et un loyer meublé classique (l'ANIL indique que les données ne permettent pas d'isoler les baux mobilité). Valeur prudente : 0 %."
+  },
+  "criteres": {
+    "nature": "HYPOTHÈSE",
+    "note": "Aucune source publique ne mesure, pour la zone desservie, l'effet de ces critères sur un loyer meublé. Ajustements prudents choisis par Émeraude, en points de pourcentage, volontairement plus petits que l'écart meublé / nu mesuré par l'ANIL, additionnés puis plafonnés. À recalibrer sur les baux réellement signés.",
+    "plafond": [-0.12, 0.12],
+    "choix": {
+      "etat": { "label": "État général", "options": { "ancien": ["Ancien, à rafraîchir", -0.05], "bon": ["Bon état", 0], "renove": ["Rénové", 0.03], "entierement_renove": ["Entièrement rénové", 0.05] }, "defaut": "bon" },
+      "modernite": { "label": "Aménagement et décoration", "options": { "datee": ["Datés", -0.03], "standard": ["Standards", 0], "moderne": ["Modernes et soignés", 0.02] }, "defaut": "standard" },
+      "mobilier": { "label": "Qualité du mobilier", "options": { "basique": ["Basique", -0.02], "standard": ["Standard", 0], "haut": ["Haut de gamme", 0.02] }, "defaut": "standard" },
+      "literie": { "label": "Qualité de la literie", "options": { "basique": ["Basique", -0.01], "standard": ["Standard", 0], "haut": ["Haut de gamme", 0.01] }, "defaut": "standard" },
+      "luminosite": { "label": "Luminosité", "options": { "sombre": ["Sombre", -0.03], "normale": ["Normale", 0], "tres": ["Très lumineux", 0.02] }, "defaut": "normale" },
+      "exterieur": { "label": "Extérieur", "options": { "aucun": ["Aucun", 0], "balcon": ["Balcon", 0.02], "terrasse": ["Terrasse", 0.03], "jardin": ["Jardin", 0.03] }, "defaut": "aucun" },
+      "stationnement": { "label": "Stationnement", "options": { "aucun": ["Aucun", 0], "place": ["Place ou garage privatif", 0.02] }, "defaut": "aucun" },
+      "environnement": { "label": "Calme et environnement", "options": { "bruyant": ["Bruyant", -0.03], "normal": ["Normal", 0], "calme": ["Très calme", 0.01] }, "defaut": "normal" }
+    },
+    "etage": {
+      "label": "Étage (appartements seulement)",
+      "options": { "rdc": ["Rez-de-chaussée", -0.03], "1": ["1er étage", 0], "2": ["2e étage", 0], "3plus": ["3e étage ou plus", 0] },
+      "defaut": "1",
+      "troisPlusAvecAscenseur": 0.01,
+      "troisPlusSansAscenseur": -0.03
+    },
+    "equipements": {
+      "laveLinge": ["Lave-linge", 0.015],
+      "laveVaisselle": ["Lave-vaisselle", 0.01],
+      "secheLinge": ["Sèche-linge", 0.005],
+      "television": ["Télévision", 0.005],
+      "fibre": ["Fibre Internet", 0.01],
+      "climatisation": ["Climatisation", 0.01],
+      "complementaires": ["Équipements complémentaires (bureau, rangements, etc.)", 0.005]
+    },
+    "obligatoires": {
+      "cuisine": "Cuisine équipée (plaques, réfrigérateur, vaisselle)",
+      "four": "Four",
+      "microOndes": "Micro-ondes",
+      "note": "Éléments obligatoires d'un meublé (décret n° 2015-981) : déjà compris dans l'écart meublé / nu, aucun ajustement. Il faut une cuisine équipée et au moins un four ou un micro-ondes."
+    },
+    "sansEffet": {
+      "chambres": "Le nombre de chambres est déjà reflété par la surface et le nombre de pièces (catégorie de la Carte des loyers) : 0 %.",
+      "capacite": "En bail mobilité, le loyer porte sur le logement et non sur le nombre d'occupants : 0 % ; la capacité sert au contrôle de cohérence.",
+      "adresse": "L'adresse est reprise dans le résumé ; aucune donnée publique par quartier n'est intégrée à l'outil : 0 %."
+    }
+  },
+  "confiance": {
+    "nature": "HYPOTHÈSE",
+    "minAnnonces": 100,
+    "niveaux": { "moyenne": "Confiance moyenne", "faible": "Confiance faible" },
+    "zFourchette": { "moyenne": 0.6745, "faible": 1.2816 },
+    "note": "Le niveau « élevé » n'est jamais attribué : aucune donnée publique n'observe directement les loyers de bail mobilité."
+  },
+  "bornes": { "surface": [8, 500], "pieces": [1, 10], "chambres": [0, 9], "capacite": [1, 16] },
+  "arrondiEuros": 10,
+  "texts": {
+    "avertissement": "Estimation indicative, établie à partir de références publiques de location nue et meublée et d'hypothèses Émeraude. Ce n'est pas une valeur de marché certaine : le loyer final dépend des annonces comparables au moment de la mise en location.",
+    "forfait": "Le loyer conseillé est un loyer total, charges comprises, comparable aux annonces. Le loyer hors charges s'obtient en retirant votre forfait de charges : un forfait plus élevé réduit d'autant le loyer hors charges, il n'augmente pas le revenu.",
+    "personnalise": "Loyer modifié par le propriétaire : les revenus ci-dessous utilisent ce montant et non le loyer conseillé."
+  }
+}

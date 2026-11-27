@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "mobilite-1.0.0",
-  "description": "Parcours « bail mobilité » de l'estimateur : paramètres propres, indépendants du parcours courte durée (config/config.json n'est pas lu). Aucun montant par défaut : loyer, forfait de charges, durée, vacance, charges, frais et rémunération sont saisis pour chaque logement.",
+  "version": "mobilite-1.1.0",
+  "description": "Parcours « bail mobilité » de l'estimateur : paramètres propres, indépendants du parcours courte durée (config/config.json n'est pas lu). Depuis 1.1.0, le loyer est calculé automatiquement (config/mobilite-loyer.json) et reste modifiable ; forfait de charges, durée, vacance, charges, frais et rémunération sont saisis pour chaque logement.",
   "cadreLegal": {
     "texte": "Loi n° 89-462 du 6 juillet 1989, titre Ier ter (bail mobilité), créé par la loi n° 2018-1021 du 23 novembre 2018 (ELAN).",
     "dureeBailMois": { "min": 1, "max": 10 },
@@ -71,11 +71,11 @@
   },
   "arrondis": { "euros": 10, "mois": 0.1 },
   "texts": {
-    "avertissement": "Simulation indicative, avant impôts, établie à partir des valeurs saisies. Elle ne constitue ni une garantie de loyer, ni une garantie d'occupation, ni un conseil juridique ou fiscal. Le propriétaire reste le bailleur : il fixe le loyer et le forfait de charges, choisit son locataire et signe le bail.",
+    "avertissement": "Simulation indicative, avant impôts, établie à partir d'un loyer estimé (ou modifié par le propriétaire) et des valeurs saisies. Elle ne constitue ni une garantie de loyer, ni une garantie d'occupation, ni un conseil juridique ou fiscal. Le propriétaire reste le bailleur : il fixe le loyer et le forfait de charges, choisit son locataire et signe le bail.",
     "charges": "Le forfait de charges compense des charges récupérables : ce n'est pas un revenu net. Le revenu net ci-dessous déduit toutes les charges réelles du logement, y compris pendant la vacance.",
     "vacance": "Vacance : mois sans locataire entre deux baux (recherche, préparation, délai entre départ et arrivée). Le loyer n'est pas perçu ; les charges du logement continuent de courir.",
-    "repere": "Source du repère : Carte des loyers 2025 (ANIL, ministère du Logement), loyers d'annonce charges comprises d'un logement NON meublé loué à l'année. Ce n'est ni un loyer meublé ni un loyer de bail mobilité, et le calcul ne l'utilise pas.",
-    "sansDonnees": "Aucune source publique fiable n'a été identifiée pour les loyers meublés en bail mobilité, la durée moyenne de ces baux ou la vacance entre deux baux à l'échelle de la commune : ces valeurs sont à saisir à partir de l'expérience du propriétaire ou d'annonces comparables.",
-    "attribution": "Repère de loyer : Carte des loyers 2025 (ANIL, ministère du Logement), Licence Ouverte Etalab 2.0."
+    "repere": "Base du loyer conseillé : Carte des loyers 2025 (ANIL, ministère du Logement), loyers d'annonce charges comprises d'un logement NON meublé loué à l'année. Cette base n'est jamais présentée comme un loyer meublé : l'écart meublé / nu mesuré par l'ANIL (2026) lui est appliqué, puis les critères du logement.",
+    "sansDonnees": "Aucune source publique ne mesure les loyers de bail mobilité, la durée moyenne de ces baux ou la vacance entre deux baux à l'échelle de la commune : le loyer conseillé repose sur des références de location nue et meublée, et la durée et la vacance sont à saisir.",
+    "attribution": "Base du loyer : Carte des loyers 2025 — « Estimations ANIL, à partir des données du Groupe SeLoger et de leboncoin » (ministère de la Transition écologique, Licence Ouverte Etalab 2.0). Écart meublé / nu : ANIL, étude du 28 octobre 2026."
   }
 }

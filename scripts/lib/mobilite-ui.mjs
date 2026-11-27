@@ -1,4 +1,4 @@
-// Interface du parcours « bail mobilité » de l'artifact (2.5.0) : choix initial du type de location, formulaire,
+// Interface du parcours « bail mobilité » de l'artifact (2.5.0 ; loyer conseillé calculé automatiquement depuis 2.6.0) : choix initial du type de location, formulaire,
 // résultats, scénarios, résumé partageable et e-mail. Indépendante du parcours courte durée : ses identifiants sont
 // préfixés « m », son script ne lit ni SNAPSHOT ni le moteur courte durée, et le moteur courte durée ne lit rien d'ici.
 // Le calcul est fait exclusivement par engine/mobilite.js (window.EmeraudeMobilite).
@@ -34,9 +34,19 @@ export const MOB_CSS = `/* Choix du type de location et parcours bail mobilité 
 #emeraude-estimateur .mob .ftable tr.total td{font-weight:850;color:var(--g);border-top:2px solid var(--g)}
 #emeraude-estimateur .mob .ftable tr.sub td{color:var(--muted);font-size:12px}
 #emeraude-estimateur .mob textarea.summary{width:100%;min-height:200px;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);resize:vertical}
+#emeraude-estimateur .mob .mcol{display:grid;gap:18px;min-width:0;align-content:start}
+#emeraude-estimateur .mob .step{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--g);color:#fff;font-size:13px;font-weight:850;margin-right:8px;vertical-align:1px}
+#emeraude-estimateur .mob .checks{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#emeraude-estimateur .mob .checks .check.oblig span::after{content:" · obligatoire";color:var(--muted);font-size:11px}
+#emeraude-estimateur .mob .checks .check.ou span::after{content:" · four ou micro-ondes obligatoire";color:var(--muted);font-size:11px}
+#emeraude-estimateur .mob #mAscWrap{align-content:end}
+#emeraude-estimateur .mob .conf{display:inline-block;margin-left:6px;font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:6px;background:var(--g);color:#fff;vertical-align:1px}
+#emeraude-estimateur .mob .conf.faible{background:var(--warn2);color:var(--warn)}
+#emeraude-estimateur .mob .quick.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:820px){
 #emeraude-estimateur .parcours-cards{grid-template-columns:1fr}
 #emeraude-estimateur .mob .hyp-grid{grid-template-columns:1fr}
+#emeraude-estimateur .mob .checks{grid-template-columns:1fr}
 }
 `;
 
@@ -48,7 +58,7 @@ export const CHOOSER_HTML = `<div class="parcours" id="parcours">
 </div>
 <div class="parcours-cards" id="parcoursCards">
 <button class="parcours-card" type="button" data-parcours="courte"><strong>Location courte durée Airbnb</strong><span>Séjours de quelques nuits. Estimation à partir des données du marché local de la location saisonnière.</span></button>
-<button class="parcours-card" type="button" data-parcours="mobilite"><strong>Location en bail mobilité</strong><span>Logement meublé loué de 1 à 10 mois. Simulation à partir de vos loyers, de la durée des baux et de la vacance entre deux locataires.</span></button>
+<button class="parcours-card" type="button" data-parcours="mobilite"><strong>Location en bail mobilité</strong><span>Logement meublé loué de 1 à 10 mois. Loyer conseillé calculé à partir des caractéristiques du logement, puis revenus selon la durée des baux et la vacance entre deux locataires.</span></button>
 </div>
 <div class="parcours-tabs" role="group" aria-label="Type de location">
 <button class="parcours-tab" type="button" data-parcours="courte" aria-pressed="false">Courte durée Airbnb</button>
@@ -60,12 +70,15 @@ export const CHOOSER_HTML = `<div class="parcours" id="parcours">
 const num = (id, label, attrs = '', hint = '', wide = false) =>
   `<div class="field${wide ? ' wide' : ''}"><label for="${id}">${label}</label><input id="${id}" type="number" inputmode="decimal" ${attrs}>${hint ? `<div class="field-hint">${hint}</div>` : ''}<div class="field-error" id="err-${id}" hidden></div></div>`;
 
+const selInner = (id, label) => `<label for="${id}">${label}</label><select id="${id}"></select>`;
+const sel = (id, label) => `<div class="field">${selInner(id, label)}</div>`;
+
 export const MOB_HTML = `<div class="app mob" id="mobApp" hidden>
 <header class="head">
 <div>
 <div class="kicker">Émeraude Conciergerie · Bail mobilité</div>
 <div class="title">Simulation de revenus en bail mobilité</div>
-<div class="sub">Loyers, vacance entre deux baux, frais et rémunération : chaque hypothèse est saisie et reste modifiable.</div>
+<div class="sub">Loyer conseillé calculé à partir des caractéristiques du logement, et modifiable ; durée des baux, vacance, frais et rémunération saisis par vos soins.</div>
 </div>
 <div class="pills"><div class="badge">SIMULATION PERSONNALISÉE</div></div>
 </header>
@@ -74,17 +87,61 @@ export const MOB_HTML = `<div class="app mob" id="mobApp" hidden>
 <button class="btn small" id="mSendTop" type="button">✉ Envoyer au propriétaire</button>
 </div>
 <div class="layout">
-<section class="card" aria-label="Logement et hypothèses de location">
-<div class="section">Votre logement en bail mobilité<small>Les champs facultatifs non renseignés ne sont pas déduits : rien n’est complété à votre place.</small></div>
+<div class="mcol">
+<section class="card" aria-label="Caractéristiques du logement">
+<div class="section"><span class="step">1</span>Caractéristiques du logement<small>Elles servent à calculer automatiquement le loyer conseillé.</small></div>
 <div class="fields">
-<div class="sec-title">Logement</div>
+<div class="sec-title">Caractéristiques générales</div>
 <div class="field"><label for="mCommune">Commune</label><select id="mCommune"></select><div class="field-error" id="err-mCommune" hidden></div></div>
-<div class="field"><label for="mTypologie">Typologie</label><select id="mTypologie"></select><div class="field-error" id="err-mTypologie" hidden></div></div>
-${num('mSurface', 'Surface (m²)', 'min="8" max="500" step="1"')}
-<div class="repere" id="mRepere">—</div>
-<div class="sec-title">Loyer et charges</div>
-${num('mLoyer', 'Loyer mensuel hors charges (€)', 'min="0" step="10"', 'Loyer meublé envisagé, fixé par le propriétaire.')}
-${num('mForfait', 'Forfait mensuel de charges (€)', 'min="0" step="5"', 'Saisissez 0 s’il n’y en a pas.')}
+<div class="field"><label for="mAdresse">Adresse <span class="opt">facultatif</span></label><input id="mAdresse" type="text" maxlength="200" autocomplete="street-address"><div class="field-hint">Reprise dans le résumé ; elle ne modifie pas le calcul.</div></div>
+<div class="field"><label for="mType">Type de logement</label><select id="mType"><option value="">Choisir…</option><option value="appartement">Appartement</option><option value="maison">Maison</option></select><div class="field-error" id="err-mType" hidden></div></div>
+${num('mSurface', 'Surface habitable (m²)', 'min="8" max="500" step="1"')}
+${num('mPieces', 'Nombre de pièces', 'min="1" max="10" step="1"', 'Pièces principales, hors cuisine et salle de bains.')}
+${num('mChambres', 'Nombre de chambres', 'min="0" max="9" step="1"', '0 pour un studio.')}
+${num('mCapacite', 'Capacité d’accueil (personnes)', 'min="1" max="16" step="1"')}
+<div class="sec-title">État et modernité</div>
+${sel('mEtat', 'État général')}
+${sel('mModernite', 'Aménagement et décoration')}
+${sel('mMobilier', 'Qualité du mobilier')}
+${sel('mLiterie', 'Qualité de la literie')}
+<div class="sec-title">Équipements</div>
+<div class="checks" id="mEquipements"></div>
+<div class="sec-title">Immeuble et environnement</div>
+<div class="field" id="mEtageWrap">${selInner('mEtage', 'Étage')}</div>
+<div class="field" id="mAscWrap"><label class="check"><input type="checkbox" id="mAscenseur"><span>Ascenseur</span></label></div>
+${sel('mLuminosite', 'Luminosité')}
+${sel('mExterieur', 'Extérieur')}
+${sel('mStationnement', 'Stationnement')}
+${sel('mEnvironnement', 'Calme et environnement')}
+</div>
+</section>
+<section class="card" aria-label="Estimation locative">
+<div class="section"><span class="step">2</span>Estimation locative<small>Loyer conseillé pour un bail mobilité, calculé à partir de références publiques.</small></div>
+<div id="mLoyerVide" class="missing"></div>
+<div id="mLoyerBox" hidden>
+<div class="hero">
+<div class="hero-label">Loyer mensuel conseillé hors charges <span class="conf" id="mConf"></span></div>
+<div class="hero-val" id="mLoyerHC">—</div>
+<div class="hero-range" id="mLoyerRange">—</div>
+</div>
+<div class="quick two">
+<div class="metric"><span>Loyer total conseillé, charges comprises</span><strong id="mLoyerCC">—</strong></div>
+<div class="metric"><span>Prix au m² hors charges</span><strong id="mLoyerM2">—</strong></div>
+</div>
+<p class="note" id="mForfaitNote"></p>
+<div class="detail-title">Pourquoi ce loyer ?</div>
+<table class="ftable" id="mExplication"></table>
+<ul class="warnings" id="mLoyerWarnings"></ul>
+</div>
+<div class="fields" style="margin-top:14px">
+${num('mLoyerPerso', 'Modifier le loyer conseillé (€ / mois hors charges) <span class="opt">facultatif</span>', 'min="0" step="10"', 'Laissez vide pour utiliser le loyer conseillé. Un montant saisi ici est votre choix personnel et remplace l’estimation dans les revenus.', true)}
+</div>
+</section>
+<section class="card" aria-label="Charges et dépenses">
+<div class="section"><span class="step">3</span>Charges et dépenses<small>Les champs facultatifs non renseignés ne sont pas déduits : rien n’est complété à votre place.</small></div>
+<div class="fields">
+<div class="sec-title">Charges</div>
+${num('mForfait', 'Forfait mensuel de charges (€)', 'min="0" step="5"', 'Montant que vous décidez de demander au locataire. Saisissez 0 s’il n’y en a pas.')}
 ${num('mCharges', 'Charges annuelles réelles du logement (€ / an)', 'min="0" step="50"', 'Tout ce que le propriétaire paie dans l’année, y compris pendant la vacance : copropriété, énergie et eau si incluses, taxe foncière, assurance, entretien, abonnements… Saisissez 0 si aucune.', true)}
 <div class="info" id="mChargesInfo"></div>
 <div class="sec-title">Rotation des locataires</div>
@@ -115,8 +172,10 @@ ${num('mOptiVacance', 'Optimiste : vacance supplémentaire (mois)', 'min="-3" ma
 </details>
 </div>
 </section>
+</div>
 <aside class="result" aria-live="polite">
 <div class="card">
+<div class="section"><span class="step">4</span>Revenus estimés</div>
 <div id="mMissing" class="missing"></div>
 <div id="mResult" hidden>
 <div class="hero">
@@ -173,7 +232,7 @@ export const MOB_JS = `(()=>{
 const root=document.getElementById('emeraude-estimateur');
 if(!root)return;
 const $=id=>root.querySelector('#'+id);
-const M=window.EmeraudeMobilite,CFG=MOBILITE.config,REP=MOBILITE.reperes;
+const M=window.EmeraudeMobilite,CFG=MOBILITE.config,REP=MOBILITE.reperes,LOY=MOBILITE.loyer;
 const eur=new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:0});
 const ARR=CFG.arrondis.euros;
 function e10(n){return (typeof n==='number'&&isFinite(n))?eur.format(Math.round(n/ARR)*ARR):'—';}
@@ -196,7 +255,13 @@ root.querySelectorAll('[data-parcours]').forEach(b=>b.addEventListener('click',(
 
 /* ---------- Formulaire ---------- */
 opts($('mCommune'),Object.entries(REP.communes).map(([k,c])=>[k,c.label]),'Choisir…');
-opts($('mTypologie'),Object.entries(CFG.typologies).map(([k,t])=>[k,t.label]),'Choisir…');
+const SELS={mEtat:'etat',mModernite:'modernite',mMobilier:'mobilier',mLiterie:'literie',mLuminosite:'luminosite',mExterieur:'exterieur',mStationnement:'stationnement',mEnvironnement:'environnement'};
+for(const [id,k] of Object.entries(SELS))opts($(id),Object.entries(LOY.criteres.choix[k].options).map(([v,o])=>[v,o[0]]));
+opts($('mEtage'),Object.entries(LOY.criteres.etage.options).map(([v,o])=>[v,o[0]]));
+const OBL=['cuisine','four','microOndes'];
+$('mEquipements').innerHTML=OBL.map(k=>'<label class="check '+(k==='cuisine'?'oblig':'ou')+'"><input type="checkbox" data-eq="'+k+'"><span>'+esc(LOY.criteres.obligatoires[k])+'</span></label>').join('')+Object.entries(LOY.criteres.equipements).map(([k,o])=>'<label class="check"><input type="checkbox" data-eq="'+k+'"><span>'+esc(o[0])+'</span></label>').join('');
+function selDefaults(){for(const [id,k] of Object.entries(SELS))$(id).value=LOY.criteres.choix[k].defaut;$('mEtage').value=LOY.criteres.etage.defaut;}
+selDefaults();
 opts($('mRemMode'),Object.entries(CFG.remuneration.modes),'Choisir…');
 opts($('mRemAssiette'),Object.entries(CFG.remuneration.assiettes),'Choisir…');
 opts($('mPlatMode'),Object.entries(CFG.plateforme.modes),'Choisir…');
@@ -207,11 +272,13 @@ $('mDisclaimer').textContent=CFG.texts.avertissement;
 function hypDefaults(){$('mPrudDepart').value=CFG.scenarios.prudent.departAnticipeMois;$('mPrudVacance').value=CFG.scenarios.prudent.vacanceSupplementaireMois;$('mOptiDepart').value=CFG.scenarios.optimiste.departAnticipeMois;$('mOptiVacance').value=CFG.scenarios.optimiste.vacanceSupplementaireMois;}
 hypDefaults();
 const v=id=>$(id).value;
-function raw(){return{commune:v('mCommune'),typologie:v('mTypologie'),surface:v('mSurface'),loyer:v('mLoyer'),forfaitCharges:v('mForfait'),chargesAnnuelles:v('mCharges'),dureeBail:v('mDuree'),vacance:v('mVacance'),menage:v('mMenage'),linge:v('mLinge'),kit:v('mKit'),
+function equip(){const o={};root.querySelectorAll('#mEquipements input[data-eq]').forEach(e=>{o[e.dataset.eq]=e.checked;});return o;}
+function logement(){const o={commune:v('mCommune'),adresse:v('mAdresse'),type:v('mType'),surface:v('mSurface'),pieces:v('mPieces'),chambres:v('mChambres'),capacite:v('mCapacite'),etage:v('mEtage'),ascenseur:$('mAscenseur').checked,equipements:equip()};for(const [id,k] of Object.entries(SELS))o[k]=v(id);return o;}
+function raw(){return{logement:logement(),loyerPersonnalise:v('mLoyerPerso'),forfaitCharges:v('mForfait'),chargesAnnuelles:v('mCharges'),dureeBail:v('mDuree'),vacance:v('mVacance'),menage:v('mMenage'),linge:v('mLinge'),kit:v('mKit'),
 remuneration:{mode:v('mRemMode'),valeur:v('mRemValeur'),assiette:v('mRemAssiette'),fraisRotation:v('mRemRotation'),fraisAnnuels:v('mRemAnnuels')},
 plateforme:{mode:v('mPlatMode'),valeur:v('mPlatValeur')},
 hypotheses:{prudent:{departAnticipeMois:v('mPrudDepart'),vacanceSupplementaireMois:v('mPrudVacance')},optimiste:{departAnticipeMois:v('mOptiDepart'),vacanceSupplementaireMois:v('mOptiVacance')}}};}
-const ERR_FIELDS={commune:'mCommune',typologie:'mTypologie',surface:'mSurface',loyer:'mLoyer',forfaitCharges:'mForfait',chargesAnnuelles:'mCharges',dureeBail:'mDuree',vacance:'mVacance',menage:'mMenage',linge:'mLinge',kit:'mKit',remunerationMode:'mRemMode',remunerationValeur:'mRemValeur',remunerationAssiette:'mRemAssiette',remuneration_fraisRotation:'mRemRotation',remuneration_fraisAnnuels:'mRemAnnuels',plateformeMode:'mPlatMode',plateformeValeur:'mPlatValeur'};
+const ERR_FIELDS={logement_commune:'mCommune',logement_type:'mType',logement_surface:'mSurface',logement_pieces:'mPieces',logement_chambres:'mChambres',logement_capacite:'mCapacite',loyerPersonnalise:'mLoyerPerso',commune:'mCommune',surface:'mSurface',loyer:'mLoyerPerso',forfaitCharges:'mForfait',chargesAnnuelles:'mCharges',dureeBail:'mDuree',vacance:'mVacance',menage:'mMenage',linge:'mLinge',kit:'mKit',remunerationMode:'mRemMode',remunerationValeur:'mRemValeur',remunerationAssiette:'mRemAssiette',remuneration_fraisRotation:'mRemRotation',remuneration_fraisAnnuels:'mRemAnnuels',plateformeMode:'mPlatMode',plateformeValeur:'mPlatValeur'};
 const touched=new Set();
 
 function renderModes(){
@@ -222,15 +289,31 @@ const p=v('mPlatMode');$('mPlatValeurWrap').hidden=!p||p==='aucun';
 $('mPlatValeurLabel').textContent=p==='pourcentage_loyer'?'Pourcentage du loyer (%)':'Forfait par bail signé (€)';
 }
 
-function renderRepere(){
-const c=REP.communes[v('mCommune')],t=CFG.typologies[v('mTypologie')];
-const box=$('mRepere');
-if(!c||!t){box.innerHTML='<b>Repère de loyer</b> : choisissez la commune et la typologie. '+esc(REP.meuble.note);return;}
-const x=c[t.repere];
-if(!x){box.innerHTML='<b>Aucun repère publié</b> pour '+esc(c.label)+' et cette typologie : loyer à saisir à partir d’annonces meublées comparables.';return;}
-const s=Number(v('mSurface'));
-const range=s>0?' Pour '+s.toLocaleString('fr-FR')+' m² : environ <b>'+eur.format(Math.round(x.basM2*s/10)*10)+' à '+eur.format(Math.round(x.hautM2*s/10)*10)+' par mois</b>, charges comprises.':'';
-box.innerHTML='<b>Repère indicatif, location nue</b> à '+esc(c.label)+' : '+x.basM2.toLocaleString('fr-FR')+' à '+x.hautM2.toLocaleString('fr-FR')+' €/m² charges comprises'+(x.fiabilite==='faible'?' (<b>fiabilité faible</b> : estimation de secteur, peu d’annonces)':'')+'.'+range+' '+esc(CFG.texts.repere)+' '+esc(REP.meuble.note);
+function e1(n){return (typeof n==='number'&&isFinite(n))?eur.format(n):'—';}
+function m2(n){return (typeof n==='number'&&isFinite(n))?n.toLocaleString('fr-FR',{minimumFractionDigits:1,maximumFractionDigits:1})+' €/m²':'—';}
+function sp(x){const p=Math.round(x*1000)/10;return (p>0?'+ ':p<0?'− ':'')+Math.abs(p).toLocaleString('fr-FR')+' %';}
+function renderLoyer(r){
+const maison=v('mType')==='maison';$('mEtageWrap').hidden=maison;$('mAscWrap').hidden=maison;
+const est=r.loyer&&r.loyer.estimation;
+const ok=!!(est&&est.ok);
+$('mLoyerBox').hidden=!ok;$('mLoyerVide').hidden=ok;
+if(!ok){const errs=est&&est.errors?Object.values(est.errors):[];$('mLoyerVide').innerHTML='<b>Pour calculer le loyer conseillé, renseignez :</b>'+(errs.length?'<ul>'+errs.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'<p>la commune, le type de logement, la surface, le nombre de pièces, de chambres et la capacité d’accueil.</p>');return;}
+const c=est.coefficients,b=est.base;
+$('mConf').textContent=LOY.confiance.niveaux[est.confiance];$('mConf').className='conf '+est.confiance;
+if(est.conseilleHC!==null){$('mLoyerHC').textContent=e1(est.conseilleHC);$('mLoyerRange').textContent='Fourchette : '+e1(est.basHC)+' à '+e1(est.hautHC)+' par mois hors charges';$('mLoyerM2').textContent=m2(est.m2HC);}
+else{$('mLoyerHC').textContent='—';$('mLoyerRange').textContent='Indiquez votre forfait de charges (section 3) pour obtenir le loyer hors charges.';$('mLoyerM2').textContent='—';}
+$('mLoyerCC').textContent=e1(est.totalCC)+' ('+e1(est.totalCCbas)+' à '+e1(est.totalCChaut)+')';
+$('mForfaitNote').textContent=LOY.texts.forfait+(est.forfait!==null?' Ici : '+e1(est.totalCC)+' − forfait de '+e1(est.forfait)+' = '+e1(est.conseilleHC)+' hors charges.':'');
+const s=est.saisie;
+let rows=row('Référence location nue à '+esc(b.commune)+' ('+esc(est.segmentLabel)+', charges comprises, Carte des loyers 2025)',m2(b.loyerM2))
++row('Logement meublé : écart meublé / nu (étude ANIL 2026, lu sur une carte en classes) <span class="tag">à confirmer</span>',sp(c.meuble))
++row('Bail mobilité par rapport au meublé classique (aucune donnée : neutre) <span class="tag hyp">hypothèse</span>',sp(c.mobilite));
+for(const d of c.details)if(d.valeur!==0)rows+=row(esc(d.label)+' : '+esc(d.choix.toLowerCase())+' <span class="tag hyp">hypothèse</span>',sp(d.valeur),'sub');
+rows+=row('Critères du logement'+(c.qualite!==c.qualiteBrute?' (plafonné)':''),sp(c.qualite))
++row('Prix au m² conseillé, charges comprises',m2(est.m2CC))
++row('× '+s.surface.toLocaleString('fr-FR')+' m² = loyer total conseillé',e1(est.totalCC),'total');
+$('mExplication').innerHTML=rows;
+$('mLoyerWarnings').innerHTML=est.warnings.map(w=>'<li>'+esc(w)+'</li>').join('');
 }
 
 function showErrors(errors){
@@ -243,13 +326,14 @@ function row(l,val,cls){return '<tr'+(cls?' class="'+cls+'"':'')+'><td>'+l+'</td
 function minus(n){return n>0?'− '+e10(n):e10(0);}
 
 function calculate(){
-renderModes();renderRepere();
-const r=M.estimerMobilite(raw(),CFG,REP);
+renderModes();
+const r=M.estimerMobilite(raw(),CFG,REP,LOY);
+renderLoyer(r);
 last=r.ok?r:null;
 showErrors(r.errors);
 $('mResult').hidden=!r.ok;$('mMissing').hidden=r.ok;
 if(!r.ok){
-const list=Object.values(r.errors||{});
+const list=Object.entries(r.errors||{}).filter(([k])=>!k.startsWith('logement_')).map(([,x])=>x);if(r.loyer&&r.loyer.estimation&&!r.loyer.estimation.ok)list.unshift('Les caractéristiques du logement (section 1), pour calculer le loyer.');
 $('mMissing').innerHTML='<b>Pour afficher la simulation, renseignez :</b><ul>'+list.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><p class="note">'+esc(REP.dureeBail.note)+' '+esc(REP.vacance.note)+'</p>';
 return;
 }
@@ -275,33 +359,38 @@ const max=Math.max(1,...['prudent','central','optimiste'].map(id=>r.scenarios[id
 $('mScenarios').innerHTML=['prudent','central','optimiste'].map(id=>{const s=r.scenarios[id],h=s.hypotheses;const w=Math.max(0,s.revenuNet/max*100);
 const d=Math.round(s.revenuNet/ARR)*ARR-Math.round(c.revenuNet/ARR)*ARR;
 return '<div class="sc-row'+(id==='central'?' is-main':'')+'"><div class="sc-top"><div><div class="sc-name">'+esc(s.label)+'</div><span class="sc-diff">'+(id==='central'?'Scénario de référence':(d>0?'+':d<0?'−':'')+eur.format(Math.abs(d))+' par rapport au scénario central')+'</span></div><div class="sc-amount"><strong>'+e10(s.revenuNet)+'</strong><span>revenu net / an</span></div></div><div class="bar" aria-hidden="true"><i style="width:'+w.toFixed(1)+'%"></i></div><div class="sc-meta"><div><span>Mois loués</span><b>'+mois(s.moisLoues)+'</b></div><div><span>Rotations</span><b>'+mois(s.rotations)+'</b></div><div><span>Bail / vacance</span><b>'+mois(h.dureeBail)+' / '+mois(h.vacance)+' mois</b></div></div><p>'+esc(s.description)+'</p></div>';}).join('');
-$('mWarnings').innerHTML=r.warnings.map(w=>'<li>'+esc(w)+'</li>').join('');
+const lw=new Set((r.loyer&&r.loyer.estimation.warnings)||[]);$('mWarnings').innerHTML=r.warnings.filter(w=>!lw.has(w)).map(w=>'<li>'+esc(w)+'</li>').join('');
 $('mSummary').value=summary(r);
 $('mMethodBody').innerHTML=method(r);
 }
 
 function summary(r){
-const s=r.saisie,c=r.scenarios.central,t=CFG.typologies[s.typologie].label,cm=REP.communes[s.commune].label;
+const s=r.saisie,c=r.scenarios.central,cm=REP.communes[s.commune].label,est=r.loyer.estimation,lg=est.saisie,perso=r.loyer.source==='personnalise';
+const desc=(lg.type==='maison'?'Maison':'Appartement')+' de '+lg.pieces+' pièce'+(lg.pieces>1?'s':'')+' ('+lg.chambres+' chambre'+(lg.chambres>1?'s':'')+'), '+s.surface.toLocaleString('fr-FR')+' m², '+lg.capacite+' personne'+(lg.capacite>1?'s':'')+', à '+cm+(lg.adresse?' — '+lg.adresse:'');
 const rem=s.remuneration,remTxt=rem.mode==='pourcentage'?(rem.valeur.toLocaleString('fr-FR')+' % ('+CFG.remuneration.assiettes[rem.assiette].toLowerCase()+')'):(CFG.remuneration.modes[rem.mode]+' : '+eur.format(rem.valeur));
 const L=['SIMULATION BAIL MOBILITÉ — ÉMERAUDE CONCIERGERIE','',
-'LOGEMENT','• '+t+' de '+s.surface.toLocaleString('fr-FR')+' m² à '+cm,'',
-'HYPOTHÈSES SAISIES','• Loyer : '+eur.format(s.loyer)+' / mois hors charges ; forfait de charges : '+eur.format(s.forfaitCharges)+' / mois','• Durée moyenne d’un bail : '+mois(s.dureeBail)+' mois ; vacance entre deux baux : '+mois(s.vacance)+' mois','• Charges réelles du logement : '+eur.format(s.chargesAnnuelles)+' / an','• Rémunération Émeraude : '+remTxt+(rem.fraisRotation?' ; frais de mise en place : '+eur.format(rem.fraisRotation)+' / rotation':'')+(rem.fraisAnnuels?' ; frais fixes : '+eur.format(rem.fraisAnnuels)+' / an':''),'• Frais de plateforme : '+CFG.plateforme.modes[s.plateforme.mode]+(s.plateforme.valeur!==null?' ('+s.plateforme.valeur.toLocaleString('fr-FR')+(s.plateforme.mode==='pourcentage_loyer'?' %':' €')+')':''),
+'LOGEMENT','• '+desc,'',
+'LOYER CONSEILLÉ (estimation, '+LOY.confiance.niveaux[est.confiance].toLowerCase()+')','• Loyer total conseillé : '+eur.format(est.totalCC)+' / mois charges comprises (fourchette '+eur.format(est.totalCCbas)+' à '+eur.format(est.totalCChaut)+')','• Loyer conseillé hors charges : '+eur.format(est.conseilleHC)+' / mois (fourchette '+eur.format(est.basHC)+' à '+eur.format(est.hautHC)+'), soit '+m2(est.m2HC),
+...(perso?['• Loyer retenu par le propriétaire (modification personnelle) : '+eur.format(s.loyer)+' / mois hors charges']:[]),'',
+'HYPOTHÈSES','• Loyer utilisé : '+eur.format(s.loyer)+' / mois hors charges'+(perso?' (modification personnelle)':' (loyer conseillé)')+' ; forfait de charges choisi : '+eur.format(s.forfaitCharges)+' / mois','• Durée moyenne d’un bail : '+mois(s.dureeBail)+' mois ; vacance entre deux baux : '+mois(s.vacance)+' mois','• Charges réelles du logement : '+eur.format(s.chargesAnnuelles)+' / an','• Rémunération Émeraude : '+remTxt+(rem.fraisRotation?' ; frais de mise en place : '+eur.format(rem.fraisRotation)+' / rotation':'')+(rem.fraisAnnuels?' ; frais fixes : '+eur.format(rem.fraisAnnuels)+' / an':''),'• Frais de plateforme : '+CFG.plateforme.modes[s.plateforme.mode]+(s.plateforme.valeur!==null?' ('+s.plateforme.valeur.toLocaleString('fr-FR')+(s.plateforme.mode==='pourcentage_loyer'?' %':' €')+')':''),
 ...(r.nonRenseignes.length?['• Non renseignés, non déduits : '+r.nonRenseignes.join(', ')]:[]),'',
 'RÉSULTAT (scénario central, sur 12 mois)','• Mois loués : '+mois(c.moisLoues)+' ; rotations : ≈ '+mois(c.rotations)+' ; occupation annuelle : '+pct(c.occupation),'• Revenu locatif brut : ≈ '+e10(c.revenuLocatifBrut),'• Charges récupérées (forfait) : ≈ '+e10(c.chargesRecuperees),'• Charges réelles, frais et ménage : ≈ '+e10(c.frais.total),'• Rémunération Émeraude : ≈ '+e10(c.remuneration.total),'• Revenu net estimé du propriétaire : ≈ '+e10(c.revenuNet)+' (≈ '+e10(c.revenuNetMensuelMoyen)+' / mois en moyenne, avant impôts)','',
 'SCÉNARIOS (revenu net sur 12 mois)',...['prudent','central','optimiste'].map(id=>{const x=r.scenarios[id];return '• '+x.label+' : ≈ '+e10(x.revenuNet)+' — '+mois(x.moisLoues)+' mois loués ('+x.description+')';}),'',
-CFG.texts.avertissement];
+LOY.texts.avertissement,CFG.texts.avertissement];
 return L.join('\\n');
 }
 
 function method(r){
 const sc=CFG.scenarios;
-return '<div><h4>Calcul</h4><p>Cycle = durée du bail + vacance. Rotations par an = 12 ÷ cycle. Mois loués = min(12 ; rotations × durée du bail). Pendant un bail signé, le logement est occupé à 100 %. Occupation annuelle = mois loués ÷ 12.</p><p>Revenu net = loyers + forfait de charges perçus − charges réelles annuelles − frais de plateforme − ménage, linge et kit à chaque rotation − rémunération Émeraude.</p></div>'
+const est=r.loyer.estimation,L=LOY;
+return '<div><h4>Loyer conseillé</h4><p>'+L.methode.map(esc).join('<br>')+'</p><p><b>Écart meublé / nu</b> <span class="tag">'+esc(L.meuble.nature.toLowerCase())+'</span> : '+esc(L.meuble.justification)+'</p><p><b>Bail mobilité</b> <span class="tag hyp">hypothèse</span> : '+esc(L.mobilite.justification)+'</p><p><b>Critères du logement</b> <span class="tag hyp">hypothèse</span> : '+esc(L.criteres.note)+' '+Object.values(L.criteres.sansEffet).map(esc).join(' ')+'</p><p><b>Confiance</b> : '+esc(L.confiance.note)+(est.raisonsConfiance.length?' Ici : '+esc(est.raisonsConfiance.join(' ; '))+'.':'')+'</p><p>Sources : '+Object.values(L.sources).map(x=>esc(x.label)).join(' · ')+'.</p></div>'
++'<div><h4>Calcul des revenus</h4><p>Cycle = durée du bail + vacance. Rotations par an = 12 ÷ cycle. Mois loués = min(12 ; rotations × durée du bail). Pendant un bail signé, le logement est occupé à 100 %. Occupation annuelle = mois loués ÷ 12.</p><p>Revenu net = loyers + forfait de charges perçus − charges réelles annuelles − frais de plateforme − ménage, linge et kit à chaque rotation − rémunération Émeraude.</p></div>'
 +'<div><h4>Hypothèses des scénarios <span class="tag hyp">hypothèse</span></h4><p>'+esc(sc.note)+'</p><p>'+['prudent','central','optimiste'].map(id=>'<b>'+esc(sc[id].label)+'</b> : '+esc(sc[id].description)).join('<br>')+'</p></div>'
 +'<div><h4>Charges</h4><p>'+esc(CFG.texts.charges)+'</p></div>'
 +'<div><h4>Vacance</h4><p>'+esc(CFG.texts.vacance)+'</p></div>'
 +'<div><h4>Données de marché</h4><p>'+esc(CFG.texts.sansDonnees)+'</p><p>'+esc(CFG.texts.repere)+'</p><p>'+esc(CFG.texts.attribution)+'</p></div>'
 +'<div><h4>Cadre</h4><p>'+esc(CFG.cadreLegal.texte)+' '+esc(CFG.cadreLegal.note)+'</p></div>'
-+'<p class="note">Moteur bail mobilité '+esc(r.engineVersion)+' · configuration '+esc(r.configVersion)+' · indépendant du parcours courte durée.</p>';
++'<p class="note">Moteur bail mobilité '+esc(r.engineVersion)+' · configuration '+esc(r.configVersion)+' · '+esc(LOY.version)+' · indépendant du parcours courte durée.</p>';
 }
 
 /* ---------- Résumé et e-mail ---------- */
@@ -319,7 +408,7 @@ if(!email||!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)){$('mMailStatus').textC
 const gmail='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(email)+'&su='+encodeURIComponent('Votre simulation en bail mobilité — Émeraude Conciergerie')+'&body='+encodeURIComponent(emailBody());
 $('mMailStatus').innerHTML='Brouillon prêt pour '+esc(email)+'. Rien n’est envoyé automatiquement.<div class="mail-links"><a href="'+esc(gmail)+'" target="_blank" rel="noopener noreferrer">Ouvrir le brouillon dans Gmail</a></div>';
 });
-$('mNew').addEventListener('click',()=>{root.querySelectorAll('#mobApp .fields input,#mobApp .fields select').forEach(e=>{e.value='';});hypDefaults();touched.clear();calculate();});
+$('mNew').addEventListener('click',()=>{root.querySelectorAll('#mobApp .fields input,#mobApp .fields select').forEach(e=>{if(e.type==='checkbox')e.checked=false;else e.value='';});hypDefaults();selDefaults();touched.clear();calculate();});
 root.querySelectorAll('#mobApp .fields input,#mobApp .fields select').forEach(e=>{const h=()=>{touched.add(e.id);calculate();};e.addEventListener('input',h);e.addEventListener('change',h);});
 calculate();
 })();
